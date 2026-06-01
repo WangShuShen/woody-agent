@@ -1,0 +1,24 @@
+# policy-analyzer 是獨立的 git repo，在此排除
+policy-analyzer/
+
+# 環境變數與金鑰（絕對不 commit）
+.env
+.env.*
+*.key
+*.pem
+secrets/
+
+# Next.js
+policy-analyzer/.next/
+policy-analyzer/node_modules/
+policy-analyzer/tsconfig.tsbuildinfo
+
+# macOS
+.DS_Store
+**/.DS_Store
+
+# Playwright MCP logs
+.playwright-mcp/
+
+# Claude Code 快取（不需備份）
+.claude/cache/
