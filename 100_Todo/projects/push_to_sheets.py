@@ -8,6 +8,7 @@
 JSON 格式參考 policy-db-extract 輸出的資料庫 JSON 區塊。
 """
 
+import re
 import sys
 import json
 import argparse
@@ -15,14 +16,12 @@ from datetime import datetime
 from pathlib import Path
 
 import gspread
-from google.oauth2.service_account import Credentials
+from google.oauth2.credentials import Credentials
+from googleapiclient.discovery import build
 
 # ── 設定 ──────────────────────────────────────────
-SERVICE_ACCOUNT_FILE = Path(__file__).parent.parent.parent / "000_Agent" / "service_account.json"
-SCOPES = [
-    "https://www.googleapis.com/auth/spreadsheets",
-    "https://www.googleapis.com/auth/drive",
-]
+CREDENTIALS_FILE  = Path(__file__).parent.parent.parent / "000_Agent" / "google_credentials.json"
+AUTHORIZED_FILE   = Path(__file__).parent.parent.parent / "000_Agent" / "authorized_user.json"
 SHEET_FOLDER_NAME = "保單審核資料庫"   # Google Drive 資料夾名稱（會自動建立）
 
 # ── 顏色常數 ──────────────────────────────────────
@@ -41,52 +40,99 @@ COLOR = {
 }
 
 
+DRIVE_SCOPES = [
+    "https://www.googleapis.com/auth/spreadsheets",
+    "https://www.googleapis.com/auth/drive",
+]
+
+
 def connect():
-    """建立 Google Sheets 連線"""
-    if not SERVICE_ACCOUNT_FILE.exists():
-        print(f"❌ 找不到 Service Account 金鑰：{SERVICE_ACCOUNT_FILE}")
-        print("請確認已將 service_account.json 放到 000_Agent/ 資料夾")
+    """建立 Google Sheets + Drive 連線（OAuth2，第一次跑會開瀏覽器授權）"""
+    if not CREDENTIALS_FILE.exists():
+        print(f"❌ 找不到 OAuth 憑證：{CREDENTIALS_FILE}")
+        print("請確認已將 google_credentials.json 放到 000_Agent/ 資料夾")
         sys.exit(1)
-    creds = Credentials.from_service_account_file(str(SERVICE_ACCOUNT_FILE), scopes=SCOPES)
-    return gspread.authorize(creds), creds.service_account_email
-
-
-def get_or_create_folder(drive_service, folder_name):
-    """在 Google Drive 找到或建立資料夾，回傳資料夾 ID"""
-    # gspread 不直接操作 Drive，用 requests 搭配 token
-    import requests
-    token = drive_service.auth.token
-    headers = {"Authorization": f"Bearer {token}"}
-
-    # 搜尋資料夾
-    q = f"name='{folder_name}' and mimeType='application/vnd.google-apps.folder' and trashed=false"
-    r = requests.get(
-        "https://www.googleapis.com/drive/v3/files",
-        params={"q": q, "fields": "files(id,name)"},
-        headers=headers,
+    gc = gspread.oauth(
+        credentials_filename=str(CREDENTIALS_FILE),
+        authorized_user_filename=str(AUTHORIZED_FILE),
     )
-    files = r.json().get("files", [])
+    # 用 gspread 授權後存下來的 token 建立 Drive 服務
+    creds = Credentials.from_authorized_user_file(str(AUTHORIZED_FILE), DRIVE_SCOPES)
+    drive = build("drive", "v3", credentials=creds)
+    return gc, drive
+
+
+def get_or_create_folder(drive, name, parent_id=None):
+    """在 Google Drive 找到或建立資料夾，回傳資料夾 ID"""
+    q = f"name='{name}' and mimeType='application/vnd.google-apps.folder' and trashed=false"
+    if parent_id:
+        q += f" and '{parent_id}' in parents"
+    res = drive.files().list(q=q, fields="files(id)").execute()
+    files = res.get("files", [])
     if files:
         return files[0]["id"]
-
-    # 建立資料夾
-    r = requests.post(
-        "https://www.googleapis.com/drive/v3/files",
-        headers={**headers, "Content-Type": "application/json"},
-        json={"name": folder_name, "mimeType": "application/vnd.google-apps.folder"},
-    )
-    return r.json()["id"]
+    meta = {"name": name, "mimeType": "application/vnd.google-apps.folder"}
+    if parent_id:
+        meta["parents"] = [parent_id]
+    return drive.files().create(body=meta, fields="id").execute()["id"]
 
 
-def create_spreadsheet(gc, title):
-    """建立新試算表"""
-    sh = gc.create(title)
-    return sh
+def move_file(drive, file_id, new_parent_id):
+    """把 Google Drive 檔案移到指定資料夾"""
+    f = drive.files().get(fileId=file_id, fields="parents").execute()
+    old_parents = ",".join(f.get("parents", []))
+    drive.files().update(
+        fileId=file_id,
+        addParents=new_parent_id,
+        removeParents=old_parents,
+        fields="id, parents",
+    ).execute()
 
 
-def share_with_anyone(sh):
-    """設定任何人都可以查看（方便顧問開啟連結）"""
-    sh.share(None, perm_type="anyone", role="writer")
+def archive_sheet(gc, drive, sheet_ref):
+    """把審核完成的試算表歸檔到正確的險種/公司資料夾"""
+    # 支援完整 URL 或純 ID
+    if "docs.google.com" in sheet_ref:
+        sheet_id = sheet_ref.split("/d/")[1].split("/")[0]
+    else:
+        sheet_id = sheet_ref
+
+    sh = gc.open_by_key(sheet_id)
+    ws = sh.worksheet("給付項目審核")
+
+    # 從 A1 解析險種與公司
+    header = ws.cell(1, 1).value or ""
+    type_match    = re.search(r"【(.+?)】", header)
+    company_match = re.search(r"】(.+?)　｜", header)
+    insurance_type = type_match.group(1).strip()    if type_match    else "未分類"
+    company        = company_match.group(1).strip() if company_match else "未知公司"
+
+    # 檢查是否還有「待審核」項目
+    all_values = ws.get_all_values()
+    pending = [r[4] for r in all_values[4:] if len(r) >= 5 and r[4] == "待審核"]
+    if pending:
+        print(f"⚠️  還有 {len(pending)} 個項目尚未審核完成。確定要歸檔嗎？(y/N) ", end="")
+        if input().strip().lower() != "y":
+            print("取消歸檔。")
+            return
+
+    # 建立目標資料夾層級：保單審核資料庫 / 險種 / 公司
+    root_id    = get_or_create_folder(drive, SHEET_FOLDER_NAME)
+    type_id    = get_or_create_folder(drive, insurance_type, root_id)
+    company_id = get_or_create_folder(drive, company, type_id)
+
+    # 移動檔案
+    move_file(drive, sh.id, company_id)
+
+    # 重新命名（移除「待審核」前綴）
+    new_title = re.sub(r"^【待審核】\s*", "", sh.title).strip()
+    if new_title != sh.title:
+        drive.files().update(fileId=sh.id, body={"name": new_title}).execute()
+
+    url = f"https://docs.google.com/spreadsheets/d/{sh.id}"
+    print(f"\n✅ 歸檔完成！")
+    print(f"   路徑：保單審核資料庫 / {insurance_type} / {company}")
+    print(f"   連結：{url}\n")
 
 
 # ── 格式化工具 ────────────────────────────────────
@@ -502,11 +548,22 @@ def build_claim_docs_sheet(sh, data):
 def main():
     parser = argparse.ArgumentParser(description="推送保單 JSON 到 Google Sheets")
     parser.add_argument("json_file", nargs="?", help="policy-db-extract 輸出的 JSON 檔案路徑")
-    parser.add_argument("--sheet-id", help="已建立的 Google Sheet ID（從網址複製）")
-    parser.add_argument("--stdin", action="store_true", help="從 stdin 讀取 JSON")
+    parser.add_argument("--sheet-id", help="已建立的 Google Sheet ID 或 URL")
+    parser.add_argument("--stdin",    action="store_true", help="從 stdin 讀取 JSON")
+    parser.add_argument("--archive",  metavar="SHEET_ID_OR_URL",
+                        help="歸檔已審核的試算表到正確的險種/公司資料夾")
     args = parser.parse_args()
 
-    # 讀取 JSON
+    print("🔌 連線 Google Sheets...")
+    gc, drive = connect()
+
+    # ── 歸檔模式 ──────────────────────────────────────
+    if args.archive:
+        print(f"📦 歸檔模式：{args.archive}")
+        archive_sheet(gc, drive, args.archive)
+        return
+
+    # ── 建立模式：讀取 JSON ────────────────────────────
     if args.stdin:
         data = json.load(sys.stdin)
     elif args.json_file:
@@ -516,32 +573,40 @@ def main():
         parser.print_help()
         sys.exit(1)
 
-    print(f"📋 保單：{data.get('company')} / {data.get('productName')}")
-    print("🔌 連線 Google Sheets...")
-    gc, sa_email = connect()
+    company  = data.get("company", "")
+    product  = data.get("productName", "")
+    date_str = datetime.today().strftime("%Y%m%d")
+    print(f"📋 保單：{company} / {product}")
 
     if args.sheet_id:
         # 寫入現有試算表
-        print(f"📂 開啟現有試算表：{args.sheet_id}")
-        sh = gc.open_by_key(args.sheet_id)
-        # 清除並重建分頁
+        ref = args.sheet_id
+        if "docs.google.com" in ref:
+            ref = ref.split("/d/")[1].split("/")[0]
+        print(f"📂 開啟現有試算表：{ref}")
+        sh = gc.open_by_key(ref)
         existing = [ws.title for ws in sh.worksheets()]
-        for title in ["給付項目審核", "除外責任與限制", "理賠必要文件"]:
-            if title not in existing:
-                sh.add_worksheet(title=title, rows=100, cols=10)
-        # 把預設的 Sheet1 重命名（如果還在）
+        for t in ["給付項目審核", "除外責任與限制", "理賠必要文件"]:
+            if t not in existing:
+                sh.add_worksheet(title=t, rows=100, cols=10)
         try:
             sh.sheet1.update_title("給付項目審核")
         except Exception:
             pass
     else:
-        # 建立新試算表
-        title = f"【審核】{data.get('company', '')} {data.get('productName', '')} {datetime.today().strftime('%Y%m%d')}"
+        # 建立新試算表，放進「保單審核資料庫/待審核/」
+        title = f"【待審核】{company} {product} {date_str}"
         print(f"📊 建立試算表：{title}")
         sh = gc.create(title)
         sh.sheet1.update_title("給付項目審核")
         sh.add_worksheet(title="除外責任與限制", rows=100, cols=10)
         sh.add_worksheet(title="理賠必要文件",   rows=100, cols=10)
+
+        # 移到「待審核」資料夾
+        print("📁 放入「待審核」資料夾...")
+        root_id    = get_or_create_folder(drive, SHEET_FOLDER_NAME)
+        pending_id = get_or_create_folder(drive, "待審核", root_id)
+        move_file(drive, sh.id, pending_id)
 
     print("✍️  填入給付項目...")
     build_coverage_sheet(sh, data)
@@ -553,8 +618,10 @@ def main():
     build_claim_docs_sheet(sh, data)
 
     url = f"https://docs.google.com/spreadsheets/d/{sh.id}"
-    print(f"\n✅ 完成！試算表連結：")
-    print(f"   {url}\n")
+    print(f"\n✅ 完成！試算表已放入「待審核」資料夾")
+    print(f"   連結：{url}")
+    print(f"\n審核完成後執行：")
+    print(f"   python3 push_to_sheets.py --archive {sh.id}\n")
 
     return url
 
