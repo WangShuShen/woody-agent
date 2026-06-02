@@ -9,6 +9,16 @@ policy-analyzer/
 secrets/
 service_account.json
 google_credentials.json
+100_Todo/projects/notifier_config.json
+
+# 暫存與執行期產生的檔案
+100_Todo/projects/preview_*.html
+100_Todo/projects/__pycache__/
+100_Todo/projects/tmp/
+100_Todo/projects/analyzed_state.json
+100_Todo/projects/*_products.json
+100_Todo/projects/analyzed/
+100_Todo/projects/uuid_registry.json
 
 # Next.js
 policy-analyzer/.next/
