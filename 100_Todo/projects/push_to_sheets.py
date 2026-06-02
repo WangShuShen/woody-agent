@@ -116,22 +116,23 @@ def archive_sheet(gc, drive, sheet_ref):
             print("取消歸檔。")
             return
 
-    # 建立目標資料夾層級：保單審核資料庫 / 險種 / 公司
+    # 建立目標資料夾層級：保單審核資料庫 / 公司 / 險種
     root_id    = get_or_create_folder(drive, SHEET_FOLDER_NAME)
-    type_id    = get_or_create_folder(drive, insurance_type, root_id)
-    company_id = get_or_create_folder(drive, company, type_id)
+    company_id = get_or_create_folder(drive, company, root_id)
+    type_id    = get_or_create_folder(drive, insurance_type, company_id)
 
     # 移動檔案
-    move_file(drive, sh.id, company_id)
+    move_file(drive, sh.id, type_id)
 
-    # 重新命名（移除「待審核」前綴）
+    # 重新命名：移除「待審核」前綴和公司名，日期改用底線
     new_title = re.sub(r"^【待審核】\s*", "", sh.title).strip()
-    if new_title != sh.title:
-        drive.files().update(fileId=sh.id, body={"name": new_title}).execute()
+    new_title = re.sub(rf"^{re.escape(company)}\s+", "", new_title).strip()
+    new_title = re.sub(r"\s+(\d{8})$", r"_\1", new_title)
+    drive.files().update(fileId=sh.id, body={"name": new_title}).execute()
 
     url = f"https://docs.google.com/spreadsheets/d/{sh.id}"
     print(f"\n✅ 歸檔完成！")
-    print(f"   路徑：保單審核資料庫 / {insurance_type} / {company}")
+    print(f"   路徑：保單審核資料庫 / {company} / {insurance_type}")
     print(f"   連結：{url}\n")
 
 
