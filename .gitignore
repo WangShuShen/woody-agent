@@ -7,6 +7,8 @@ policy-analyzer/
 *.key
 *.pem
 secrets/
+service_account.json
+google_credentials.json
 
 # Next.js
 policy-analyzer/.next/
