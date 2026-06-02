@@ -15,12 +15,12 @@ from datetime import date
 from pathlib import Path
 import anthropic
 
-BASE_DIR   = Path(__file__).parent
-STATE_FILE = BASE_DIR / "analyzed_state.json"
-OUTPUT_DIR = BASE_DIR / "analyzed"
+BASE_DIR      = Path(__file__).parent
+STATE_FILE    = BASE_DIR / "uuid_registry.json"   # 全域 UUID 去重登記
+OUTPUT_DIR    = BASE_DIR / "analyzed"
 OUTPUT_DIR.mkdir(exist_ok=True)
 
-SKILL_PATH = Path.home() / ".claude" / "skills" / "policy-db-extract" / "SKILL.md"
+SKILL_PATH = Path.home() / ".claude" / "skills" / "db-extract" / "SKILL.md"
 
 
 def load_skill_prompt() -> str:
@@ -127,19 +127,20 @@ def main():
 
     for product in products:
         plan_code    = product.get("planCode", "")
+        pdf_uuid     = product.get("pdfUUID", "") or plan_code  # 舊資料相容
         product_name = product.get("productName", plan_code)
-        prev_status  = state.get(plan_code, {}).get("status", "")
+        prev_status  = state.get(pdf_uuid, {}).get("status", "")
 
-        # 跳過已完成（除非 --force）
-        if not args.force and prev_status == "analyzed":
-            print(f"   ⏭️  {product_name} 已分析，跳過")
+        # 跳過已完成（除非 --force）；UUID 相同的 PDF 不管 planCode 都算重複
+        if not args.force and prev_status not in ("", "failed", None):
+            print(f"   ⏭️  {product_name} [{pdf_uuid[:8]}...] 已處理，跳過")
             skipped += 1
             continue
 
         # 無 PDF 跳過
         if not product.get("pdfPath"):
             print(f"   ⏭️  {product_name} 無 PDF，跳過")
-            state[plan_code] = {"status": "no_pdf"}
+            state[pdf_uuid] = {"status": "no_pdf", "planCode": plan_code, "productName": product_name}
             save_state(state)
             continue
 
@@ -153,12 +154,11 @@ def main():
 
             if not data:
                 print("   ❌ 無法從回應中提取 JSON")
-                # 儲存完整回應供偵錯
-                debug_path = OUTPUT_DIR / f"{plan_code}_debug.txt"
+                debug_path = OUTPUT_DIR / f"{pdf_uuid}_debug.txt"
                 debug_path.write_text(full_text, encoding="utf-8")
                 print(f"   完整回應已存：{debug_path.name}")
                 print(f"   回應結尾200字：...{full_text[-200:]}")
-                state[plan_code] = {"status": "failed", "error": "json_parse_error"}
+                state[pdf_uuid] = {"status": "failed", "error": "json_parse_error", "planCode": plan_code}
                 failed += 1
             else:
                 # 補充欄位
@@ -166,19 +166,22 @@ def main():
                 data["status"]      = "待審核"
                 data["extractedAt"] = date.today().isoformat()
 
-                # 儲存分析結果（含完整原始回應）
+                # 儲存分析結果（用 UUID 命名）
                 out_data = {**data, "_rawResponse": full_text}
-                out_path = OUTPUT_DIR / f"{plan_code}.json"
+                out_path = OUTPUT_DIR / f"{pdf_uuid}.json"
                 out_path.write_text(
                     json.dumps(out_data, ensure_ascii=False, indent=2),
                     encoding="utf-8"
                 )
 
-                state[plan_code] = {
+                state[pdf_uuid] = {
                     "status":      "analyzed",
                     "analyzedAt":  date.today().isoformat(),
                     "outputPath":  str(out_path),
+                    "planCode":    plan_code,
+                    "company":     product.get("company", ""),
                     "productName": product_name,
+                    "filename":    product.get("filename", ""),
                 }
                 print(f"   ✅ 已儲存：{out_path.name}")
                 print(f"   险種：{data.get('insuranceType')}  基礎類型：{data.get('baseType')}")
@@ -186,11 +189,11 @@ def main():
 
         except FileNotFoundError as e:
             print(f"   ❌ {e}")
-            state[plan_code] = {"status": "failed", "error": str(e)}
+            state[pdf_uuid] = {"status": "failed", "error": str(e), "planCode": plan_code}
             failed += 1
         except Exception as e:
             print(f"   ❌ API 錯誤：{e}")
-            state[plan_code] = {"status": "failed", "error": str(e)}
+            state[pdf_uuid] = {"status": "failed", "error": str(e), "planCode": plan_code}
             failed += 1
 
         save_state(state)

@@ -16,7 +16,7 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).parent))
 
 from scraper       import scrape
-from analyzer      import load_skill_prompt, analyze_product, load_state, save_state, OUTPUT_DIR
+from analyzer      import load_skill_prompt, analyze_product, load_state, save_state, OUTPUT_DIR, STATE_FILE
 from push_to_sheets import (
     connect, get_or_create_folder, move_file,
     build_coverage_sheet, build_restrictions_sheet, build_claim_docs_sheet,
@@ -101,12 +101,13 @@ def main():
 
     for product in products:
         plan_code    = product.get("planCode", "")
+        pdf_uuid     = product.get("pdfUUID", "") or plan_code  # 舊資料相容
         product_name = product.get("productName", plan_code)
-        prev_status  = state.get(plan_code, {}).get("status", "")
+        prev_status  = state.get(pdf_uuid, {}).get("status", "")
 
-        # 跳過已上傳（除非 --force）
-        if not args.force and prev_status == "uploaded":
-            print(f"   ⏭️  {product_name}  已上傳，跳過")
+        # 跳過已上傳（除非 --force）；UUID 去重，相同 PDF 不重複上傳
+        if not args.force and prev_status in ("uploaded", "archived"):
+            print(f"   ⏭️  {product_name}  [{pdf_uuid[:8]}...] 已上傳，跳過")
             skipped += 1
             continue
 
@@ -135,8 +136,8 @@ def main():
             data["status"]      = "待審核"
             data["extractedAt"] = date.today().isoformat()
 
-            # 存分析結果
-            out_path = OUTPUT_DIR / f"{plan_code}.json"
+            # 存分析結果（UUID 命名）
+            out_path = OUTPUT_DIR / f"{pdf_uuid}.json"
             out_path.write_text(
                 json.dumps({**data, "_rawResponse": full_text}, ensure_ascii=False, indent=2),
                 encoding="utf-8",
@@ -150,11 +151,13 @@ def main():
             print("   📊 建立 Google Sheet...")
             sheet_url = create_sheet(gc, drive, data, pending_id)
 
-            state[plan_code] = {
+            state[pdf_uuid] = {
                 "status":      "uploaded",
                 "uploadedAt":  date.today().isoformat(),
                 "sheetUrl":    sheet_url,
                 "pdfDriveId":  pdf_drive_id,
+                "planCode":    plan_code,
+                "company":     product.get("company", ""),
                 "productName": product_name,
                 "filename":    filename,
             }
@@ -165,7 +168,7 @@ def main():
 
         except Exception as e:
             print(f"   ❌  失敗：{e}")
-            state[plan_code] = {"status": "failed", "error": str(e)}
+            state[pdf_uuid] = {"status": "failed", "error": str(e), "planCode": plan_code}
             save_state(state)
             failed += 1
 

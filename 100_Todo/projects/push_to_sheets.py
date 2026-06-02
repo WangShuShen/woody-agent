@@ -100,16 +100,17 @@ def archive_sheet(gc, drive, sheet_ref, force=False):
     sh = gc.open_by_key(sheet_id)
     ws = sh.worksheet("給付項目審核")
 
-    # 從 A1 解析險種與公司
+    # 從 A1 解析險種與公司（格式：【險種】公司　｜　商品　｜　planCode）
     header = ws.cell(1, 1).value or ""
     type_match    = re.search(r"【(.+?)】", header)
     company_match = re.search(r"】(.+?)　｜", header)
     insurance_type = type_match.group(1).strip()    if type_match    else "未分類"
     company        = company_match.group(1).strip() if company_match else "未知公司"
 
-    # 檢查是否還有「待審核」項目
+    # 檢查是否還有「待審核」或「需修改」項目（A 欄 = 審核狀態）
     all_values = ws.get_all_values()
-    pending = [r[4] for r in all_values[4:] if len(r) >= 5 and r[4] == "待審核"]
+    incomplete_statuses = {"待審核", "需修改", "進一步核實"}
+    pending = [r[0] for r in all_values[4:] if r and r[0] in incomplete_statuses]
     if pending and not force:
         print(f"⚠️  還有 {len(pending)} 個項目尚未審核完成。確定要歸檔嗎？(y/N) ", end="", flush=True)
         if input().strip().lower() != "y":
@@ -175,59 +176,86 @@ def block_range(sheet_id, r1, r2, c1=0, c2=6):
     }
 
 
+# ── 下拉選單常數 ────────────────────────────────────
+
+REVIEW_STATUS_OPTIONS  = ["待審核", "確認正確", "需修改", "忽略此項", "進一步核實"]
+UNIT_OPTIONS           = ["/日", "/次", "/月", "/年", ""]
+BASE_TYPE_OPTIONS      = ["日額", "單位", "計劃別", "固定"]
+RESTRICTION_CATEGORIES = ["等待期", "除外責任", "特別限制", "給付觸發條件"]
+CLAIM_SITUATIONS       = ["每次申請必備", "住院申請", "手術申請", "出院後申請",
+                           "重大疾病確診", "身故申請", "其他"]
+
+
+def dropdown_rule(options: list[str]) -> dict:
+    return {
+        "condition": {"type": "ONE_OF_LIST",
+                      "values": [{"userEnteredValue": v} for v in options]},
+        "showCustomUi": True,
+        "strict": True,
+    }
+
+
 # ── 分頁 1：給付項目審核 ──────────────────────────
+# 欄位：A=審核狀態 B=給付項目 C=公式 D=單位 E=限制條件 F=注意事項 G=保額基礎 H=險種
 
 def build_coverage_sheet(sh, data):
     ws = sh.worksheet("給付項目審核")
     sheet_id = ws.id
+    NUM_COLS = 8
 
-    company = data.get("company", "—")
-    product = data.get("productName", "—")
-    plan    = data.get("planCode", "—") or "—"
-    base    = data.get("baseType", "—")
-    date    = data.get("extractedAt", datetime.today().strftime("%Y-%m-%d"))
-    items   = data.get("items", [])
-    limit   = data.get("annualLimit", {})
+    company      = data.get("company", "—")
+    product      = data.get("productName", "—")
+    plan         = data.get("planCode", "—") or "—"
+    base         = data.get("baseType", "—")
+    ins_type_raw = data.get("insuranceType", ["—"])
+    ins_type     = ins_type_raw[0] if isinstance(ins_type_raw, list) else ins_type_raw
+    ins_type_str = "、".join(ins_type_raw) if isinstance(ins_type_raw, list) else ins_type_raw
+    date_str     = data.get("extractedAt", datetime.today().strftime("%Y-%m-%d"))
+    items        = data.get("items", [])
+    limit        = data.get("annualLimit", {})
 
-    # ── 寫入文字資料 ──
-    header1 = f"【{data.get('insuranceType', ['—'])[0]}】{company}　｜　{product}　｜　{plan}"
-    header2 = f"保額基礎：{base}　｜　狀態：待審核　｜　提取日期：{date}"
-    col_headers = ["給付項目", "公式", "限制條件", "注意事項", "✅ 狀態", "📝 審核備注"]
+    header1 = f"【{ins_type}】{company}　｜　{product}　｜　{plan}"
+    header2 = f"保額基礎：{base}　｜　狀態：待審核　｜　提取日期：{date_str}"
+    col_hdrs = ["審核狀態", "給付項目", "公式", "單位", "限制條件", "注意事項", "保額基礎類型", "險種"]
 
-    rows = [[header1], [header2], [], col_headers]
-    for item in items:
+    # 第一筆資料行補 baseType / insuranceType
+    rows = [[header1], [header2], [], col_hdrs]
+    for idx, item in enumerate(items):
         rows.append([
+            "待審核",
             item.get("name", ""),
-            item.get("formula", "") + (item.get("unit", "") or ""),
+            item.get("formula", ""),
+            item.get("unit", "") or "",
             item.get("restriction", "") or "—",
             item.get("notes", "") or "—",
-            "待審核",
-            "",
+            base         if idx == 0 else "",
+            ins_type_str if idx == 0 else "",
         ])
-    rows.append([])  # 空行
+    rows.append([])
     rows.append([
+        "待審核",
         "⚠️ 累積給付上限",
         limit.get("formula", ""),
+        "",
         "所有給付項目合計",
         limit.get("notes", ""),
-        "待審核",
-        "",
+        "", "",
     ])
 
     ws.update(rows, "A1", value_input_option="USER_ENTERED")
 
-    # ── 合併標題欄 ──
     requests = []
+
+    # 合併標題行（橫跨 NUM_COLS 欄）
     for r in [0, 1, 2]:
         requests.append({"mergeCells": {
-            "range": block_range(sheet_id, r, r + 1, 0, 6),
+            "range": block_range(sheet_id, r, r + 1, 0, NUM_COLS),
             "mergeType": "MERGE_ALL",
         }})
 
-    # ── 格式：標題行 ──
     def fmt_row(row, bg, fg, size, bold):
         return {"repeatCell": {
-            "range": row_range(sheet_id, row),
+            "range": row_range(sheet_id, row, col_end=NUM_COLS),
             "cell": {"userEnteredFormat": cell_format(bg, fg, size, bold)},
             "fields": "userEnteredFormat(backgroundColor,textFormat,verticalAlignment,wrapStrategy)",
         }}
@@ -238,60 +266,65 @@ def build_coverage_sheet(sh, data):
         fmt_row(3, COLOR["navy"],      COLOR["white"], 11, True),
     ]
 
-    # ── 格式：資料行斑馬紋 ──
-    for i, _ in enumerate(items):
+    # 資料行斑馬紋
+    for i in range(len(items)):
         bg = COLOR["gray_light"] if i % 2 == 0 else COLOR["white"]
         requests.append({"repeatCell": {
-            "range": row_range(sheet_id, 4 + i),
+            "range": row_range(sheet_id, 4 + i, col_end=NUM_COLS),
             "cell": {"userEnteredFormat": {"backgroundColor": bg, "textFormat": {"fontSize": 10},
                                             "verticalAlignment": "MIDDLE", "wrapStrategy": "WRAP"}},
             "fields": "userEnteredFormat(backgroundColor,textFormat,verticalAlignment,wrapStrategy)",
         }})
 
-    # ── 格式：累積上限行 ──
     limit_row = 4 + len(items) + 1
     requests.append(fmt_row(limit_row, COLOR["gold"], COLOR["dark_navy"], 10, True))
 
-    # ── 欄寬 ──
-    col_widths = [220, 120, 130, 210, 90, 200]
-    for i, w in enumerate(col_widths):
+    # 欄寬：A(90) B(220) C(120) D(60) E(130) F(200) G(90) H(140)
+    for i, w in enumerate([90, 220, 120, 60, 130, 200, 90, 140]):
         requests.append({"updateDimensionProperties": {
             "range": {"sheetId": sheet_id, "dimension": "COLUMNS",
                       "startIndex": i, "endIndex": i + 1},
-            "properties": {"pixelSize": w},
-            "fields": "pixelSize",
+            "properties": {"pixelSize": w}, "fields": "pixelSize",
         }})
 
-    # ── 凍結前4列 ──
+    # 凍結前 4 列
     requests.append({"updateSheetProperties": {
         "properties": {"sheetId": sheet_id, "gridProperties": {"frozenRowCount": 4}},
         "fields": "gridProperties.frozenRowCount",
     }})
 
-    # ── 框線 ──
+    # 框線
     requests.append({"updateBorders": {
-        "range": block_range(sheet_id, 3, limit_row + 1),
+        "range": block_range(sheet_id, 3, limit_row + 1, 0, NUM_COLS),
         **border_style(),
     }})
 
-    # ── 下拉選單：狀態欄 ──
-    status_rows = len(items) + 1  # 資料行 + 累積上限行
+    data_rows = len(items) + 1  # items + limit row
+    # 下拉：A 欄審核狀態
     requests.append({"setDataValidation": {
-        "range": block_range(sheet_id, 4, 4 + status_rows, 4, 5),
-        "rule": {
-            "condition": {"type": "ONE_OF_LIST",
-                          "values": [{"userEnteredValue": v} for v in ["待審核", "已審核", "有疑問"]]},
-            "showCustomUi": True,
-            "strict": True,
-        },
+        "range": block_range(sheet_id, 4, 4 + data_rows, 0, 1),
+        "rule": dropdown_rule(REVIEW_STATUS_OPTIONS),
+    }})
+    # 下拉：D 欄單位
+    requests.append({"setDataValidation": {
+        "range": block_range(sheet_id, 4, 4 + data_rows, 3, 4),
+        "rule": dropdown_rule(UNIT_OPTIONS),
+    }})
+    # 下拉：G2 保額基礎類型（只在第一筆資料行）
+    requests.append({"setDataValidation": {
+        "range": block_range(sheet_id, 4, 5, 6, 7),
+        "rule": dropdown_rule(BASE_TYPE_OPTIONS),
     }})
 
-    # ── 條件格式：狀態顏色 ──
-    status_range = block_range(sheet_id, 4, 4 + status_rows, 4, 5)
+    # 條件格式：A 欄審核狀態顏色
+    status_range = block_range(sheet_id, 4, 4 + data_rows, 0, 1)
     for text, bg, fg in [
-        ("已審核", COLOR["green_pale"], {"red": 0.08, "green": 0.34, "blue": 0.14}),
-        ("有疑問", COLOR["red_pale"],   {"red": 0.44, "green": 0.11, "blue": 0.11}),
-        ("待審核", COLOR["yellow_pale"],{"red": 0.52, "green": 0.39, "blue": 0.02}),
+        ("確認正確", COLOR["green_pale"], {"red": 0.08, "green": 0.34, "blue": 0.14}),
+        ("需修改",   COLOR["red_pale"],   {"red": 0.44, "green": 0.11, "blue": 0.11}),
+        ("待審核",   COLOR["yellow_pale"],{"red": 0.52, "green": 0.39, "blue": 0.02}),
+        ("忽略此項", COLOR["gray_light"], {"red": 0.50, "green": 0.50, "blue": 0.50}),
+        ("進一步核實", {"red": 0.90, "green": 0.85, "blue": 1.0},
+                       {"red": 0.28, "green": 0.09, "blue": 0.50}),
     ]:
         requests.append({"addConditionalFormatRule": {
             "rule": {
@@ -308,109 +341,137 @@ def build_coverage_sheet(sh, data):
 
 
 # ── 分頁 2：除外責任與限制 ────────────────────────
+# 欄位：A=審核狀態 B=類別 C=內容
 
 def build_restrictions_sheet(sh, data):
     ws = sh.worksheet("除外責任與限制")
     sheet_id = ws.id
+    NUM_COLS = 3
 
     wp   = data.get("waitingPeriod", {})
     excl = data.get("exclusions", [])
     spec = data.get("specialRestrictions", [])
 
-    rows = [
-        ["理賠條件與限制　｜　" + data.get("productName", "")],
-        [],
-        ["⏳ 等待期", "類型", "天數"],
-        ["", "疾病", f"{wp.get('disease', 30)}天"],
-        ["", "傷害意外", "無" if wp.get("injury", 0) == 0 else f"{wp.get('injury')}天"],
-        ["", "增加保額部分", wp.get("note", "另計30天")],
-        [],
-        [],
-        ["🚫 除外責任"],
-    ]
+    header = ["理賠條件與限制　｜　" + data.get("productName", ""), "", ""]
+    col_hdrs = ["審核狀態", "類別", "內容"]
+
+    rows = [header, [], col_hdrs]
+
+    # 等待期
+    disease_days = wp.get("disease", 30)
+    injury_days  = wp.get("injury", 0)
+    wp_note      = wp.get("note", "")
+    rows.append(["待審核", "等待期", f"疾病：{disease_days}天"])
+    rows.append(["待審核", "等待期",
+                 "傷害意外：無" if injury_days == 0 else f"傷害意外：{injury_days}天"])
+    if wp_note:
+        rows.append(["待審核", "等待期", wp_note])
+
+    # 除外責任
     for e in excl:
-        rows.append(["✗", e])
-    rows.append([])
-    rows.append(["⚠️ 特別注意"])
+        rows.append(["待審核", "除外責任", e])
+
+    # 特別限制
     for s in spec:
-        rows.append(["✗", s])
+        rows.append(["待審核", "特別限制", s])
 
     ws.update(rows, "A1", value_input_option="USER_ENTERED")
 
-    requests = []
+    data_start = 3  # row index (0-based) where data starts
+    data_end   = len(rows)
+    requests   = []
 
-    # 合併標題
+    # 合併標題行
     requests.append({"mergeCells": {
-        "range": block_range(sheet_id, 0, 1, 0, 3),
+        "range": block_range(sheet_id, 0, 1, 0, NUM_COLS),
         "mergeType": "MERGE_ALL",
     }})
 
     def fmt_row(row, bg, fg, size=10, bold=True):
         return {"repeatCell": {
-            "range": block_range(sheet_id, row, row + 1, 0, 3),
+            "range": block_range(sheet_id, row, row + 1, 0, NUM_COLS),
             "cell": {"userEnteredFormat": cell_format(bg, fg, size, bold)},
             "fields": "userEnteredFormat(backgroundColor,textFormat,verticalAlignment,wrapStrategy)",
         }}
 
-    excl_start = 8
-    note_start = excl_start + len(excl) + 2
-
     requests += [
         fmt_row(0, COLOR["dark_navy"], COLOR["white"], 13),
         fmt_row(2, COLOR["navy"],      COLOR["white"]),
-        fmt_row(excl_start, COLOR["red"], COLOR["white"]),
-        fmt_row(note_start, COLOR["orange"], COLOR["white"]),
     ]
 
-    # 等待期淡藍背景
-    requests.append({"repeatCell": {
-        "range": block_range(sheet_id, 3, 6, 0, 3),
-        "cell": {"userEnteredFormat": {"backgroundColor": {"red": 0.94, "green": 0.96, "blue": 1.0},
-                                        "textFormat": {"fontSize": 10}, "verticalAlignment": "MIDDLE"}},
-        "fields": "userEnteredFormat(backgroundColor,textFormat,verticalAlignment)",
-    }})
+    # 資料行斑馬紋
+    for i in range(data_start, data_end):
+        bg = COLOR["gray_light"] if (i - data_start) % 2 == 0 else COLOR["white"]
+        requests.append({"repeatCell": {
+            "range": block_range(sheet_id, i, i + 1, 0, NUM_COLS),
+            "cell": {"userEnteredFormat": {"backgroundColor": bg, "textFormat": {"fontSize": 10},
+                                            "verticalAlignment": "MIDDLE", "wrapStrategy": "WRAP"}},
+            "fields": "userEnteredFormat(backgroundColor,textFormat,verticalAlignment,wrapStrategy)",
+        }})
 
-    # 除外責任字色
-    requests.append({"repeatCell": {
-        "range": block_range(sheet_id, excl_start + 1, excl_start + 1 + len(excl), 0, 3),
-        "cell": {"userEnteredFormat": {"textFormat": {"foregroundColor": COLOR["red"], "fontSize": 10},
-                                        "verticalAlignment": "MIDDLE"}},
-        "fields": "userEnteredFormat(textFormat,verticalAlignment)",
-    }})
-
-    # 特別注意字色
-    requests.append({"repeatCell": {
-        "range": block_range(sheet_id, note_start + 1, note_start + 1 + len(spec), 0, 3),
-        "cell": {"userEnteredFormat": {"textFormat": {"foregroundColor": COLOR["orange"], "fontSize": 10},
-                                        "verticalAlignment": "MIDDLE"}},
-        "fields": "userEnteredFormat(textFormat,verticalAlignment)",
-    }})
-
-    col_widths = [40, 430, 110]
-    for i, w in enumerate(col_widths):
+    # 欄寬：A(90) B(110) C(450)
+    for i, w in enumerate([90, 110, 450]):
         requests.append({"updateDimensionProperties": {
             "range": {"sheetId": sheet_id, "dimension": "COLUMNS",
                       "startIndex": i, "endIndex": i + 1},
             "properties": {"pixelSize": w}, "fields": "pixelSize",
         }})
 
+    # 凍結前 3 列
     requests.append({"updateSheetProperties": {
-        "properties": {"sheetId": sheet_id, "gridProperties": {"frozenRowCount": 1}},
+        "properties": {"sheetId": sheet_id, "gridProperties": {"frozenRowCount": 3}},
         "fields": "gridProperties.frozenRowCount",
     }})
+
+    # 框線
+    requests.append({"updateBorders": {
+        "range": block_range(sheet_id, 2, data_end, 0, NUM_COLS),
+        **border_style(),
+    }})
+
+    # 下拉：A 欄審核狀態
+    requests.append({"setDataValidation": {
+        "range": block_range(sheet_id, data_start, data_end, 0, 1),
+        "rule": dropdown_rule(REVIEW_STATUS_OPTIONS),
+    }})
+    # 下拉：B 欄類別
+    requests.append({"setDataValidation": {
+        "range": block_range(sheet_id, data_start, data_end, 1, 2),
+        "rule": dropdown_rule(RESTRICTION_CATEGORIES),
+    }})
+
+    # 條件格式：A 欄狀態顏色
+    status_range = block_range(sheet_id, data_start, data_end, 0, 1)
+    for text, bg, fg in [
+        ("確認正確", COLOR["green_pale"], {"red": 0.08, "green": 0.34, "blue": 0.14}),
+        ("需修改",   COLOR["red_pale"],   {"red": 0.44, "green": 0.11, "blue": 0.11}),
+        ("待審核",   COLOR["yellow_pale"],{"red": 0.52, "green": 0.39, "blue": 0.02}),
+        ("忽略此項", COLOR["gray_light"], {"red": 0.50, "green": 0.50, "blue": 0.50}),
+    ]:
+        requests.append({"addConditionalFormatRule": {
+            "rule": {
+                "ranges": [status_range],
+                "booleanRule": {
+                    "condition": {"type": "TEXT_EQ", "values": [{"userEnteredValue": text}]},
+                    "format": {"backgroundColor": bg, "textFormat": {"foregroundColor": fg, "bold": True}},
+                },
+            },
+            "index": 0,
+        }})
 
     sh.batch_update({"requests": requests})
 
 
 # ── 分頁 3：理賠必要文件 ──────────────────────────
+# 欄位：A=審核狀態 B=申請情境 C=必要文件
 
 def build_claim_docs_sheet(sh, data):
     ws = sh.worksheet("理賠必要文件")
     sheet_id = ws.id
+    NUM_COLS = 3
 
-    # 固定文件結構（依保單類型可擴充）
     sections = [
-        ("🏥 一般住院／加護病房", [
+        ("住院申請", [
             "保險金申請書",
             "被保險人身分證影本",
             "醫療診斷書（含住院原因/入出院日期）",
@@ -418,7 +479,7 @@ def build_claim_docs_sheet(sh, data):
             "受益人身分證影本",
             "受益人存摺封面影本",
         ]),
-        ("🔪 重大手術", [
+        ("手術申請", [
             "保險金申請書",
             "被保險人身分證影本",
             "醫療診斷書（載明手術名稱及日期）",
@@ -427,20 +488,15 @@ def build_claim_docs_sheet(sh, data):
             "受益人身分證影本",
             "受益人存摺封面影本",
         ]),
-        ("🚪 住院前後門診", [
+        ("出院後申請", [
             "保險金申請書",
             "門診收據（含就診日期/診斷）",
             "住院診斷書（證明同一疾病/傷害）",
-            "受益人身分證影本",
-            "受益人存摺封面影本",
-        ]),
-        ("💊 出院療養", [
-            "保險金申請書",
             "出院診斷書（含出院日期及住院日數）",
             "受益人身分證影本",
             "受益人存摺封面影本",
         ]),
-        ("🕊️ 身故／喪葬費用", [
+        ("身故申請", [
             "保險金申請書",
             "保險單或其謄本",
             "死亡診斷書（或相驗屍體證明書）",
@@ -449,99 +505,112 @@ def build_claim_docs_sheet(sh, data):
             "受益人身分證影本",
             "受益人存摺封面影本",
         ]),
-        ("🚑 緊急醫療運送", [
-            "保險金申請書",
-            "救護車費用收據",
-            "急診或住院證明",
-            "受益人身分證影本",
-            "受益人存摺封面影本",
-        ]),
-        ("💔 重大疾病確診（特別看護觸發）", [
+        ("重大疾病確診", [
             "診斷書（載明重大疾病種類）",
             "心肌梗塞：心電圖＋心肌酶報告",
-            "冠狀動脈繞道：心導管報告＋手術紀錄",
             "腦中風：腦部影像（CT/MRI）",
-            "慢性腎衰竭：腎功能檢查＋洗腎紀錄",
             "癌症：病理組織切片報告",
+            "慢性腎衰竭：腎功能檢查＋洗腎紀錄",
             "癱瘓：神經科專科醫師診斷書",
             "器官移植：移植手術紀錄",
         ]),
+        ("其他", [
+            "救護車費用收據（緊急醫療運送）",
+            "急診或住院證明（緊急醫療運送）",
+        ]),
     ]
 
-    header = ["理賠必要文件　｜　" + data.get("productName", "")]
-    all_rows = [header, []]
+    header   = ["理賠必要文件　｜　" + data.get("productName", ""), "", ""]
+    col_hdrs = ["審核狀態", "申請情境", "必要文件"]
+    rows     = [header, [], col_hdrs]
 
-    # 每4個 section 換行
-    section_cols = 4
-    for batch_start in range(0, len(sections), section_cols):
-        batch = sections[batch_start: batch_start + section_cols]
-        max_docs = max(len(s[1]) for s in batch)
-        title_row = [s[0] for s in batch] + [""] * (section_cols - len(batch))
-        all_rows.append(title_row)
-        for i in range(max_docs):
-            row = []
-            for sec in batch:
-                row.append("· " + sec[1][i] if i < len(sec[1]) else "")
-            row += [""] * (section_cols - len(batch))
-            all_rows.append(row)
-        all_rows.append([])
+    for situation, docs in sections:
+        for doc in docs:
+            rows.append(["待審核", situation, doc])
 
-    ws.update(all_rows, "A1", value_input_option="USER_ENTERED")
+    ws.update(rows, "A1", value_input_option="USER_ENTERED")
 
-    requests = []
-    # 標題合併
+    data_start = 3
+    data_end   = len(rows)
+    requests   = []
+
+    # 合併標題行
     requests.append({"mergeCells": {
-        "range": block_range(sheet_id, 0, 1, 0, section_cols),
+        "range": block_range(sheet_id, 0, 1, 0, NUM_COLS),
         "mergeType": "MERGE_ALL",
     }})
-    requests.append({"repeatCell": {
-        "range": block_range(sheet_id, 0, 1, 0, section_cols),
-        "cell": {"userEnteredFormat": cell_format(COLOR["dark_navy"], COLOR["white"], 13, True)},
-        "fields": "userEnteredFormat(backgroundColor,textFormat,verticalAlignment,wrapStrategy)",
-    }})
 
-    sec_colors = [
-        COLOR["green_dark"], COLOR["navy"], {"red": 0.42, "green": 0.11, "blue": 0.11},
-        {"red": 0.29, "green": 0.11, "blue": 0.42},
-        {"red": 0.49, "green": 0.11, "blue": 0.11}, COLOR["navy"],
-        {"red": 0.35, "green": 0.11, "blue": 0.49},
+    def fmt_row(row, bg, fg, size=10, bold=True):
+        return {"repeatCell": {
+            "range": block_range(sheet_id, row, row + 1, 0, NUM_COLS),
+            "cell": {"userEnteredFormat": cell_format(bg, fg, size, bold)},
+            "fields": "userEnteredFormat(backgroundColor,textFormat,verticalAlignment,wrapStrategy)",
+        }}
+
+    requests += [
+        fmt_row(0, COLOR["dark_navy"], COLOR["white"], 13),
+        fmt_row(2, COLOR["navy"],      COLOR["white"]),
     ]
 
-    row_cursor = 2
-    for batch_start in range(0, len(sections), section_cols):
-        batch = sections[batch_start: batch_start + section_cols]
-        max_docs = max(len(s[1]) for s in batch)
-        # 分類標題行
-        for col_i, (sec, _) in enumerate(batch):
-            color = sec_colors[(batch_start + col_i) % len(sec_colors)]
-            requests.append({"repeatCell": {
-                "range": block_range(sheet_id, row_cursor, row_cursor + 1, col_i, col_i + 1),
-                "cell": {"userEnteredFormat": cell_format(color, COLOR["white"], 10, True)},
-                "fields": "userEnteredFormat(backgroundColor,textFormat,verticalAlignment,wrapStrategy)",
-            }})
-        # 資料行斑馬紋
-        for i in range(max_docs):
-            bg = COLOR["gray_light"] if i % 2 == 0 else COLOR["white"]
-            requests.append({"repeatCell": {
-                "range": block_range(sheet_id, row_cursor + 1 + i, row_cursor + 2 + i, 0, section_cols),
-                "cell": {"userEnteredFormat": {"backgroundColor": bg, "textFormat": {"fontSize": 10},
-                                               "verticalAlignment": "MIDDLE", "wrapStrategy": "WRAP"}},
-                "fields": "userEnteredFormat(backgroundColor,textFormat,verticalAlignment,wrapStrategy)",
-            }})
-        row_cursor += max_docs + 2
+    # 資料行斑馬紋
+    for i in range(data_start, data_end):
+        bg = COLOR["gray_light"] if (i - data_start) % 2 == 0 else COLOR["white"]
+        requests.append({"repeatCell": {
+            "range": block_range(sheet_id, i, i + 1, 0, NUM_COLS),
+            "cell": {"userEnteredFormat": {"backgroundColor": bg, "textFormat": {"fontSize": 10},
+                                            "verticalAlignment": "MIDDLE", "wrapStrategy": "WRAP"}},
+            "fields": "userEnteredFormat(backgroundColor,textFormat,verticalAlignment,wrapStrategy)",
+        }})
 
-    # 欄寬
-    for i in range(section_cols):
+    # 欄寬：A(90) B(120) C(420)
+    for i, w in enumerate([90, 120, 420]):
         requests.append({"updateDimensionProperties": {
             "range": {"sheetId": sheet_id, "dimension": "COLUMNS",
                       "startIndex": i, "endIndex": i + 1},
-            "properties": {"pixelSize": 240}, "fields": "pixelSize",
+            "properties": {"pixelSize": w}, "fields": "pixelSize",
         }})
 
+    # 凍結前 3 列
     requests.append({"updateSheetProperties": {
-        "properties": {"sheetId": sheet_id, "gridProperties": {"frozenRowCount": 1}},
+        "properties": {"sheetId": sheet_id, "gridProperties": {"frozenRowCount": 3}},
         "fields": "gridProperties.frozenRowCount",
     }})
+
+    # 框線
+    requests.append({"updateBorders": {
+        "range": block_range(sheet_id, 2, data_end, 0, NUM_COLS),
+        **border_style(),
+    }})
+
+    # 下拉：A 欄審核狀態
+    requests.append({"setDataValidation": {
+        "range": block_range(sheet_id, data_start, data_end, 0, 1),
+        "rule": dropdown_rule(REVIEW_STATUS_OPTIONS),
+    }})
+    # 下拉：B 欄申請情境
+    requests.append({"setDataValidation": {
+        "range": block_range(sheet_id, data_start, data_end, 1, 2),
+        "rule": dropdown_rule(CLAIM_SITUATIONS),
+    }})
+
+    # 條件格式：A 欄狀態顏色
+    status_range = block_range(sheet_id, data_start, data_end, 0, 1)
+    for text, bg, fg in [
+        ("確認正確", COLOR["green_pale"], {"red": 0.08, "green": 0.34, "blue": 0.14}),
+        ("需修改",   COLOR["red_pale"],   {"red": 0.44, "green": 0.11, "blue": 0.11}),
+        ("待審核",   COLOR["yellow_pale"],{"red": 0.52, "green": 0.39, "blue": 0.02}),
+        ("忽略此項", COLOR["gray_light"], {"red": 0.50, "green": 0.50, "blue": 0.50}),
+    ]:
+        requests.append({"addConditionalFormatRule": {
+            "rule": {
+                "ranges": [status_range],
+                "booleanRule": {
+                    "condition": {"type": "TEXT_EQ", "values": [{"userEnteredValue": text}]},
+                    "format": {"backgroundColor": bg, "textFormat": {"foregroundColor": fg, "bold": True}},
+                },
+            },
+            "index": 0,
+        }})
 
     sh.batch_update({"requests": requests})
 

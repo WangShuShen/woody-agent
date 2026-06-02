@@ -13,6 +13,7 @@ import base64
 import ssl
 import urllib.request
 from pathlib import Path
+from urllib.parse import urlparse, parse_qs
 import anthropic
 from playwright.sync_api import sync_playwright, TimeoutError as PlaywrightTimeout
 
@@ -45,8 +46,10 @@ CATEGORY_DETECT = [
     ("傳統型壽險", ["壽險", "終身保險", "定期壽", "還本"]),
 ]
 
-# 延續條款排除關鍵字
-EXCLUSION_KEYWORDS = ["延續", "轉換", "繼續"]
+# 團體保險排除關鍵字（商品名稱）
+GROUP_NAME_KEYWORDS = ["團體", "團險", "集體", "團保", "Group", "group"]
+# 延續條款排除關鍵字（需精確匹配，避免誤殺正常商品）
+CONTINUATION_KEYWORDS = ["延續條款", "停售後續", "附約延續"]
 
 
 def detect_category(name: str) -> tuple[str, str]:
@@ -58,7 +61,20 @@ def detect_category(name: str) -> tuple[str, str]:
 
 
 def should_exclude(name: str) -> bool:
-    return any(kw in name for kw in EXCLUSION_KEYWORDS)
+    """排除團體保險與延續條款"""
+    if any(kw in name for kw in GROUP_NAME_KEYWORDS):
+        return True
+    if any(kw in name for kw in CONTINUATION_KEYWORDS):
+        return True
+    return False
+
+
+def extract_pdf_uuid(pdf_url: str) -> str:
+    """從 TII PDF URL 抽取 UUID，例：Open2.ashx?id=08143f9d-... → 08143f9d-..."""
+    if not pdf_url:
+        return ""
+    parsed = urlparse(pdf_url)
+    return parse_qs(parsed.query).get("id", [""])[0]
 
 
 def fmt_date(roc_date: str) -> str:
@@ -278,6 +294,7 @@ def scrape(company_code: str, limit: int = 0) -> list[dict]:
                     "company":     company_name,
                     "productName": item["productName"],
                     "planCode":    item["productId"],
+                    "pdfUUID":     extract_pdf_uuid(pdf_url),
                     "category":    category,
                     "label":       label,
                     "filename":    filename,
