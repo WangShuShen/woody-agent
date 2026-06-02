@@ -89,7 +89,7 @@ def move_file(drive, file_id, new_parent_id):
     ).execute()
 
 
-def archive_sheet(gc, drive, sheet_ref):
+def archive_sheet(gc, drive, sheet_ref, force=False):
     """把審核完成的試算表歸檔到正確的險種/公司資料夾"""
     # 支援完整 URL 或純 ID
     if "docs.google.com" in sheet_ref:
@@ -110,11 +110,13 @@ def archive_sheet(gc, drive, sheet_ref):
     # 檢查是否還有「待審核」項目
     all_values = ws.get_all_values()
     pending = [r[4] for r in all_values[4:] if len(r) >= 5 and r[4] == "待審核"]
-    if pending:
-        print(f"⚠️  還有 {len(pending)} 個項目尚未審核完成。確定要歸檔嗎？(y/N) ", end="")
+    if pending and not force:
+        print(f"⚠️  還有 {len(pending)} 個項目尚未審核完成。確定要歸檔嗎？(y/N) ", end="", flush=True)
         if input().strip().lower() != "y":
             print("取消歸檔。")
             return
+    elif pending and force:
+        print(f"⚠️  跳過確認，強制歸檔（{len(pending)} 個項目尚未審核）")
 
     # 建立目標資料夾層級：保單審核資料庫 / 公司 / 險種
     root_id    = get_or_create_folder(drive, SHEET_FOLDER_NAME)
@@ -553,6 +555,8 @@ def main():
     parser.add_argument("--stdin",    action="store_true", help="從 stdin 讀取 JSON")
     parser.add_argument("--archive",  metavar="SHEET_ID_OR_URL",
                         help="歸檔已審核的試算表到正確的險種/公司資料夾")
+    parser.add_argument("--force",    action="store_true",
+                        help="歸檔時跳過未審核確認")
     args = parser.parse_args()
 
     print("🔌 連線 Google Sheets...")
@@ -561,7 +565,7 @@ def main():
     # ── 歸檔模式 ──────────────────────────────────────
     if args.archive:
         print(f"📦 歸檔模式：{args.archive}")
-        archive_sheet(gc, drive, args.archive)
+        archive_sheet(gc, drive, args.archive, force=args.force)
         return
 
     # ── 建立模式：讀取 JSON ────────────────────────────
