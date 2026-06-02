@@ -49,11 +49,13 @@ def create_sheet(gc, drive, data: dict, folder_id: str) -> str:
     sh.add_worksheet(title="除外責任與限制", rows=100, cols=10)
     sh.add_worksheet(title="理賠必要文件",   rows=100, cols=10)
 
+    # 先移到資料夾，再填內容（避免失敗時留空白孤兒在根目錄）
+    move_file(drive, sh.id, folder_id)
+
     build_coverage_sheet(sh, data)
     build_restrictions_sheet(sh, data)
     build_claim_docs_sheet(sh, data)
 
-    move_file(drive, sh.id, folder_id)
     return f"https://docs.google.com/spreadsheets/d/{sh.id}"
 
 
