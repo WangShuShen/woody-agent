@@ -15,7 +15,7 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).parent))
 
-from scraper       import scrape
+from scraper       import scrape, should_exclude
 from analyzer      import load_skill_prompt, analyze_product, load_state, save_state, OUTPUT_DIR, STATE_FILE
 from push_to_sheets import (
     connect, get_or_create_folder, move_file,
@@ -80,7 +80,7 @@ def main():
         print(f"📂 載入現有資料：{len(products)} 筆（已跳過爬蟲）")
     else:
         print(f"🕷️  Phase 1：爬取 TII 公司代碼 {args.company}...")
-        products = scrape(args.company, limit=0)
+        products = scrape(args.company, limit=args.limit)
         products_path.write_text(
             json.dumps(products, ensure_ascii=False, indent=2), encoding="utf-8"
         )
@@ -104,6 +104,12 @@ def main():
         pdf_uuid     = product.get("pdfUUID", "") or plan_code  # 舊資料相容
         product_name = product.get("productName", plan_code)
         prev_status  = state.get(pdf_uuid, {}).get("status", "")
+
+        # 排除團險、產險
+        if should_exclude(product_name):
+            print(f"   ⏭️  {product_name}  排除（團險/產險）")
+            skipped += 1
+            continue
 
         # 跳過已上傳（除非 --force）；UUID 去重，相同 PDF 不重複上傳
         if not args.force and prev_status in ("uploaded", "archived"):

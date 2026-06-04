@@ -57,10 +57,10 @@ CATEGORY_DETECT = [
     ("傳統型壽險", ["壽險", "終身保險", "定期壽", "還本"]),
 ]
 
-# 團體保險排除關鍵字（商品名稱）
-GROUP_NAME_KEYWORDS = ["團體", "團險", "集體", "團保", "Group", "group"]
-# 延續條款排除關鍵字（需精確匹配，避免誤殺正常商品）
-CONTINUATION_KEYWORDS = ["延續條款", "停售後續", "附約延續"]
+# 排除關鍵字
+GROUP_NAME_KEYWORDS    = ["團體", "團險", "集體", "團保", "Group", "group"]
+CONTINUATION_KEYWORDS  = ["延續條款", "停售後續", "附約延續"]
+PROPERTY_KEYWORDS      = ["產險", "財產保險", "火災保險", "汽車險", "車險", "住宅火災"]
 
 
 def detect_category(name: str) -> tuple[str, str]:
@@ -72,10 +72,12 @@ def detect_category(name: str) -> tuple[str, str]:
 
 
 def should_exclude(name: str) -> bool:
-    """排除團體保險與延續條款"""
+    """排除團險、產險、延續條款"""
     if any(kw in name for kw in GROUP_NAME_KEYWORDS):
         return True
     if any(kw in name for kw in CONTINUATION_KEYWORDS):
+        return True
+    if any(kw in name for kw in PROPERTY_KEYWORDS):
         return True
     return False
 
