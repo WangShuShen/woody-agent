@@ -15,6 +15,17 @@ from datetime import date
 from pathlib import Path
 import anthropic
 
+# 自動載入 .env（本目錄 → 上層 → policy-analyzer 同層）
+try:
+    from dotenv import load_dotenv
+    _root = Path(__file__).parent.parent.parent  # woody-agent/
+    for p in [Path(__file__).parent, _root / "100_Todo/projects",
+              _root, _root / "policy-analyzer"]:
+        if (p / ".env").exists():
+            load_dotenv(p / ".env"); break
+except ImportError:
+    pass
+
 BASE_DIR      = Path(__file__).parent
 STATE_FILE    = BASE_DIR / "uuid_registry.json"   # 全域 UUID 去重登記
 OUTPUT_DIR    = BASE_DIR / "analyzed"

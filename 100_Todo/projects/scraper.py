@@ -15,6 +15,17 @@ import urllib.request
 from pathlib import Path
 from urllib.parse import urlparse, parse_qs
 import anthropic
+
+# 自動載入 .env（本目錄 → 上層 → policy-analyzer 同層）
+try:
+    from dotenv import load_dotenv
+    _root = Path(__file__).parent.parent.parent  # woody-agent/
+    for p in [Path(__file__).parent, _root / "100_Todo/projects",
+              _root, _root / "policy-analyzer"]:
+        if (p / ".env").exists():
+            load_dotenv(p / ".env"); break
+except ImportError:
+    pass
 from playwright.sync_api import sync_playwright, TimeoutError as PlaywrightTimeout
 
 # macOS 上 Python 預設不信任系統憑證，這個 context 跳過 SSL 驗證
