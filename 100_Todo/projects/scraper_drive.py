@@ -124,20 +124,53 @@ def detect_product_type(name: str) -> str:
 
 
 def detect_currency(name: str) -> str:
-    return "外幣" if any(kw in name for kw in FOREIGN_KEYWORDS) else "新台幣"
+    for kw in FOREIGN_KEYWORDS:
+        if kw in name:
+            if "美元" in name or "USD" in name:
+                return "美元"
+            if "港幣" in name:
+                return "港幣"
+            if "澳幣" in name:
+                return "澳幣"
+            return "外幣"
+    return "新台幣"
 
 
 def detect_status(stop_date: str) -> str:
     return "停售" if stop_date else "現售"
 
 
-def make_folder_name(product_name: str, plan_code: str, sale_date: str, status: str) -> str:
-    sale = sale_date.replace("/", "-") if sale_date else "未知"
-    safe = re.sub(r'[\\/*?:"<>|]', "", product_name)
-    # 限制長度避免 Drive 過長
-    if len(safe) > 50:
-        safe = safe[:50]
-    return f"{safe}_{plan_code}_{sale}_{status}"
+def roc_to_western(roc_date: str) -> str:
+    """民國 111/06/30 → 2022-06-30"""
+    m = re.match(r"(\d+)/(\d+)/(\d+)", roc_date.strip())
+    if m:
+        year = int(m.group(1)) + 1911
+        return f"{year}-{m.group(2)}-{m.group(3)}"
+    return roc_date
+
+
+def get_version_number(plan_code: str) -> int:
+    """planCode 末 3 碼推版次：100→0, 200→1, 300→2"""
+    m = re.search(r"(\d{3})$", plan_code)
+    if m:
+        return max(0, int(m.group(1)) // 100 - 1)
+    return 0
+
+
+def make_version_folder_name(plan_code: str, status: str, currency: str,
+                              sale_date: str, stop_date: str) -> str:
+    v = get_version_number(plan_code)
+    label = "原始版" if v == 0 else f"第{v}次部分變更"
+    sale  = roc_to_western(sale_date) if sale_date else "未知"
+    name  = f"v{v:02d} {label}（{status}·{currency}）{sale}~"
+    if stop_date:
+        name += roc_to_western(stop_date)
+    return name
+
+
+def safe_folder_name(name: str, max_len: int = 50) -> str:
+    s = re.sub(r'[\\/*?:"<>|]', "", name)
+    return s[:max_len] if len(s) > max_len else s
 
 
 # ── Google Drive ──────────────────────────────────
@@ -186,12 +219,14 @@ def upload_pdf(drive, local_path: Path, filename: str, folder_id: str) -> str:
     return f["id"]
 
 
-def get_version_folder(drive, root_id, company, contract_type, product_type, folder_name) -> str:
-    """建立並回傳版次資料夾：根/公司/主附約/商品類型/版次"""
+def get_version_folder(drive, root_id, company, product_type, contract_type,
+                        product_name, version_folder) -> str:
+    """建立並回傳版次資料夾：根/公司/險種/主附約/商品名稱/版次"""
     cid  = get_or_create_folder(drive, company,        root_id)
-    ctid = get_or_create_folder(drive, contract_type,  cid)
-    ptid = get_or_create_folder(drive, product_type,   ctid)
-    vid  = get_or_create_folder(drive, folder_name,    ptid)
+    ptid = get_or_create_folder(drive, product_type,   cid)
+    ctid = get_or_create_folder(drive, contract_type,  ptid)
+    pnid = get_or_create_folder(drive, product_name,   ctid)
+    vid  = get_or_create_folder(drive, version_folder, pnid)
     return vid
 
 
@@ -444,10 +479,12 @@ def scrape_and_upload(company_code: str, limit: int = 0, manual_captcha: str = "
                 product_type  = detect_product_type(name)
                 currency      = detect_currency(name)
                 status        = detect_status(stop_date)
-                folder_name   = make_folder_name(name, pid, sale_date, status)
+                version_folder = make_version_folder_name(pid, status, currency, sale_date, stop_date)
+                product_folder = safe_folder_name(name)
 
                 print(f"\n  [{processed+1}] {name}")
                 print(f"       {contract_type} ｜ {product_type} ｜ {currency} ｜ {status}")
+                print(f"       版次：{version_folder}")
 
                 # 取 DetailList 所有 PDF
                 cookies = {c["name"]: c["value"] for c in context.cookies()}
@@ -460,10 +497,10 @@ def scrape_and_upload(company_code: str, limit: int = 0, manual_captcha: str = "
                     processed += 1
                     continue
 
-                # 建 Drive 資料夾層級
+                # 建 Drive 資料夾層級：根/公司/險種/主附約/商品名稱/版次
                 version_id = get_version_folder(
                     drive, root_id, company_name,
-                    contract_type, product_type, folder_name,
+                    product_type, contract_type, product_folder, version_folder,
                 )
 
                 # 下載 + 上傳每種文件
@@ -479,17 +516,18 @@ def scrape_and_upload(company_code: str, limit: int = 0, manual_captcha: str = "
 
                 # 寫入 registry
                 registry[pid] = {
-                    "company":      company_name,
-                    "productName":  name,
-                    "planCode":     pid,
-                    "contractType": contract_type,
-                    "productType":  product_type,
-                    "currency":     currency,
-                    "status":       status,
-                    "saleDate":     sale_date,
-                    "stopDate":     stop_date,
-                    "folderName":   folder_name,
-                    "docTypes":     uploaded_docs,
+                    "company":       company_name,
+                    "productName":   name,
+                    "planCode":      pid,
+                    "contractType":  contract_type,
+                    "productType":   product_type,
+                    "currency":      currency,
+                    "status":        status,
+                    "saleDate":      roc_to_western(sale_date) if sale_date else "",
+                    "stopDate":      roc_to_western(stop_date) if stop_date else "",
+                    "versionFolder": version_folder,
+                    "productFolder": product_folder,
+                    "docTypes":      uploaded_docs,
                 }
                 registry_path.write_text(
                     json.dumps(registry, indent=2, ensure_ascii=False),
@@ -518,7 +556,7 @@ def scrape_and_upload(company_code: str, limit: int = 0, manual_captcha: str = "
         browser.close()
 
     print(f"\n🎉 完成！共處理 {processed} 筆")
-    print(f"   Drive 結構：{DRIVE_ROOT_FOLDER} / {company_name} / 主約|附約 / 商品類型 / 版次")
+    print(f"   Drive 結構：{DRIVE_ROOT_FOLDER} / {company_name} / 險種 / 主附約 / 商品名稱 / 版次")
     print(f"   Registry：{registry_path}")
 
 
