@@ -89,6 +89,53 @@ def move_file(drive, file_id, new_parent_id):
     ).execute()
 
 
+def update_coverage_data(gc, sheet_ref, data):
+    """UI 審核後，用更新後的 JSON 重寫 Sheet 資料列，保留 A 欄審核狀態"""
+    if "docs.google.com" in sheet_ref:
+        sheet_id_str = sheet_ref.split("/d/")[1].split("/")[0]
+    else:
+        sheet_id_str = sheet_ref
+
+    sh = gc.open_by_key(sheet_id_str)
+    ws = sh.worksheet("給付項目審核")
+
+    items = data.get("items", [])
+    limit = data.get("annualLimit") or {}
+    data_row_count = len(items) + 1  # items + 累積給付上限
+
+    # 讀取 A 欄現有審核狀態（row 5 開始，1-indexed）
+    status_raw = ws.get(f"A5:A{4 + data_row_count}")
+    saved_statuses = [row[0] if row else "待審核" for row in status_raw]
+    while len(saved_statuses) < data_row_count:
+        saved_statuses.append("待審核")
+
+    # 重建資料列（保留 A 欄狀態）
+    new_rows = []
+    for i, item in enumerate(items):
+        mult = extract_multiplier(item.get("formula", ""))
+        new_rows.append([
+            saved_statuses[i],
+            item.get("name", ""),
+            format_amount(item.get("formula", ""), item.get("unit", "")),
+            calc_formula(mult),
+            item.get("restriction", "") or "—",
+            item.get("notes", "") or "—",
+        ])
+
+    limit_mult = extract_multiplier(limit.get("formula", ""))
+    new_rows.append([
+        saved_statuses[len(items)],
+        "⚠️ 累積給付上限",
+        format_amount(limit.get("formula", ""), ""),
+        calc_formula(limit_mult),
+        "所有給付項目合計",
+        limit.get("notes", "") or "",
+    ])
+
+    ws.update(new_rows, "A5", value_input_option="USER_ENTERED")
+    print(f"✅ Sheet 已更新（{len(items)} 筆項目 + 累積上限，審核狀態已保留）")
+
+
 def archive_sheet(gc, drive, sheet_ref, force=False, pdf_drive_id=None):
     """把審核完成的試算表歸檔到正確的險種/公司資料夾"""
     # 支援完整 URL 或純 ID
@@ -699,10 +746,26 @@ def main():
                         help="歸檔時跳過未審核確認")
     parser.add_argument("--pdf-id",   metavar="FILE_ID", dest="pdf_id",
                         help="歸檔時同步將 PDF 移到同一資料夾")
+    parser.add_argument("--update-data", metavar="SHEET_ID_OR_URL",
+                        help="用新的 JSON 更新已存在 Sheet 的資料列（保留審核狀態）")
     args = parser.parse_args()
 
     print("🔌 連線 Google Sheets...")
     gc, drive = connect()
+
+    # ── 更新資料模式 ──────────────────────────────────
+    if args.update_data:
+        if args.stdin:
+            data = json.load(sys.stdin)
+        elif args.json_file:
+            with open(args.json_file, "r", encoding="utf-8") as f:
+                data = json.load(f)
+        else:
+            print("❌ --update-data 需要搭配 JSON 檔案或 --stdin")
+            sys.exit(1)
+        print(f"📝 更新 Sheet：{args.update_data}")
+        update_coverage_data(gc, args.update_data, data)
+        return
 
     # ── 歸檔模式 ──────────────────────────────────────
     if args.archive:
