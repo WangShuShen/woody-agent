@@ -1,81 +1,88 @@
-# 專案協調狀態
+# 保單資料庫自動化流水線狀態
 
-> 更新：2026-06-02
+> 更新：2026-06-08
 
 ---
 
 ## 整體架構
 
 ```
-[Session A] scraper.py          → 爬 TII 商品列表
-[Session A] pipeline.py         → 串接爬蟲 + 分析 + 上傳
-[Session A] analyzer.py         → Claude API 分析 PDF
-[Session A] push_to_sheets.py   → 上傳 Google Sheets / Drive
-            ↓
-     analyzed_state.json         ← 兩個 Session 的橋梁
-            ↓
-[Session B] notifier.py         → 讀狀態，發送審核提醒
+pipeline.py               ← 總指揮（串接以下三個階段）
+  ↓ Phase 1
+scraper.py                ← TII 爬蟲（含 CAPTCHA 自動解）
+  ↓ Phase 2
+analyzer.py               ← Claude API 分析 PDF → analyzed/{uuid}.json
+  ↓ Phase 3
+push_to_sheets.py         ← 建立 Google Sheet + 上傳 PDF 到 Drive
+  ↓
+uuid_registry.json        ← 全域狀態登記（status 欄位是唯一 source of truth）
+  ↓
+Review UI（Next.js）       ← 顯示待審核佇列，顧問逐一審核後歸檔
+  ↓
+push_to_sheets.py --archive ← 歸檔：Sheet + PDF 移至正式資料庫資料夾
 ```
 
 ---
 
-## 檔案所有權
+## uuid_registry.json 狀態流
 
-| 檔案 | 負責 Session | 狀態 |
-|------|-------------|------|
-| `scraper.py` | Session A | 進行中 |
-| `pipeline.py` | Session A | 進行中 |
-| `analyzer.py` | Session A | 進行中 |
-| `push_to_sheets.py` | Session A | 進行中 |
-| `analyzed_state.json` | 共用（A 寫 / B 讀） | 橋梁 |
-| `notifier.py` | Session B | 設計中 |
-| `notifier_config.json` | Session B | 待建立 |
-
----
-
-## analyzed_state.json 欄位合約
-
-Session A 寫入的欄位：
-```json
-{
-  "planCode": {
-    "status": "uploaded",
-    "uploadedAt": "2026-06-02",
-    "sheetUrl": "https://docs.google.com/spreadsheets/d/...",
-    "pdfDriveId": "...",
-    "productName": "南山人壽終身醫療保險",
-    "filename": "[健] 南山人壽終身醫療保險_112-01-01~"
-  }
-}
 ```
-
-Session B 追加的欄位（不覆蓋 A 的欄位）：
-```json
-{
-  "planCode": {
-    "notifiedAt": "2026-06-02T14:30:00",
-    "notifyChannel": "email"
-  }
-}
+no_pdf      ← 商品無 PDF，跳過
+analyzed    ← Claude 分析完成，還未上傳 Drive（分析成功、上傳失敗時暫存）
+uploaded    ← 分析 + Drive 上傳 + Sheet 建立完成，等待審核
+archived    ← 審核完成，已移至正式資料庫
+failed      ← 分析失敗（JSON 解析錯、API 錯）
 ```
 
 ---
 
-## 目前進度
+## pipeline.py 執行模式
 
-### Session A
-- [ ] PDF 從 TII 下載功能（進行中）
-- [ ] pipeline.py 整合測試
+| 指令 | 說明 |
+|------|------|
+| `python3 pipeline.py --company 206` | 完整跑：爬蟲 → 分析 → 上傳 |
+| `python3 pipeline.py --company 206 --skip-scrape` | 跳過爬蟲，用現有 products JSON |
+| `python3 pipeline.py --company 206 --analyze-only` | 只跑 Claude 分析，不上傳 Drive |
+| `python3 pipeline.py --company 206 --upload-only` | 跳過分析，直接上傳已有分析結果 |
+| `python3 pipeline.py --company 206 --force` | 強制重新處理（忽略已上傳狀態） |
+| `python3 pipeline.py --company 206 --limit 1` | 測試用，只處理 1 筆 |
 
-### Session B
-- [ ] notifier.py 設計與實作
-- [ ] 通知管道設定（Email / LINE）
+> ⚠️ 已有 `analyzed/{uuid}.json` 的商品自動跳過 Claude API，不會重複呼叫。
 
 ---
 
-## 交接說明
+## 各 Script 說明
 
-Session A 完成後：
-1. `git commit` 你的改動
-2. 在這個檔案把 Session A 的 checkbox 打勾
-3. Session B 就能接著整合測試
+| 檔案 | 輸入 | 輸出 | 職責 |
+|------|------|------|------|
+| `scraper.py` | TII 網站 | `{company}_products.json` + `tmp/pdfs/*.pdf` | 爬蟲 + 下載 PDF |
+| `analyzer.py` | `*_products.json` | `analyzed/{uuid}.json` | Claude 分析（可獨立執行） |
+| `push_to_sheets.py` | `analyzed/{uuid}.json` | Google Sheet + Drive | 建立審核 Sheet（可獨立執行） |
+| `pipeline.py` | 公司代碼 | 全部 | 統籌三個階段 |
+| `notifier.py` | `uuid_registry.json` | 通知訊息 | 審核提醒（LINE / Email） |
+
+---
+
+## Review UI 欄位對應
+
+`uuid_registry.json` → `/api/review` → `ReviewProduct` 介面：
+
+| registry 欄位 | API 欄位 | 說明 |
+|--------------|---------|------|
+| key（uuid） | `id` | pdfUUID，也是 `analyzed/{id}.json` 的檔名 |
+| `planCode` | `planCode` | TII productId |
+| `company` | `company` | 保險公司全名 |
+| `productName` | `product_name` | 商品名稱 |
+| `sheetUrl` | `sheetUrl` | Google Sheet URL |
+| `pdfDriveId` | `pdfDriveId` | Drive PDF 檔案 ID（空 = 無 PDF）|
+| `filename` | `filename` | 檔名（含標籤與日期） |
+
+---
+
+## 歸檔執行
+
+```bash
+python3 push_to_sheets.py --archive {sheet_url_or_id} --force --pdf-id {pdfDriveId}
+```
+
+Review UI 的「通過審核·歸檔」按鈕會自動呼叫 `/api/review/[id]` PATCH，由 Next.js 後端執行這個指令。

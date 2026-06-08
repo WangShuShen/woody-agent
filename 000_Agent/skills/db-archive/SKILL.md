@@ -82,10 +82,11 @@ else:
 ```json
 "{pdfUUID}": {
   "status": "archived",
-  "archivedAt": "2026-06-02",
-  "archiveFolderPath": "保單審核資料庫/南山人壽保險股份有限公司/定額醫療/"
+  "archivedAt": "2026-06-02"
 }
 ```
+
+> 注意：`archiveFolderPath` 目前不寫入，Drive 路徑可從 `sheetUrl` 反推。
 
 ---
 
