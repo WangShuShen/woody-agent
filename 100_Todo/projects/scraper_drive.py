@@ -64,10 +64,15 @@ DRIVE_SCOPES = [
 
 _SSL_CTX = ssl._create_unverified_context()
 
-# ── 文件後綴 → 中文名稱 ────────────────────────────
+# ── 文件後綴 → 中文名稱（None = 跳過）────────────────
+_SKIP = object()   # sentinel：有匹配但不要的文件
 DOC_SUFFIX_MAP = {
     "-A": "條款",
+    "-B": _SKIP,   # 要保書 - 不需要
     "-C": "費率",
+    "-D": _SKIP,   # 健康聲明 - 不需要
+    "-E": _SKIP,   # 附件 - 不需要
+    "-F": "說明",  # 商品說明書
 }
 
 # ── 排除（只排產險、延續條款、團險）─────────────────
@@ -266,17 +271,14 @@ def get_all_pdfs(page, product_id: str) -> dict:
                 continue
             full_url = f"{BASE_URL}/{href}" if href.startswith("Open2") else href
 
-            # 只接受 DOC_SUFFIX_MAP 中的 -A/-B/-C，其他全略過
             doc_label = None
             for suffix, label in DOC_SUFFIX_MAP.items():
-                if re.search(rf"{re.escape(suffix)}\.pdf", text, re.IGNORECASE) or \
-                   re.search(rf"{re.escape(suffix)}\.pdf", href, re.IGNORECASE):
+                if re.search(rf"{re.escape(suffix)}\.pdf", text, re.IGNORECASE):
                     doc_label = label
                     break
 
-            if doc_label is None:
-                continue   # 不在清單內的連結直接跳過
-
+            if doc_label is _SKIP or doc_label is None:
+                continue
             pdfs[doc_label] = full_url
     except Exception as e:
         print(f"         ⚠️  DetailList 失敗 ({product_id})：{e}")
