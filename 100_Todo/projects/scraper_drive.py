@@ -69,8 +69,6 @@ DOC_SUFFIX_MAP = {
     "-A": "條款",
     "-B": "費率",
     "-C": "說明",
-    "-D": "健康聲明",
-    "-E": "附件",
 }
 
 # ── 排除（只排產險、延續條款、團險）─────────────────
@@ -269,7 +267,7 @@ def get_all_pdfs(page, product_id: str) -> dict:
                 continue
             full_url = f"{BASE_URL}/{href}" if href.startswith("Open2") else href
 
-            # 根據後綴分類（先查 link text，再查 URL）
+            # 只接受 DOC_SUFFIX_MAP 中的 -A/-B/-C，其他全略過
             doc_label = None
             for suffix, label in DOC_SUFFIX_MAP.items():
                 if re.search(rf"{re.escape(suffix)}\.pdf", text, re.IGNORECASE) or \
@@ -277,18 +275,8 @@ def get_all_pdfs(page, product_id: str) -> dict:
                     doc_label = label
                     break
 
-            # 後綴沒匹配，用文字關鍵字猜
             if doc_label is None:
-                if "條款" in text:
-                    doc_label = "條款"
-                elif "費率" in text:
-                    doc_label = "費率"
-                elif "說明" in text or "建議" in text or "投保說明" in text:
-                    doc_label = "說明"
-                elif "健康" in text and "聲明" in text:
-                    doc_label = "健康聲明"
-                else:
-                    doc_label = re.sub(r'[\\/*?:"<>|]', "", text[:12]) or "其他"
+                continue   # 不在清單內的連結直接跳過
 
             pdfs[doc_label] = full_url
     except Exception as e:
