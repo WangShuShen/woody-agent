@@ -15,13 +15,14 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).parent))
 
-from scraper       import scrape, should_exclude
-from analyzer      import load_skill_prompt, analyze_product, load_state, save_state, OUTPUT_DIR, STATE_FILE
+from scraper        import scrape, should_exclude
+from analyzer       import load_skill_prompt, analyze_product, load_state, save_state, OUTPUT_DIR, STATE_FILE
 from push_to_sheets import (
     connect, get_or_create_folder, move_file,
     build_coverage_sheet, build_restrictions_sheet, build_claim_docs_sheet,
     SHEET_FOLDER_NAME,
 )
+from sync_registry  import download_registry, upload_registry
 
 BASE_DIR = Path(__file__).parent
 
@@ -92,13 +93,16 @@ def main():
         print(f"   已存：{products_path.name}，共 {len(products)} 筆")
 
     # ── Phase 2：連線 Google Drive（analyze-only 模式跳過）──
-    gc = drive = pending_id = None
+    gc = drive = pending_id = root_id = None
     if not args.analyze_only:
         print("\n🔌 Phase 2：連線 Google Sheets / Drive...")
         gc, drive  = connect()
         root_id    = get_or_create_folder(drive, SHEET_FOLDER_NAME)
         pending_id = get_or_create_folder(drive, "待審核", root_id)
         print("   連線成功")
+
+        print("   🔄 同步 Drive registry（雙機共用狀態）...")
+        state = download_registry(drive, root_id, STATE_FILE)
 
     # ── Phase 3：分析 + 上傳 ─────────────────────────────
     print(f"\n🔍 Phase 3：{'只分析（不上傳）' if args.analyze_only else '分析保單條款並上傳'}...")
@@ -171,6 +175,8 @@ def main():
                         "productName": product_name, "filename": filename,
                     }
                     save_state(state)
+                    if drive and root_id:
+                        upload_registry(drive, root_id, state, STATE_FILE)
 
             # ── 上傳（analyze-only 模式跳過）──────────────
             if args.analyze_only:
@@ -194,6 +200,7 @@ def main():
                 "filename":    filename,
             }
             save_state(state)
+            upload_registry(drive, root_id, state, STATE_FILE)
 
             print(f"   ✅  Sheet：{sheet_url}")
             done += 1
