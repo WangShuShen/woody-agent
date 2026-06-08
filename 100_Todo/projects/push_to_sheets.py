@@ -262,7 +262,6 @@ def build_coverage_sheet(sh, data):
             item.get("restriction", "") or "—",
             item.get("notes", "") or "—",
         ])
-    rows.append([])
     limit_mult = extract_multiplier(limit.get("formula", ""))
     rows.append([
         "待審核",
@@ -333,7 +332,7 @@ def build_coverage_sheet(sh, data):
             "fields": "userEnteredFormat(backgroundColor,textFormat,verticalAlignment,wrapStrategy)",
         }})
 
-    limit_row = 4 + len(items) + 1
+    limit_row = 4 + len(items)
     requests.append(fmt_row(limit_row, COLOR["gold"], COLOR["dark_navy"], 10, True))
 
     # 計算金額 D 欄資料格：淺金底、靠右、加粗

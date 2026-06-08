@@ -173,7 +173,7 @@ def main():
                 failed += 1
             else:
                 # 補充欄位
-                data.setdefault("planCode", plan_code)
+                data["planCode"] = data.get("planCode") or plan_code
                 data["status"]      = "待審核"
                 data["extractedAt"] = date.today().isoformat()
 
