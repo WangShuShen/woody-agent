@@ -96,7 +96,7 @@ def analyze_product(product: dict, skill_prompt: str) -> tuple[dict | None, str]
     client = anthropic.Anthropic()
     response = client.messages.create(
         model="claude-sonnet-4-6",
-        max_tokens=8192,
+        max_tokens=16000,
         system=skill_prompt,
         messages=[{
             "role": "user",

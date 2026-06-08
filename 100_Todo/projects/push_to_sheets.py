@@ -228,7 +228,7 @@ def build_coverage_sheet(sh, data):
     ins_type_str = "、".join(ins_type_raw) if isinstance(ins_type_raw, list) else ins_type_raw
     date_str     = data.get("extractedAt", datetime.today().strftime("%Y-%m-%d"))
     items        = data.get("items", [])
-    limit        = data.get("annualLimit", {})
+    limit        = data.get("annualLimit") or {}
 
     header1  = f"【{ins_type}】{company}　｜　{product}　｜　{plan}"
     header2  = f"保額基礎：{base}　｜　險種：{ins_type_str}　｜　提取日期：{date_str}"
@@ -349,9 +349,9 @@ def build_restrictions_sheet(sh, data):
     sheet_id = ws.id
     NUM_COLS = 2
 
-    wp   = data.get("waitingPeriod", {})
-    excl = data.get("exclusions", [])
-    spec = data.get("specialRestrictions", [])
+    wp   = data.get("waitingPeriod") or {}
+    excl = data.get("exclusions") or []
+    spec = data.get("specialRestrictions") or []
 
     header   = ["理賠條件與限制　｜　" + data.get("productName", ""), ""]
     status   = ["整體審核狀態", "待審核"]   # B2 放 dropdown

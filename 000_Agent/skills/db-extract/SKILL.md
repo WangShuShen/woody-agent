@@ -152,6 +152,8 @@ description: 保單資料庫提取模式。分析保單 PDF，輸出「倍數公
 
 緊接在人工審核表後輸出，格式如下：
 
+> **pageRef 規則**：每個 item 的 `pageRef` 填入該給付項目條文出現在 PDF 的頁碼（整數，從第 1 頁算起）。若某項目的條文跨多頁，填第一次出現的頁碼。找不到對應頁碼時填 `null`。
+
 ```json
 {
   "company": "保險公司名稱",
@@ -165,56 +167,64 @@ description: 保單資料庫提取模式。分析保單 PDF，輸出「倍數公
       "formula": "日額×1",
       "unit": "/日",
       "restriction": "",
-      "notes": "31日起×2"
+      "notes": "31日起×2",
+      "pageRef": 5
     },
     {
       "name": "加護病房暨燒燙傷中心",
       "formula": "日額×3",
       "unit": "/日",
       "restriction": "",
-      "notes": "住院日額+另給付×2"
+      "notes": "住院日額+另給付×2",
+      "pageRef": 7
     },
     {
       "name": "重大手術醫療保險金",
       "formula": "日額×50",
       "unit": "/次",
       "restriction": "同一住院限1次",
-      "notes": "附表一共13類重大手術"
+      "notes": "附表一共13類重大手術",
+      "pageRef": 8
     },
     {
       "name": "重大手術暨重大疾病特別看護",
       "formula": "日額×1",
       "unit": "/日",
       "restriction": "最高28日/次",
-      "notes": "住院中接受重大手術或確診7大重大疾病"
+      "notes": "住院中接受重大手術或確診7大重大疾病",
+      "pageRef": 8
     },
     {
       "name": "住院前後門診醫療保險金",
       "formula": "日額×0.25",
       "unit": "/次",
       "restriction": "每日1次",
-      "notes": "住院前後2週，同一疾病/傷害"
+      "notes": "住院前後2週，同一疾病/傷害",
+      "pageRef": 9
     },
     {
       "name": "出院療養保險金",
       "formula": "日額×0.5",
       "unit": "/日",
       "restriction": "",
-      "notes": "依實際住院日數一次給付"
+      "notes": "依實際住院日數一次給付",
+      "pageRef": 9
     },
     {
       "name": "緊急醫療運送保險金",
       "formula": "日額×2",
       "unit": "/次",
       "restriction": "同一住院限1次",
-      "notes": ""
+      "notes": "",
+      "pageRef": 10
     },
     {
       "name": "身故保險金",
       "formula": "日額×1000",
       "unit": "",
       "restriction": "扣除已領各項合計",
-      "notes": "給付後契約終止"
+      "notes": "給付後契約終止",
+      "pageRef": 11
     }
   ],
   "annualLimit": {
