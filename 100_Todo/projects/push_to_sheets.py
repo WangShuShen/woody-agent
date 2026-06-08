@@ -211,13 +211,27 @@ def format_amount(formula: str, unit: str) -> str:
     return f"{formula}{unit}" if unit else formula
 
 
+def extract_multiplier(formula: str):
+    """從公式字串（如「單位×1」「日額×0.5」）提取數字倍率，找不到回傳 None"""
+    m = re.search(r'[單日](?:位|額)[×x*](\d+(?:\.\d+)?)', formula or "")
+    return float(m.group(1)) if m else None
+
+
+def calc_formula(multiplier) -> str:
+    """產生 Sheets 試算公式，引用 C3 作為每單位保額輸入格"""
+    if multiplier is None:
+        return "—"
+    return f'=IF($C$3>0,TEXT(ROUND($C$3*{multiplier},0),"#,##0"),"—")'
+
+
 # ── 分頁 1：給付項目審核 ──────────────────────────
-# 欄位（5 欄）：A=審核狀態  B=給付項目  C=給付金額  D=限制條件  E=注意事項
+# 欄位（6 欄）：A=審核狀態  B=給付項目  C=給付金額  D=計算金額  E=限制條件  F=注意事項
+# Row 3（1-indexed）= 每單位保額輸入列：A:B 標籤，C3 輸入格，D:F 公式自動計算
 
 def build_coverage_sheet(sh, data):
     ws = sh.worksheet("給付項目審核")
     sheet_id = ws.id
-    NUM_COLS = 5
+    NUM_COLS = 6
 
     company      = data.get("company", "—")
     product      = data.get("productName", "—")
@@ -232,22 +246,29 @@ def build_coverage_sheet(sh, data):
 
     header1  = f"【{ins_type}】{company}　｜　{product}　｜　{plan}"
     header2  = f"保額基礎：{base}　｜　險種：{ins_type_str}　｜　提取日期：{date_str}"
-    col_hdrs = ["審核狀態", "給付項目", "給付金額", "限制條件", "注意事項"]
+    col_hdrs = ["審核狀態", "給付項目", "給付金額", "計算金額", "限制條件", "注意事項"]
 
-    rows = [[header1], [header2], [], col_hdrs]
+    # Row 2 (index 2): 每單位保額輸入格 — A:B 合併做標籤，C3 讓使用者填數字
+    unit_row = ["每單位保額（NT$）", "", 0, "", "", ""]
+
+    rows = [[header1], [header2], unit_row, col_hdrs]
     for item in items:
+        mult = extract_multiplier(item.get("formula", ""))
         rows.append([
             "待審核",
             item.get("name", ""),
             format_amount(item.get("formula", ""), item.get("unit", "")),
+            calc_formula(mult),
             item.get("restriction", "") or "—",
             item.get("notes", "") or "—",
         ])
     rows.append([])
+    limit_mult = extract_multiplier(limit.get("formula", ""))
     rows.append([
         "待審核",
         "⚠️ 累積給付上限",
         format_amount(limit.get("formula", ""), ""),
+        calc_formula(limit_mult),
         "所有給付項目合計",
         limit.get("notes", ""),
     ])
@@ -256,12 +277,17 @@ def build_coverage_sheet(sh, data):
 
     requests = []
 
-    # 合併標題行
-    for r in [0, 1, 2]:
+    # 合併標題行（row 0, 1）
+    for r in [0, 1]:
         requests.append({"mergeCells": {
             "range": block_range(sheet_id, r, r + 1, 0, NUM_COLS),
             "mergeType": "MERGE_ALL",
         }})
+    # row 2：A:B 合併做「每單位保額」標籤，C 留作輸入格
+    requests.append({"mergeCells": {
+        "range": block_range(sheet_id, 2, 3, 0, 2),
+        "mergeType": "MERGE_ALL",
+    }})
 
     def fmt_row(row, bg, fg, size, bold):
         return {"repeatCell": {
@@ -273,8 +299,29 @@ def build_coverage_sheet(sh, data):
     requests += [
         fmt_row(0, COLOR["dark_navy"], COLOR["white"], 13, True),
         fmt_row(1, COLOR["navy"],      COLOR["gray_light"], 10, False),
+        # row 2: 每單位保額輸入列
+        fmt_row(2, {"red": 1.00, "green": 0.97, "blue": 0.87},
+                   {"red": 0.40, "green": 0.20, "blue": 0.00}, 10, False),
         fmt_row(3, COLOR["navy"],      COLOR["white"], 11, True),
     ]
+    # 輸入格 C3 特別高亮
+    requests.append({"repeatCell": {
+        "range": block_range(sheet_id, 2, 3, 2, 3),
+        "cell": {"userEnteredFormat": {
+            "backgroundColor": {"red": 1.00, "green": 0.99, "blue": 0.70},
+            "textFormat": {"fontSize": 11, "bold": True,
+                           "foregroundColor": {"red": 0.20, "green": 0.10, "blue": 0.00}},
+            "numberFormat": {"type": "NUMBER", "pattern": "#,##0"},
+            "verticalAlignment": "MIDDLE", "horizontalAlignment": "RIGHT",
+        }},
+        "fields": "userEnteredFormat(backgroundColor,textFormat,numberFormat,verticalAlignment,horizontalAlignment)",
+    }})
+    # 計算金額欄（D）header 特別標色
+    requests.append({"repeatCell": {
+        "range": block_range(sheet_id, 3, 4, 3, 4),
+        "cell": {"userEnteredFormat": cell_format(COLOR["gold"], COLOR["dark_navy"], 11, True)},
+        "fields": "userEnteredFormat(backgroundColor,textFormat,verticalAlignment,wrapStrategy)",
+    }})
 
     # 資料行斑馬紋
     for i in range(len(items)):
@@ -289,8 +336,21 @@ def build_coverage_sheet(sh, data):
     limit_row = 4 + len(items) + 1
     requests.append(fmt_row(limit_row, COLOR["gold"], COLOR["dark_navy"], 10, True))
 
-    # 欄寬：A(90) B(220) C(200) D(160) E(210)
-    for i, w in enumerate([90, 220, 200, 160, 210]):
+    # 計算金額 D 欄資料格：淺金底、靠右、加粗
+    for i in range(len(items)):
+        requests.append({"repeatCell": {
+            "range": block_range(sheet_id, 4 + i, 5 + i, 3, 4),
+            "cell": {"userEnteredFormat": {
+                "backgroundColor": {"red": 0.99, "green": 0.97, "blue": 0.82},
+                "textFormat": {"fontSize": 10, "bold": True,
+                               "foregroundColor": {"red": 0.30, "green": 0.15, "blue": 0.00}},
+                "verticalAlignment": "MIDDLE", "horizontalAlignment": "RIGHT",
+                "wrapStrategy": "CLIP",
+            }},
+            "fields": "userEnteredFormat(backgroundColor,textFormat,verticalAlignment,horizontalAlignment,wrapStrategy)",
+        }})
+    # 欄寬：A(80) B(200) C(160) D(110) E(160) F(200)
+    for i, w in enumerate([80, 200, 160, 110, 160, 200]):
         requests.append({"updateDimensionProperties": {
             "range": {"sheetId": sheet_id, "dimension": "COLUMNS",
                       "startIndex": i, "endIndex": i + 1},
