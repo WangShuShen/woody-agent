@@ -21,9 +21,14 @@ echo ""
 echo "🔗 設定 Claude Code skills 連結..."
 mkdir -p ~/.claude
 SKILLS_TARGET="$REPO_DIR/000_Agent/skills"
+CURRENT_LINK="$(readlink ~/.claude/skills 2>/dev/null || echo '')"
 
-if [ -L ~/.claude/skills ]; then
-    echo "   ✅ ~/.claude/skills 已是 symlink（$(readlink ~/.claude/skills)）"
+if [ "$CURRENT_LINK" = "$SKILLS_TARGET" ]; then
+    echo "   ✅ ~/.claude/skills 已正確指向 $SKILLS_TARGET"
+elif [ -L ~/.claude/skills ]; then
+    echo "   🔄 symlink 指向舊路徑（$CURRENT_LINK），更新中..."
+    ln -sf "$SKILLS_TARGET" ~/.claude/skills
+    echo "   ✅ 已更新 → $SKILLS_TARGET"
 elif [ -d ~/.claude/skills ]; then
     echo "   ⚠️  ~/.claude/skills 是實體資料夾，先備份為 ~/.claude/skills.bak"
     mv ~/.claude/skills ~/.claude/skills.bak
@@ -53,14 +58,17 @@ else
     echo "   ✅ Google OAuth 憑證存在"
 fi
 
-if [ ! -f "$REPO_DIR/policy-analyzer/.env" ]; then
-    echo "   ⚠️  缺少 policy-analyzer/.env，建立模板..."
-    cat > "$REPO_DIR/policy-analyzer/.env" << 'ENVEOF'
+ENV_FILE="$REPO_DIR/.env"
+if [ -f "$REPO_DIR/policy-analyzer/.env" ]; then
+    echo "   ✅ .env 已存在（policy-analyzer/.env）"
+elif [ -f "$ENV_FILE" ]; then
+    echo "   ✅ .env 已存在（.env）"
+else
+    echo "   ⚠️  缺少 .env，建立模板..."
+    cat > "$ENV_FILE" << 'ENVEOF'
 ANTHROPIC_API_KEY=sk-ant-請填入你的金鑰
 ENVEOF
-    echo "   📝 已建立 policy-analyzer/.env 模板，請填入 ANTHROPIC_API_KEY"
-else
-    echo "   ✅ .env 已存在"
+    echo "   📝 已建立 .env 模板（根目錄），請填入 ANTHROPIC_API_KEY"
 fi
 echo ""
 
@@ -69,7 +77,7 @@ echo "════════════════════════�
 echo "  ✅ 設定完成！"
 echo ""
 echo "  下一步："
-echo "  1. 填入 policy-analyzer/.env 的 ANTHROPIC_API_KEY"
+echo "  1. 填入根目錄 .env 的 ANTHROPIC_API_KEY"
 echo "  2. 確認 000_Agent/google_credentials.json 已放好"
 echo "  3. 執行爬蟲："
 echo "     cd $REPO_DIR/100_Todo/projects"
