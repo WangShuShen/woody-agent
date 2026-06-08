@@ -139,11 +139,23 @@ if existing.get("status") not in ("", "failed", None) and not force:
 
 ---
 
+## 兩台電腦分工
+
+| 機器 | 負責公司 | 指令 |
+|------|---------|------|
+| 主 Mac（Woody） | 南山人壽（206） | `python3 pipeline.py --company 206` |
+| 副 Mac | 三商美邦人壽（211） | `python3 pipeline.py --company 211` |
+
+`uuid_registry.json` 會自動同步到 Google Drive `保單審核資料庫/` 資料夾，兩台共用、不重複分析。
+
+---
+
 ## 常用指令速查
 
 ```bash
 # 爬取 + 分析 + 上傳（全流程）
-python3 pipeline.py --company 206
+python3 pipeline.py --company 206   # 南山（主 Mac）
+python3 pipeline.py --company 211   # 三商美邦（副 Mac）
 
 # 只跑指定筆數（測試用）
 python3 pipeline.py --company 206 --limit 1

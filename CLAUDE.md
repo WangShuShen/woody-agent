@@ -10,7 +10,7 @@
 
 ## 我的資料夾結構
 
-根目錄：`/Users/wangshusheng/Downloads/woody-agent/`
+根目錄：當前 `claude` 執行的專案目錄（即 CLAUDE.md 所在位置）
 
 ```
 000_Agent/
