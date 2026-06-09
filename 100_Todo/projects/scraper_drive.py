@@ -254,29 +254,31 @@ def solve_captcha(page) -> str:
 
 # ── 取 DetailList 所有 PDF ─────────────────────────
 
-def get_all_pdfs(page, product_id: str) -> dict:
-    """回傳 {doc_type: url}，例：{"條款": "https://...", "費率": "https://..."}"""
+def get_all_pdfs(product_id: str, cookies: dict) -> dict:
+    """回傳 {doc_type: url}，用 HTTP 抓 DetailList（不動 Playwright browser）"""
     try:
-        page.goto(
-            f"{BASE_URL}/DetailList.aspx?productId={product_id}",
-            wait_until="networkidle",
-            timeout=15000,
-        )
-        links = page.query_selector_all("a[href*='Open2.ashx']")
-        pdfs = {}
-        for link in links:
-            text = (link.inner_text() or "").strip()
-            href = link.get_attribute("href") or ""
-            if not href:
-                continue
-            full_url = f"{BASE_URL}/{href}" if href.startswith("Open2") else href
+        url = f"{BASE_URL}/DetailList.aspx?productId={product_id}"
+        req = urllib.request.Request(url)
+        req.add_header("Cookie", "; ".join(f"{k}={v}" for k, v in cookies.items()))
+        req.add_header("Referer", BASE_URL)
+        req.add_header("User-Agent", "Mozilla/5.0")
+        with urllib.request.urlopen(req, timeout=15, context=_SSL_CTX) as resp:
+            html = resp.read().decode("utf-8", errors="replace")
 
+        # 找所有 <a href="Open2.ashx?id=...">filename.pdf</a>
+        pattern = re.compile(
+            r'href=["\']?(Open2\.ashx\?[^"\'>\s]+)["\']?[^>]*>\s*([^<]+\.pdf)\s*</a>',
+            re.IGNORECASE,
+        )
+        pdfs = {}
+        for href, text in pattern.findall(html):
+            text = text.strip()
+            full_url = f"{BASE_URL}/{href}"
             doc_label = None
             for suffix, label in DOC_SUFFIX_MAP.items():
                 if re.search(rf"{re.escape(suffix)}\.pdf", text, re.IGNORECASE):
                     doc_label = label
                     break
-
             if doc_label is _SKIP or doc_label is None:
                 continue
             pdfs[doc_label] = full_url
@@ -475,14 +477,13 @@ def scrape_and_upload(company_code: str, limit: int = 0, manual_captcha: str = "
                 print(f"       {contract_type} ｜ {product_type} ｜ {currency} ｜ {status}")
                 print(f"       版次：{version_folder}")
 
-                # 取 DetailList 所有 PDF
+                # 取 DetailList 所有 PDF（HTTP 請求，不動 browser）
                 cookies = {c["name"]: c["value"] for c in context.cookies()}
-                pdfs = get_all_pdfs(page, pid)
+                pdfs = get_all_pdfs(pid, cookies)
                 if pdfs:
                     print(f"       文件類型：{', '.join(pdfs.keys())}")
                 else:
                     print(f"       ⚠️  找不到任何 PDF，略過")
-                    page.goto(results_url, wait_until="networkidle", timeout=15000)
                     processed += 1
                     continue
 
@@ -493,14 +494,13 @@ def scrape_and_upload(company_code: str, limit: int = 0, manual_captcha: str = "
                 )
 
                 # 下載 + 上傳每種文件
-                cookies = {c["name"]: c["value"] for c in context.cookies()}
                 uploaded_docs = []
                 for doc_type, pdf_url in pdfs.items():
                     local_path = TMP_DIR / f"{pid}_{doc_type}.pdf"
                     print(f"       ⬇️  下載 {doc_type}...")
                     if download_pdf(pdf_url, local_path, cookies):
                         drive_id = upload_pdf(drive, local_path, f"{doc_type}.pdf", version_id)
-                        if drive_id or True:   # 即使已存在也記錄
+                        if drive_id or True:
                             uploaded_docs.append(doc_type)
 
                 # 寫入 registry
@@ -522,8 +522,6 @@ def scrape_and_upload(company_code: str, limit: int = 0, manual_captcha: str = "
                     json.dumps(registry, indent=2, ensure_ascii=False),
                     encoding="utf-8",
                 )
-
-                page.goto(results_url, wait_until="networkidle", timeout=15000)
                 processed += 1
 
             print(f"   累計 {processed} 筆")
@@ -540,6 +538,7 @@ def scrape_and_upload(company_code: str, limit: int = 0, manual_captcha: str = "
                 break
 
             next_link.click()
+            page.wait_for_load_state("networkidle", timeout=15000)
             page_num += 1
 
         browser.close()
