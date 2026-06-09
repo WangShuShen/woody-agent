@@ -210,14 +210,23 @@ def upload_pdf(drive, local_path: Path, filename: str, folder_id: str) -> str:
     if file_exists(drive, filename, folder_id):
         print(f"         ⏭️  已存在，略過：{filename}")
         return ""
-    media = MediaFileUpload(str(local_path), mimetype="application/pdf", resumable=True)
-    f = drive.files().create(
-        body={"name": filename, "parents": [folder_id]},
-        media_body=media,
-        fields="id",
-    ).execute()
-    print(f"         ✅ 上傳完成：{filename}")
-    return f["id"]
+    for attempt in range(1, 4):
+        try:
+            media = MediaFileUpload(str(local_path), mimetype="application/pdf", resumable=True)
+            f = drive.files().create(
+                body={"name": filename, "parents": [folder_id]},
+                media_body=media,
+                fields="id",
+            ).execute()
+            print(f"         ✅ 上傳完成：{filename}")
+            return f["id"]
+        except Exception as e:
+            if attempt < 3:
+                print(f"         ⚠️  上傳失敗（第{attempt}次），5秒後重試：{e}")
+                time.sleep(5)
+            else:
+                print(f"         ❌ 上傳失敗（放棄）：{e}")
+    return ""
 
 
 def get_version_folder(drive, root_id, company, product_type, contract_type,
@@ -288,17 +297,22 @@ def get_all_pdfs(product_id: str, cookies: dict) -> dict:
 
 
 def download_pdf(url: str, dest: Path, cookies: dict) -> bool:
-    try:
-        req = urllib.request.Request(url)
-        req.add_header("Cookie", "; ".join(f"{k}={v}" for k, v in cookies.items()))
-        req.add_header("Referer", BASE_URL)
-        req.add_header("User-Agent", "Mozilla/5.0")
-        with urllib.request.urlopen(req, timeout=30, context=_SSL_CTX) as resp:
-            dest.write_bytes(resp.read())
-        return True
-    except Exception as e:
-        print(f"         ⚠️  下載失敗：{e}")
-        return False
+    for attempt in range(1, 4):
+        try:
+            req = urllib.request.Request(url)
+            req.add_header("Cookie", "; ".join(f"{k}={v}" for k, v in cookies.items()))
+            req.add_header("Referer", BASE_URL)
+            req.add_header("User-Agent", "Mozilla/5.0")
+            with urllib.request.urlopen(req, timeout=30, context=_SSL_CTX) as resp:
+                dest.write_bytes(resp.read())
+            return True
+        except Exception as e:
+            if attempt < 3:
+                print(f"         ⚠️  下載失敗（第{attempt}次），5秒後重試：{e}")
+                time.sleep(5)
+            else:
+                print(f"         ❌ 下載失敗（放棄）：{e}")
+    return False
 
 
 # ── 主流程 ─────────────────────────────────────────
