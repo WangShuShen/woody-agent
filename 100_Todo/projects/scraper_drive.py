@@ -54,11 +54,9 @@ TMP_DIR.mkdir(parents=True, exist_ok=True)
 BASE_URL          = "https://insprod.tii.org.tw"
 DRIVE_ROOT_FOLDER = "保單原始條款"
 
-CREDENTIALS_FILE = Path(__file__).parent.parent.parent / "000_Agent" / "google_credentials.json"
-AUTHORIZED_FILE  = Path(__file__).parent.parent.parent / "000_Agent" / "authorized_user.json"
+SERVICE_ACCOUNT_FILE = Path(__file__).parent.parent.parent / "000_Agent" / "service_account.json"
 
 DRIVE_SCOPES = [
-    "https://www.googleapis.com/auth/spreadsheets",
     "https://www.googleapis.com/auth/drive",
 ]
 
@@ -178,10 +176,10 @@ def safe_folder_name(name: str, max_len: int = 50) -> str:
 # ── Google Drive ──────────────────────────────────
 
 def connect_drive():
-    if not AUTHORIZED_FILE.exists():
-        print("❌ 找不到 authorized_user.json，請先執行 push_to_sheets.py 完成 OAuth 授權")
-        sys.exit(1)
-    creds = Credentials.from_authorized_user_file(str(AUTHORIZED_FILE), DRIVE_SCOPES)
+    from google.oauth2 import service_account as _sa
+    creds = _sa.Credentials.from_service_account_file(
+        str(SERVICE_ACCOUNT_FILE), scopes=DRIVE_SCOPES
+    )
     return build("drive", "v3", credentials=creds)
 
 
