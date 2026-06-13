@@ -19,6 +19,19 @@ google_credentials.json
 100_Todo/projects/*_products.json
 100_Todo/projects/analyzed/
 100_Todo/projects/uuid_registry.json
+100_Todo/projects/migrate_progress.json
+100_Todo/projects/scraper_subcat_*.json
+100_Todo/projects/debug_links.txt
+
+# OAuth token（每台機器獨立，不 commit）
+000_Agent/authorized_user.json
+
+# 截圖與暫存圖片
+*.png
+*.jpg
+
+# skills 巢狀目錄（symlink 展開後的副本）
+000_Agent/skills/skills
 
 # Next.js
 policy-analyzer/.next/

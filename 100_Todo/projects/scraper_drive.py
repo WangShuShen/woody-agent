@@ -150,23 +150,15 @@ def roc_to_western(roc_date: str) -> str:
     return roc_date
 
 
-def get_version_number(plan_code: str) -> int:
-    """planCode 末 3 碼推版次：100→0, 200→1, 300→2"""
-    m = re.search(r"(\d{3})$", plan_code)
-    if m:
-        return max(0, int(m.group(1)) // 100 - 1)
-    return 0
+def get_version_number(product_name: str) -> int:
+    """從商品名稱取版次：有「第N次部分變更」→ N，否則 → 0"""
+    m = re.search(r'第(\d+)次部分變更', product_name)
+    return int(m.group(1)) if m else 0
 
 
-def make_version_folder_name(plan_code: str, status: str, currency: str,
-                              sale_date: str, stop_date: str) -> str:
-    v = get_version_number(plan_code)
-    label = "原始版" if v == 0 else f"第{v}次部分變更"
-    sale  = roc_to_western(sale_date) if sale_date else "未知"
-    name  = f"v{v:02d} {label}（{status}·{currency}）{sale}~"
-    if stop_date:
-        name += roc_to_western(stop_date)
-    return name
+def base_product_name(product_name: str) -> str:
+    """去除「(第N次部分變更)」，取基本商品名稱"""
+    return re.sub(r'\s*\(第\d+次部分變更\)', '', product_name).strip()
 
 
 def safe_folder_name(name: str, max_len: int = 50) -> str:
@@ -231,12 +223,12 @@ def upload_pdf(drive, local_path: Path, filename: str, folder_id: str) -> str:
 
 def get_version_folder(drive, root_id, company, product_type, contract_type,
                         product_name, version_folder) -> str:
-    """建立並回傳版次資料夾：根/公司/險種/主附約/商品名稱/版次"""
+    """建立並回傳版次資料夾：根/公司/險種/主附約/基本商品名稱/vN"""
     cid  = get_or_create_folder(drive, company,        root_id)
     ptid = get_or_create_folder(drive, product_type,   cid)
     ctid = get_or_create_folder(drive, contract_type,  ptid)
-    pnid = get_or_create_folder(drive, product_name,   ctid)
-    vid  = get_or_create_folder(drive, version_folder, pnid)
+    pnid = get_or_create_folder(drive, product_name,   ctid)  # 已是基本名稱
+    vid  = get_or_create_folder(drive, version_folder, pnid)  # v0 / v1 / v2
     return vid
 
 
@@ -317,6 +309,95 @@ def download_pdf(url: str, dest: Path, cookies: dict) -> bool:
 
 # ── 主流程 ─────────────────────────────────────────
 
+# 人身保險子類別（空選會漏掉大量資料，需逐一查詢）
+LIFE_SUB_CATEGORIES = [
+    ("2_1", "傷害保險"),
+    ("2_2", "健康保險"),
+    ("2_3", "傳統型壽險"),
+    ("2_4", "傳統型年金"),
+    ("2_5", "投資型壽險"),
+    ("2_6", "投資型年金"),
+]
+
+
+def _subcat_progress_path(company_code: str) -> Path:
+    return BASE_DIR / f"scraper_subcat_{company_code}.json"
+
+
+def _load_done_subcats(company_code: str) -> set:
+    p = _subcat_progress_path(company_code)
+    if p.exists():
+        return set(json.loads(p.read_text("utf-8")))
+    return set()
+
+
+def _mark_subcat_done(company_code: str, sub_val: str):
+    p = _subcat_progress_path(company_code)
+    done = _load_done_subcats(company_code)
+    done.add(sub_val)
+    p.write_text(json.dumps(sorted(done), ensure_ascii=False))
+
+
+def _navigate_and_captcha(page, target_value: str, sub_cat: str) -> bool:
+    """導航到 TII 查詢頁、選公司+子類別、解 CAPTCHA，回傳是否成功"""
+    page.goto(f"{BASE_URL}/Query.aspx", wait_until="networkidle", timeout=60000)
+    page.select_option("select[name='categoryId']", "人身保險")
+    page.wait_for_timeout(500)
+    page.select_option("select[name='CompanyID']", target_value)
+    page.wait_for_timeout(300)
+    if sub_cat:
+        page.select_option("select[name='f_CategoryId1']", sub_cat)
+
+    for attempt in range(3):
+        try:
+            captcha_val = solve_captcha(page)
+            print(f"   🤖 CAPTCHA：{captcha_val}（第 {attempt+1} 次）")
+            if not captcha_val:
+                raise ValueError("空")
+            page.fill("input[name='bmpC']", captcha_val)
+            page.click("input[name='Go222']")
+            page.wait_for_load_state("networkidle", timeout=15000)
+            if page.query_selector("a[href*='DetailList.aspx']") or "查無" in page.content():
+                print(f"   ✅ CAPTCHA 正確")
+                return True
+        except Exception as e:
+            print(f"   ⚠️  CAPTCHA 失敗：{e}")
+        # 重試：重新導航
+        page.goto(f"{BASE_URL}/Query.aspx", wait_until="networkidle")
+        page.select_option("select[name='categoryId']", "人身保險")
+        page.wait_for_timeout(500)
+        page.select_option("select[name='CompanyID']", target_value)
+        page.wait_for_timeout(300)
+        if sub_cat:
+            page.select_option("select[name='f_CategoryId1']", sub_cat)
+
+    # 自動解析失敗，等人工輸入
+    captcha_img    = BASE_DIR / "captcha_live.png"
+    captcha_answer = BASE_DIR / "captcha_answer.txt"
+    if captcha_answer.exists():
+        captcha_answer.unlink()
+    page.locator("img[src*='bmp.ashx']").screenshot(path=str(captcha_img))
+    print(f"\n   ⚠️  CAPTCHA 自動解析失敗，截圖：{captcha_img}")
+    print(f"   請將答案寫入 {captcha_answer}（最多等 120 秒）")
+    for _ in range(240):
+        time.sleep(0.5)
+        if captcha_answer.exists():
+            captcha_val = captcha_answer.read_text("utf-8").strip()
+            captcha_answer.unlink()
+            if captcha_val:
+                page.fill("input[name='bmpC']", captcha_val)
+                page.click("input[name='Go222']")
+                page.wait_for_load_state("networkidle", timeout=15000)
+                if page.query_selector("a[href*='DetailList.aspx']"):
+                    print(f"   ✅ CAPTCHA 正確（{captcha_val}）")
+                    return True
+                print("   ❌ CAPTCHA 錯誤")
+                return False
+            break
+    print("   ❌ 等待 CAPTCHA 超時")
+    return False
+
+
 def scrape_and_upload(company_code: str, limit: int = 0, manual_captcha: str = ""):
     print("🔌 連線 Google Drive...")
     drive   = connect_drive()
@@ -337,7 +418,7 @@ def scrape_and_upload(company_code: str, limit: int = 0, manual_captcha: str = "
         context = browser.new_context()
         page    = context.new_page()
 
-        # ── 選公司 ────────────────────────────────
+        # ── 查公司名稱 ────────────────────────────
         print("🌐 開啟 TII 查詢頁面...")
         page.goto(f"{BASE_URL}/Query.aspx", wait_until="networkidle")
         page.select_option("select[name='categoryId']", "人身保險")
@@ -358,201 +439,182 @@ def scrape_and_upload(company_code: str, limit: int = 0, manual_captcha: str = "
             browser.close()
             return
 
-        page.select_option("select[name='CompanyID']", target_value)
         print(f"✅ 公司：{company_name}")
 
-        # ── CAPTCHA ────────────────────────────────
-        solved = False
-        if manual_captcha:
-            print(f"🔑 使用手動傳入的 CAPTCHA：{manual_captcha}")
-            page.fill("input[name='bmpC']", manual_captcha)
-            page.click("input[name='Go222']")
-            page.wait_for_load_state("networkidle", timeout=15000)
-            if page.query_selector("a[href*='DetailList.aspx']"):
-                print("✅ CAPTCHA 正確")
-                solved = True
-            else:
-                print("❌ 手動 CAPTCHA 錯誤，請重新截圖並確認數值")
-                browser.close()
-                return
-        else:
-            for attempt in range(3):
-                try:
-                    captcha_val = solve_captcha(page)
-                    print(f"🤖 CAPTCHA：{captcha_val}（第 {attempt+1} 次）")
-                    if not captcha_val:
-                        raise ValueError("空")
-                    page.fill("input[name='bmpC']", captcha_val)
-                    page.click("input[name='Go222']")
-                    page.wait_for_load_state("networkidle", timeout=15000)
-                    if page.query_selector("a[href*='DetailList.aspx']"):
-                        print("✅ CAPTCHA 正確")
-                        solved = True
-                        break
-                except Exception as e:
-                    print(f"⚠️  CAPTCHA 失敗：{e}")
-                if attempt < 2:
-                    page.goto(f"{BASE_URL}/Query.aspx", wait_until="networkidle")
-                    page.select_option("select[name='categoryId']", "人身保險")
-                    page.wait_for_timeout(500)
-                    page.select_option("select[name='CompanyID']", target_value)
-
-            if not solved:
-                captcha_img    = BASE_DIR / "captcha_live.png"
-                captcha_answer = BASE_DIR / "captcha_answer.txt"
-                if captcha_answer.exists():
-                    captcha_answer.unlink()
-                page.locator("img[src*='bmp.ashx']").screenshot(path=str(captcha_img))
-                print(f"\n⚠️  CAPTCHA 自動解析失敗")
-                print(f"   截圖已存至：{captcha_img}")
-                print(f"   請將答案寫入：{captcha_answer}，腳本將自動繼續（最多等 120 秒）")
-                for _ in range(240):   # 每 0.5s 檢查，共 120s
-                    time.sleep(0.5)
-                    if captcha_answer.exists():
-                        captcha_val = captcha_answer.read_text("utf-8").strip()
-                        captcha_answer.unlink()
-                        if captcha_val:
-                            page.fill("input[name='bmpC']", captcha_val)
-                            page.click("input[name='Go222']")
-                            page.wait_for_load_state("networkidle", timeout=15000)
-                            if page.query_selector("a[href*='DetailList.aspx']"):
-                                print(f"✅ CAPTCHA 正確（{captcha_val}）")
-                                solved = True
-                            else:
-                                print("❌ CAPTCHA 錯誤，請重試")
-                                browser.close()
-                                return
-                        break
-                if not solved:
-                    print("❌ 等待 CAPTCHA 答案超時")
-                    browser.close()
-                    return
-
-        # ── 翻頁爬取 ──────────────────────────────
+        # ── 逐一子類別爬取 ────────────────────────
         processed = 0
-        page_num  = 1
+        done_subcats = _load_done_subcats(company_code)
+        if done_subcats:
+            print(f"   已完成子類別：{', '.join(sorted(done_subcats))}，直接跳過")
 
-        while True:
-            print(f"\n📄 第 {page_num} 頁...")
-            page.wait_for_timeout(600)
-            results_url = page.url
+        for sub_val, sub_label in LIFE_SUB_CATEGORIES:
+            print(f"\n{'='*50}")
+            print(f"📂 子類別：{sub_label}（{sub_val}）")
 
-            page_items = page.evaluate("""() => {
-                const items = [];
-                document.querySelectorAll("tr").forEach(row => {
-                    const link = row.querySelector("a[href*='DetailList.aspx']");
-                    if (!link) return;
-                    const href = link.getAttribute("href") || "";
-                    const m = href.match(/productId=([^&]+)/);
-                    if (!m) return;
-                    const dates = [];
-                    row.querySelectorAll("td").forEach(td => {
-                        if (/^\\d{3}\\/\\d{2}\\/\\d{2}$/.test(td.innerText.trim()))
-                            dates.push(td.innerText.trim());
+            if sub_val in done_subcats:
+                print(f"   ⏭️  已完成，跳過")
+                continue
+
+            if manual_captcha:
+                page.goto(f"{BASE_URL}/Query.aspx", wait_until="networkidle")
+                page.select_option("select[name='categoryId']", "人身保險")
+                page.wait_for_timeout(500)
+                page.select_option("select[name='CompanyID']", target_value)
+                page.wait_for_timeout(300)
+                page.select_option("select[name='f_CategoryId1']", sub_val)
+                page.fill("input[name='bmpC']", manual_captcha)
+                page.click("input[name='Go222']")
+                page.wait_for_load_state("networkidle", timeout=15000)
+                if not page.query_selector("a[href*='DetailList.aspx']"):
+                    print(f"   ❌ 手動 CAPTCHA 在 {sub_label} 失敗，跳過")
+                    continue
+            else:
+                if not _navigate_and_captcha(page, target_value, sub_val):
+                    print(f"   ⚠️  {sub_label} CAPTCHA 失敗，跳過此子類別")
+                    continue
+
+            # ── 翻頁爬取（同一子類別內）──────────────
+            page_num = 1
+            sub_done = False
+
+            while True:
+                print(f"\n📄 [{sub_label}] 第 {page_num} 頁...")
+                page.wait_for_timeout(600)
+
+                page_items = page.evaluate("""() => {
+                    const items = [];
+                    document.querySelectorAll("tr").forEach(row => {
+                        const link = row.querySelector("a[href*='DetailList.aspx']");
+                        if (!link) return;
+                        const href = link.getAttribute("href") || "";
+                        const m = href.match(/productId=([^&]+)/);
+                        if (!m) return;
+                        const dates = [];
+                        row.querySelectorAll("td").forEach(td => {
+                            if (/^\\d{3}\\/\\d{2}\\/\\d{2}$/.test(td.innerText.trim()))
+                                dates.push(td.innerText.trim());
+                        });
+                        items.push({
+                            productName: link.innerText.trim(),
+                            productId:   m[1],
+                            saleDate:    dates[0] || "",
+                            stopDate:    dates[1] || "",
+                        });
                     });
-                    items.push({
-                        productName: link.innerText.trim(),
-                        productId:   m[1],
-                        saleDate:    dates[0] || "",
-                        stopDate:    dates[1] || "",
-                    });
-                });
-                return items;
-            }""")
+                    return items;
+                }""")
 
-            for item in page_items:
-                if limit > 0 and processed >= limit:
+                for item in page_items:
+                    if limit > 0 and processed >= limit:
+                        sub_done = True
+                        break
+
+                    name = item["productName"]
+                    pid  = item["productId"]
+
+                    if should_exclude(name):
+                        print(f"   ⏭️  排除：{name}")
+                        continue
+
+                    if pid in registry:
+                        print(f"   ⏭️  已存在 registry，略過：{name}")
+                        processed += 1
+                        continue
+
+                    sale_date     = item["saleDate"]
+                    stop_date     = item["stopDate"]
+                    contract_type = detect_contract_type(name)
+                    product_type  = detect_product_type(name)
+                    currency      = detect_currency(name)
+                    status        = detect_status(stop_date)
+                    ver            = get_version_number(name)
+                    version_folder = f"v{ver}"
+                    product_folder = safe_folder_name(base_product_name(name))
+
+                    print(f"\n  [{processed+1}] {name}")
+                    print(f"       {contract_type} ｜ {product_type} ｜ {currency} ｜ {status}")
+                    print(f"       版次：{version_folder}")
+
+                    cookies = {c["name"]: c["value"] for c in context.cookies()}
+                    pdfs = get_all_pdfs(pid, cookies)
+                    if pdfs:
+                        print(f"       文件類型：{', '.join(pdfs.keys())}")
+                    else:
+                        print(f"       ⚠️  找不到任何 PDF，略過")
+                        processed += 1
+                        continue
+
+                    version_id = get_version_folder(
+                        drive, root_id, company_name,
+                        product_type, contract_type, product_folder, version_folder,
+                    )
+
+                    uploaded_docs = []
+                    for doc_type, pdf_url in pdfs.items():
+                        local_path = TMP_DIR / f"{pid}_{doc_type}.pdf"
+                        print(f"       ⬇️  下載 {doc_type}...")
+                        if download_pdf(pdf_url, local_path, cookies):
+                            drive_id = upload_pdf(drive, local_path, f"{doc_type}.pdf", version_id)
+                            if drive_id or True:
+                                uploaded_docs.append(doc_type)
+
+                    registry[pid] = {
+                        "company":       company_name,
+                        "productName":   name,
+                        "planCode":      pid,
+                        "contractType":  contract_type,
+                        "productType":   product_type,
+                        "currency":      currency,
+                        "status":        status,
+                        "saleDate":      roc_to_western(sale_date) if sale_date else "",
+                        "stopDate":      roc_to_western(stop_date) if stop_date else "",
+                        "versionFolder": version_folder,
+                        "productFolder": product_folder,
+                        "docTypes":      uploaded_docs,
+                    }
+                    registry_path.write_text(
+                        json.dumps(registry, indent=2, ensure_ascii=False),
+                        encoding="utf-8",
+                    )
+                    processed += 1
+
+                print(f"   累計 {processed} 筆")
+
+                if sub_done or (limit > 0 and processed >= limit):
+                    print(f"\n✅ 達到 limit={limit}，停止")
                     break
 
-                name = item["productName"]
-                pid  = item["productId"]
+                next_link = page.query_selector(f"a:text('{page_num + 1}')")
+                if not next_link:
+                    next_link = page.query_selector("a:text('[下十頁]')")
+                if not next_link:
+                    print(f"\n✅ [{sub_label}] 全部爬完")
+                    break
 
-                if should_exclude(name):
-                    print(f"   ⏭️  排除：{name}")
-                    continue
+                for _click_attempt in range(3):
+                    try:
+                        next_link.click()
+                        page.wait_for_load_state("networkidle", timeout=30000)
+                        break
+                    except Exception as _e:
+                        if _click_attempt < 2:
+                            print(f"   ⚠️  翻頁失敗，重試：{_e}")
+                            time.sleep(5)
+                            next_link = page.query_selector(f"a:text('{page_num + 1}')") or \
+                                        page.query_selector("a:text('[下十頁]')")
+                            if not next_link:
+                                break
+                        else:
+                            raise
+                page_num += 1
 
-                # 已處理過則跳過
-                if pid in registry:
-                    print(f"   ⏭️  已存在 registry，略過：{name}")
-                    processed += 1
-                    continue
+            # 子類別全部完成（非 limit 中斷），記錄避免重啟重複掃
+            if not sub_done and not (limit > 0 and processed >= limit):
+                _mark_subcat_done(company_code, sub_val)
+                print(f"   💾 {sub_label} 完成，已記錄")
 
-                sale_date     = item["saleDate"]
-                stop_date     = item["stopDate"]
-                contract_type = detect_contract_type(name)
-                product_type  = detect_product_type(name)
-                currency      = detect_currency(name)
-                status        = detect_status(stop_date)
-                version_folder = make_version_folder_name(pid, status, currency, sale_date, stop_date)
-                product_folder = safe_folder_name(name)
-
-                print(f"\n  [{processed+1}] {name}")
-                print(f"       {contract_type} ｜ {product_type} ｜ {currency} ｜ {status}")
-                print(f"       版次：{version_folder}")
-
-                # 取 DetailList 所有 PDF（HTTP 請求，不動 browser）
-                cookies = {c["name"]: c["value"] for c in context.cookies()}
-                pdfs = get_all_pdfs(pid, cookies)
-                if pdfs:
-                    print(f"       文件類型：{', '.join(pdfs.keys())}")
-                else:
-                    print(f"       ⚠️  找不到任何 PDF，略過")
-                    processed += 1
-                    continue
-
-                # 建 Drive 資料夾層級：根/公司/險種/主附約/商品名稱/版次
-                version_id = get_version_folder(
-                    drive, root_id, company_name,
-                    product_type, contract_type, product_folder, version_folder,
-                )
-
-                # 下載 + 上傳每種文件
-                uploaded_docs = []
-                for doc_type, pdf_url in pdfs.items():
-                    local_path = TMP_DIR / f"{pid}_{doc_type}.pdf"
-                    print(f"       ⬇️  下載 {doc_type}...")
-                    if download_pdf(pdf_url, local_path, cookies):
-                        drive_id = upload_pdf(drive, local_path, f"{doc_type}.pdf", version_id)
-                        if drive_id or True:
-                            uploaded_docs.append(doc_type)
-
-                # 寫入 registry
-                registry[pid] = {
-                    "company":       company_name,
-                    "productName":   name,
-                    "planCode":      pid,
-                    "contractType":  contract_type,
-                    "productType":   product_type,
-                    "currency":      currency,
-                    "status":        status,
-                    "saleDate":      roc_to_western(sale_date) if sale_date else "",
-                    "stopDate":      roc_to_western(stop_date) if stop_date else "",
-                    "versionFolder": version_folder,
-                    "productFolder": product_folder,
-                    "docTypes":      uploaded_docs,
-                }
-                registry_path.write_text(
-                    json.dumps(registry, indent=2, ensure_ascii=False),
-                    encoding="utf-8",
-                )
-                processed += 1
-
-            print(f"   累計 {processed} 筆")
-
-            if limit > 0 and processed >= limit:
-                print(f"\n✅ 達到 limit={limit}，停止")
+            if sub_done or (limit > 0 and processed >= limit):
                 break
-
-            next_link = page.query_selector(f"a:text('{page_num + 1}')")
-            if not next_link:
-                next_link = page.query_selector("a:text('[下十頁]')")
-            if not next_link:
-                print("\n✅ 沒有下一頁，全部爬完")
-                break
-
-            next_link.click()
-            page.wait_for_load_state("networkidle", timeout=15000)
-            page_num += 1
 
         browser.close()
 
