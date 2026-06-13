@@ -295,7 +295,7 @@ def download_pdf(url: str, dest: Path, cookies: dict) -> bool:
             req.add_header("Cookie", "; ".join(f"{k}={v}" for k, v in cookies.items()))
             req.add_header("Referer", BASE_URL)
             req.add_header("User-Agent", "Mozilla/5.0")
-            with urllib.request.urlopen(req, timeout=30, context=_SSL_CTX) as resp:
+            with urllib.request.urlopen(req, timeout=120, context=_SSL_CTX) as resp:
                 dest.write_bytes(resp.read())
             return True
         except Exception as e:
