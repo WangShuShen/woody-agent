@@ -19,6 +19,7 @@ import argparse
 import time
 import base64
 import ssl
+import unicodedata
 import urllib.request
 from pathlib import Path
 from urllib.parse import urlparse, parse_qs
@@ -174,7 +175,8 @@ def base_product_name(product_name: str) -> str:
 
 
 def safe_folder_name(name: str, max_len: int = 50) -> str:
-    s = re.sub(r'[\\/*?:"<>|]', "", name)
+    s = unicodedata.normalize("NFC", name)
+    s = re.sub(r'[\\/*?:"<>|]', "", s)
     return s[:max_len] if len(s) > max_len else s
 
 
@@ -520,6 +522,16 @@ def scrape_and_upload(company_code: str, limit: int = 0, manual_captcha: str = "
             page_num = 1
             sub_done = False
             subcat_had_failure = False   # 有任何單筆網路失敗就不標記子類別完成
+            rows_seen = 0                 # 已看過的列數（用以對照 TII 宣告總數）
+
+            # 取得 TII 宣告的總筆數（「找到 N 筆」），作為分頁完整性依據
+            try:
+                _txt = page.inner_text("body")
+                _m = re.search(r"找到\s*(\d+)\s*筆", _txt)
+                total_count = int(_m.group(1)) if _m else -1
+            except Exception:
+                total_count = -1
+            print(f"   TII 宣告總筆數：{total_count if total_count >= 0 else '未知'}")
 
             while True:
                 print(f"\n📄 [{sub_label}] 第 {page_num} 頁...")
@@ -553,7 +565,7 @@ def scrape_and_upload(company_code: str, limit: int = 0, manual_captcha: str = "
                         sub_done = True
                         break
 
-                    name = item["productName"]
+                    name = unicodedata.normalize("NFC", item["productName"])
                     pid  = item["productId"]
 
                     if should_exclude(name):
@@ -629,17 +641,30 @@ def scrape_and_upload(company_code: str, limit: int = 0, manual_captcha: str = "
                     )
                     processed += 1
 
-                print(f"   累計 {processed} 筆")
+                rows_seen += len(page_items)
+                print(f"   累計 {processed} 筆（已看 {rows_seen}/{total_count if total_count>=0 else '?'} 列）")
 
                 if sub_done or (limit > 0 and processed >= limit):
                     print(f"\n✅ 達到 limit={limit}，停止")
                     break
 
-                next_link = page.query_selector(f"a:text('{page_num + 1}')")
+                # 找下一頁連結；找不到時重試數次（避免渲染未完成的假陰性）
+                next_link = None
+                for _find in range(3):
+                    next_link = page.query_selector(f"a:text('{page_num + 1}')") or \
+                                page.query_selector("a:text('[下十頁]')")
+                    if next_link:
+                        break
+                    page.wait_for_timeout(1500)
+
                 if not next_link:
-                    next_link = page.query_selector("a:text('[下十頁]')")
-                if not next_link:
-                    print(f"\n✅ [{sub_label}] 全部爬完")
+                    # 沒有下一頁連結：須確認是否真的爬完（看過列數 >= 宣告總數）
+                    if total_count >= 0 and rows_seen < total_count:
+                        print(f"\n❌ [{sub_label}] 分頁中斷！只看到 {rows_seen}/{total_count} 列，"
+                              f"標記未完成，下次重掃")
+                        subcat_had_failure = True
+                    else:
+                        print(f"\n✅ [{sub_label}] 全部爬完（{rows_seen} 列）")
                     break
 
                 for _click_attempt in range(3):
