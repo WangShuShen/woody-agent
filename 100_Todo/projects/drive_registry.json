@@ -66537,5 +66537,6196 @@
       "說明",
       "條款"
     ]
+  },
+  "206211R11A30107": {
+    "company": "南山人壽保險股份有限公司",
+    "productName": "南山人壽新人身意外傷害保險附約(第7次部分變更)",
+    "planCode": "206211R11A30107",
+    "contractType": "附約",
+    "productType": "傷害險",
+    "currency": "新台幣",
+    "status": "停售",
+    "saleDate": "2008-09-22",
+    "stopDate": "2008-11-13",
+    "versionFolder": "v7",
+    "productFolder": "南山人壽新人身意外傷害保險附約",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ]
+  },
+  "206291M12D30106": {
+    "company": "南山人壽保險股份有限公司",
+    "productName": "南山人壽意外骨折及特定手術傷害保險金契約(第6次部分變更)",
+    "planCode": "206291M12D30106",
+    "contractType": "主約",
+    "productType": "傷害險",
+    "currency": "新台幣",
+    "status": "停售",
+    "saleDate": "2008-09-22",
+    "stopDate": "2008-11-13",
+    "versionFolder": "v6",
+    "productFolder": "南山人壽意外骨折及特定手術傷害保險金契約",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ]
+  },
+  "206291A12D30106": {
+    "company": "南山人壽保險股份有限公司",
+    "productName": "南山人壽骨動青春傷害補償附加條款(第6次部分變更)",
+    "planCode": "206291A12D30106",
+    "contractType": "附約",
+    "productType": "傷害險",
+    "currency": "新台幣",
+    "status": "停售",
+    "saleDate": "2008-11-14",
+    "stopDate": "2010-06-29",
+    "versionFolder": "v6",
+    "productFolder": "南山人壽骨動青春傷害補償附加條款",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ]
+  },
+  "206211R12D30111": {
+    "company": "南山人壽保險股份有限公司",
+    "productName": "南山人壽傷害保險附約(第11次部分變更)",
+    "planCode": "206211R12D30111",
+    "contractType": "附約",
+    "productType": "傷害險",
+    "currency": "新台幣",
+    "status": "停售",
+    "saleDate": "2012-01-01",
+    "stopDate": "2014-12-14",
+    "versionFolder": "v11",
+    "productFolder": "南山人壽傷害保險附約",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ]
+  },
+  "206291M11D30111": {
+    "company": "南山人壽保險股份有限公司",
+    "productName": "南山人壽海外心安旅得保險(第11次部分變更)",
+    "planCode": "206291M11D30111",
+    "contractType": "主約",
+    "productType": "其他",
+    "currency": "新台幣",
+    "status": "停售",
+    "saleDate": "2014-05-01",
+    "stopDate": "2015-08-03",
+    "versionFolder": "v11",
+    "productFolder": "南山人壽海外心安旅得保險",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ]
+  },
+  "206211MZ1A30221A11Z10000007": {
+    "company": "南山人壽保險股份有限公司",
+    "productName": "南山人壽長青傷害保險(第7次部分變更)",
+    "planCode": "206211MZ1A30221A11Z10000007",
+    "contractType": "主約",
+    "productType": "傷害險",
+    "currency": "新台幣",
+    "status": "停售",
+    "saleDate": "2015-08-04",
+    "stopDate": "2018-09-09",
+    "versionFolder": "v7",
+    "productFolder": "南山人壽長青傷害保險",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ]
+  },
+  "206211RZ1A30121A11Z10000012": {
+    "company": "南山人壽保險股份有限公司",
+    "productName": "南山人壽新人身意外傷害保險附約(第12次部分變更)",
+    "planCode": "206211RZ1A30121A11Z10000012",
+    "contractType": "附約",
+    "productType": "傷害險",
+    "currency": "新台幣",
+    "status": "停售",
+    "saleDate": "2015-08-04",
+    "stopDate": "2016-03-28",
+    "versionFolder": "v12",
+    "productFolder": "南山人壽新人身意外傷害保險附約",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ]
+  },
+  "206291RZ1A30221A11Z10000000": {
+    "company": "南山人壽保險股份有限公司",
+    "productName": "南山人壽新意外骨折及特定手術傷害保險附約",
+    "planCode": "206291RZ1A30221A11Z10000000",
+    "contractType": "附約",
+    "productType": "傷害險",
+    "currency": "新台幣",
+    "status": "停售",
+    "saleDate": "2017-01-01",
+    "stopDate": "2018-09-09",
+    "versionFolder": "v0",
+    "productFolder": "南山人壽新意外骨折及特定手術傷害保險附約",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ]
+  },
+  "206291EZ1A30121A11Z10000001": {
+    "company": "南山人壽保險股份有限公司",
+    "productName": "南山人壽意外傷害保險家庭型批註條款(第1次部分變更)",
+    "planCode": "206291EZ1A30121A11Z10000001",
+    "contractType": "主約",
+    "productType": "傷害險",
+    "currency": "新台幣",
+    "status": "停售",
+    "saleDate": "2017-01-01",
+    "stopDate": "2021-06-30",
+    "versionFolder": "v1",
+    "productFolder": "南山人壽意外傷害保險家庭型批註條款",
+    "docTypes": [
+      "條款",
+      "費率"
+    ]
+  },
+  "206211RZ1A30221A11Z10000014": {
+    "company": "南山人壽保險股份有限公司",
+    "productName": "南山人壽傷害保險附約(第14次部分變更)",
+    "planCode": "206211RZ1A30221A11Z10000014",
+    "contractType": "附約",
+    "productType": "傷害險",
+    "currency": "新台幣",
+    "status": "停售",
+    "saleDate": "2017-01-01",
+    "stopDate": "2018-09-09",
+    "versionFolder": "v14",
+    "productFolder": "南山人壽傷害保險附約",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ]
+  },
+  "206221MZ1A30221A11Z10000018": {
+    "company": "南山人壽保險股份有限公司",
+    "productName": "南山人壽旅行平安保險(第18次部分變更)",
+    "planCode": "206221MZ1A30221A11Z10000018",
+    "contractType": "主約",
+    "productType": "傷害險",
+    "currency": "新台幣",
+    "status": "停售",
+    "saleDate": "2018-09-10",
+    "stopDate": "2019-12-31",
+    "versionFolder": "v18",
+    "productFolder": "南山人壽旅行平安保險",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ]
+  },
+  "206291AZ1A30121A11Z10000009": {
+    "company": "南山人壽保險股份有限公司",
+    "productName": "南山人壽骨動青春傷害補償附加條款(第9次部分變更)",
+    "planCode": "206291AZ1A30121A11Z10000009",
+    "contractType": "附約",
+    "productType": "傷害險",
+    "currency": "新台幣",
+    "status": "停售",
+    "saleDate": "2018-09-10",
+    "stopDate": "2019-12-31",
+    "versionFolder": "v9",
+    "productFolder": "南山人壽骨動青春傷害補償附加條款",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ]
+  },
+  "206291MZ1A30221A11Z10000001": {
+    "company": "南山人壽保險股份有限公司",
+    "productName": "南山人壽新意外骨折及特定手術傷害保險(第1次部分變更)",
+    "planCode": "206291MZ1A30221A11Z10000001",
+    "contractType": "主約",
+    "productType": "傷害險",
+    "currency": "新台幣",
+    "status": "停售",
+    "saleDate": "2018-09-10",
+    "stopDate": "2019-12-31",
+    "versionFolder": "v1",
+    "productFolder": "南山人壽新意外骨折及特定手術傷害保險",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ]
+  },
+  "206211MZ1A30221A11Z10000008": {
+    "company": "南山人壽保險股份有限公司",
+    "productName": "南山人壽長青傷害保險(第8次部分變更)",
+    "planCode": "206211MZ1A30221A11Z10000008",
+    "contractType": "主約",
+    "productType": "傷害險",
+    "currency": "新台幣",
+    "status": "停售",
+    "saleDate": "2018-09-10",
+    "stopDate": "2019-12-31",
+    "versionFolder": "v8",
+    "productFolder": "南山人壽長青傷害保險",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ]
+  },
+  "206211MZ1A30121A11Z10000014": {
+    "company": "南山人壽保險股份有限公司",
+    "productName": "南山人壽新人身意外傷害保險(第14次部分變更)",
+    "planCode": "206211MZ1A30121A11Z10000014",
+    "contractType": "主約",
+    "productType": "傷害險",
+    "currency": "新台幣",
+    "status": "停售",
+    "saleDate": "2018-09-10",
+    "stopDate": "2019-12-31",
+    "versionFolder": "v14",
+    "productFolder": "南山人壽新人身意外傷害保險",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ]
+  },
+  "206211MZ1A30121A11A10000006": {
+    "company": "南山人壽保險股份有限公司",
+    "productName": "南山人壽一年期微型傷害保險(第6次部分變更)",
+    "planCode": "206211MZ1A30121A11A10000006",
+    "contractType": "主約",
+    "productType": "傷害險",
+    "currency": "新台幣",
+    "status": "停售",
+    "saleDate": "2018-09-10",
+    "stopDate": "2019-12-31",
+    "versionFolder": "v6",
+    "productFolder": "南山人壽一年期微型傷害保險",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ]
+  },
+  "206211RZ3D30121A11Z10000002": {
+    "company": "南山人壽保險股份有限公司",
+    "productName": "南山人壽新傷害保險附約(第2次部分變更)",
+    "planCode": "206211RZ3D30121A11Z10000002",
+    "contractType": "附約",
+    "productType": "傷害險",
+    "currency": "新台幣",
+    "status": "停售",
+    "saleDate": "2020-01-01",
+    "stopDate": "2020-08-30",
+    "versionFolder": "v2",
+    "productFolder": "南山人壽新傷害保險附約",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ]
+  },
+  "206211RZ1A30123A11Z10000002": {
+    "company": "南山人壽保險股份有限公司",
+    "productName": "南山人壽福愛終身傷害保險附約(第2次部分變更)",
+    "planCode": "206211RZ1A30123A11Z10000002",
+    "contractType": "附約",
+    "productType": "傷害險",
+    "currency": "新台幣",
+    "status": "停售",
+    "saleDate": "2020-01-01",
+    "stopDate": "2020-07-01",
+    "versionFolder": "v2",
+    "productFolder": "南山人壽福愛終身傷害保險附約",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ]
+  },
+  "206221AZ1A30221A11Z10000002": {
+    "company": "南山人壽保險股份有限公司",
+    "productName": "南山人壽新網路投保傷害醫療費用給付附加條款(第2次部分變更)",
+    "planCode": "206221AZ1A30221A11Z10000002",
+    "contractType": "附約",
+    "productType": "傷害險",
+    "currency": "新台幣",
+    "status": "停售",
+    "saleDate": "2020-01-01",
+    "stopDate": "2021-12-10",
+    "versionFolder": "v2",
+    "productFolder": "南山人壽新網路投保傷害醫療費用給付附加條款",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ]
+  },
+  "206221AZ1A30121A11Z10000003": {
+    "company": "南山人壽保險股份有限公司",
+    "productName": "南山人壽網路投保傷害醫療費用給付附加條款(第3次部分變更)",
+    "planCode": "206221AZ1A30121A11Z10000003",
+    "contractType": "附約",
+    "productType": "傷害險",
+    "currency": "新台幣",
+    "status": "現售",
+    "saleDate": "2020-01-01",
+    "stopDate": "",
+    "versionFolder": "v3",
+    "productFolder": "南山人壽網路投保傷害醫療費用給付附加條款",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ]
+  },
+  "206291MZ1D30221A11Z10000006": {
+    "company": "南山人壽保險股份有限公司",
+    "productName": "南山人壽海外暢遊保險(第6次部分變更)",
+    "planCode": "206291MZ1D30221A11Z10000006",
+    "contractType": "主約",
+    "productType": "其他",
+    "currency": "新台幣",
+    "status": "停售",
+    "saleDate": "2020-01-01",
+    "stopDate": "2020-08-30",
+    "versionFolder": "v6",
+    "productFolder": "南山人壽海外暢遊保險",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ]
+  },
+  "206211MZ1A30221A11Z10000010": {
+    "company": "南山人壽保險股份有限公司",
+    "productName": "南山人壽長青傷害保險(第10次部分變更)",
+    "planCode": "206211MZ1A30221A11Z10000010",
+    "contractType": "主約",
+    "productType": "傷害險",
+    "currency": "新台幣",
+    "status": "停售",
+    "saleDate": "2020-08-31",
+    "stopDate": "2024-09-13",
+    "versionFolder": "v10",
+    "productFolder": "南山人壽長青傷害保險",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ]
+  },
+  "206221MZ1A30221A11Z10000021": {
+    "company": "南山人壽保險股份有限公司",
+    "productName": "南山人壽旅行平安保險(第21次部分變更)",
+    "planCode": "206221MZ1A30221A11Z10000021",
+    "contractType": "主約",
+    "productType": "傷害險",
+    "currency": "新台幣",
+    "status": "停售",
+    "saleDate": "2021-01-01",
+    "stopDate": "2022-04-01",
+    "versionFolder": "v21",
+    "productFolder": "南山人壽旅行平安保險",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ]
+  },
+  "206211RZ1A30121A11D10000000": {
+    "company": "南山人壽保險股份有限公司",
+    "productName": "南山人壽Full樂平安小額傷害保險附約",
+    "planCode": "206211RZ1A30121A11D10000000",
+    "contractType": "附約",
+    "productType": "傷害險",
+    "currency": "新台幣",
+    "status": "停售",
+    "saleDate": "2021-07-01",
+    "stopDate": "2024-09-13",
+    "versionFolder": "v0",
+    "productFolder": "南山人壽Full樂平安小額傷害保險附約",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ]
+  },
+  "206211RZ1A30621A11Z10000000": {
+    "company": "南山人壽保險股份有限公司",
+    "productName": "南山人壽成意實足意外傷害醫療保險附約",
+    "planCode": "206211RZ1A30621A11Z10000000",
+    "contractType": "附約",
+    "productType": "傷害險",
+    "currency": "新台幣",
+    "status": "停售",
+    "saleDate": "2022-03-19",
+    "stopDate": "2022-12-01",
+    "versionFolder": "v0",
+    "productFolder": "南山人壽成意實足意外傷害醫療保險附約",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ]
+  },
+  "206211RZ1A30621A11Z10000001": {
+    "company": "南山人壽保險股份有限公司",
+    "productName": "南山人壽成意實足意外傷害醫療保險附約(第1次部分變更)",
+    "planCode": "206211RZ1A30621A11Z10000001",
+    "contractType": "附約",
+    "productType": "傷害險",
+    "currency": "新台幣",
+    "status": "停售",
+    "saleDate": "2022-12-02",
+    "stopDate": "2024-09-13",
+    "versionFolder": "v1",
+    "productFolder": "南山人壽成意實足意外傷害醫療保險附約",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ]
+  },
+  "206211MZ1A30321A11A10000000": {
+    "company": "南山人壽保險股份有限公司",
+    "productName": "南山人壽Full樂微型傷害保險",
+    "planCode": "206211MZ1A30321A11A10000000",
+    "contractType": "主約",
+    "productType": "傷害險",
+    "currency": "新台幣",
+    "status": "停售",
+    "saleDate": "2022-12-17",
+    "stopDate": "2024-09-13",
+    "versionFolder": "v0",
+    "productFolder": "南山人壽Full樂微型傷害保險",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ]
+  },
+  "206291RZ1A30421A11Z10000002": {
+    "company": "南山人壽保險股份有限公司",
+    "productName": "南山人壽意外骨折及特定手術傷害醫療保險附約(第2次部分變更)",
+    "planCode": "206291RZ1A30421A11Z10000002",
+    "contractType": "附約",
+    "productType": "傷害險",
+    "currency": "新台幣",
+    "status": "現售",
+    "saleDate": "2024-09-14",
+    "stopDate": "",
+    "versionFolder": "v2",
+    "productFolder": "南山人壽意外骨折及特定手術傷害醫療保險附約",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ]
+  },
+  "206211RZ1A30821A11Z10000001": {
+    "company": "南山人壽保險股份有限公司",
+    "productName": "南山人壽珍安康2意外傷害保險附約(第1次部分變更)",
+    "planCode": "206211RZ1A30821A11Z10000001",
+    "contractType": "附約",
+    "productType": "傷害險",
+    "currency": "新台幣",
+    "status": "現售",
+    "saleDate": "2024-09-14",
+    "stopDate": "",
+    "versionFolder": "v1",
+    "productFolder": "南山人壽珍安康2意外傷害保險附約",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ]
+  },
+  "206211RZ1A30621A11Z10000002": {
+    "company": "南山人壽保險股份有限公司",
+    "productName": "南山人壽成意實足意外傷害醫療保險附約(第2次部分變更)",
+    "planCode": "206211RZ1A30621A11Z10000002",
+    "contractType": "附約",
+    "productType": "傷害險",
+    "currency": "新台幣",
+    "status": "現售",
+    "saleDate": "2024-09-14",
+    "stopDate": "",
+    "versionFolder": "v2",
+    "productFolder": "南山人壽成意實足意外傷害醫療保險附約",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ]
+  },
+  "206211RZ3D30121A11Z10000006": {
+    "company": "南山人壽保險股份有限公司",
+    "productName": "南山人壽新傷害保險附約(第6次部分變更)",
+    "planCode": "206211RZ3D30121A11Z10000006",
+    "contractType": "附約",
+    "productType": "傷害險",
+    "currency": "新台幣",
+    "status": "現售",
+    "saleDate": "2024-09-14",
+    "stopDate": "",
+    "versionFolder": "v6",
+    "productFolder": "南山人壽新傷害保險附約",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ]
+  },
+  "206211RZ1A30521A11Z10000003": {
+    "company": "南山人壽保險股份有限公司",
+    "productName": "南山人壽陪童長大意外傷害保險附約(第3次部分變更)",
+    "planCode": "206211RZ1A30521A11Z10000003",
+    "contractType": "附約",
+    "productType": "傷害險",
+    "currency": "新台幣",
+    "status": "現售",
+    "saleDate": "2024-09-14",
+    "stopDate": "",
+    "versionFolder": "v3",
+    "productFolder": "南山人壽陪童長大意外傷害保險附約",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ]
+  },
+  "206211RZ1A30421A11Z10000002": {
+    "company": "南山人壽保險股份有限公司",
+    "productName": "南山人壽成心相守意外傷害保險附約(第2次部分變更)",
+    "planCode": "206211RZ1A30421A11Z10000002",
+    "contractType": "附約",
+    "productType": "傷害險",
+    "currency": "新台幣",
+    "status": "現售",
+    "saleDate": "2024-09-14",
+    "stopDate": "",
+    "versionFolder": "v2",
+    "productFolder": "南山人壽成心相守意外傷害保險附約",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ]
+  },
+  "206311R11A30308": {
+    "company": "南山人壽保險股份有限公司",
+    "productName": "南山人壽住院費用給付保險附約(第8次部分變更)",
+    "planCode": "206311R11A30308",
+    "contractType": "附約",
+    "productType": "醫療定額",
+    "currency": "新台幣",
+    "status": "停售",
+    "saleDate": "2012-01-01",
+    "stopDate": "2013-02-28",
+    "versionFolder": "v8",
+    "productFolder": "南山人壽住院費用給付保險附約",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ]
+  },
+  "206311M11A30101": {
+    "company": "南山人壽保險股份有限公司",
+    "productName": "南山人壽好EASY終身醫療健康保險(第1次部分變更)",
+    "planCode": "206311M11A30101",
+    "contractType": "主約",
+    "productType": "醫療定額",
+    "currency": "新台幣",
+    "status": "停售",
+    "saleDate": "2013-03-01",
+    "stopDate": "2014-04-30",
+    "versionFolder": "v1",
+    "productFolder": "南山人壽好EASY終身醫療健康保險",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ]
+  },
+  "206311A11A30109": {
+    "company": "南山人壽保險股份有限公司",
+    "productName": "南山人壽住院費用給付保險附約居家療養附加條款(第9次部分變更)",
+    "planCode": "206311A11A30109",
+    "contractType": "附約",
+    "productType": "醫療定額",
+    "currency": "新台幣",
+    "status": "停售",
+    "saleDate": "2013-03-01",
+    "stopDate": "2014-04-30",
+    "versionFolder": "v9",
+    "productFolder": "南山人壽住院費用給付保險附約居家療養附加條款",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ]
+  },
+  "206391M12B30502": {
+    "company": "南山人壽保險股份有限公司",
+    "productName": "南山人壽新終身醫療保險(繳費10年)(第2次部分變更)",
+    "planCode": "206391M12B30502",
+    "contractType": "主約",
+    "productType": "醫療定額",
+    "currency": "新台幣",
+    "status": "停售",
+    "saleDate": "2013-03-01",
+    "stopDate": "2014-04-30",
+    "versionFolder": "v2",
+    "productFolder": "南山人壽新終身醫療保險(繳費10年)",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ]
+  },
+  "206391M12B30602": {
+    "company": "南山人壽保險股份有限公司",
+    "productName": "南山人壽呵護倍至醫療終身保險(第2次部分變更)",
+    "planCode": "206391M12B30602",
+    "contractType": "主約",
+    "productType": "終身壽險",
+    "currency": "新台幣",
+    "status": "停售",
+    "saleDate": "2013-03-01",
+    "stopDate": "2014-05-01",
+    "versionFolder": "v2",
+    "productFolder": "南山人壽呵護倍至醫療終身保險",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ]
+  },
+  "206321M11A30306": {
+    "company": "南山人壽保險股份有限公司",
+    "productName": "南山人壽護您久久終身防癌健康保險(第6次部分變更)",
+    "planCode": "206321M11A30306",
+    "contractType": "主約",
+    "productType": "防癌險",
+    "currency": "新台幣",
+    "status": "停售",
+    "saleDate": "2014-05-01",
+    "stopDate": "2015-08-03",
+    "versionFolder": "v6",
+    "productFolder": "南山人壽護您久久終身防癌健康保險",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ]
+  },
+  "206311A11A30402": {
+    "company": "南山人壽保險股份有限公司",
+    "productName": "南山人壽海外突發疾病醫療健康保險附加條款(第2次部分變更)",
+    "planCode": "206311A11A30402",
+    "contractType": "附約",
+    "productType": "醫療定額",
+    "currency": "新台幣",
+    "status": "停售",
+    "saleDate": "2014-05-01",
+    "stopDate": "2014-12-17",
+    "versionFolder": "v2",
+    "productFolder": "南山人壽海外突發疾病醫療健康保險附加條款",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ]
+  },
+  "206311M11A30102": {
+    "company": "南山人壽保險股份有限公司",
+    "productName": "南山人壽好EASY終身醫療健康保險(第2次部分變更)",
+    "planCode": "206311M11A30102",
+    "contractType": "主約",
+    "productType": "醫療定額",
+    "currency": "新台幣",
+    "status": "停售",
+    "saleDate": "2014-05-01",
+    "stopDate": "2015-01-18",
+    "versionFolder": "v2",
+    "productFolder": "南山人壽好EASY終身醫療健康保險",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ]
+  },
+  "206391M11B30107": {
+    "company": "南山人壽保險股份有限公司",
+    "productName": "南山人壽新終身醫療保險(第7次部份變更)",
+    "planCode": "206391M11B30107",
+    "contractType": "主約",
+    "productType": "醫療定額",
+    "currency": "新台幣",
+    "status": "停售",
+    "saleDate": "2014-05-01",
+    "stopDate": "2015-08-03",
+    "versionFolder": "v7",
+    "productFolder": "南山人壽新終身醫療保險",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ]
+  },
+  "206391M11B30203": {
+    "company": "南山人壽保險股份有限公司",
+    "productName": "南山人壽新終身醫療保險(繳費10年)(第3次部分變更)",
+    "planCode": "206391M11B30203",
+    "contractType": "主約",
+    "productType": "醫療定額",
+    "currency": "新台幣",
+    "status": "停售",
+    "saleDate": "2014-05-01",
+    "stopDate": "2015-08-03",
+    "versionFolder": "v3",
+    "productFolder": "南山人壽新終身醫療保險(繳費10年)",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ]
+  },
+  "206391A11A30202": {
+    "company": "南山人壽保險股份有限公司",
+    "productName": "南山人壽真安心手術醫療終身保險附加條款(第2次部分變更)",
+    "planCode": "206391A11A30202",
+    "contractType": "附約",
+    "productType": "終身壽險",
+    "currency": "新台幣",
+    "status": "停售",
+    "saleDate": "2014-05-01",
+    "stopDate": "2015-08-03",
+    "versionFolder": "v2",
+    "productFolder": "南山人壽真安心手術醫療終身保險附加條款",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ]
+  },
+  "206391M19B30108": {
+    "company": "南山人壽保險股份有限公司",
+    "productName": "南山人壽真安心手術醫療終身保險(第8次部分變更)",
+    "planCode": "206391M19B30108",
+    "contractType": "主約",
+    "productType": "終身壽險",
+    "currency": "新台幣",
+    "status": "停售",
+    "saleDate": "2014-05-01",
+    "stopDate": "2015-08-03",
+    "versionFolder": "v8",
+    "productFolder": "南山人壽真安心手術醫療終身保險",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ]
+  },
+  "206361MZ6B30223A11Z10000004": {
+    "company": "南山人壽保險股份有限公司",
+    "productName": "南山人壽美滿人生長期照顧終身保險(第4次部分變更)",
+    "planCode": "206361MZ6B30223A11Z10000004",
+    "contractType": "主約",
+    "productType": "長照險",
+    "currency": "新台幣",
+    "status": "停售",
+    "saleDate": "2015-08-04",
+    "stopDate": "2016-12-31",
+    "versionFolder": "v4",
+    "productFolder": "南山人壽美滿人生長期照顧終身保險",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ]
+  },
+  "206361MZ6B30123A11Z10000001": {
+    "company": "南山人壽保險股份有限公司",
+    "productName": "南山人壽圓滿人生長期照顧終身保險(第1次部分變更)",
+    "planCode": "206361MZ6B30123A11Z10000001",
+    "contractType": "主約",
+    "productType": "長照險",
+    "currency": "新台幣",
+    "status": "停售",
+    "saleDate": "2015-08-04",
+    "stopDate": "2016-12-31",
+    "versionFolder": "v1",
+    "productFolder": "南山人壽圓滿人生長期照顧終身保險",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ]
+  },
+  "206361MZ6B30323A11Z10000003": {
+    "company": "南山人壽保險股份有限公司",
+    "productName": "南山人壽珍愛守護長期照顧終身保險(第3次部分變更)",
+    "planCode": "206361MZ6B30323A11Z10000003",
+    "contractType": "主約",
+    "productType": "長照險",
+    "currency": "新台幣",
+    "status": "停售",
+    "saleDate": "2015-08-04",
+    "stopDate": "2016-12-31",
+    "versionFolder": "v3",
+    "productFolder": "南山人壽珍愛守護長期照顧終身保險",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ]
+  },
+  "206391AZ1A30123A11Z10000003": {
+    "company": "南山人壽保險股份有限公司",
+    "productName": "南山人壽真安心手術醫療終身保險附加條款(第3次部分變更)",
+    "planCode": "206391AZ1A30123A11Z10000003",
+    "contractType": "附約",
+    "productType": "終身壽險",
+    "currency": "新台幣",
+    "status": "停售",
+    "saleDate": "2015-08-04",
+    "stopDate": "2017-01-01",
+    "versionFolder": "v3",
+    "productFolder": "南山人壽真安心手術醫療終身保險附加條款",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ]
+  },
+  "206341RZ1A30121A11Z10000003": {
+    "company": "南山人壽保險股份有限公司",
+    "productName": "南山人壽愛家保要保人豁免保險費附約(第3次部分變更)",
+    "planCode": "206341RZ1A30121A11Z10000003",
+    "contractType": "附約",
+    "productType": "其他",
+    "currency": "新台幣",
+    "status": "停售",
+    "saleDate": "2016-01-01",
+    "stopDate": "2018-06-07",
+    "versionFolder": "v3",
+    "productFolder": "南山人壽愛家保要保人豁免保險費附約",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ]
+  },
+  "206311MZ1A30123A11Z10000005": {
+    "company": "南山人壽保險股份有限公司",
+    "productName": "南山人壽好EASY終身醫療健康保險(第5次部分變更)",
+    "planCode": "206311MZ1A30123A11Z10000005",
+    "contractType": "主約",
+    "productType": "醫療定額",
+    "currency": "新台幣",
+    "status": "停售",
+    "saleDate": "2017-01-01",
+    "stopDate": "2018-09-09",
+    "versionFolder": "v5",
+    "productFolder": "南山人壽好EASY終身醫療健康保險",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ]
+  },
+  "206311RZ1A30321A11Z10000000": {
+    "company": "南山人壽保險股份有限公司",
+    "productName": "南山人壽好醫靠住院醫療健康保險附約",
+    "planCode": "206311RZ1A30321A11Z10000000",
+    "contractType": "附約",
+    "productType": "醫療定額",
+    "currency": "新台幣",
+    "status": "停售",
+    "saleDate": "2017-01-01",
+    "stopDate": "2019-12-31",
+    "versionFolder": "v0",
+    "productFolder": "南山人壽好醫靠住院醫療健康保險附約",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ]
+  },
+  "206361MZ6B30123A11Z10000002": {
+    "company": "南山人壽保險股份有限公司",
+    "productName": "南山人壽圓滿人生長期照顧終身保險(第2次部分變更)",
+    "planCode": "206361MZ6B30123A11Z10000002",
+    "contractType": "主約",
+    "productType": "長照險",
+    "currency": "新台幣",
+    "status": "停售",
+    "saleDate": "2017-01-01",
+    "stopDate": "2018-09-09",
+    "versionFolder": "v2",
+    "productFolder": "南山人壽圓滿人生長期照顧終身保險",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ]
+  },
+  "206361MZ6B30223A11Z10000005": {
+    "company": "南山人壽保險股份有限公司",
+    "productName": "南山人壽美滿人生長期照顧終身保險(第5次部分變更)",
+    "planCode": "206361MZ6B30223A11Z10000005",
+    "contractType": "主約",
+    "productType": "長照險",
+    "currency": "新台幣",
+    "status": "停售",
+    "saleDate": "2017-01-01",
+    "stopDate": "2018-09-09",
+    "versionFolder": "v5",
+    "productFolder": "南山人壽美滿人生長期照顧終身保險",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ]
+  },
+  "206361RZ1A30122A11Z10000000": {
+    "company": "南山人壽保險股份有限公司",
+    "productName": "南山人壽呵護人生長期照顧健康保險附約",
+    "planCode": "206361RZ1A30122A11Z10000000",
+    "contractType": "附約",
+    "productType": "長照險",
+    "currency": "新台幣",
+    "status": "停售",
+    "saleDate": "2017-01-01",
+    "stopDate": "2018-09-09",
+    "versionFolder": "v0",
+    "productFolder": "南山人壽呵護人生長期照顧健康保險附約",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ]
+  },
+  "206311MZ1B30223A11Z10000002": {
+    "company": "南山人壽保險股份有限公司",
+    "productName": "南山人壽健康御守醫療帳戶終身保險(第2次部分變更)",
+    "planCode": "206311MZ1B30223A11Z10000002",
+    "contractType": "主約",
+    "productType": "醫療定額",
+    "currency": "新台幣",
+    "status": "停售",
+    "saleDate": "2017-03-31",
+    "stopDate": "2018-09-09",
+    "versionFolder": "v2",
+    "productFolder": "南山人壽健康御守醫療帳戶終身保險",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ]
+  },
+  "206341RZ1A30121A11Z10000004": {
+    "company": "南山人壽保險股份有限公司",
+    "productName": "南山人壽愛家保要保人豁免保險費附約(第4次部分變更)",
+    "planCode": "206341RZ1A30121A11Z10000004",
+    "contractType": "附約",
+    "productType": "其他",
+    "currency": "新台幣",
+    "status": "停售",
+    "saleDate": "2018-06-08",
+    "stopDate": "2018-09-09",
+    "versionFolder": "v4",
+    "productFolder": "南山人壽愛家保要保人豁免保險費附約",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ]
+  },
+  "206391MZ9B30123B11Z10000001": {
+    "company": "南山人壽保險股份有限公司",
+    "productName": "南山人壽美好康祥B型美元終身保險(第1次部分變更)",
+    "planCode": "206391MZ9B30123B11Z10000001",
+    "contractType": "主約",
+    "productType": "終身壽險",
+    "currency": "美元",
+    "status": "停售",
+    "saleDate": "2018-06-08",
+    "stopDate": "2018-09-09",
+    "versionFolder": "v1",
+    "productFolder": "南山人壽美好康祥B型美元終身保險",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ]
+  },
+  "206311MZ1A30123A11Z10000006": {
+    "company": "南山人壽保險股份有限公司",
+    "productName": "南山人壽好EASY終身醫療健康保險(第6次部分變更)",
+    "planCode": "206311MZ1A30123A11Z10000006",
+    "contractType": "主約",
+    "productType": "醫療定額",
+    "currency": "新台幣",
+    "status": "停售",
+    "saleDate": "2018-09-10",
+    "stopDate": "2019-12-31",
+    "versionFolder": "v6",
+    "productFolder": "南山人壽好EASY終身醫療健康保險",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ]
+  },
+  "206311RZ1A30221A11Z10000012": {
+    "company": "南山人壽保險股份有限公司",
+    "productName": "南山人壽住院費用給付保險附約(第12次部分變更)",
+    "planCode": "206311RZ1A30221A11Z10000012",
+    "contractType": "附約",
+    "productType": "醫療定額",
+    "currency": "新台幣",
+    "status": "停售",
+    "saleDate": "2018-09-10",
+    "stopDate": "2019-12-31",
+    "versionFolder": "v12",
+    "productFolder": "南山人壽住院費用給付保險附約",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ]
+  },
+  "206341RZ1A30121A11Z10000005": {
+    "company": "南山人壽保險股份有限公司",
+    "productName": "南山人壽愛家保要保人豁免保險費附約(第5次部分變更)",
+    "planCode": "206341RZ1A30121A11Z10000005",
+    "contractType": "附約",
+    "productType": "其他",
+    "currency": "新台幣",
+    "status": "停售",
+    "saleDate": "2018-09-10",
+    "stopDate": "2019-12-31",
+    "versionFolder": "v5",
+    "productFolder": "南山人壽愛家保要保人豁免保險費附約",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ]
+  },
+  "206351MZ5B30222A11Z10000002": {
+    "company": "南山人壽保險股份有限公司",
+    "productName": "南山人壽新活力康祥定期健康保險(第2次部分變更)",
+    "planCode": "206351MZ5B30222A11Z10000002",
+    "contractType": "主約",
+    "productType": "醫療定額",
+    "currency": "新台幣",
+    "status": "停售",
+    "saleDate": "2018-09-10",
+    "stopDate": "2019-12-31",
+    "versionFolder": "v2",
+    "productFolder": "南山人壽新活力康祥定期健康保險",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ]
+  },
+  "206351MZ5B30123A11Z10000002": {
+    "company": "南山人壽保險股份有限公司",
+    "productName": "南山人壽圓滿康祥終身健康保險(第2次部分變更)",
+    "planCode": "206351MZ5B30123A11Z10000002",
+    "contractType": "主約",
+    "productType": "醫療定額",
+    "currency": "新台幣",
+    "status": "停售",
+    "saleDate": "2018-09-10",
+    "stopDate": "2019-12-31",
+    "versionFolder": "v2",
+    "productFolder": "南山人壽圓滿康祥終身健康保險",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ]
+  },
+  "206351RZ1A30223A11Z10000003": {
+    "company": "南山人壽保險股份有限公司",
+    "productName": "南山人壽重大疾病終身健康保險附約（乙型）(第3次部分變更)",
+    "planCode": "206351RZ1A30223A11Z10000003",
+    "contractType": "附約",
+    "productType": "重大疾(傷)病險",
+    "currency": "新台幣",
+    "status": "停售",
+    "saleDate": "2018-09-10",
+    "stopDate": "2019-12-31",
+    "versionFolder": "v3",
+    "productFolder": "南山人壽重大疾病終身健康保險附約（乙型）",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ]
+  },
+  "206361MZ6B30323A11Z10000005": {
+    "company": "南山人壽保險股份有限公司",
+    "productName": "南山人壽珍愛守護長期照顧終身保險(第5次部分變更)",
+    "planCode": "206361MZ6B30323A11Z10000005",
+    "contractType": "主約",
+    "productType": "長照險",
+    "currency": "新台幣",
+    "status": "停售",
+    "saleDate": "2018-09-10",
+    "stopDate": "2020-01-01",
+    "versionFolder": "v5",
+    "productFolder": "南山人壽珍愛守護長期照顧終身保險",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ]
+  },
+  "206391MZ1B30123A11Z10000011": {
+    "company": "南山人壽保險股份有限公司",
+    "productName": "南山人壽新終身醫療保險(第11次部分變更)",
+    "planCode": "206391MZ1B30123A11Z10000011",
+    "contractType": "主約",
+    "productType": "醫療定額",
+    "currency": "新台幣",
+    "status": "停售",
+    "saleDate": "2018-09-10",
+    "stopDate": "2019-12-31",
+    "versionFolder": "v11",
+    "productFolder": "南山人壽新終身醫療保險",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ]
+  },
+  "206391MZ9B30123B11Z10000002": {
+    "company": "南山人壽保險股份有限公司",
+    "productName": "南山人壽美好康祥B型美元終身保險(第2次部分變更)",
+    "planCode": "206391MZ9B30123B11Z10000002",
+    "contractType": "主約",
+    "productType": "終身壽險",
+    "currency": "美元",
+    "status": "停售",
+    "saleDate": "2018-09-10",
+    "stopDate": "2018-12-31",
+    "versionFolder": "v2",
+    "productFolder": "南山人壽美好康祥B型美元終身保險",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ]
+  },
+  "206391MZ1B30223A11Z10000007": {
+    "company": "南山人壽保險股份有限公司",
+    "productName": "南山人壽新終身醫療保險(繳費10年)(第7次部分變更)",
+    "planCode": "206391MZ1B30223A11Z10000007",
+    "contractType": "主約",
+    "productType": "醫療定額",
+    "currency": "新台幣",
+    "status": "停售",
+    "saleDate": "2018-09-10",
+    "stopDate": "2019-12-31",
+    "versionFolder": "v7",
+    "productFolder": "南山人壽新終身醫療保險(繳費10年)",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ]
+  },
+  "206361RZ1A30122A11Z10000001": {
+    "company": "南山人壽保險股份有限公司",
+    "productName": "南山人壽呵護人生長期照顧健康保險附約(第1次部分變更)",
+    "planCode": "206361RZ1A30122A11Z10000001",
+    "contractType": "附約",
+    "productType": "長照險",
+    "currency": "新台幣",
+    "status": "停售",
+    "saleDate": "2018-09-10",
+    "stopDate": "2018-12-23",
+    "versionFolder": "v1",
+    "productFolder": "南山人壽呵護人生長期照顧健康保險附約",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ]
+  },
+  "206321RZ1A30123A11Z10000010": {
+    "company": "南山人壽保險股份有限公司",
+    "productName": "南山人壽護您久久癌症醫療終身健康保險附約(2)(第10次部分變更)",
+    "planCode": "206321RZ1A30123A11Z10000010",
+    "contractType": "附約",
+    "productType": "防癌險",
+    "currency": "新台幣",
+    "status": "停售",
+    "saleDate": "2019-01-01",
+    "stopDate": "2019-12-31",
+    "versionFolder": "v10",
+    "productFolder": "南山人壽護您久久癌症醫療終身健康保險附約(2)",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ]
+  },
+  "206321RZ2B30123A11Z10000003": {
+    "company": "南山人壽保險股份有限公司",
+    "productName": "南山人壽超健康B型終身防癌健康保險附約(第3次部分變更)",
+    "planCode": "206321RZ2B30123A11Z10000003",
+    "contractType": "附約",
+    "productType": "防癌險",
+    "currency": "新台幣",
+    "status": "停售",
+    "saleDate": "2019-01-01",
+    "stopDate": "2020-01-01",
+    "versionFolder": "v3",
+    "productFolder": "南山人壽超健康B型終身防癌健康保險附約",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ]
+  },
+  "206321RZ1A30223A11Z10000003": {
+    "company": "南山人壽保險股份有限公司",
+    "productName": "南山人壽超健康A型終身防癌健康保險附約(第3次部分變更)",
+    "planCode": "206321RZ1A30223A11Z10000003",
+    "contractType": "附約",
+    "productType": "防癌險",
+    "currency": "新台幣",
+    "status": "停售",
+    "saleDate": "2019-01-01",
+    "stopDate": "2020-01-01",
+    "versionFolder": "v3",
+    "productFolder": "南山人壽超健康A型終身防癌健康保險附約",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ]
+  },
+  "206391MZ9B30123B11Z10000003": {
+    "company": "南山人壽保險股份有限公司",
+    "productName": "南山人壽美好康祥B型美元終身保險(第3次部分變更)",
+    "planCode": "206391MZ9B30123B11Z10000003",
+    "contractType": "主約",
+    "productType": "終身壽險",
+    "currency": "美元",
+    "status": "停售",
+    "saleDate": "2019-01-01",
+    "stopDate": "2020-01-01",
+    "versionFolder": "v3",
+    "productFolder": "南山人壽美好康祥B型美元終身保險",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ]
+  },
+  "206391MA9B30123B11Z10000001": {
+    "company": "南山人壽保險股份有限公司",
+    "productName": "南山人壽美好康祥2美元終身保險(第1次部分變更)",
+    "planCode": "206391MA9B30123B11Z10000001",
+    "contractType": "主約",
+    "productType": "終身壽險",
+    "currency": "美元",
+    "status": "停售",
+    "saleDate": "2019-01-01",
+    "stopDate": "2019-12-31",
+    "versionFolder": "v1",
+    "productFolder": "南山人壽美好康祥2美元終身保險",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ]
+  },
+  "206391RZ1A30223A11Z10000000": {
+    "company": "南山人壽保險股份有限公司",
+    "productName": "南山人壽樂享健康終身健康保險附約",
+    "planCode": "206391RZ1A30223A11Z10000000",
+    "contractType": "附約",
+    "productType": "醫療定額",
+    "currency": "新台幣",
+    "status": "停售",
+    "saleDate": "2019-01-01",
+    "stopDate": "2019-12-31",
+    "versionFolder": "v0",
+    "productFolder": "南山人壽樂享健康終身健康保險附約",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ]
+  },
+  "206391MZ9B30223B11Z10000003": {
+    "company": "南山人壽保險股份有限公司",
+    "productName": "南山人壽美好康祥B型美元終身保險(繳費6年期、20年期)(第3次部分變更)",
+    "planCode": "206391MZ9B30223B11Z10000003",
+    "contractType": "主約",
+    "productType": "終身壽險",
+    "currency": "美元",
+    "status": "停售",
+    "saleDate": "2019-01-01",
+    "stopDate": "2019-12-31",
+    "versionFolder": "v3",
+    "productFolder": "南山人壽美好康祥B型美元終身保險(繳費6年期、20年期)",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ]
+  },
+  "206351MZ1A30122A11E10000001": {
+    "company": "南山人壽保險股份有限公司",
+    "productName": "南山人壽活力洋溢特定重大傷病定期健康保險(第1次部分變更)",
+    "planCode": "206351MZ1A30122A11E10000001",
+    "contractType": "主約",
+    "productType": "重大疾(傷)病險",
+    "currency": "新台幣",
+    "status": "停售",
+    "saleDate": "2020-01-01",
+    "stopDate": "2022-12-01",
+    "versionFolder": "v1",
+    "productFolder": "南山人壽活力洋溢特定重大傷病定期健康保險",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ]
+  },
+  "206351MZ5B30122A11E10000001": {
+    "company": "南山人壽保險股份有限公司",
+    "productName": "南山人壽樂健康祥定期健康保險(第1次部分變更)",
+    "planCode": "206351MZ5B30122A11E10000001",
+    "contractType": "主約",
+    "productType": "醫療定額",
+    "currency": "新台幣",
+    "status": "停售",
+    "saleDate": "2020-01-01",
+    "stopDate": "2020-08-30",
+    "versionFolder": "v1",
+    "productFolder": "南山人壽樂健康祥定期健康保險",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ]
+  },
+  "206311MZ1A30123A11Z10000007": {
+    "company": "南山人壽保險股份有限公司",
+    "productName": "南山人壽好EASY終身醫療健康保險(第7次部分變更)",
+    "planCode": "206311MZ1A30123A11Z10000007",
+    "contractType": "主約",
+    "productType": "醫療定額",
+    "currency": "新台幣",
+    "status": "停售",
+    "saleDate": "2020-01-01",
+    "stopDate": "2021-07-01",
+    "versionFolder": "v7",
+    "productFolder": "南山人壽好EASY終身醫療健康保險",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ]
+  },
+  "206361MZ6B30223A11Z10000007": {
+    "company": "南山人壽保險股份有限公司",
+    "productName": "南山人壽美滿人生長期照顧終身保險(第7次部分變更)",
+    "planCode": "206361MZ6B30223A11Z10000007",
+    "contractType": "主約",
+    "productType": "長照險",
+    "currency": "新台幣",
+    "status": "停售",
+    "saleDate": "2020-01-01",
+    "stopDate": "2020-04-24",
+    "versionFolder": "v7",
+    "productFolder": "南山人壽美滿人生長期照顧終身保險",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ]
+  },
+  "206391MA9B30223B11Z10000001": {
+    "company": "南山人壽保險股份有限公司",
+    "productName": "南山人壽鑽安心美元終身保險(第1次部分變更)",
+    "planCode": "206391MA9B30223B11Z10000001",
+    "contractType": "主約",
+    "productType": "終身壽險",
+    "currency": "美元",
+    "status": "停售",
+    "saleDate": "2020-01-01",
+    "stopDate": "2020-07-01",
+    "versionFolder": "v1",
+    "productFolder": "南山人壽鑽安心美元終身保險",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ]
+  },
+  "206391MZ1A30122A11Z10000001": {
+    "company": "南山人壽保險股份有限公司",
+    "productName": "南山人壽全心守護定期醫療健康保險(第1次部分變更)",
+    "planCode": "206391MZ1A30122A11Z10000001",
+    "contractType": "主約",
+    "productType": "醫療定額",
+    "currency": "新台幣",
+    "status": "停售",
+    "saleDate": "2020-01-01",
+    "stopDate": "2021-07-01",
+    "versionFolder": "v1",
+    "productFolder": "南山人壽全心守護定期醫療健康保險",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ]
+  },
+  "206391MA9B30123B11Z10000002": {
+    "company": "南山人壽保險股份有限公司",
+    "productName": "南山人壽美好康祥2美元終身保險(第2次部分變更)",
+    "planCode": "206391MA9B30123B11Z10000002",
+    "contractType": "主約",
+    "productType": "終身壽險",
+    "currency": "美元",
+    "status": "停售",
+    "saleDate": "2020-01-01",
+    "stopDate": "2020-07-01",
+    "versionFolder": "v2",
+    "productFolder": "南山人壽美好康祥2美元終身保險",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ]
+  },
+  "206361RZ1A30122A11Z10000003": {
+    "company": "南山人壽保險股份有限公司",
+    "productName": "南山人壽呵護人生長期照顧健康保險附約(第3次部分變更)",
+    "planCode": "206361RZ1A30122A11Z10000003",
+    "contractType": "附約",
+    "productType": "長照險",
+    "currency": "新台幣",
+    "status": "停售",
+    "saleDate": "2020-01-01",
+    "stopDate": "2020-04-24",
+    "versionFolder": "v3",
+    "productFolder": "南山人壽呵護人生長期照顧健康保險附約",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ]
+  },
+  "206391MZ9B30223B11Z10000004": {
+    "company": "南山人壽保險股份有限公司",
+    "productName": "南山人壽美好康祥B型美元終身保險(繳費6年期、20年期)(第4次部分變更)",
+    "planCode": "206391MZ9B30223B11Z10000004",
+    "contractType": "主約",
+    "productType": "終身壽險",
+    "currency": "美元",
+    "status": "停售",
+    "saleDate": "2020-01-01",
+    "stopDate": "2020-08-30",
+    "versionFolder": "v4",
+    "productFolder": "南山人壽美好康祥B型美元終身保險(繳費6年期、20年期)",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ]
+  },
+  "206391MZ9B30323A11Z10000003": {
+    "company": "南山人壽保險股份有限公司",
+    "productName": "南山人壽全心守護醫療終身保險(第3次部分變更)",
+    "planCode": "206391MZ9B30323A11Z10000003",
+    "contractType": "主約",
+    "productType": "終身壽險",
+    "currency": "新台幣",
+    "status": "停售",
+    "saleDate": "2020-01-01",
+    "stopDate": "2020-08-02",
+    "versionFolder": "v3",
+    "productFolder": "南山人壽全心守護醫療終身保險",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ]
+  },
+  "206391RZ1A30223A11Z10000001": {
+    "company": "南山人壽保險股份有限公司",
+    "productName": "南山人壽樂享健康終身健康保險附約(第1次部分變更)",
+    "planCode": "206391RZ1A30223A11Z10000001",
+    "contractType": "附約",
+    "productType": "醫療定額",
+    "currency": "新台幣",
+    "status": "停售",
+    "saleDate": "2020-01-01",
+    "stopDate": "2020-08-30",
+    "versionFolder": "v1",
+    "productFolder": "南山人壽樂享健康終身健康保險附約",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ]
+  },
+  "206391RZ1A30322A11Z10000002": {
+    "company": "南山人壽保險股份有限公司",
+    "productName": "南山人壽安家2定期健康保險附約(第2次部分變更)",
+    "planCode": "206391RZ1A30322A11Z10000002",
+    "contractType": "附約",
+    "productType": "醫療定額",
+    "currency": "新台幣",
+    "status": "停售",
+    "saleDate": "2020-01-01",
+    "stopDate": "2022-12-01",
+    "versionFolder": "v2",
+    "productFolder": "南山人壽安家2定期健康保險附約",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ]
+  },
+  "206391EZ1A30221A11Z10000000": {
+    "company": "南山人壽保險股份有限公司",
+    "productName": "南山人壽法定傳染病等待期間排除批註條款(適用附表商品)",
+    "planCode": "206391EZ1A30221A11Z10000000",
+    "contractType": "主約",
+    "productType": "其他",
+    "currency": "新台幣",
+    "status": "停售",
+    "saleDate": "2020-03-13",
+    "stopDate": "2020-08-02",
+    "versionFolder": "v0",
+    "productFolder": "南山人壽法定傳染病等待期間排除批註條款(適用附表商品)",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ]
+  },
+  "206391MZ1B30123A11Z10000013": {
+    "company": "南山人壽保險股份有限公司",
+    "productName": "南山人壽新終身醫療保險(第13次部分變更)",
+    "planCode": "206391MZ1B30123A11Z10000013",
+    "contractType": "主約",
+    "productType": "醫療定額",
+    "currency": "新台幣",
+    "status": "停售",
+    "saleDate": "2020-04-25",
+    "stopDate": "2020-08-30",
+    "versionFolder": "v13",
+    "productFolder": "南山人壽新終身醫療保險",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ]
+  },
+  "206391MZ1B30223A11Z10000009": {
+    "company": "南山人壽保險股份有限公司",
+    "productName": "南山人壽新終身醫療保險(繳費10年)(第9次部分變更)",
+    "planCode": "206391MZ1B30223A11Z10000009",
+    "contractType": "主約",
+    "productType": "醫療定額",
+    "currency": "新台幣",
+    "status": "停售",
+    "saleDate": "2020-04-25",
+    "stopDate": "2020-08-30",
+    "versionFolder": "v9",
+    "productFolder": "南山人壽新終身醫療保險(繳費10年)",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ]
+  },
+  "206391MZ9B30223A11Z10000003": {
+    "company": "南山人壽保險股份有限公司",
+    "productName": "南山人壽好安心手術醫療終身保險(第3次部分變更)",
+    "planCode": "206391MZ9B30223A11Z10000003",
+    "contractType": "主約",
+    "productType": "終身壽險",
+    "currency": "新台幣",
+    "status": "停售",
+    "saleDate": "2020-04-25",
+    "stopDate": "2020-08-30",
+    "versionFolder": "v3",
+    "productFolder": "南山人壽好安心手術醫療終身保險",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ]
+  },
+  "206391RZ9B30121A11E10000000": {
+    "company": "南山人壽保險股份有限公司",
+    "productName": "南山人壽卡滿溢幸福重大傷病保險附約",
+    "planCode": "206391RZ9B30121A11E10000000",
+    "contractType": "附約",
+    "productType": "重大疾(傷)病險",
+    "currency": "新台幣",
+    "status": "停售",
+    "saleDate": "2020-08-17",
+    "stopDate": "2021-07-01",
+    "versionFolder": "v0",
+    "productFolder": "南山人壽卡滿溢幸福重大傷病保險附約",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ]
+  },
+  "206361MZ6B30123A11Z10000006": {
+    "company": "南山人壽保險股份有限公司",
+    "productName": "南山人壽圓滿人生長期照顧終身保險(第6次部分變更)",
+    "planCode": "206361MZ6B30123A11Z10000006",
+    "contractType": "主約",
+    "productType": "長照險",
+    "currency": "新台幣",
+    "status": "停售",
+    "saleDate": "2020-08-31",
+    "stopDate": "2021-07-31",
+    "versionFolder": "v6",
+    "productFolder": "南山人壽圓滿人生長期照顧終身保險",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ]
+  },
+  "206391RZ1A30223A11Z10000002": {
+    "company": "南山人壽保險股份有限公司",
+    "productName": "南山人壽樂享健康終身健康保險附約(第2次部分變更)",
+    "planCode": "206391RZ1A30223A11Z10000002",
+    "contractType": "附約",
+    "productType": "醫療定額",
+    "currency": "新台幣",
+    "status": "現售",
+    "saleDate": "2020-08-31",
+    "stopDate": "",
+    "versionFolder": "v2",
+    "productFolder": "南山人壽樂享健康終身健康保險附約",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ]
+  },
+  "206361MZ9B30123A11Z10000003": {
+    "company": "南山人壽保險股份有限公司",
+    "productName": "南山人壽全方位長期照顧終身保險(第3次部分變更)",
+    "planCode": "206361MZ9B30123A11Z10000003",
+    "contractType": "主約",
+    "productType": "長照險",
+    "currency": "新台幣",
+    "status": "停售",
+    "saleDate": "2020-08-31",
+    "stopDate": "2021-03-26",
+    "versionFolder": "v3",
+    "productFolder": "南山人壽全方位長期照顧終身保險",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ]
+  },
+  "206391MZ1B30123A11E10000002": {
+    "company": "南山人壽保險股份有限公司",
+    "productName": "南山人壽Hold康雙享醫療終身保險(第2次部分變更)",
+    "planCode": "206391MZ1B30123A11E10000002",
+    "contractType": "主約",
+    "productType": "終身壽險",
+    "currency": "新台幣",
+    "status": "停售",
+    "saleDate": "2020-08-31",
+    "stopDate": "2021-07-01",
+    "versionFolder": "v2",
+    "productFolder": "南山人壽Hold康雙享醫療終身保險",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ]
+  },
+  "206391MZ9B30223A11E10000000": {
+    "company": "南山人壽保險股份有限公司",
+    "productName": "南山人壽全心溢靠醫療終身保險",
+    "planCode": "206391MZ9B30223A11E10000000",
+    "contractType": "主約",
+    "productType": "終身壽險",
+    "currency": "新台幣",
+    "status": "停售",
+    "saleDate": "2022-03-19",
+    "stopDate": "2022-12-01",
+    "versionFolder": "v0",
+    "productFolder": "南山人壽全心溢靠醫療終身保險",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ]
+  },
+  "206391MZ9B30323A11E10000000": {
+    "company": "南山人壽保險股份有限公司",
+    "productName": "南山人壽溢同安心手術醫療終身保險",
+    "planCode": "206391MZ9B30323A11E10000000",
+    "contractType": "主約",
+    "productType": "終身壽險",
+    "currency": "新台幣",
+    "status": "停售",
+    "saleDate": "2022-03-19",
+    "stopDate": "2022-12-01",
+    "versionFolder": "v0",
+    "productFolder": "南山人壽溢同安心手術醫療終身保險",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ]
+  },
+  "206351RZ1A30223A11Z10000005": {
+    "company": "南山人壽保險股份有限公司",
+    "productName": "南山人壽重大疾病終身健康保險附約（乙型）(第5次部分變更)",
+    "planCode": "206351RZ1A30223A11Z10000005",
+    "contractType": "附約",
+    "productType": "重大疾(傷)病險",
+    "currency": "新台幣",
+    "status": "停售",
+    "saleDate": "2022-12-02",
+    "stopDate": "2023-05-13",
+    "versionFolder": "v5",
+    "productFolder": "南山人壽重大疾病終身健康保險附約（乙型）",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ]
+  },
+  "206361MZ1A30122A11Z10000003": {
+    "company": "南山人壽保險股份有限公司",
+    "productName": "南山人壽青年護照長期照顧定期健康保險(第3次部分變更)",
+    "planCode": "206361MZ1A30122A11Z10000003",
+    "contractType": "主約",
+    "productType": "長照險",
+    "currency": "新台幣",
+    "status": "現售",
+    "saleDate": "2022-12-02",
+    "stopDate": "",
+    "versionFolder": "v3",
+    "productFolder": "南山人壽青年護照長期照顧定期健康保險",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ]
+  },
+  "206321MZ1A30123A11E10000001": {
+    "company": "南山人壽保險股份有限公司",
+    "productName": "南山人壽滿溢久久癌症醫療終身健康保險(第1次部分變更)",
+    "planCode": "206321MZ1A30123A11E10000001",
+    "contractType": "主約",
+    "productType": "防癌險",
+    "currency": "新台幣",
+    "status": "停售",
+    "saleDate": "2022-12-02",
+    "stopDate": "2023-05-13",
+    "versionFolder": "v1",
+    "productFolder": "南山人壽滿溢久久癌症醫療終身健康保險",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ]
+  },
+  "206321MZ1A30122A11E10000002": {
+    "company": "南山人壽保險股份有限公司",
+    "productName": "南山人壽美力相守癌症定期健康保險(第2次部分變更)",
+    "planCode": "206321MZ1A30122A11E10000002",
+    "contractType": "主約",
+    "productType": "防癌險",
+    "currency": "新台幣",
+    "status": "現售",
+    "saleDate": "2022-12-02",
+    "stopDate": "",
+    "versionFolder": "v2",
+    "productFolder": "南山人壽美力相守癌症定期健康保險",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ]
+  },
+  "206321RZ1A30123A11E10000001": {
+    "company": "南山人壽保險股份有限公司",
+    "productName": "南山人壽滿溢久久癌症醫療終身健康保險附約(第1次部分變更)",
+    "planCode": "206321RZ1A30123A11E10000001",
+    "contractType": "附約",
+    "productType": "防癌險",
+    "currency": "新台幣",
+    "status": "停售",
+    "saleDate": "2022-12-02",
+    "stopDate": "2023-05-13",
+    "versionFolder": "v1",
+    "productFolder": "南山人壽滿溢久久癌症醫療終身健康保險附約",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ]
+  },
+  "206311MZ1D30122A31E10000004": {
+    "company": "南山人壽保險股份有限公司",
+    "productName": "南山人壽Hold助糖定期醫療保險(第4次部分變更)",
+    "planCode": "206311MZ1D30122A31E10000004",
+    "contractType": "主約",
+    "productType": "醫療定額",
+    "currency": "新台幣",
+    "status": "停售",
+    "saleDate": "2022-12-02",
+    "stopDate": "2024-09-13",
+    "versionFolder": "v4",
+    "productFolder": "南山人壽Hold助糖定期醫療保險",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ]
+  },
+  "206311RZ1A30621A11E10000001": {
+    "company": "南山人壽保險股份有限公司",
+    "productName": "南山人壽新住院醫療健康保險附約(第1次部分變更)",
+    "planCode": "206311RZ1A30621A11E10000001",
+    "contractType": "附約",
+    "productType": "醫療定額",
+    "currency": "新台幣",
+    "status": "停售",
+    "saleDate": "2022-12-02",
+    "stopDate": "2024-06-22",
+    "versionFolder": "v1",
+    "productFolder": "南山人壽新住院醫療健康保險附約",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ]
+  },
+  "206311RZ1A30521A11E10000001": {
+    "company": "南山人壽保險股份有限公司",
+    "productName": "南山人壽日臻幸福住院日額健康保險附約(第1次部分變更)",
+    "planCode": "206311RZ1A30521A11E10000001",
+    "contractType": "附約",
+    "productType": "醫療定額",
+    "currency": "新台幣",
+    "status": "停售",
+    "saleDate": "2022-12-02",
+    "stopDate": "2024-09-13",
+    "versionFolder": "v1",
+    "productFolder": "南山人壽日臻幸福住院日額健康保險附約",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ]
+  },
+  "206311RZ1A30321A11E10000001": {
+    "company": "南山人壽保險股份有限公司",
+    "productName": "南山人壽實踐幸福住院醫療健康保險附約(第1次部分變更)",
+    "planCode": "206311RZ1A30321A11E10000001",
+    "contractType": "附約",
+    "productType": "醫療定額",
+    "currency": "新台幣",
+    "status": "停售",
+    "saleDate": "2022-12-02",
+    "stopDate": "2024-09-13",
+    "versionFolder": "v1",
+    "productFolder": "南山人壽實踐幸福住院醫療健康保險附約",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ]
+  },
+  "206311RZ1A30421A11E10000001": {
+    "company": "南山人壽保險股份有限公司",
+    "productName": "南山人壽超實踐幸福自負額住院醫療健康保險附約(第1次部分變更)",
+    "planCode": "206311RZ1A30421A11E10000001",
+    "contractType": "附約",
+    "productType": "醫療定額",
+    "currency": "新台幣",
+    "status": "停售",
+    "saleDate": "2022-12-02",
+    "stopDate": "2024-09-13",
+    "versionFolder": "v1",
+    "productFolder": "南山人壽超實踐幸福自負額住院醫療健康保險附約",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ]
+  },
+  "206311RZ1A30121A11E10000001": {
+    "company": "南山人壽保險股份有限公司",
+    "productName": "南山人壽實現幸福部分負擔住院醫療健康保險附約(第1次部分變更)",
+    "planCode": "206311RZ1A30121A11E10000001",
+    "contractType": "附約",
+    "productType": "醫療定額",
+    "currency": "新台幣",
+    "status": "停售",
+    "saleDate": "2022-12-02",
+    "stopDate": "2024-01-26",
+    "versionFolder": "v1",
+    "productFolder": "南山人壽實現幸福部分負擔住院醫療健康保險附約",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ]
+  },
+  "206311RZ1A30221A11E10000001": {
+    "company": "南山人壽保險股份有限公司",
+    "productName": "南山人壽手握幸福手術醫療健康保險附約(第1次部分變更)",
+    "planCode": "206311RZ1A30221A11E10000001",
+    "contractType": "附約",
+    "productType": "醫療定額",
+    "currency": "新台幣",
+    "status": "停售",
+    "saleDate": "2022-12-02",
+    "stopDate": "2024-09-13",
+    "versionFolder": "v1",
+    "productFolder": "南山人壽手握幸福手術醫療健康保險附約",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ]
+  },
+  "206361MZ6B30121A11E10000001": {
+    "company": "南山人壽保險股份有限公司",
+    "productName": "南山人壽照亮幸福長期照顧保險(第1次部分變更)",
+    "planCode": "206361MZ6B30121A11E10000001",
+    "contractType": "主約",
+    "productType": "長照險",
+    "currency": "新台幣",
+    "status": "停售",
+    "saleDate": "2022-12-02",
+    "stopDate": "2024-06-30",
+    "versionFolder": "v1",
+    "productFolder": "南山人壽照亮幸福長期照顧保險",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ]
+  },
+  "206361MZ1A30122A11E10000001": {
+    "company": "南山人壽保險股份有限公司",
+    "productName": "南山人壽溢路陪伴長期照顧健康保險(第1次部分變更)",
+    "planCode": "206361MZ1A30122A11E10000001",
+    "contractType": "主約",
+    "productType": "長照險",
+    "currency": "新台幣",
+    "status": "現售",
+    "saleDate": "2022-12-02",
+    "stopDate": "",
+    "versionFolder": "v1",
+    "productFolder": "南山人壽溢路陪伴長期照顧健康保險",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ]
+  },
+  "206361MZ1A30123A11E10000001": {
+    "company": "南山人壽保險股份有限公司",
+    "productName": "南山人壽溢路守護長期照顧終身健康保險(第1次部分變更)",
+    "planCode": "206361MZ1A30123A11E10000001",
+    "contractType": "主約",
+    "productType": "長照險",
+    "currency": "新台幣",
+    "status": "現售",
+    "saleDate": "2022-12-02",
+    "stopDate": "",
+    "versionFolder": "v1",
+    "productFolder": "南山人壽溢路守護長期照顧終身健康保險",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ]
+  },
+  "206361MZ6B30123A11E10000001": {
+    "company": "南山人壽保險股份有限公司",
+    "productName": "南山人壽溢路相守長期照顧終身保險(第1次部分變更)",
+    "planCode": "206361MZ6B30123A11E10000001",
+    "contractType": "主約",
+    "productType": "長照險",
+    "currency": "新台幣",
+    "status": "停售",
+    "saleDate": "2022-12-02",
+    "stopDate": "2024-05-11",
+    "versionFolder": "v1",
+    "productFolder": "南山人壽溢路相守長期照顧終身保險",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ]
+  },
+  "206391RZ1A30223A11Z10000003": {
+    "company": "南山人壽保險股份有限公司",
+    "productName": "南山人壽樂享健康終身健康保險附約(第3次部分變更)",
+    "planCode": "206391RZ1A30223A11Z10000003",
+    "contractType": "附約",
+    "productType": "醫療定額",
+    "currency": "新台幣",
+    "status": "停售",
+    "saleDate": "2022-12-02",
+    "stopDate": "2023-05-13",
+    "versionFolder": "v3",
+    "productFolder": "南山人壽樂享健康終身健康保險附約",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ]
+  },
+  "206391RZ1A30222A11Z10000002": {
+    "company": "南山人壽保險股份有限公司",
+    "productName": "南山人壽真獻情2手術醫療定期健康保險附約(第2次部分變更)",
+    "planCode": "206391RZ1A30222A11Z10000002",
+    "contractType": "附約",
+    "productType": "醫療定額",
+    "currency": "新台幣",
+    "status": "停售",
+    "saleDate": "2022-12-02",
+    "stopDate": "2024-09-13",
+    "versionFolder": "v2",
+    "productFolder": "南山人壽真獻情2手術醫療定期健康保險附約",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ]
+  },
+  "206391MZ9B30222A11E10000000": {
+    "company": "南山人壽保險股份有限公司",
+    "productName": "南山人壽溢同安心2手術醫療保險",
+    "planCode": "206391MZ9B30222A11E10000000",
+    "contractType": "主約",
+    "productType": "醫療定額",
+    "currency": "新台幣",
+    "status": "停售",
+    "saleDate": "2022-12-17",
+    "stopDate": "2023-11-10",
+    "versionFolder": "v0",
+    "productFolder": "南山人壽溢同安心2手術醫療保險",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ]
+  },
+  "206391RZ1A30422A11Z10000000": {
+    "company": "南山人壽保險股份有限公司",
+    "productName": "南山人壽樂享健康2健康保險附約",
+    "planCode": "206391RZ1A30422A11Z10000000",
+    "contractType": "附約",
+    "productType": "醫療定額",
+    "currency": "新台幣",
+    "status": "現售",
+    "saleDate": "2023-03-11",
+    "stopDate": "",
+    "versionFolder": "v0",
+    "productFolder": "南山人壽樂享健康2健康保險附約",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ]
+  },
+  "206361MZ9B30323A11E10000001": {
+    "company": "南山人壽保險股份有限公司",
+    "productName": "南山人壽照得住長期照顧終身保險(第1次部分變更)",
+    "planCode": "206361MZ9B30323A11E10000001",
+    "contractType": "主約",
+    "productType": "長照險",
+    "currency": "新台幣",
+    "status": "停售",
+    "saleDate": "2024-07-01",
+    "stopDate": "2024-09-13",
+    "versionFolder": "v1",
+    "productFolder": "南山人壽照得住長期照顧終身保險",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ]
+  },
+  "206391MZ9B30222A11E10000002": {
+    "company": "南山人壽保險股份有限公司",
+    "productName": "南山人壽溢同安心2手術醫療保險(第2次部分變更)",
+    "planCode": "206391MZ9B30222A11E10000002",
+    "contractType": "主約",
+    "productType": "醫療定額",
+    "currency": "新台幣",
+    "status": "停售",
+    "saleDate": "2024-07-01",
+    "stopDate": "2024-09-13",
+    "versionFolder": "v2",
+    "productFolder": "南山人壽溢同安心2手術醫療保險",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ]
+  },
+  "206391MZ1B30323A11E10000001": {
+    "company": "南山人壽保險股份有限公司",
+    "productName": "南山人壽保滿溢醫療終身保險(第1次部分變更)",
+    "planCode": "206391MZ1B30323A11E10000001",
+    "contractType": "主約",
+    "productType": "終身壽險",
+    "currency": "新台幣",
+    "status": "停售",
+    "saleDate": "2024-07-01",
+    "stopDate": "2024-09-13",
+    "versionFolder": "v1",
+    "productFolder": "南山人壽保滿溢醫療終身保險",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ]
+  },
+  "206391MZ1B30323A11Z10000001": {
+    "company": "南山人壽保險股份有限公司",
+    "productName": "南山人壽樂活洋溢醫療終身保險(第1次部分變更)",
+    "planCode": "206391MZ1B30323A11Z10000001",
+    "contractType": "主約",
+    "productType": "終身壽險",
+    "currency": "新台幣",
+    "status": "停售",
+    "saleDate": "2024-07-01",
+    "stopDate": "2024-09-13",
+    "versionFolder": "v1",
+    "productFolder": "南山人壽樂活洋溢醫療終身保險",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ]
+  },
+  "206391MZ9B30122A11E10000001": {
+    "company": "南山人壽保險股份有限公司",
+    "productName": "南山人壽全心溢靠2醫療保險(第1次部分變更)",
+    "planCode": "206391MZ9B30122A11E10000001",
+    "contractType": "主約",
+    "productType": "醫療定額",
+    "currency": "新台幣",
+    "status": "停售",
+    "saleDate": "2024-07-01",
+    "stopDate": "2024-09-13",
+    "versionFolder": "v1",
+    "productFolder": "南山人壽全心溢靠2醫療保險",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ]
+  },
+  "206311MZ1A30221A11E10000001": {
+    "company": "南山人壽保險股份有限公司",
+    "productName": "南山人壽新日溢幸福住院日額健康保險(第1次部分變更)",
+    "planCode": "206311MZ1A30221A11E10000001",
+    "contractType": "主約",
+    "productType": "醫療定額",
+    "currency": "新台幣",
+    "status": "現售",
+    "saleDate": "2024-09-14",
+    "stopDate": "",
+    "versionFolder": "v1",
+    "productFolder": "南山人壽新日溢幸福住院日額健康保險",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ]
+  },
+  "206311MZ1B30223A11E10000003": {
+    "company": "南山人壽保險股份有限公司",
+    "productName": "南山人壽日溢美滿住院日額終身保險(第3次部分變更)",
+    "planCode": "206311MZ1B30223A11E10000003",
+    "contractType": "主約",
+    "productType": "醫療定額",
+    "currency": "新台幣",
+    "status": "停售",
+    "saleDate": "2024-09-14",
+    "stopDate": "2024-12-20",
+    "versionFolder": "v3",
+    "productFolder": "南山人壽日溢美滿住院日額終身保險",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ]
+  },
+  "206311MZ1D30122A31E10000005": {
+    "company": "南山人壽保險股份有限公司",
+    "productName": "南山人壽Hold助糖定期醫療保險(第5次部分變更)",
+    "planCode": "206311MZ1D30122A31E10000005",
+    "contractType": "主約",
+    "productType": "醫療定額",
+    "currency": "新台幣",
+    "status": "現售",
+    "saleDate": "2024-09-14",
+    "stopDate": "",
+    "versionFolder": "v5",
+    "productFolder": "南山人壽Hold助糖定期醫療保險",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ]
+  },
+  "206311RZ1A30121A11E10000003": {
+    "company": "南山人壽保險股份有限公司",
+    "productName": "南山人壽實現幸福部分負擔住院醫療健康保險附約(第3次部分變更)",
+    "planCode": "206311RZ1A30121A11E10000003",
+    "contractType": "附約",
+    "productType": "醫療定額",
+    "currency": "新台幣",
+    "status": "現售",
+    "saleDate": "2024-09-14",
+    "stopDate": "",
+    "versionFolder": "v3",
+    "productFolder": "南山人壽實現幸福部分負擔住院醫療健康保險附約",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ]
+  },
+  "206311MZ1D30121A31E10000001": {
+    "company": "南山人壽保險股份有限公司",
+    "productName": "南山人壽穩助糖醫療保險(第1次部分變更)",
+    "planCode": "206311MZ1D30121A31E10000001",
+    "contractType": "主約",
+    "productType": "醫療定額",
+    "currency": "新台幣",
+    "status": "現售",
+    "saleDate": "2024-09-14",
+    "stopDate": "",
+    "versionFolder": "v1",
+    "productFolder": "南山人壽穩助糖醫療保險",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ]
+  },
+  "206321AZ1A30221A11E10000006": {
+    "company": "南山人壽保險股份有限公司",
+    "productName": "南山人壽精準醫療癌後基因檢測附加條款(第6次部分變更)",
+    "planCode": "206321AZ1A30221A11E10000006",
+    "contractType": "附約",
+    "productType": "其他",
+    "currency": "新台幣",
+    "status": "停售",
+    "saleDate": "2024-09-14",
+    "stopDate": "2025-07-04",
+    "versionFolder": "v6",
+    "productFolder": "南山人壽精準醫療癌後基因檢測附加條款",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ]
+  },
+  "206391MZ9B30222A11E10000003": {
+    "company": "南山人壽保險股份有限公司",
+    "productName": "南山人壽溢同安心2手術醫療保險(第3次部分變更)",
+    "planCode": "206391MZ9B30222A11E10000003",
+    "contractType": "主約",
+    "productType": "醫療定額",
+    "currency": "新台幣",
+    "status": "停售",
+    "saleDate": "2024-09-14",
+    "stopDate": "2024-12-20",
+    "versionFolder": "v3",
+    "productFolder": "南山人壽溢同安心2手術醫療保險",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ]
+  },
+  "206311AZ1A30721A11Z10000001": {
+    "company": "南山人壽保險股份有限公司",
+    "productName": "南山人壽網路投保安心海外突發疾病醫療健康保險附加條款(第1次部分變更)",
+    "planCode": "206311AZ1A30721A11Z10000001",
+    "contractType": "附約",
+    "productType": "醫療定額",
+    "currency": "新台幣",
+    "status": "停售",
+    "saleDate": "2024-12-14",
+    "stopDate": "2024-12-14",
+    "versionFolder": "v1",
+    "productFolder": "南山人壽網路投保安心海外突發疾病醫療健康保險附加條款",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ]
+  },
+  "206351MZ9B30322A11E10000001": {
+    "company": "南山人壽保險股份有限公司",
+    "productName": "南山人壽精彩雙保精選傷病定期保險(第1次部分變更)",
+    "planCode": "206351MZ9B30322A11E10000001",
+    "contractType": "主約",
+    "productType": "定期壽險",
+    "currency": "新台幣",
+    "status": "現售",
+    "saleDate": "2024-12-21",
+    "stopDate": "",
+    "versionFolder": "v1",
+    "productFolder": "南山人壽精彩雙保精選傷病定期保險",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ]
+  },
+  "206361MZ6B30121A11E10000003": {
+    "company": "南山人壽保險股份有限公司",
+    "productName": "南山人壽照亮幸福長期照顧保險(第3次部分變更)",
+    "planCode": "206361MZ6B30121A11E10000003",
+    "contractType": "主約",
+    "productType": "長照險",
+    "currency": "新台幣",
+    "status": "現售",
+    "saleDate": "2024-12-21",
+    "stopDate": "",
+    "versionFolder": "v3",
+    "productFolder": "南山人壽照亮幸福長期照顧保險",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ]
+  },
+  "206361MZ6B30122A11E10000002": {
+    "company": "南山人壽保險股份有限公司",
+    "productName": "南山人壽溢路相守2長期照顧保險(第2次部分變更)",
+    "planCode": "206361MZ6B30122A11E10000002",
+    "contractType": "主約",
+    "productType": "長照險",
+    "currency": "新台幣",
+    "status": "現售",
+    "saleDate": "2024-12-21",
+    "stopDate": "",
+    "versionFolder": "v2",
+    "productFolder": "南山人壽溢路相守2長期照顧保險",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ]
+  },
+  "206361MZ9B30323A11E10000004": {
+    "company": "南山人壽保險股份有限公司",
+    "productName": "南山人壽照得住長期照顧終身保險(第4次部分變更)",
+    "planCode": "206361MZ9B30323A11E10000004",
+    "contractType": "主約",
+    "productType": "長照險",
+    "currency": "新台幣",
+    "status": "停售",
+    "saleDate": "2024-12-21",
+    "stopDate": "2025-12-16",
+    "versionFolder": "v4",
+    "productFolder": "南山人壽照得住長期照顧終身保險",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ]
+  },
+  "206391MZ9B30223B11Z10000009": {
+    "company": "南山人壽保險股份有限公司",
+    "productName": "南山人壽美好康祥B型美元終身保險(繳費6年期、20年期)(第9次部分變更)",
+    "planCode": "206391MZ9B30223B11Z10000009",
+    "contractType": "主約",
+    "productType": "終身壽險",
+    "currency": "美元",
+    "status": "現售",
+    "saleDate": "2024-12-21",
+    "stopDate": "",
+    "versionFolder": "v9",
+    "productFolder": "南山人壽美好康祥B型美元終身保險(繳費6年期、20年期)",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ]
+  },
+  "206131R11A30104": {
+    "company": "南山人壽保險股份有限公司",
+    "productName": "南山人壽不分紅定期壽險附約(第4次部分變更)",
+    "planCode": "206131R11A30104",
+    "contractType": "附約",
+    "productType": "定期壽險",
+    "currency": "新台幣",
+    "status": "停售",
+    "saleDate": "2008-05-26",
+    "stopDate": "2008-09-21",
+    "versionFolder": "v4",
+    "productFolder": "南山人壽不分紅定期壽險附約",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ]
+  },
+  "206141M11A30406": {
+    "company": "南山人壽保險股份有限公司",
+    "productName": "南山人壽二十年限期繳費終身分紅壽險(第6次部分變更)",
+    "planCode": "206141M11A30406",
+    "contractType": "主約",
+    "productType": "終身壽險",
+    "currency": "新台幣",
+    "status": "停售",
+    "saleDate": "2008-05-26",
+    "stopDate": "2008-09-21",
+    "versionFolder": "v6",
+    "productFolder": "南山人壽二十年限期繳費終身分紅壽險",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ]
+  },
+  "206141M11A30305": {
+    "company": "南山人壽保險股份有限公司",
+    "productName": "南山人壽不分紅新康福終身壽險(第5次部分變更)",
+    "planCode": "206141M11A30305",
+    "contractType": "主約",
+    "productType": "終身壽險",
+    "currency": "新台幣",
+    "status": "停售",
+    "saleDate": "2008-05-26",
+    "stopDate": "2009-07-04",
+    "versionFolder": "v5",
+    "productFolder": "南山人壽不分紅新康福終身壽險",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ]
+  },
+  "206191E11A30103": {
+    "company": "南山人壽保險股份有限公司",
+    "productName": "南山人壽保險金額增加批註條款(第3次部分變更)",
+    "planCode": "206191E11A30103",
+    "contractType": "主約",
+    "productType": "其他",
+    "currency": "新台幣",
+    "status": "停售",
+    "saleDate": "2008-09-22",
+    "stopDate": "2010-08-31",
+    "versionFolder": "v3",
+    "productFolder": "南山人壽保險金額增加批註條款",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ]
+  },
+  "206191M12B30405": {
+    "company": "南山人壽保險股份有限公司",
+    "productName": "南山人壽寵愛佳人婦女終身保險(第5次部分變更)",
+    "planCode": "206191M12B30405",
+    "contractType": "主約",
+    "productType": "終身壽險",
+    "currency": "新台幣",
+    "status": "停售",
+    "saleDate": "2012-01-01",
+    "stopDate": "2014-04-30",
+    "versionFolder": "v5",
+    "productFolder": "南山人壽寵愛佳人婦女終身保險",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ]
+  },
+  "206131M11A30705": {
+    "company": "南山人壽保險股份有限公司",
+    "productName": "南山人壽優活定期壽險(第5次部分變更)",
+    "planCode": "206131M11A30705",
+    "contractType": "主約",
+    "productType": "定期壽險",
+    "currency": "新台幣",
+    "status": "停售",
+    "saleDate": "2012-07-01",
+    "stopDate": "2013-02-23",
+    "versionFolder": "v5",
+    "productFolder": "南山人壽優活定期壽險",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ]
+  },
+  "206131M12A30100": {
+    "company": "南山人壽保險股份有限公司",
+    "productName": "南山人壽家平安定期壽險",
+    "planCode": "206131M12A30100",
+    "contractType": "主約",
+    "productType": "定期壽險",
+    "currency": "新台幣",
+    "status": "停售",
+    "saleDate": "2012-07-01",
+    "stopDate": "2013-07-01",
+    "versionFolder": "v0",
+    "productFolder": "南山人壽家平安定期壽險",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ]
+  },
+  "206121M11A35600": {
+    "company": "南山人壽保險股份有限公司",
+    "productName": "南山人壽美年高昇外幣增額還本終身保險",
+    "planCode": "206121M11A35600",
+    "contractType": "主約",
+    "productType": "儲蓄壽險",
+    "currency": "外幣",
+    "status": "停售",
+    "saleDate": "2013-05-06",
+    "stopDate": "2014-04-30",
+    "versionFolder": "v0",
+    "productFolder": "南山人壽美年高昇外幣增額還本終身保險",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ]
+  },
+  "206141M11A32701": {
+    "company": "南山人壽保險股份有限公司",
+    "productName": "南山人壽新增美利外幣增額終身壽險(第1次部分變更)",
+    "planCode": "206141M11A32701",
+    "contractType": "主約",
+    "productType": "終身壽險",
+    "currency": "外幣",
+    "status": "停售",
+    "saleDate": "2013-12-30",
+    "stopDate": "2014-04-30",
+    "versionFolder": "v1",
+    "productFolder": "南山人壽新增美利外幣增額終身壽險",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ]
+  },
+  "206121M21A31900": {
+    "company": "南山人壽保險股份有限公司",
+    "productName": "南山人壽享利成雙利率變動型還本終身保險",
+    "planCode": "206121M21A31900",
+    "contractType": "主約",
+    "productType": "利率變動型壽險",
+    "currency": "新台幣",
+    "status": "停售",
+    "saleDate": "2014-04-07",
+    "stopDate": "2014-09-14",
+    "versionFolder": "v0",
+    "productFolder": "南山人壽享利成雙利率變動型還本終身保險",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ]
+  },
+  "206121M12A30601": {
+    "company": "南山人壽保險股份有限公司",
+    "productName": "南山人壽玉見幸福567養老保險(第1次部分變更)",
+    "planCode": "206121M12A30601",
+    "contractType": "主約",
+    "productType": "儲蓄壽險",
+    "currency": "新台幣",
+    "status": "停售",
+    "saleDate": "2014-05-01",
+    "stopDate": "2014-12-03",
+    "versionFolder": "v1",
+    "productFolder": "南山人壽玉見幸福567養老保險",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ]
+  },
+  "206121M11A35301": {
+    "company": "南山人壽保險股份有限公司",
+    "productName": "南山人壽滿意年年增額還本終身保險(第1次部分變更)",
+    "planCode": "206121M11A35301",
+    "contractType": "主約",
+    "productType": "儲蓄壽險",
+    "currency": "新台幣",
+    "status": "停售",
+    "saleDate": "2014-05-01",
+    "stopDate": "2015-08-04",
+    "versionFolder": "v1",
+    "productFolder": "南山人壽滿意年年增額還本終身保險",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ]
+  },
+  "206121M11A35101": {
+    "company": "南山人壽保險股份有限公司",
+    "productName": "南山人壽幸福年年外幣增額還本終身保險(第1次部分變更)",
+    "planCode": "206121M11A35101",
+    "contractType": "主約",
+    "productType": "儲蓄壽險",
+    "currency": "外幣",
+    "status": "停售",
+    "saleDate": "2014-05-01",
+    "stopDate": "2015-02-01",
+    "versionFolder": "v1",
+    "productFolder": "南山人壽幸福年年外幣增額還本終身保險",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ]
+  },
+  "206121M11A35201": {
+    "company": "南山人壽保險股份有限公司",
+    "productName": "南山人壽美利豐收外幣增額還本終身保險(第1次部分變更)",
+    "planCode": "206121M11A35201",
+    "contractType": "主約",
+    "productType": "儲蓄壽險",
+    "currency": "外幣",
+    "status": "停售",
+    "saleDate": "2014-05-01",
+    "stopDate": "2015-08-04",
+    "versionFolder": "v1",
+    "productFolder": "南山人壽美利豐收外幣增額還本終身保險",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ]
+  },
+  "206121M21A31601": {
+    "company": "南山人壽保險股份有限公司",
+    "productName": "南山人壽靈活沛2利率變動型養老保險(第1次部分變更)",
+    "planCode": "206121M21A31601",
+    "contractType": "主約",
+    "productType": "利率變動型壽險",
+    "currency": "新台幣",
+    "status": "停售",
+    "saleDate": "2014-05-01",
+    "stopDate": "2014-09-15",
+    "versionFolder": "v1",
+    "productFolder": "南山人壽靈活沛2利率變動型養老保險",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ]
+  },
+  "206121M21A31501": {
+    "company": "南山人壽保險股份有限公司",
+    "productName": "南山人壽靈活沛利率變動型養老保險(第1次部分變更)",
+    "planCode": "206121M21A31501",
+    "contractType": "主約",
+    "productType": "利率變動型壽險",
+    "currency": "新台幣",
+    "status": "停售",
+    "saleDate": "2014-05-01",
+    "stopDate": "2014-09-15",
+    "versionFolder": "v1",
+    "productFolder": "南山人壽靈活沛利率變動型養老保險",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ]
+  },
+  "206121M22A30202": {
+    "company": "南山人壽保險股份有限公司",
+    "productName": "南山人壽鑫利多多利率變動型養老保險(第2次部分變更)",
+    "planCode": "206121M22A30202",
+    "contractType": "主約",
+    "productType": "利率變動型壽險",
+    "currency": "新台幣",
+    "status": "停售",
+    "saleDate": "2014-05-01",
+    "stopDate": "2014-09-15",
+    "versionFolder": "v2",
+    "productFolder": "南山人壽鑫利多多利率變動型養老保險",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ]
+  },
+  "206121M14B30101": {
+    "company": "南山人壽保險股份有限公司",
+    "productName": "南山人壽鴻利年年2增額還本終身保險(第1次部分變更)",
+    "planCode": "206121M14B30101",
+    "contractType": "主約",
+    "productType": "儲蓄壽險",
+    "currency": "新台幣",
+    "status": "停售",
+    "saleDate": "2014-05-01",
+    "stopDate": "2015-08-03",
+    "versionFolder": "v1",
+    "productFolder": "南山人壽鴻利年年2增額還本終身保險",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ]
+  },
+  "206191M16B30101": {
+    "company": "南山人壽保險股份有限公司",
+    "productName": "南山人壽幸福人生長期看護終身保險(第1次部分變更)",
+    "planCode": "206191M16B30101",
+    "contractType": "主約",
+    "productType": "終身壽險",
+    "currency": "新台幣",
+    "status": "停售",
+    "saleDate": "2014-05-01",
+    "stopDate": "2015-06-30",
+    "versionFolder": "v1",
+    "productFolder": "南山人壽幸福人生長期看護終身保險",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ]
+  },
+  "206191M19B30106": {
+    "company": "南山人壽保險股份有限公司",
+    "productName": "南山人壽寵愛佳人婦女終身保險(第6次部分變更)",
+    "planCode": "206191M19B30106",
+    "contractType": "主約",
+    "productType": "終身壽險",
+    "currency": "新台幣",
+    "status": "停售",
+    "saleDate": "2014-05-01",
+    "stopDate": "2015-08-03",
+    "versionFolder": "v6",
+    "productFolder": "南山人壽寵愛佳人婦女終身保險",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ]
+  },
+  "206121M14B30202": {
+    "company": "南山人壽保險股份有限公司",
+    "productName": "南山人壽金旺年年終身保險(第2次部分變更)",
+    "planCode": "206121M14B30202",
+    "contractType": "主約",
+    "productType": "終身壽險",
+    "currency": "新台幣",
+    "status": "停售",
+    "saleDate": "2014-05-01",
+    "stopDate": "2015-08-03",
+    "versionFolder": "v2",
+    "productFolder": "南山人壽金旺年年終身保險",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ]
+  },
+  "206121M14B30301": {
+    "company": "南山人壽保險股份有限公司",
+    "productName": "南山人壽增富年年增額還本終身保險(第1次部分變更)",
+    "planCode": "206121M14B30301",
+    "contractType": "主約",
+    "productType": "儲蓄壽險",
+    "currency": "新台幣",
+    "status": "停售",
+    "saleDate": "2014-05-01",
+    "stopDate": "2015-02-01",
+    "versionFolder": "v1",
+    "productFolder": "南山人壽增富年年增額還本終身保險",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ]
+  },
+  "206191M12A30204": {
+    "company": "南山人壽保險股份有限公司",
+    "productName": "南山人壽意帆風順保本終身保險(第4次部分變更)",
+    "planCode": "206191M12A30204",
+    "contractType": "主約",
+    "productType": "儲蓄壽險",
+    "currency": "新台幣",
+    "status": "停售",
+    "saleDate": "2014-05-01",
+    "stopDate": "2015-08-03",
+    "versionFolder": "v4",
+    "productFolder": "南山人壽意帆風順保本終身保險",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ]
+  },
+  "206141M11A32702": {
+    "company": "南山人壽保險股份有限公司",
+    "productName": "南山人壽新增美利外幣增額終身壽險(第2次部分變更)",
+    "planCode": "206141M11A32702",
+    "contractType": "主約",
+    "productType": "終身壽險",
+    "currency": "外幣",
+    "status": "停售",
+    "saleDate": "2014-05-01",
+    "stopDate": "2015-08-03",
+    "versionFolder": "v2",
+    "productFolder": "南山人壽新增美利外幣增額終身壽險",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ]
+  },
+  "206141M11A31601": {
+    "company": "南山人壽保險股份有限公司",
+    "productName": "南山人壽增多利增額終身壽險(第1次部分變更)",
+    "planCode": "206141M11A31601",
+    "contractType": "主約",
+    "productType": "終身壽險",
+    "currency": "新台幣",
+    "status": "停售",
+    "saleDate": "2014-05-01",
+    "stopDate": "2015-08-04",
+    "versionFolder": "v1",
+    "productFolder": "南山人壽增多利增額終身壽險",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ]
+  },
+  "206131MA1A30123A11Z10000002": {
+    "company": "南山人壽保險股份有限公司",
+    "productName": "南山人壽優利久久利率變動型增額終身壽險(第2次部分變更)",
+    "planCode": "206131MA1A30123A11Z10000002",
+    "contractType": "主約",
+    "productType": "利率變動型壽險",
+    "currency": "新台幣",
+    "status": "停售",
+    "saleDate": "2015-08-04",
+    "stopDate": "2017-01-01",
+    "versionFolder": "v2",
+    "productFolder": "南山人壽優利久久利率變動型增額終身壽險",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ]
+  },
+  "206131MA1A30123B11Z10000001": {
+    "company": "南山人壽保險股份有限公司",
+    "productName": "南山人壽美源豐利美元利率變動型增額終身壽險(第1次部分變更)",
+    "planCode": "206131MA1A30123B11Z10000001",
+    "contractType": "主約",
+    "productType": "利率變動型壽險",
+    "currency": "美元",
+    "status": "停售",
+    "saleDate": "2015-08-04",
+    "stopDate": "2017-01-01",
+    "versionFolder": "v1",
+    "productFolder": "南山人壽美源豐利美元利率變動型增額終身壽險",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ]
+  },
+  "206131MA1A30523B11Z10000002": {
+    "company": "南山人壽保險股份有限公司",
+    "productName": "南山人壽美利久久美元利率變動型增額終身壽險(第2次部分變更)",
+    "planCode": "206131MA1A30523B11Z10000002",
+    "contractType": "主約",
+    "productType": "利率變動型壽險",
+    "currency": "美元",
+    "status": "停售",
+    "saleDate": "2015-08-04",
+    "stopDate": "2017-01-01",
+    "versionFolder": "v2",
+    "productFolder": "南山人壽美利久久美元利率變動型增額終身壽險",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ]
+  },
+  "206131MA1A30223B11Z10000001": {
+    "company": "南山人壽保險股份有限公司",
+    "productName": "南山人壽美利高昇美元利率變動型增額終身壽險(第1次部分變更)",
+    "planCode": "206131MA1A30223B11Z10000001",
+    "contractType": "主約",
+    "productType": "利率變動型壽險",
+    "currency": "美元",
+    "status": "停售",
+    "saleDate": "2015-08-04",
+    "stopDate": "2017-01-01",
+    "versionFolder": "v1",
+    "productFolder": "南山人壽美利高昇美元利率變動型增額終身壽險",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ]
+  },
+  "206131MA1A30323A11Z10000001": {
+    "company": "南山人壽保險股份有限公司",
+    "productName": "南山人壽源源豐利利率變動型增額終身壽險(第1次部分變更)",
+    "planCode": "206131MA1A30323A11Z10000001",
+    "contractType": "主約",
+    "productType": "利率變動型壽險",
+    "currency": "新台幣",
+    "status": "停售",
+    "saleDate": "2015-08-04",
+    "stopDate": "2017-01-01",
+    "versionFolder": "v1",
+    "productFolder": "南山人壽源源豐利利率變動型增額終身壽險",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ]
+  },
+  "206131MA1A30323B11Z10000001": {
+    "company": "南山人壽保險股份有限公司",
+    "productName": "南山人壽美添高昇美元利率變動型增額終身壽險(第1次部分變更)",
+    "planCode": "206131MA1A30323B11Z10000001",
+    "contractType": "主約",
+    "productType": "利率變動型壽險",
+    "currency": "美元",
+    "status": "停售",
+    "saleDate": "2015-08-04",
+    "stopDate": "2016-09-01",
+    "versionFolder": "v1",
+    "productFolder": "南山人壽美添高昇美元利率變動型增額終身壽險",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ]
+  },
+  "206121MA1A30123A11Z10000002": {
+    "company": "南山人壽保險股份有限公司",
+    "productName": "南山人壽享利成雙利率變動型還本終身保險(第2次部分變更)",
+    "planCode": "206121MA1A30123A11Z10000002",
+    "contractType": "主約",
+    "productType": "利率變動型壽險",
+    "currency": "新台幣",
+    "status": "停售",
+    "saleDate": "2015-08-04",
+    "stopDate": "2016-09-01",
+    "versionFolder": "v2",
+    "productFolder": "南山人壽享利成雙利率變動型還本終身保險",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ]
+  },
+  "206191MZ2A30223A11Z10000003": {
+    "company": "南山人壽保險股份有限公司",
+    "productName": "南山人壽意帆風順保本終身保險(繳費6年)(第3次部分變更)",
+    "planCode": "206191MZ2A30223A11Z10000003",
+    "contractType": "主約",
+    "productType": "儲蓄壽險",
+    "currency": "新台幣",
+    "status": "停售",
+    "saleDate": "2015-08-04",
+    "stopDate": "2016-12-31",
+    "versionFolder": "v3",
+    "productFolder": "南山人壽意帆風順保本終身保險(繳費6年)",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ]
+  },
+  "206191MZ2B30123A11Z10000002": {
+    "company": "南山人壽保險股份有限公司",
+    "productName": "南山人壽超安心防癌保本終身保險(第2次部分變更)",
+    "planCode": "206191MZ2B30123A11Z10000002",
+    "contractType": "主約",
+    "productType": "防癌險",
+    "currency": "新台幣",
+    "status": "停售",
+    "saleDate": "2015-08-04",
+    "stopDate": "2017-01-01",
+    "versionFolder": "v2",
+    "productFolder": "南山人壽超安心防癌保本終身保險",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ]
+  },
+  "206191MZ5B30123A11Z10000002": {
+    "company": "南山人壽保險股份有限公司",
+    "productName": "南山人壽福氣康祥終身保險(第2次部分變更)",
+    "planCode": "206191MZ5B30123A11Z10000002",
+    "contractType": "主約",
+    "productType": "終身壽險",
+    "currency": "新台幣",
+    "status": "停售",
+    "saleDate": "2015-08-04",
+    "stopDate": "2015-12-31",
+    "versionFolder": "v2",
+    "productFolder": "南山人壽福氣康祥終身保險",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ]
+  },
+  "206191MZ5B30123B11Z10000001": {
+    "company": "南山人壽保險股份有限公司",
+    "productName": "南山人壽美滿康祥美元終身保險(第1次部分變更)",
+    "planCode": "206191MZ5B30123B11Z10000001",
+    "contractType": "主約",
+    "productType": "終身壽險",
+    "currency": "美元",
+    "status": "停售",
+    "saleDate": "2015-08-04",
+    "stopDate": "2015-12-31",
+    "versionFolder": "v1",
+    "productFolder": "南山人壽美滿康祥美元終身保險",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ]
+  },
+  "206121MA1A30122B11Z10000001": {
+    "company": "南山人壽保險股份有限公司",
+    "productName": "南山人壽美年鑽美元利率變動型養老保險(第1次部分變更)",
+    "planCode": "206121MA1A30122B11Z10000001",
+    "contractType": "主約",
+    "productType": "利率變動型壽險",
+    "currency": "美元",
+    "status": "停售",
+    "saleDate": "2015-08-04",
+    "stopDate": "2017-04-28",
+    "versionFolder": "v1",
+    "productFolder": "南山人壽美年鑽美元利率變動型養老保險",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ]
+  },
+  "206121MA4B30123A11Z10000001": {
+    "company": "南山人壽保險股份有限公司",
+    "productName": "南山人壽雙利年年利率變動型還本終身保險（定期給付型）(第1次部分變更)",
+    "planCode": "206121MA4B30123A11Z10000001",
+    "contractType": "主約",
+    "productType": "利率變動型壽險",
+    "currency": "新台幣",
+    "status": "停售",
+    "saleDate": "2015-08-04",
+    "stopDate": "2016-12-22",
+    "versionFolder": "v1",
+    "productFolder": "南山人壽雙利年年利率變動型還本終身保險（定期給付型）",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ]
+  },
+  "206121MA4B30223A11Z10000001": {
+    "company": "南山人壽保險股份有限公司",
+    "productName": "南山人壽威利618利率變動型還本終身保險（定期給付型）(第1次部分變更)",
+    "planCode": "206121MA4B30223A11Z10000001",
+    "contractType": "主約",
+    "productType": "利率變動型壽險",
+    "currency": "新台幣",
+    "status": "停售",
+    "saleDate": "2015-08-04",
+    "stopDate": "2017-01-01",
+    "versionFolder": "v1",
+    "productFolder": "南山人壽威利618利率變動型還本終身保險（定期給付型）",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ]
+  },
+  "206191MZ1B30123A11Z10000001": {
+    "company": "南山人壽保險股份有限公司",
+    "productName": "南山人壽富貴年年醫療終身保險(第1次部分變更)",
+    "planCode": "206191MZ1B30123A11Z10000001",
+    "contractType": "主約",
+    "productType": "終身壽險",
+    "currency": "新台幣",
+    "status": "停售",
+    "saleDate": "2015-08-04",
+    "stopDate": "2017-01-01",
+    "versionFolder": "v1",
+    "productFolder": "南山人壽富貴年年醫療終身保險",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ]
+  },
+  "206121MA2A30122A11Z10000002": {
+    "company": "南山人壽保險股份有限公司",
+    "productName": "南山人壽年年鑽利率變動型養老保險(第2次部分變更)",
+    "planCode": "206121MA2A30122A11Z10000002",
+    "contractType": "主約",
+    "productType": "利率變動型壽險",
+    "currency": "新台幣",
+    "status": "停售",
+    "saleDate": "2015-08-04",
+    "stopDate": "2016-11-12",
+    "versionFolder": "v2",
+    "productFolder": "南山人壽年年鑽利率變動型養老保險",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ]
+  },
+  "206121MA2A30222A11Z10000003": {
+    "company": "南山人壽保險股份有限公司",
+    "productName": "南山人壽優利圓滿利率變動型養老保險(第3次部分變更)",
+    "planCode": "206121MA2A30222A11Z10000003",
+    "contractType": "主約",
+    "productType": "利率變動型壽險",
+    "currency": "新台幣",
+    "status": "停售",
+    "saleDate": "2015-08-04",
+    "stopDate": "2016-07-01",
+    "versionFolder": "v3",
+    "productFolder": "南山人壽優利圓滿利率變動型養老保險",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ]
+  },
+  "206131MZ1A30423B11Z10000004": {
+    "company": "南山人壽保險股份有限公司",
+    "productName": "南山人壽幸福久久2外幣增額終身壽險(第4次部分變更)",
+    "planCode": "206131MZ1A30423B11Z10000004",
+    "contractType": "主約",
+    "productType": "終身壽險",
+    "currency": "外幣",
+    "status": "停售",
+    "saleDate": "2015-08-04",
+    "stopDate": "2017-01-01",
+    "versionFolder": "v4",
+    "productFolder": "南山人壽幸福久久2外幣增額終身壽險",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ]
+  },
+  "206131MZ1A30123B11Z10000001": {
+    "company": "南山人壽保險股份有限公司",
+    "productName": "南山人壽企業專屬美元增額終身壽險(第1次部分變更)",
+    "planCode": "206131MZ1A30123B11Z10000001",
+    "contractType": "主約",
+    "productType": "終身壽險",
+    "currency": "美元",
+    "status": "停售",
+    "saleDate": "2015-08-04",
+    "stopDate": "2017-01-01",
+    "versionFolder": "v1",
+    "productFolder": "南山人壽企業專屬美元增額終身壽險",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ]
+  },
+  "206131MZ1A30123D11Z10000002": {
+    "company": "南山人壽保險股份有限公司",
+    "productName": "南山人壽新澳利發澳幣增額終身壽險(第2次部分變更)",
+    "planCode": "206131MZ1A30123D11Z10000002",
+    "contractType": "主約",
+    "productType": "終身壽險",
+    "currency": "澳幣",
+    "status": "停售",
+    "saleDate": "2015-08-04",
+    "stopDate": "2015-11-30",
+    "versionFolder": "v2",
+    "productFolder": "南山人壽新澳利發澳幣增額終身壽險",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ]
+  },
+  "206131MZ1A30223B11Z10000003": {
+    "company": "南山人壽保險股份有限公司",
+    "productName": "南山人壽新增美利外幣增額終身壽險(第3次部分變更)",
+    "planCode": "206131MZ1A30223B11Z10000003",
+    "contractType": "主約",
+    "productType": "終身壽險",
+    "currency": "外幣",
+    "status": "停售",
+    "saleDate": "2015-08-04",
+    "stopDate": "2016-08-19",
+    "versionFolder": "v3",
+    "productFolder": "南山人壽新增美利外幣增額終身壽險",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ]
+  },
+  "206131MZ1A30223D11Z10000002": {
+    "company": "南山人壽保險股份有限公司",
+    "productName": "南山人壽澳利發澳幣增額終身壽險(第2次部分變更)",
+    "planCode": "206131MZ1A30223D11Z10000002",
+    "contractType": "主約",
+    "productType": "終身壽險",
+    "currency": "澳幣",
+    "status": "停售",
+    "saleDate": "2015-08-04",
+    "stopDate": "2016-05-01",
+    "versionFolder": "v2",
+    "productFolder": "南山人壽澳利發澳幣增額終身壽險",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ]
+  },
+  "206131MZ1A30323B11Z10000002": {
+    "company": "南山人壽保險股份有限公司",
+    "productName": "南山人壽美滿康順外幣終身壽險(第2次部分變更)",
+    "planCode": "206131MZ1A30323B11Z10000002",
+    "contractType": "主約",
+    "productType": "終身壽險",
+    "currency": "外幣",
+    "status": "停售",
+    "saleDate": "2015-08-04",
+    "stopDate": "2016-01-31",
+    "versionFolder": "v2",
+    "productFolder": "南山人壽美滿康順外幣終身壽險",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ]
+  },
+  "206131MZ1A30122A21Z10000008": {
+    "company": "南山人壽保險股份有限公司",
+    "productName": "南山人壽優活定期壽險(第8次部分變更)",
+    "planCode": "206131MZ1A30122A21Z10000008",
+    "contractType": "主約",
+    "productType": "定期壽險",
+    "currency": "新台幣",
+    "status": "停售",
+    "saleDate": "2015-08-04",
+    "stopDate": "2016-12-31",
+    "versionFolder": "v8",
+    "productFolder": "南山人壽優活定期壽險",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ]
+  },
+  "206121MA4B30323A11Z10000000": {
+    "company": "南山人壽保險股份有限公司",
+    "productName": "南山人壽超多利利率變動型還本終身保險(定期給付型)",
+    "planCode": "206121MA4B30323A11Z10000000",
+    "contractType": "主約",
+    "productType": "利率變動型壽險",
+    "currency": "新台幣",
+    "status": "停售",
+    "saleDate": "2015-08-04",
+    "stopDate": "2017-01-01",
+    "versionFolder": "v0",
+    "productFolder": "南山人壽超多利利率變動型還本終身保險(定期給付型)",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ]
+  },
+  "206121MA4B30423A11Z10000001": {
+    "company": "南山人壽保險股份有限公司",
+    "productName": "南山人壽事事吉利利率變動型還本終身保險(第1次部分變更)",
+    "planCode": "206121MA4B30423A11Z10000001",
+    "contractType": "主約",
+    "productType": "利率變動型壽險",
+    "currency": "新台幣",
+    "status": "停售",
+    "saleDate": "2015-08-04",
+    "stopDate": "2016-09-01",
+    "versionFolder": "v1",
+    "productFolder": "南山人壽事事吉利利率變動型還本終身保險",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ]
+  },
+  "206131MZ1A30323B11Z10000003": {
+    "company": "南山人壽保險股份有限公司",
+    "productName": "南山人壽美滿康順外幣終身壽險(第3次部分變更)",
+    "planCode": "206131MZ1A30323B11Z10000003",
+    "contractType": "主約",
+    "productType": "終身壽險",
+    "currency": "外幣",
+    "status": "停售",
+    "saleDate": "2016-02-01",
+    "stopDate": "2016-10-30",
+    "versionFolder": "v3",
+    "productFolder": "南山人壽美滿康順外幣終身壽險",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ]
+  },
+  "206131MA1A30523A11Z10000000": {
+    "company": "南山人壽保險股份有限公司",
+    "productName": "南山人壽添集利利率變動型增額終身壽險(定期給付型)",
+    "planCode": "206131MA1A30523A11Z10000000",
+    "contractType": "主約",
+    "productType": "利率變動型壽險",
+    "currency": "新台幣",
+    "status": "停售",
+    "saleDate": "2017-01-01",
+    "stopDate": "2018-09-09",
+    "versionFolder": "v0",
+    "productFolder": "南山人壽添集利利率變動型增額終身壽險(定期給付型)",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ]
+  },
+  "206131MA4B30623A11Z10000000": {
+    "company": "南山人壽保險股份有限公司",
+    "productName": "南山人壽金鑽久久利率變動型增額終身壽險(定期給付型)",
+    "planCode": "206131MA4B30623A11Z10000000",
+    "contractType": "主約",
+    "productType": "利率變動型壽險",
+    "currency": "新台幣",
+    "status": "停售",
+    "saleDate": "2017-03-31",
+    "stopDate": "2018-09-09",
+    "versionFolder": "v0",
+    "productFolder": "南山人壽金鑽久久利率變動型增額終身壽險(定期給付型)",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ]
+  },
+  "206131MA1A32123B11Z10000000": {
+    "company": "南山人壽保險股份有限公司",
+    "productName": "南山人壽集美利美元利率變動型增額終身壽險（定期給付型）",
+    "planCode": "206131MA1A32123B11Z10000000",
+    "contractType": "主約",
+    "productType": "利率變動型壽險",
+    "currency": "美元",
+    "status": "停售",
+    "saleDate": "2018-06-08",
+    "stopDate": "2018-09-09",
+    "versionFolder": "v0",
+    "productFolder": "南山人壽集美利美元利率變動型增額終身壽險（定期給付型）",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ]
+  },
+  "206131MA1A32123B11Z10000001": {
+    "company": "南山人壽保險股份有限公司",
+    "productName": "南山人壽集美利美元利率變動型增額終身壽險（定期給付型）(第1次部分變更)",
+    "planCode": "206131MA1A32123B11Z10000001",
+    "contractType": "主約",
+    "productType": "利率變動型壽險",
+    "currency": "美元",
+    "status": "停售",
+    "saleDate": "2018-09-10",
+    "stopDate": "2019-12-31",
+    "versionFolder": "v1",
+    "productFolder": "南山人壽集美利美元利率變動型增額終身壽險（定期給付型）",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ]
+  },
+  "206131MA1A32023B11Z10000001": {
+    "company": "南山人壽保險股份有限公司",
+    "productName": "南山人壽豐利旺旺旺美元利率變動型增額終身壽險（定期給付型）(第1次部分變更)",
+    "planCode": "206131MA1A32023B11Z10000001",
+    "contractType": "主約",
+    "productType": "利率變動型壽險",
+    "currency": "美元",
+    "status": "停售",
+    "saleDate": "2018-09-10",
+    "stopDate": "2020-01-01",
+    "versionFolder": "v1",
+    "productFolder": "南山人壽豐利旺旺旺美元利率變動型增額終身壽險（定期給付型）",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ]
+  },
+  "206131MZ2G30122A11Z10000004": {
+    "company": "南山人壽保險股份有限公司",
+    "productName": "南山人壽幸福安康定期壽險(第4次部分變更)",
+    "planCode": "206131MZ2G30122A11Z10000004",
+    "contractType": "主約",
+    "productType": "定期壽險",
+    "currency": "新台幣",
+    "status": "停售",
+    "saleDate": "2018-09-10",
+    "stopDate": "2018-12-31",
+    "versionFolder": "v4",
+    "productFolder": "南山人壽幸福安康定期壽險",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ]
+  },
+  "206131MZ2A30122A11Z10000005": {
+    "company": "南山人壽保險股份有限公司",
+    "productName": "南山人壽幸福傳家定期壽險(第5次部分變更)",
+    "planCode": "206131MZ2A30122A11Z10000005",
+    "contractType": "主約",
+    "productType": "定期壽險",
+    "currency": "新台幣",
+    "status": "停售",
+    "saleDate": "2018-09-10",
+    "stopDate": "2019-12-31",
+    "versionFolder": "v5",
+    "productFolder": "南山人壽幸福傳家定期壽險",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ]
+  },
+  "206131MZ2A30222A11Z10000005": {
+    "company": "南山人壽保險股份有限公司",
+    "productName": "南山人壽幸福傳家減額定期壽險(第5次部分變更)",
+    "planCode": "206131MZ2A30222A11Z10000005",
+    "contractType": "主約",
+    "productType": "定期壽險",
+    "currency": "新台幣",
+    "status": "停售",
+    "saleDate": "2018-09-10",
+    "stopDate": "2019-12-31",
+    "versionFolder": "v5",
+    "productFolder": "南山人壽幸福傳家減額定期壽險",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ]
+  },
+  "206131MA1A31123B11Z10000002": {
+    "company": "南山人壽保險股份有限公司",
+    "productName": "南山人壽新美超鑽美元利率變動型終身壽險(定期給付型)(第2次部分變更)",
+    "planCode": "206131MA1A31123B11Z10000002",
+    "contractType": "主約",
+    "productType": "利率變動型壽險",
+    "currency": "美元",
+    "status": "停售",
+    "saleDate": "2018-09-10",
+    "stopDate": "2018-12-01",
+    "versionFolder": "v2",
+    "productFolder": "南山人壽新美超鑽美元利率變動型終身壽險(定期給付型)",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ]
+  },
+  "206131MA1A31323B11Z10000001": {
+    "company": "南山人壽保險股份有限公司",
+    "productName": "南山人壽添美利美元利率變動型增額終身壽險（定期給付型）(第1次部分變更)",
+    "planCode": "206131MA1A31323B11Z10000001",
+    "contractType": "主約",
+    "productType": "利率變動型壽險",
+    "currency": "美元",
+    "status": "停售",
+    "saleDate": "2018-09-10",
+    "stopDate": "2020-01-01",
+    "versionFolder": "v1",
+    "productFolder": "南山人壽添美利美元利率變動型增額終身壽險（定期給付型）",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ]
+  },
+  "206131MA1A31223B11Z10000003": {
+    "company": "南山人壽保險股份有限公司",
+    "productName": "南山人壽美圓鑽美元利率變動型終身壽險(定期給付型)(第3次部分變更)",
+    "planCode": "206131MA1A31223B11Z10000003",
+    "contractType": "主約",
+    "productType": "利率變動型壽險",
+    "currency": "美元",
+    "status": "停售",
+    "saleDate": "2018-09-10",
+    "stopDate": "2019-12-31",
+    "versionFolder": "v3",
+    "productFolder": "南山人壽美圓鑽美元利率變動型終身壽險(定期給付型)",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ]
+  },
+  "206131MA1A31023B11Z10000003": {
+    "company": "南山人壽保險股份有限公司",
+    "productName": "南山人壽美鑫鑽美元利率變動型終身壽險（定期給付型）(第3次部分變更)",
+    "planCode": "206131MA1A31023B11Z10000003",
+    "contractType": "主約",
+    "productType": "利率變動型壽險",
+    "currency": "美元",
+    "status": "停售",
+    "saleDate": "2018-09-10",
+    "stopDate": "2018-12-01",
+    "versionFolder": "v3",
+    "productFolder": "南山人壽美鑫鑽美元利率變動型終身壽險（定期給付型）",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ]
+  },
+  "206121MA1A31023A11Z10000001": {
+    "company": "南山人壽保險股份有限公司",
+    "productName": "南山人壽年年添利利率變動型還本終身保險（定期給付型）(第1次部分變更)",
+    "planCode": "206121MA1A31023A11Z10000001",
+    "contractType": "主約",
+    "productType": "利率變動型壽險",
+    "currency": "新台幣",
+    "status": "停售",
+    "saleDate": "2018-09-10",
+    "stopDate": "2019-04-15",
+    "versionFolder": "v1",
+    "productFolder": "南山人壽年年添利利率變動型還本終身保險（定期給付型）",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ]
+  },
+  "206191MA2A30223A11Z10000001": {
+    "company": "南山人壽保險股份有限公司",
+    "productName": "南山人壽意生保倍利率變動型終身保險(第1次部分變更)",
+    "planCode": "206191MA2A30223A11Z10000001",
+    "contractType": "主約",
+    "productType": "利率變動型壽險",
+    "currency": "新台幣",
+    "status": "停售",
+    "saleDate": "2018-09-10",
+    "stopDate": "2019-02-18",
+    "versionFolder": "v1",
+    "productFolder": "南山人壽意生保倍利率變動型終身保險",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ]
+  },
+  "206121MA1A30923A11Z10000002": {
+    "company": "南山人壽保險股份有限公司",
+    "productName": "南山人壽佳多利利率變動型還本終身保險（定期給付型）(第2次部分變更)",
+    "planCode": "206121MA1A30923A11Z10000002",
+    "contractType": "主約",
+    "productType": "利率變動型壽險",
+    "currency": "新台幣",
+    "status": "停售",
+    "saleDate": "2018-09-10",
+    "stopDate": "2020-01-01",
+    "versionFolder": "v2",
+    "productFolder": "南山人壽佳多利利率變動型還本終身保險（定期給付型）",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ]
+  },
+  "206191MZ9B30123A11Z10000008": {
+    "company": "南山人壽保險股份有限公司",
+    "productName": "南山人壽寵愛佳人婦女終身保險(第8次部分變更)",
+    "planCode": "206191MZ9B30123A11Z10000008",
+    "contractType": "主約",
+    "productType": "終身壽險",
+    "currency": "新台幣",
+    "status": "停售",
+    "saleDate": "2018-09-10",
+    "stopDate": "2018-12-31",
+    "versionFolder": "v8",
+    "productFolder": "南山人壽寵愛佳人婦女終身保險",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ]
+  },
+  "206121MA1A30422B11Z10000001": {
+    "company": "南山人壽保險股份有限公司",
+    "productName": "南山人壽美滿鑽美元利率變動型養老保險(第1次部分變更)",
+    "planCode": "206121MA1A30422B11Z10000001",
+    "contractType": "主約",
+    "productType": "利率變動型壽險",
+    "currency": "美元",
+    "status": "停售",
+    "saleDate": "2018-09-10",
+    "stopDate": "2019-09-21",
+    "versionFolder": "v1",
+    "productFolder": "南山人壽美滿鑽美元利率變動型養老保險",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ]
+  },
+  "206131MZ1A30122A11Z10000012": {
+    "company": "南山人壽保險股份有限公司",
+    "productName": "南山人壽不分紅定期壽險(第12次部分變更)",
+    "planCode": "206131MZ1A30122A11Z10000012",
+    "contractType": "主約",
+    "productType": "定期壽險",
+    "currency": "新台幣",
+    "status": "停售",
+    "saleDate": "2018-09-10",
+    "stopDate": "2019-12-31",
+    "versionFolder": "v12",
+    "productFolder": "南山人壽不分紅定期壽險",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ]
+  },
+  "206131MZ1A30122A21Z10000011": {
+    "company": "南山人壽保險股份有限公司",
+    "productName": "南山人壽優活定期壽險(第11次部分變更)",
+    "planCode": "206131MZ1A30122A21Z10000011",
+    "contractType": "主約",
+    "productType": "定期壽險",
+    "currency": "新台幣",
+    "status": "停售",
+    "saleDate": "2018-09-10",
+    "stopDate": "2019-12-31",
+    "versionFolder": "v11",
+    "productFolder": "南山人壽優活定期壽險",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ]
+  },
+  "206131MZ1A30123A11D10000001": {
+    "company": "南山人壽保險股份有限公司",
+    "productName": "南山人壽福愛小額終身壽險(第1次部分變更)",
+    "planCode": "206131MZ1A30123A11D10000001",
+    "contractType": "主約",
+    "productType": "終身壽險",
+    "currency": "新台幣",
+    "status": "停售",
+    "saleDate": "2018-09-10",
+    "stopDate": "2019-12-31",
+    "versionFolder": "v1",
+    "productFolder": "南山人壽福愛小額終身壽險",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ]
+  },
+  "206121MA4G30123A11Z10000001": {
+    "company": "南山人壽保險股份有限公司",
+    "productName": "南山人壽樂活智選利率變動型還本終身保險（定期給付型）(第1次部分變更)",
+    "planCode": "206121MA4G30123A11Z10000001",
+    "contractType": "主約",
+    "productType": "利率變動型壽險",
+    "currency": "新台幣",
+    "status": "停售",
+    "saleDate": "2018-09-10",
+    "stopDate": "2020-01-01",
+    "versionFolder": "v1",
+    "productFolder": "南山人壽樂活智選利率變動型還本終身保險（定期給付型）",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ]
+  },
+  "206131MZ2G30222A11Z10000005": {
+    "company": "南山人壽保險股份有限公司",
+    "productName": "南山人壽幸福安康減額定期壽險(第5次部分變更)",
+    "planCode": "206131MZ2G30222A11Z10000005",
+    "contractType": "主約",
+    "productType": "定期壽險",
+    "currency": "新台幣",
+    "status": "停售",
+    "saleDate": "2019-01-01",
+    "stopDate": "2019-12-31",
+    "versionFolder": "v5",
+    "productFolder": "南山人壽幸福安康減額定期壽險",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ]
+  },
+  "206131MZ2G30122A11Z10000005": {
+    "company": "南山人壽保險股份有限公司",
+    "productName": "南山人壽幸福安康定期壽險(第5次部分變更)",
+    "planCode": "206131MZ2G30122A11Z10000005",
+    "contractType": "主約",
+    "productType": "定期壽險",
+    "currency": "新台幣",
+    "status": "停售",
+    "saleDate": "2019-01-01",
+    "stopDate": "2019-12-31",
+    "versionFolder": "v5",
+    "productFolder": "南山人壽幸福安康定期壽險",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ]
+  },
+  "206131MA1A31823B11Z10000002": {
+    "company": "南山人壽保險股份有限公司",
+    "productName": "南山人壽添美福美元利率變動型終身壽險（定期給付型）(第2次部分變更)",
+    "planCode": "206131MA1A31823B11Z10000002",
+    "contractType": "主約",
+    "productType": "利率變動型壽險",
+    "currency": "美元",
+    "status": "停售",
+    "saleDate": "2020-01-01",
+    "stopDate": "2020-07-01",
+    "versionFolder": "v2",
+    "productFolder": "南山人壽添美福美元利率變動型終身壽險（定期給付型）",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ]
+  },
+  "206191MZ2A30123A11Z10000008": {
+    "company": "南山人壽保險股份有限公司",
+    "productName": "南山人壽意帆風順保本終身保險(第8次部分變更)",
+    "planCode": "206191MZ2A30123A11Z10000008",
+    "contractType": "主約",
+    "productType": "儲蓄壽險",
+    "currency": "新台幣",
+    "status": "停售",
+    "saleDate": "2020-01-01",
+    "stopDate": "2020-08-30",
+    "versionFolder": "v8",
+    "productFolder": "南山人壽意帆風順保本終身保險",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ]
+  },
+  "206191MZ2A30223A11Z10000006": {
+    "company": "南山人壽保險股份有限公司",
+    "productName": "南山人壽意帆風順保本終身保險(繳費6年)(第6次部分變更)",
+    "planCode": "206191MZ2A30223A11Z10000006",
+    "contractType": "主約",
+    "productType": "儲蓄壽險",
+    "currency": "新台幣",
+    "status": "停售",
+    "saleDate": "2020-01-01",
+    "stopDate": "2020-07-01",
+    "versionFolder": "v6",
+    "productFolder": "南山人壽意帆風順保本終身保險(繳費6年)",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ]
+  },
+  "206121MA1A31223B11Z10000002": {
+    "company": "南山人壽保險股份有限公司",
+    "productName": "南山人壽美年金鑽美元利率變動型還本終身保險（定期給付型）(第2次部分變更)",
+    "planCode": "206121MA1A31223B11Z10000002",
+    "contractType": "主約",
+    "productType": "利率變動型壽險",
+    "currency": "美元",
+    "status": "停售",
+    "saleDate": "2020-01-01",
+    "stopDate": "2020-07-01",
+    "versionFolder": "v2",
+    "productFolder": "南山人壽美年金鑽美元利率變動型還本終身保險（定期給付型）",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ]
+  },
+  "206131MA1A32823B11Z10000001": {
+    "company": "南山人壽保險股份有限公司",
+    "productName": "南山人壽多美福美元利率變動型壽險（定期給付型）(第1次部分變更)",
+    "planCode": "206131MA1A32823B11Z10000001",
+    "contractType": "主約",
+    "productType": "利率變動型壽險",
+    "currency": "美元",
+    "status": "停售",
+    "saleDate": "2020-01-01",
+    "stopDate": "2020-02-29",
+    "versionFolder": "v1",
+    "productFolder": "南山人壽多美福美元利率變動型壽險（定期給付型）",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ]
+  },
+  "206121MA1A30423B11Z10000003": {
+    "company": "南山人壽保險股份有限公司",
+    "productName": "南山人壽美年集利美元利率變動型還本終身保險（定期給付型）(第3次部分變更)",
+    "planCode": "206121MA1A30423B11Z10000003",
+    "contractType": "主約",
+    "productType": "利率變動型壽險",
+    "currency": "美元",
+    "status": "停售",
+    "saleDate": "2020-01-01",
+    "stopDate": "2020-07-01",
+    "versionFolder": "v3",
+    "productFolder": "南山人壽美年集利美元利率變動型還本終身保險（定期給付型）",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ]
+  },
+  "206121MA1A30522B11Z10000001": {
+    "company": "南山人壽保險股份有限公司",
+    "productName": "南山人壽美好鑽美元利率變動型養老保險（定期給付型）(第1次部分變更)",
+    "planCode": "206121MA1A30522B11Z10000001",
+    "contractType": "主約",
+    "productType": "利率變動型壽險",
+    "currency": "美元",
+    "status": "停售",
+    "saleDate": "2020-01-01",
+    "stopDate": "2020-07-01",
+    "versionFolder": "v1",
+    "productFolder": "南山人壽美好鑽美元利率變動型養老保險（定期給付型）",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ]
+  },
+  "206121MA1A30823B11Z10000002": {
+    "company": "南山人壽保險股份有限公司",
+    "productName": "南山人壽美利雙享3美元利率變動型還本終身保險(定期給付型)(第2次部分變更)",
+    "planCode": "206121MA1A30823B11Z10000002",
+    "contractType": "主約",
+    "productType": "利率變動型壽險",
+    "currency": "美元",
+    "status": "停售",
+    "saleDate": "2020-01-01",
+    "stopDate": "2020-03-01",
+    "versionFolder": "v2",
+    "productFolder": "南山人壽美利雙享3美元利率變動型還本終身保險(定期給付型)",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ]
+  },
+  "206121MA1A30723B11Z10000002": {
+    "company": "南山人壽保險股份有限公司",
+    "productName": "南山人壽佳美利美元利率變動型還本終身保險（定期給付型）(第2次部分變更)",
+    "planCode": "206121MA1A30723B11Z10000002",
+    "contractType": "主約",
+    "productType": "利率變動型壽險",
+    "currency": "美元",
+    "status": "停售",
+    "saleDate": "2020-01-01",
+    "stopDate": "2020-07-01",
+    "versionFolder": "v2",
+    "productFolder": "南山人壽佳美利美元利率變動型還本終身保險（定期給付型）",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ]
+  },
+  "206131MA4G30123A11Z10000003": {
+    "company": "南山人壽保險股份有限公司",
+    "productName": "南山人壽創薪世代利率變動型增額終身保險（定期給付型）(第3次部分變更)",
+    "planCode": "206131MA4G30123A11Z10000003",
+    "contractType": "主約",
+    "productType": "利率變動型壽險",
+    "currency": "新台幣",
+    "status": "停售",
+    "saleDate": "2020-01-01",
+    "stopDate": "2020-07-01",
+    "versionFolder": "v3",
+    "productFolder": "南山人壽創薪世代利率變動型增額終身保險（定期給付型）",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ]
+  },
+  "206131MA4B30823A11Z10000002": {
+    "company": "南山人壽保險股份有限公司",
+    "productName": "南山人壽鑫鑽久久利率變動型增額終身壽險(定期給付型)(第2次部分變更)",
+    "planCode": "206131MA4B30823A11Z10000002",
+    "contractType": "主約",
+    "productType": "利率變動型壽險",
+    "currency": "新台幣",
+    "status": "停售",
+    "saleDate": "2020-01-01",
+    "stopDate": "2020-07-01",
+    "versionFolder": "v2",
+    "productFolder": "南山人壽鑫鑽久久利率變動型增額終身壽險(定期給付型)",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ]
+  },
+  "206131MZ1A30121A11Z10000004": {
+    "company": "南山人壽保險股份有限公司",
+    "productName": "南山人壽網路投保一年期定期壽險(第4次部分變更)",
+    "planCode": "206131MZ1A30121A11Z10000004",
+    "contractType": "主約",
+    "productType": "定期壽險",
+    "currency": "新台幣",
+    "status": "停售",
+    "saleDate": "2020-01-01",
+    "stopDate": "2020-08-30",
+    "versionFolder": "v4",
+    "productFolder": "南山人壽網路投保一年期定期壽險",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ]
+  },
+  "206121MZ1A30123A11Z10000000": {
+    "company": "南山人壽保險股份有限公司",
+    "productName": "南山人壽威利沛還本終身保險（定期給付型）",
+    "planCode": "206121MZ1A30123A11Z10000000",
+    "contractType": "主約",
+    "productType": "儲蓄壽險",
+    "currency": "新台幣",
+    "status": "停售",
+    "saleDate": "2020-02-08",
+    "stopDate": "2020-07-01",
+    "versionFolder": "v0",
+    "productFolder": "南山人壽威利沛還本終身保險（定期給付型）",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ]
+  },
+  "206131MA1A33123B11Z10000000": {
+    "company": "南山人壽保險股份有限公司",
+    "productName": "南山人壽添美鑽美元利率變動型終身壽險（定期給付型）",
+    "planCode": "206131MA1A33123B11Z10000000",
+    "contractType": "主約",
+    "productType": "利率變動型壽險",
+    "currency": "美元",
+    "status": "停售",
+    "saleDate": "2020-07-01",
+    "stopDate": "2021-07-01",
+    "versionFolder": "v0",
+    "productFolder": "南山人壽添美鑽美元利率變動型終身壽險（定期給付型）",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ]
+  },
+  "206131MA1A33223B11Z10000000": {
+    "company": "南山人壽保險股份有限公司",
+    "productName": "南山人壽美利鑫晴美元利率變動型增額終身壽險（定期給付型）",
+    "planCode": "206131MA1A33223B11Z10000000",
+    "contractType": "主約",
+    "productType": "利率變動型壽險",
+    "currency": "美元",
+    "status": "停售",
+    "saleDate": "2020-07-01",
+    "stopDate": "2021-12-25",
+    "versionFolder": "v0",
+    "productFolder": "南山人壽美利鑫晴美元利率變動型增額終身壽險（定期給付型）",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ]
+  },
+  "206131MA1A33323B11Z10000000": {
+    "company": "南山人壽保險股份有限公司",
+    "productName": "南山人壽集美鑫美元利率變動型增額終身壽險（定期給付型）",
+    "planCode": "206131MA1A33323B11Z10000000",
+    "contractType": "主約",
+    "productType": "利率變動型壽險",
+    "currency": "美元",
+    "status": "停售",
+    "saleDate": "2020-07-01",
+    "stopDate": "2022-12-01",
+    "versionFolder": "v0",
+    "productFolder": "南山人壽集美鑫美元利率變動型增額終身壽險（定期給付型）",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ]
+  },
+  "206121MA1A31823B11Z10000000": {
+    "company": "南山人壽保險股份有限公司",
+    "productName": "南山人壽鑫利美美元利率變動型還本終身保險（定期給付型）",
+    "planCode": "206121MA1A31823B11Z10000000",
+    "contractType": "主約",
+    "productType": "利率變動型壽險",
+    "currency": "美元",
+    "status": "停售",
+    "saleDate": "2020-07-01",
+    "stopDate": "2022-06-01",
+    "versionFolder": "v0",
+    "productFolder": "南山人壽鑫利美美元利率變動型還本終身保險（定期給付型）",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ]
+  },
+  "206191EZ1A30522A11Z10000001": {
+    "company": "南山人壽保險股份有限公司",
+    "productName": "南山人壽債權債務範圍內受益人指定批註條款(B)(第1次部分變更)",
+    "planCode": "206191EZ1A30522A11Z10000001",
+    "contractType": "主約",
+    "productType": "其他",
+    "currency": "新台幣",
+    "status": "停售",
+    "saleDate": "2021-07-01",
+    "stopDate": "2023-06-30",
+    "versionFolder": "v1",
+    "productFolder": "南山人壽債權債務範圍內受益人指定批註條款(B)",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ]
+  },
+  "206191EZ1A30622A11Z10000002": {
+    "company": "南山人壽保險股份有限公司",
+    "productName": "南山人壽債權債務範圍內受益人指定及其處分權批註條款(A)(第2次部分變更)",
+    "planCode": "206191EZ1A30622A11Z10000002",
+    "contractType": "主約",
+    "productType": "其他",
+    "currency": "新台幣",
+    "status": "停售",
+    "saleDate": "2021-07-01",
+    "stopDate": "2023-07-01",
+    "versionFolder": "v2",
+    "productFolder": "南山人壽債權債務範圍內受益人指定及其處分權批註條款(A)",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ]
+  },
+  "206131MA2A30823A11Z10000000": {
+    "company": "南山人壽保險股份有限公司",
+    "productName": "南山人壽鑫寶鑽利率變動型終身保險（定期給付型）",
+    "planCode": "206131MA2A30823A11Z10000000",
+    "contractType": "主約",
+    "productType": "利率變動型壽險",
+    "currency": "新台幣",
+    "status": "停售",
+    "saleDate": "2021-07-01",
+    "stopDate": "2022-02-12",
+    "versionFolder": "v0",
+    "productFolder": "南山人壽鑫寶鑽利率變動型終身保險（定期給付型）",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ]
+  },
+  "206131MA2A30723A11Z10000000": {
+    "company": "南山人壽保險股份有限公司",
+    "productName": "南山人壽佳多鑽利率變動型終身保險（定期給付型）",
+    "planCode": "206131MA2A30723A11Z10000000",
+    "contractType": "主約",
+    "productType": "利率變動型壽險",
+    "currency": "新台幣",
+    "status": "停售",
+    "saleDate": "2021-07-01",
+    "stopDate": "2022-01-01",
+    "versionFolder": "v0",
+    "productFolder": "南山人壽佳多鑽利率變動型終身保險（定期給付型）",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ]
+  },
+  "206131MA4G30323A11Z10000001": {
+    "company": "南山人壽保險股份有限公司",
+    "productName": "南山人壽珍利發利率變動型增額終身保險（定期給付型）(第1次部分變更)",
+    "planCode": "206131MA4G30323A11Z10000001",
+    "contractType": "主約",
+    "productType": "利率變動型壽險",
+    "currency": "新台幣",
+    "status": "停售",
+    "saleDate": "2021-07-01",
+    "stopDate": "2022-12-01",
+    "versionFolder": "v1",
+    "productFolder": "南山人壽珍利發利率變動型增額終身保險（定期給付型）",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ]
+  },
+  "206191EZ1A30722A11Z10000000": {
+    "company": "南山人壽保險股份有限公司",
+    "productName": "南山人壽債權債務範圍內受益人指定批註條款(C)",
+    "planCode": "206191EZ1A30722A11Z10000000",
+    "contractType": "主約",
+    "productType": "其他",
+    "currency": "新台幣",
+    "status": "停售",
+    "saleDate": "2021-07-31",
+    "stopDate": "2022-12-01",
+    "versionFolder": "v0",
+    "productFolder": "南山人壽債權債務範圍內受益人指定批註條款(C)",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ]
+  },
+  "206121MA2A30423A11Z10000002": {
+    "company": "南山人壽保險股份有限公司",
+    "productName": "南山人壽多利雙享利率變動型還本終身保險（定期給付型）(第2次部分變更)",
+    "planCode": "206121MA2A30423A11Z10000002",
+    "contractType": "主約",
+    "productType": "利率變動型壽險",
+    "currency": "新台幣",
+    "status": "停售",
+    "saleDate": "2021-12-01",
+    "stopDate": "2021-12-25",
+    "versionFolder": "v2",
+    "productFolder": "南山人壽多利雙享利率變動型還本終身保險（定期給付型）",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ]
+  },
+  "206121MA1A32523B11Z10000000": {
+    "company": "南山人壽保險股份有限公司",
+    "productName": "南山人壽美年滿利美元利率變動型還本終身保險（定期給付型）",
+    "planCode": "206121MA1A32523B11Z10000000",
+    "contractType": "主約",
+    "productType": "利率變動型壽險",
+    "currency": "美元",
+    "status": "停售",
+    "saleDate": "2021-12-18",
+    "stopDate": "2022-12-01",
+    "versionFolder": "v0",
+    "productFolder": "南山人壽美年滿利美元利率變動型還本終身保險（定期給付型）",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ]
+  },
+  "206131MZ4B30223B11Z10000001": {
+    "company": "南山人壽保險股份有限公司",
+    "productName": "南山人壽美滿康順3美元終身壽險（定期給付型）(第1次部分變更)",
+    "planCode": "206131MZ4B30223B11Z10000001",
+    "contractType": "主約",
+    "productType": "終身壽險",
+    "currency": "美元",
+    "status": "停售",
+    "saleDate": "2022-12-02",
+    "stopDate": "2022-12-31",
+    "versionFolder": "v1",
+    "productFolder": "南山人壽美滿康順3美元終身壽險（定期給付型）",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ]
+  },
+  "206131MZ2A30322A11Z10000003": {
+    "company": "南山人壽保險股份有限公司",
+    "productName": "南山人壽幸福滿屋定期壽險(第3次部分變更)",
+    "planCode": "206131MZ2A30322A11Z10000003",
+    "contractType": "主約",
+    "productType": "定期壽險",
+    "currency": "新台幣",
+    "status": "停售",
+    "saleDate": "2022-12-02",
+    "stopDate": "2023-07-01",
+    "versionFolder": "v3",
+    "productFolder": "南山人壽幸福滿屋定期壽險",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ]
+  },
+  "206131MZ2A30422A11Z10000003": {
+    "company": "南山人壽保險股份有限公司",
+    "productName": "南山人壽幸福滿屋減額定期壽險(第3次部分變更)",
+    "planCode": "206131MZ2A30422A11Z10000003",
+    "contractType": "主約",
+    "productType": "定期壽險",
+    "currency": "新台幣",
+    "status": "停售",
+    "saleDate": "2022-12-02",
+    "stopDate": "2023-07-01",
+    "versionFolder": "v3",
+    "productFolder": "南山人壽幸福滿屋減額定期壽險",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ]
+  },
+  "206131MA1A35923B11Z10000001": {
+    "company": "南山人壽保險股份有限公司",
+    "productName": "南山人壽美滿多福6美元利率變動型終身壽險（定期給付型）（第1次部分變更）",
+    "planCode": "206131MA1A35923B11Z10000001",
+    "contractType": "主約",
+    "productType": "利率變動型壽險",
+    "currency": "美元",
+    "status": "停售",
+    "saleDate": "2022-12-02",
+    "stopDate": "2022-12-17",
+    "versionFolder": "v1",
+    "productFolder": "南山人壽美滿多福6美元利率變動型終身壽險（定期給付型）",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ]
+  },
+  "206131MA1A35823B11Z10000001": {
+    "company": "南山人壽保險股份有限公司",
+    "productName": "南山人壽美添多福美元利率變動型終身壽險（定期給付型）(第1次部分變更)",
+    "planCode": "206131MA1A35823B11Z10000001",
+    "contractType": "主約",
+    "productType": "利率變動型壽險",
+    "currency": "美元",
+    "status": "停售",
+    "saleDate": "2022-12-02",
+    "stopDate": "2022-12-31",
+    "versionFolder": "v1",
+    "productFolder": "南山人壽美添多福美元利率變動型終身壽險（定期給付型）",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ]
+  },
+  "206131MA1A35723B11Z10000001": {
+    "company": "南山人壽保險股份有限公司",
+    "productName": "南山人壽增美鑫美元利率變動型增額終身壽險（定期給付型）（第1次部分變更）",
+    "planCode": "206131MA1A35723B11Z10000001",
+    "contractType": "主約",
+    "productType": "利率變動型壽險",
+    "currency": "美元",
+    "status": "停售",
+    "saleDate": "2022-12-02",
+    "stopDate": "2023-02-24",
+    "versionFolder": "v1",
+    "productFolder": "南山人壽增美鑫美元利率變動型增額終身壽險（定期給付型）",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ]
+  },
+  "206131MA1A35323B11Z10000002": {
+    "company": "南山人壽保險股份有限公司",
+    "productName": "南山人壽美添享福美元利率變動型終身壽險（定期給付型）(第2次部分變更)",
+    "planCode": "206131MA1A35323B11Z10000002",
+    "contractType": "主約",
+    "productType": "利率變動型壽險",
+    "currency": "美元",
+    "status": "停售",
+    "saleDate": "2022-12-02",
+    "stopDate": "2022-12-31",
+    "versionFolder": "v2",
+    "productFolder": "南山人壽美添享福美元利率變動型終身壽險（定期給付型）",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ]
+  },
+  "206131MA1A35123B11Z10000001": {
+    "company": "南山人壽保險股份有限公司",
+    "productName": "南山人壽多美鑫美元利率變動型終身壽險（定期給付型）（第1次部分變更）",
+    "planCode": "206131MA1A35123B11Z10000001",
+    "contractType": "主約",
+    "productType": "利率變動型壽險",
+    "currency": "美元",
+    "status": "停售",
+    "saleDate": "2022-12-02",
+    "stopDate": "2023-02-24",
+    "versionFolder": "v1",
+    "productFolder": "南山人壽多美鑫美元利率變動型終身壽險（定期給付型）",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ]
+  },
+  "206131MA1A35623B11Z10000001": {
+    "company": "南山人壽保險股份有限公司",
+    "productName": "南山人壽珍美利發2美元利率變動型增額終身壽險（定期給付型）（第1次部分變更）",
+    "planCode": "206131MA1A35623B11Z10000001",
+    "contractType": "主約",
+    "productType": "利率變動型壽險",
+    "currency": "美元",
+    "status": "停售",
+    "saleDate": "2022-12-02",
+    "stopDate": "2023-02-24",
+    "versionFolder": "v1",
+    "productFolder": "南山人壽珍美利發2美元利率變動型增額終身壽險（定期給付型）",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ]
+  },
+  "206131MA1A35523B11Z10000001": {
+    "company": "南山人壽保險股份有限公司",
+    "productName": "南山人壽多美讚美元利率變動型終身壽險（定期給付型）（第1次部分變更）",
+    "planCode": "206131MA1A35523B11Z10000001",
+    "contractType": "主約",
+    "productType": "利率變動型壽險",
+    "currency": "美元",
+    "status": "停售",
+    "saleDate": "2022-12-02",
+    "stopDate": "2023-02-24",
+    "versionFolder": "v1",
+    "productFolder": "南山人壽多美讚美元利率變動型終身壽險（定期給付型）",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ]
+  },
+  "206131MA9B30223B11Z10000001": {
+    "company": "南山人壽保險股份有限公司",
+    "productName": "南山人壽鑫福美滿2美元利率變動型終身保險（定期給付型）(第1次部分變更)",
+    "planCode": "206131MA9B30223B11Z10000001",
+    "contractType": "主約",
+    "productType": "利率變動型壽險",
+    "currency": "美元",
+    "status": "停售",
+    "saleDate": "2022-12-02",
+    "stopDate": "2023-02-24",
+    "versionFolder": "v1",
+    "productFolder": "南山人壽鑫福美滿2美元利率變動型終身保險（定期給付型）",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ]
+  },
+  "206131MA4G30323A11Z10000002": {
+    "company": "南山人壽保險股份有限公司",
+    "productName": "南山人壽珍利發利率變動型增額終身保險（定期給付型）(第2次部分變更)",
+    "planCode": "206131MA4G30323A11Z10000002",
+    "contractType": "主約",
+    "productType": "利率變動型壽險",
+    "currency": "新台幣",
+    "status": "停售",
+    "saleDate": "2022-12-02",
+    "stopDate": "2024-12-20",
+    "versionFolder": "v2",
+    "productFolder": "南山人壽珍利發利率變動型增額終身保險（定期給付型）",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ]
+  },
+  "206131MA2A31123A11Z10000000": {
+    "company": "南山人壽保險股份有限公司",
+    "productName": "南山人壽新享多鑽利率變動型終身保險（定期給付型）",
+    "planCode": "206131MA2A31123A11Z10000000",
+    "contractType": "主約",
+    "productType": "利率變動型壽險",
+    "currency": "新台幣",
+    "status": "停售",
+    "saleDate": "2022-12-03",
+    "stopDate": "2023-10-01",
+    "versionFolder": "v0",
+    "productFolder": "南山人壽新享多鑽利率變動型終身保險（定期給付型）",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ]
+  },
+  "206121MA1A33123B11Z10000001": {
+    "company": "南山人壽保險股份有限公司",
+    "productName": "南山人壽美利珍鑫3美元利率變動型還本終身保險（定期給付型）(第1次部分變更)",
+    "planCode": "206121MA1A33123B11Z10000001",
+    "contractType": "主約",
+    "productType": "利率變動型壽險",
+    "currency": "美元",
+    "status": "停售",
+    "saleDate": "2023-02-25",
+    "stopDate": "2024-06-01",
+    "versionFolder": "v1",
+    "productFolder": "南山人壽美利珍鑫3美元利率變動型還本終身保險（定期給付型）",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ]
+  },
+  "206121MA1A33023B11Z10000001": {
+    "company": "南山人壽保險股份有限公司",
+    "productName": "南山人壽美年享利美元利率變動型還本終身保險（定期給付型）(第1次部分變更)",
+    "planCode": "206121MA1A33023B11Z10000001",
+    "contractType": "主約",
+    "productType": "利率變動型壽險",
+    "currency": "美元",
+    "status": "停售",
+    "saleDate": "2023-02-25",
+    "stopDate": "2024-12-31",
+    "versionFolder": "v1",
+    "productFolder": "南山人壽美年享利美元利率變動型還本終身保險（定期給付型）",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ]
+  },
+  "206121MA1A32523B11Z10000002": {
+    "company": "南山人壽保險股份有限公司",
+    "productName": "南山人壽美年滿利美元利率變動型還本終身保險（定期給付型）(第2次部分變更)",
+    "planCode": "206121MA1A32523B11Z10000002",
+    "contractType": "主約",
+    "productType": "利率變動型壽險",
+    "currency": "美元",
+    "status": "停售",
+    "saleDate": "2023-02-25",
+    "stopDate": "2023-10-01",
+    "versionFolder": "v2",
+    "productFolder": "南山人壽美年滿利美元利率變動型還本終身保險（定期給付型）",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ]
+  },
+  "206121MA2A30623A11Z10000000": {
+    "company": "南山人壽保險股份有限公司",
+    "productName": "南山人壽滿利雙享利率變動型還本終身保險（定期給付型）",
+    "planCode": "206121MA2A30623A11Z10000000",
+    "contractType": "主約",
+    "productType": "利率變動型壽險",
+    "currency": "新台幣",
+    "status": "停售",
+    "saleDate": "2023-02-25",
+    "stopDate": "2024-01-27",
+    "versionFolder": "v0",
+    "productFolder": "南山人壽滿利雙享利率變動型還本終身保險（定期給付型）",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ]
+  },
+  "206131MA9B30323B11Z10000001": {
+    "company": "南山人壽保險股份有限公司",
+    "productName": "南山人壽新多美寶美元利率變動型終身保險（定期給付型）(第1次部分變更)",
+    "planCode": "206131MA9B30323B11Z10000001",
+    "contractType": "主約",
+    "productType": "利率變動型壽險",
+    "currency": "美元",
+    "status": "停售",
+    "saleDate": "2023-02-25",
+    "stopDate": "2024-06-01",
+    "versionFolder": "v1",
+    "productFolder": "南山人壽新多美寶美元利率變動型終身保險（定期給付型）",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ]
+  },
+  "206131MA9B30123B11Z10000002": {
+    "company": "南山人壽保險股份有限公司",
+    "productName": "南山人壽多美寶美元利率變動型終身保險（定期給付型）(第2次部分變更)",
+    "planCode": "206131MA9B30123B11Z10000002",
+    "contractType": "主約",
+    "productType": "利率變動型壽險",
+    "currency": "美元",
+    "status": "停售",
+    "saleDate": "2023-02-25",
+    "stopDate": "2023-10-01",
+    "versionFolder": "v2",
+    "productFolder": "南山人壽多美寶美元利率變動型終身保險（定期給付型）",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ]
+  },
+  "206121MA2A30723A11Z10000000": {
+    "company": "南山人壽保險股份有限公司",
+    "productName": "南山人壽滿利雙享2利率變動型還本終身保險（定期給付型）",
+    "planCode": "206121MA2A30723A11Z10000000",
+    "contractType": "主約",
+    "productType": "利率變動型壽險",
+    "currency": "新台幣",
+    "status": "停售",
+    "saleDate": "2024-01-27",
+    "stopDate": "2024-12-20",
+    "versionFolder": "v0",
+    "productFolder": "南山人壽滿利雙享2利率變動型還本終身保險（定期給付型）",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ]
+  },
+  "206191MZ1B30123A31E10000002": {
+    "company": "南山人壽保險股份有限公司",
+    "productName": "南山人壽健康e守護終身保險(第2次部分變更)",
+    "planCode": "206191MZ1B30123A31E10000002",
+    "contractType": "主約",
+    "productType": "醫療定額",
+    "currency": "新台幣",
+    "status": "停售",
+    "saleDate": "2024-07-01",
+    "stopDate": "2024-09-13",
+    "versionFolder": "v2",
+    "productFolder": "南山人壽健康e守護終身保險",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ]
+  },
+  "206191MZ9B30122A11Z10000001": {
+    "company": "南山人壽保險股份有限公司",
+    "productName": "南山人壽媽咪寶定期保險(第一次部分變更)",
+    "planCode": "206191MZ9B30122A11Z10000001",
+    "contractType": "主約",
+    "productType": "定期壽險",
+    "currency": "新台幣",
+    "status": "停售",
+    "saleDate": "2024-08-24",
+    "stopDate": "2024-12-20",
+    "versionFolder": "v1",
+    "productFolder": "南山人壽媽咪寶定期保險",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ]
+  },
+  "206131MA4B30123B11Z10000001": {
+    "company": "南山人壽保險股份有限公司",
+    "productName": "南山人壽美利享福美元利率變動型終身壽險（定期給付型）(第1次部分變更)",
+    "planCode": "206131MA4B30123B11Z10000001",
+    "contractType": "主約",
+    "productType": "利率變動型壽險",
+    "currency": "美元",
+    "status": "現售",
+    "saleDate": "2024-12-21",
+    "stopDate": "",
+    "versionFolder": "v1",
+    "productFolder": "南山人壽美利享福美元利率變動型終身壽險（定期給付型）",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ]
+  },
+  "206191MZ1B30123A31E10000004": {
+    "company": "南山人壽保險股份有限公司",
+    "productName": "南山人壽健康e守護終身保險(第4次部分變更)",
+    "planCode": "206191MZ1B30123A31E10000004",
+    "contractType": "主約",
+    "productType": "醫療定額",
+    "currency": "新台幣",
+    "status": "停售",
+    "saleDate": "2024-12-21",
+    "stopDate": "2025-09-20",
+    "versionFolder": "v4",
+    "productFolder": "南山人壽健康e守護終身保險",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ]
+  },
+  "206131MA1A35623B11Z10000003": {
+    "company": "南山人壽保險股份有限公司",
+    "productName": "南山人壽珍美利發2美元利率變動型增額終身壽險（定期給付型）(第3次部分變更)",
+    "planCode": "206131MA1A35623B11Z10000003",
+    "contractType": "主約",
+    "productType": "利率變動型壽險",
+    "currency": "美元",
+    "status": "停售",
+    "saleDate": "2024-12-21",
+    "stopDate": "2026-05-09",
+    "versionFolder": "v3",
+    "productFolder": "南山人壽珍美利發2美元利率變動型增額終身壽險（定期給付型）",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ]
+  },
+  "206121MA4B30122A11Z10000000": {
+    "company": "南山人壽保險股份有限公司",
+    "productName": "南山人壽大樂選利率變動型還本保險（定期給付型）",
+    "planCode": "206121MA4B30122A11Z10000000",
+    "contractType": "主約",
+    "productType": "利率變動型壽險",
+    "currency": "新台幣",
+    "status": "現售",
+    "saleDate": "2024-12-21",
+    "stopDate": "",
+    "versionFolder": "v0",
+    "productFolder": "南山人壽大樂選利率變動型還本保險（定期給付型）",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ]
+  },
+  "206121MA2A30723A11Z10000001": {
+    "company": "南山人壽保險股份有限公司",
+    "productName": "南山人壽滿利雙享2利率變動型還本終身保險（定期給付型）(第1次部分變更)",
+    "planCode": "206121MA2A30723A11Z10000001",
+    "contractType": "主約",
+    "productType": "利率變動型壽險",
+    "currency": "新台幣",
+    "status": "停售",
+    "saleDate": "2024-12-21",
+    "stopDate": "2026-01-01",
+    "versionFolder": "v1",
+    "productFolder": "南山人壽滿利雙享2利率變動型還本終身保險（定期給付型）",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ]
+  },
+  "206131MZ1A30322A11Z10000002": {
+    "company": "南山人壽保險股份有限公司",
+    "productName": "南山人壽新定期壽險(第2次部分變更)",
+    "planCode": "206131MZ1A30322A11Z10000002",
+    "contractType": "主約",
+    "productType": "定期壽險",
+    "currency": "新台幣",
+    "status": "現售",
+    "saleDate": "2024-12-21",
+    "stopDate": "",
+    "versionFolder": "v2",
+    "productFolder": "南山人壽新定期壽險",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ]
+  },
+  "206131MZ1A30423A11D10000001": {
+    "company": "南山人壽保險股份有限公司",
+    "productName": "南山人壽新福愛小額終身壽險(第1次部分變更)",
+    "planCode": "206131MZ1A30423A11D10000001",
+    "contractType": "主約",
+    "productType": "終身壽險",
+    "currency": "新台幣",
+    "status": "停售",
+    "saleDate": "2024-12-21",
+    "stopDate": "2025-12-31",
+    "versionFolder": "v1",
+    "productFolder": "南山人壽新福愛小額終身壽險",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ]
+  },
+  "206121MA1A32423B11Z10000003": {
+    "company": "南山人壽保險股份有限公司",
+    "productName": "南山人壽倍利美美元利率變動型還本終身保險（定期給付型）(第3次部分變更)",
+    "planCode": "206121MA1A32423B11Z10000003",
+    "contractType": "主約",
+    "productType": "利率變動型壽險",
+    "currency": "美元",
+    "status": "停售",
+    "saleDate": "2025-01-01",
+    "stopDate": "2026-01-01",
+    "versionFolder": "v3",
+    "productFolder": "南山人壽倍利美美元利率變動型還本終身保險（定期給付型）",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ]
+  },
+  "206121MA1A33023B11Z10000002": {
+    "company": "南山人壽保險股份有限公司",
+    "productName": "南山人壽美年享利美元利率變動型還本終身保險（定期給付型）(第2次部分變更)",
+    "planCode": "206121MA1A33023B11Z10000002",
+    "contractType": "主約",
+    "productType": "利率變動型壽險",
+    "currency": "美元",
+    "status": "停售",
+    "saleDate": "2025-01-01",
+    "stopDate": "2025-08-01",
+    "versionFolder": "v2",
+    "productFolder": "南山人壽美年享利美元利率變動型還本終身保險（定期給付型）",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ]
+  },
+  "206121MZ1A30723A11Z10000001": {
+    "company": "南山人壽保險股份有限公司",
+    "productName": "南山人壽佳利年年還本終身保險（定期給付型）(第1次部分變更)",
+    "planCode": "206121MZ1A30723A11Z10000001",
+    "contractType": "主約",
+    "productType": "儲蓄壽險",
+    "currency": "新台幣",
+    "status": "現售",
+    "saleDate": "2025-01-01",
+    "stopDate": "",
+    "versionFolder": "v1",
+    "productFolder": "南山人壽佳利年年還本終身保險（定期給付型）",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ]
+  },
+  "206121MZ1A30322B11Z10000001": {
+    "company": "南山人壽保險股份有限公司",
+    "productName": "南山人壽美滿優利美元養老保險（定期給付型）(第1次部分變更)",
+    "planCode": "206121MZ1A30322B11Z10000001",
+    "contractType": "主約",
+    "productType": "儲蓄壽險",
+    "currency": "美元",
+    "status": "現售",
+    "saleDate": "2025-01-01",
+    "stopDate": "",
+    "versionFolder": "v1",
+    "productFolder": "南山人壽美滿優利美元養老保險（定期給付型）",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ]
+  },
+  "206121MA2A30823A11Z10000001": {
+    "company": "南山人壽保險股份有限公司",
+    "productName": "南山人壽年年滿利利率變動型還本終身保險（定期給付型）(第1次部分變更)",
+    "planCode": "206121MA2A30823A11Z10000001",
+    "contractType": "主約",
+    "productType": "利率變動型壽險",
+    "currency": "新台幣",
+    "status": "現售",
+    "saleDate": "2025-01-01",
+    "stopDate": "",
+    "versionFolder": "v1",
+    "productFolder": "南山人壽年年滿利利率變動型還本終身保險（定期給付型）",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ]
+  },
+  "206121MZ1A30222B11Z10000002": {
+    "company": "南山人壽保險股份有限公司",
+    "productName": "南山人壽美好吉利美元養老保險（定期給付型）(第2次部分變更)",
+    "planCode": "206121MZ1A30222B11Z10000002",
+    "contractType": "主約",
+    "productType": "儲蓄壽險",
+    "currency": "美元",
+    "status": "現售",
+    "saleDate": "2025-01-01",
+    "stopDate": "",
+    "versionFolder": "v2",
+    "productFolder": "南山人壽美好吉利美元養老保險（定期給付型）",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ]
+  },
+  "206131MZ1A30222A11Z10000001": {
+    "company": "南山人壽保險股份有限公司",
+    "productName": "南山人壽Full樂安心定期壽險(第1次部分變更)",
+    "planCode": "206131MZ1A30222A11Z10000001",
+    "contractType": "主約",
+    "productType": "定期壽險",
+    "currency": "新台幣",
+    "status": "現售",
+    "saleDate": "2025-01-01",
+    "stopDate": "",
+    "versionFolder": "v1",
+    "productFolder": "南山人壽Full樂安心定期壽險",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ]
+  },
+  "206191EZ1A30923Z11Z10000000": {
+    "company": "南山人壽保險股份有限公司",
+    "productName": "南山人壽銀行保險保費融資批註條款(B6)",
+    "planCode": "206191EZ1A30923Z11Z10000000",
+    "contractType": "主約",
+    "productType": "其他",
+    "currency": "新台幣",
+    "status": "現售",
+    "saleDate": "2026-05-23",
+    "stopDate": "",
+    "versionFolder": "v0",
+    "productFolder": "南山人壽銀行保險保費融資批註條款(B6)",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ]
+  },
+  "206191EZ1A31023Z11Z10000000": {
+    "company": "南山人壽保險股份有限公司",
+    "productName": "南山人壽銀行保險保單融資批註條款(B5)",
+    "planCode": "206191EZ1A31023Z11Z10000000",
+    "contractType": "主約",
+    "productType": "其他",
+    "currency": "新台幣",
+    "status": "現售",
+    "saleDate": "2026-05-23",
+    "stopDate": "",
+    "versionFolder": "v0",
+    "productFolder": "南山人壽銀行保險保單融資批註條款(B5)",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ]
+  },
+  "206191EZ1A31123Z11Z10000000": {
+    "company": "南山人壽保險股份有限公司",
+    "productName": "南山人壽銀行保險保費融資批註條款(B7)",
+    "planCode": "206191EZ1A31123Z11Z10000000",
+    "contractType": "主約",
+    "productType": "其他",
+    "currency": "新台幣",
+    "status": "現售",
+    "saleDate": "2026-05-23",
+    "stopDate": "",
+    "versionFolder": "v0",
+    "productFolder": "南山人壽銀行保險保費融資批註條款(B7)",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ]
+  },
+  "206121MZ1A30722B11Z10000000": {
+    "company": "南山人壽保險股份有限公司",
+    "productName": "南山人壽美好十光美元養老保險（定期給付型）",
+    "planCode": "206121MZ1A30722B11Z10000000",
+    "contractType": "主約",
+    "productType": "儲蓄壽險",
+    "currency": "美元",
+    "status": "現售",
+    "saleDate": "2026-05-23",
+    "stopDate": "",
+    "versionFolder": "v0",
+    "productFolder": "南山人壽美好十光美元養老保險（定期給付型）",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ]
+  },
+  "204311RZ1APP121A11Z10000002": {
+    "company": "國泰人壽保險股份有限公司",
+    "productName": "國泰人壽睛彩人生手術醫療健康保險附約(第2次部分變更)",
+    "planCode": "204311RZ1APP121A11Z10000002",
+    "contractType": "附約",
+    "productType": "醫療定額",
+    "currency": "新台幣",
+    "status": "停售",
+    "saleDate": "2023-03-07",
+    "stopDate": "2024-06-30",
+    "versionFolder": "v2",
+    "productFolder": "國泰人壽睛彩人生手術醫療健康保險附約",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ]
+  },
+  "204311MZ1AHTA23A11E10000000": {
+    "company": "國泰人壽保險股份有限公司",
+    "productName": "國泰人壽輕漾心安住院醫療終身健康保險(外溢型)",
+    "planCode": "204311MZ1AHTA23A11E10000000",
+    "contractType": "主約",
+    "productType": "醫療定額",
+    "currency": "新台幣",
+    "status": "停售",
+    "saleDate": "2023-03-14",
+    "stopDate": "2024-09-30",
+    "versionFolder": "v0",
+    "productFolder": "國泰人壽輕漾心安住院醫療終身健康保險(外溢型)",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ]
+  },
+  "204311RZ1AHT123A11Z10000000": {
+    "company": "國泰人壽保險股份有限公司",
+    "productName": "國泰人壽心安加護燒燙傷病房醫療終身健康保險附約",
+    "planCode": "204311RZ1AHT123A11Z10000000",
+    "contractType": "附約",
+    "productType": "醫療定額",
+    "currency": "新台幣",
+    "status": "停售",
+    "saleDate": "2023-03-14",
+    "stopDate": "2024-06-30",
+    "versionFolder": "v0",
+    "productFolder": "國泰人壽心安加護燒燙傷病房醫療終身健康保險附約",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ]
+  },
+  "204311RZ1AHT222A11Z10000000": {
+    "company": "國泰人壽保險股份有限公司",
+    "productName": "國泰人壽心安手術醫療定期健康保險附約",
+    "planCode": "204311RZ1AHT222A11Z10000000",
+    "contractType": "附約",
+    "productType": "醫療定額",
+    "currency": "新台幣",
+    "status": "停售",
+    "saleDate": "2023-03-14",
+    "stopDate": "2024-06-30",
+    "versionFolder": "v0",
+    "productFolder": "國泰人壽心安手術醫療定期健康保險附約",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ]
+  },
+  "204311MZ1AJCA22A11Z10000000": {
+    "company": "國泰人壽保險股份有限公司",
+    "productName": "國泰人壽加倍安心醫療定期健康保險",
+    "planCode": "204311MZ1AJCA22A11Z10000000",
+    "contractType": "主約",
+    "productType": "醫療定額",
+    "currency": "新台幣",
+    "status": "停售",
+    "saleDate": "2023-03-30",
+    "stopDate": "2024-09-30",
+    "versionFolder": "v0",
+    "productFolder": "國泰人壽加倍安心醫療定期健康保險",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ]
+  },
+  "204321MZ2BM2322A11Z10000004": {
+    "company": "國泰人壽保險股份有限公司",
+    "productName": "國泰人壽鍾愛守護防癌定期保險(第4次部分變更)",
+    "planCode": "204321MZ2BM2322A11Z10000004",
+    "contractType": "主約",
+    "productType": "防癌險",
+    "currency": "新台幣",
+    "status": "停售",
+    "saleDate": "2023-05-15",
+    "stopDate": "2024-06-30",
+    "versionFolder": "v4",
+    "productFolder": "國泰人壽鍾愛守護防癌定期保險",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ]
+  },
+  "204321MZ1ADPA22A12E10000000": {
+    "company": "國泰人壽保險股份有限公司",
+    "productName": "國泰人壽醫心康愛防癌定期健康保險(外溢型)(實物給付型保險商品)",
+    "planCode": "204321MZ1ADPA22A12E10000000",
+    "contractType": "主約",
+    "productType": "防癌險",
+    "currency": "新台幣",
+    "status": "停售",
+    "saleDate": "2023-05-18",
+    "stopDate": "2024-09-30",
+    "versionFolder": "v0",
+    "productFolder": "國泰人壽醫心康愛防癌定期健康保險(外溢型)(實物給付型保險商品)",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ]
+  },
+  "204311MZ1BDCA22A11E10000000": {
+    "company": "國泰人壽保險股份有限公司",
+    "productName": "國泰人壽樂心安住院醫療定期保險(外溢型)",
+    "planCode": "204311MZ1BDCA22A11E10000000",
+    "contractType": "主約",
+    "productType": "醫療定額",
+    "currency": "新台幣",
+    "status": "停售",
+    "saleDate": "2023-05-18",
+    "stopDate": "2023-10-30",
+    "versionFolder": "v0",
+    "productFolder": "國泰人壽樂心安住院醫療定期保險(外溢型)",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ]
+  },
+  "204311MZ1ACYA21A11Z10000000": {
+    "company": "國泰人壽保險股份有限公司",
+    "productName": "國泰人壽iCare一年定期住院日額醫療健康保險",
+    "planCode": "204311MZ1ACYA21A11Z10000000",
+    "contractType": "主約",
+    "productType": "醫療定額",
+    "currency": "新台幣",
+    "status": "停售",
+    "saleDate": "2023-06-15",
+    "stopDate": "2024-09-30",
+    "versionFolder": "v0",
+    "productFolder": "國泰人壽iCare一年定期住院日額醫療健康保險",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ]
+  },
+  "204391AZ1A0ES21A12Z10000001": {
+    "company": "國泰人壽保險股份有限公司",
+    "productName": "國泰人壽e悠遊旅行平安保險海外醫療專機運送附加條款(實物給付型保險商品)(112)",
+    "planCode": "204391AZ1A0ES21A12Z10000001",
+    "contractType": "附約",
+    "productType": "傷害險",
+    "currency": "新台幣",
+    "status": "停售",
+    "saleDate": "2023-08-29",
+    "stopDate": "2025-02-19",
+    "versionFolder": "v0",
+    "productFolder": "國泰人壽e悠遊旅行平安保險海外醫療專機運送附加條款(實物給付型保險商品)(112)",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ]
+  },
+  "204341RZ1AW6022A11Z10000020": {
+    "company": "國泰人壽保險股份有限公司",
+    "productName": "國泰人壽真關懷保險費豁免附約(第20次部分變更)",
+    "planCode": "204341RZ1AW6022A11Z10000020",
+    "contractType": "附約",
+    "productType": "其他",
+    "currency": "新台幣",
+    "status": "停售",
+    "saleDate": "2023-08-31",
+    "stopDate": "2024-02-05",
+    "versionFolder": "v20",
+    "productFolder": "國泰人壽真關懷保險費豁免附約",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ]
+  },
+  "204391MZ9BZCM22A12E10000000": {
+    "company": "國泰人壽保險股份有限公司",
+    "productName": "國泰人壽鍾心滿福重大傷病定期保險(外溢型)(實物給付型保險商品)",
+    "planCode": "204391MZ9BZCM22A12E10000000",
+    "contractType": "主約",
+    "productType": "重大疾(傷)病險",
+    "currency": "新台幣",
+    "status": "現售",
+    "saleDate": "2023-08-31",
+    "stopDate": "",
+    "versionFolder": "v0",
+    "productFolder": "國泰人壽鍾心滿福重大傷病定期保險(外溢型)(實物給付型保險商品)",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ]
+  },
+  "204311MZ1BFX422A11E10000006": {
+    "company": "國泰人壽保險股份有限公司",
+    "productName": "國泰人壽三倍真醫靠住院醫療定期保險(外溢型)(第6次部分變更)",
+    "planCode": "204311MZ1BFX422A11E10000006",
+    "contractType": "主約",
+    "productType": "醫療定額",
+    "currency": "新台幣",
+    "status": "停售",
+    "saleDate": "2023-09-14",
+    "stopDate": "2024-06-30",
+    "versionFolder": "v6",
+    "productFolder": "國泰人壽三倍真醫靠住院醫療定期保險(外溢型)",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ]
+  },
+  "204361MZ1ALCA22A12E10000000": {
+    "company": "國泰人壽保險股份有限公司",
+    "productName": "國泰人壽樂齡守護長期照顧定期健康保險（外溢型）（實物給付型保險商品）",
+    "planCode": "204361MZ1ALCA22A12E10000000",
+    "contractType": "主約",
+    "productType": "長照險",
+    "currency": "新台幣",
+    "status": "停售",
+    "saleDate": "2023-09-14",
+    "stopDate": "2023-10-12",
+    "versionFolder": "v0",
+    "productFolder": "國泰人壽樂齡守護長期照顧定期健康保險（外溢型）（實物給付型保險商品）",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ]
+  },
+  "204311MZ1BDCA22A11E10000001": {
+    "company": "國泰人壽保險股份有限公司",
+    "productName": "國泰人壽樂心安住院醫療定期保險(外溢型)(第1次部分變更)",
+    "planCode": "204311MZ1BDCA22A11E10000001",
+    "contractType": "主約",
+    "productType": "醫療定額",
+    "currency": "新台幣",
+    "status": "停售",
+    "saleDate": "2023-10-31",
+    "stopDate": "2024-06-30",
+    "versionFolder": "v1",
+    "productFolder": "國泰人壽樂心安住院醫療定期保險(外溢型)",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ]
+  },
+  "204321MZ1ADQ022A11E10000002": {
+    "company": "國泰人壽保險股份有限公司",
+    "productName": "國泰人壽IN康愛防癌定期健康保險(外溢型)(第2次部分變更)",
+    "planCode": "204321MZ1ADQ022A11E10000002",
+    "contractType": "主約",
+    "productType": "防癌險",
+    "currency": "新台幣",
+    "status": "停售",
+    "saleDate": "2023-10-31",
+    "stopDate": "2024-09-30",
+    "versionFolder": "v2",
+    "productFolder": "國泰人壽IN康愛防癌定期健康保險(外溢型)",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ]
+  },
+  "204321MZ1ADP122A11Z10000000": {
+    "company": "國泰人壽保險股份有限公司",
+    "productName": "國泰人壽樂無憂防癌定期健康保險",
+    "planCode": "204321MZ1ADP122A11Z10000000",
+    "contractType": "主約",
+    "productType": "防癌險",
+    "currency": "新台幣",
+    "status": "停售",
+    "saleDate": "2023-11-01",
+    "stopDate": "2024-04-21",
+    "versionFolder": "v0",
+    "productFolder": "國泰人壽樂無憂防癌定期健康保險",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ]
+  },
+  "204341RZ1AX6021A11Z90000011": {
+    "company": "國泰人壽保險股份有限公司",
+    "productName": "國泰人壽新永安保險費豁免健康保險附約(投資型保險商品專屬)(第11次部分變更)",
+    "planCode": "204341RZ1AX6021A11Z90000011",
+    "contractType": "附約",
+    "productType": "醫療定額",
+    "currency": "新台幣",
+    "status": "停售",
+    "saleDate": "2024-01-01",
+    "stopDate": "2024-06-16",
+    "versionFolder": "v11",
+    "productFolder": "國泰人壽新永安保險費豁免健康保險附約(投資型保險商品專屬)",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ]
+  },
+  "204341RZ1AW6022A11Z10000021": {
+    "company": "國泰人壽保險股份有限公司",
+    "productName": "國泰人壽真關懷保險費豁免附約(第21次部分變更)",
+    "planCode": "204341RZ1AW6022A11Z10000021",
+    "contractType": "附約",
+    "productType": "其他",
+    "currency": "新台幣",
+    "status": "停售",
+    "saleDate": "2024-02-06",
+    "stopDate": "2024-06-30",
+    "versionFolder": "v21",
+    "productFolder": "國泰人壽真關懷保險費豁免附約",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ]
+  },
+  "204391MZ9BZCN22A11E10000001": {
+    "company": "國泰人壽保險股份有限公司",
+    "productName": "國泰人壽新鍾心滿福重大傷病定期保險(外溢型)(第1次部分變更)",
+    "planCode": "204391MZ9BZCN22A11E10000001",
+    "contractType": "主約",
+    "productType": "重大疾(傷)病險",
+    "currency": "新台幣",
+    "status": "停售",
+    "saleDate": "2024-02-06",
+    "stopDate": "2024-06-30",
+    "versionFolder": "v1",
+    "productFolder": "國泰人壽新鍾心滿福重大傷病定期保險(外溢型)",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ]
+  },
+  "204321MZ1ADR122A11E10000000": {
+    "company": "國泰人壽保險股份有限公司",
+    "productName": "國泰人壽精準康愛防癌定期健康保險(外溢型)",
+    "planCode": "204321MZ1ADR122A11E10000000",
+    "contractType": "主約",
+    "productType": "防癌險",
+    "currency": "新台幣",
+    "status": "停售",
+    "saleDate": "2024-03-21",
+    "stopDate": "2024-09-30",
+    "versionFolder": "v0",
+    "productFolder": "國泰人壽精準康愛防癌定期健康保險(外溢型)",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ]
+  },
+  "204311RZ1ACFI21A11Z10000002": {
+    "company": "國泰人壽保險股份有限公司",
+    "productName": "國泰人壽自由配一年定期特定處置醫療健康保險附約(第2次部分變更)",
+    "planCode": "204311RZ1ACFI21A11Z10000002",
+    "contractType": "附約",
+    "productType": "醫療定額",
+    "currency": "新台幣",
+    "status": "停售",
+    "saleDate": "2024-03-28",
+    "stopDate": "2024-06-30",
+    "versionFolder": "v2",
+    "productFolder": "國泰人壽自由配一年定期特定處置醫療健康保險附約",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ]
+  },
+  "204391RZ1ACFL21A11Z10000001": {
+    "company": "國泰人壽保險股份有限公司",
+    "productName": "國泰人壽自由配一年定期健康保險附約(第1次部分變更)",
+    "planCode": "204391RZ1ACFL21A11Z10000001",
+    "contractType": "附約",
+    "productType": "醫療定額",
+    "currency": "新台幣",
+    "status": "停售",
+    "saleDate": "2024-03-28",
+    "stopDate": "2024-06-30",
+    "versionFolder": "v1",
+    "productFolder": "國泰人壽自由配一年定期健康保險附約",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ]
+  },
+  "204321MZ1ADP122A11Z10000001": {
+    "company": "國泰人壽保險股份有限公司",
+    "productName": "國泰人壽樂無憂防癌定期健康保險(第1次部分變更)",
+    "planCode": "204321MZ1ADP122A11Z10000001",
+    "contractType": "主約",
+    "productType": "防癌險",
+    "currency": "新台幣",
+    "status": "停售",
+    "saleDate": "2024-04-22",
+    "stopDate": "2024-09-30",
+    "versionFolder": "v1",
+    "productFolder": "國泰人壽樂無憂防癌定期健康保險",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ]
+  },
+  "204321MZ2BDP322A11E10000000": {
+    "company": "國泰人壽保險股份有限公司",
+    "productName": "國泰人壽鑫溢滿滿防癌定期保險（外溢型）",
+    "planCode": "204321MZ2BDP322A11E10000000",
+    "contractType": "主約",
+    "productType": "防癌險",
+    "currency": "新台幣",
+    "status": "停售",
+    "saleDate": "2024-05-09",
+    "stopDate": "2024-06-30",
+    "versionFolder": "v0",
+    "productFolder": "國泰人壽鑫溢滿滿防癌定期保險（外溢型）",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ]
+  },
+  "204311RZ1APP121A11Z10000003": {
+    "company": "國泰人壽保險股份有限公司",
+    "productName": "國泰人壽睛彩人生手術醫療健康保險附約(第3次部分變更)",
+    "planCode": "204311RZ1APP121A11Z10000003",
+    "contractType": "附約",
+    "productType": "醫療定額",
+    "currency": "新台幣",
+    "status": "停售",
+    "saleDate": "2024-07-01",
+    "stopDate": "2024-09-30",
+    "versionFolder": "v3",
+    "productFolder": "國泰人壽睛彩人生手術醫療健康保險附約",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ]
+  },
+  "204311RZ1AWV121A11Z10000004": {
+    "company": "國泰人壽保險股份有限公司",
+    "productName": "國泰人壽好實在自負額住院醫療健康保險附約(第4次部分變更)",
+    "planCode": "204311RZ1AWV121A11Z10000004",
+    "contractType": "附約",
+    "productType": "醫療定額",
+    "currency": "新台幣",
+    "status": "停售",
+    "saleDate": "2024-07-01",
+    "stopDate": "2024-07-12",
+    "versionFolder": "v4",
+    "productFolder": "國泰人壽好實在自負額住院醫療健康保險附約",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ]
+  },
+  "204311RZ1ACFI21A11Z10000003": {
+    "company": "國泰人壽保險股份有限公司",
+    "productName": "國泰人壽自由配一年定期特定處置醫療健康保險附約(第3次部分變更)",
+    "planCode": "204311RZ1ACFI21A11Z10000003",
+    "contractType": "附約",
+    "productType": "醫療定額",
+    "currency": "新台幣",
+    "status": "停售",
+    "saleDate": "2024-07-01",
+    "stopDate": "2024-09-30",
+    "versionFolder": "v3",
+    "productFolder": "國泰人壽自由配一年定期特定處置醫療健康保險附約",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ]
+  },
+  "204311RZ1ACV121A11Z10000002": {
+    "company": "國泰人壽保險股份有限公司",
+    "productName": "國泰人壽實全心意住院醫療健康保險附約(第2次部分變更)",
+    "planCode": "204311RZ1ACV121A11Z10000002",
+    "contractType": "附約",
+    "productType": "醫療定額",
+    "currency": "新台幣",
+    "status": "停售",
+    "saleDate": "2024-07-01",
+    "stopDate": "2024-08-28",
+    "versionFolder": "v2",
+    "productFolder": "國泰人壽實全心意住院醫療健康保險附約",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ]
+  },
+  "204311RZ1AHT222A11Z10000001": {
+    "company": "國泰人壽保險股份有限公司",
+    "productName": "國泰人壽心安手術醫療定期健康保險附約(第1次部分變更)",
+    "planCode": "204311RZ1AHT222A11Z10000001",
+    "contractType": "附約",
+    "productType": "醫療定額",
+    "currency": "新台幣",
+    "status": "停售",
+    "saleDate": "2024-07-01",
+    "stopDate": "2024-09-30",
+    "versionFolder": "v1",
+    "productFolder": "國泰人壽心安手術醫療定期健康保險附約",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ]
+  },
+  "204311RZ1AHT123A11Z10000001": {
+    "company": "國泰人壽保險股份有限公司",
+    "productName": "國泰人壽心安加護燒燙傷病房醫療終身健康保險附約(第1次部分變更)",
+    "planCode": "204311RZ1AHT123A11Z10000001",
+    "contractType": "附約",
+    "productType": "醫療定額",
+    "currency": "新台幣",
+    "status": "停售",
+    "saleDate": "2024-07-01",
+    "stopDate": "2024-09-30",
+    "versionFolder": "v1",
+    "productFolder": "國泰人壽心安加護燒燙傷病房醫療終身健康保險附約",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ]
+  },
+  "204311RZ1ACQ021A11Z10000010": {
+    "company": "國泰人壽保險股份有限公司",
+    "productName": "國泰人壽真永健住院日額健康保險附約(第10次部分變更)",
+    "planCode": "204311RZ1ACQ021A11Z10000010",
+    "contractType": "附約",
+    "productType": "醫療定額",
+    "currency": "新台幣",
+    "status": "停售",
+    "saleDate": "2024-07-01",
+    "stopDate": "2024-09-30",
+    "versionFolder": "v10",
+    "productFolder": "國泰人壽真永健住院日額健康保險附約",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ]
+  },
+  "204311RZ1AB9021A11Z10000005": {
+    "company": "國泰人壽保險股份有限公司",
+    "productName": "國泰人壽真大心住院醫療健康保險附約(第5次部分變更)",
+    "planCode": "204311RZ1AB9021A11Z10000005",
+    "contractType": "附約",
+    "productType": "醫療定額",
+    "currency": "新台幣",
+    "status": "停售",
+    "saleDate": "2024-07-01",
+    "stopDate": "2024-09-30",
+    "versionFolder": "v5",
+    "productFolder": "國泰人壽真大心住院醫療健康保險附約",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ]
+  },
+  "204311RZ1ACFH21A11Z10000002": {
+    "company": "國泰人壽保險股份有限公司",
+    "productName": "國泰人壽自由配一年定期加護燒燙傷病房醫療健康保險附約(第2次部分變更)",
+    "planCode": "204311RZ1ACFH21A11Z10000002",
+    "contractType": "附約",
+    "productType": "醫療定額",
+    "currency": "新台幣",
+    "status": "停售",
+    "saleDate": "2024-07-01",
+    "stopDate": "2024-09-30",
+    "versionFolder": "v2",
+    "productFolder": "國泰人壽自由配一年定期加護燒燙傷病房醫療健康保險附約",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ]
+  },
+  "204311MZ1BFX422A11E10000007": {
+    "company": "國泰人壽保險股份有限公司",
+    "productName": "國泰人壽三倍真醫靠住院醫療定期保險(外溢型)(第7次部分變更)",
+    "planCode": "204311MZ1BFX422A11E10000007",
+    "contractType": "主約",
+    "productType": "醫療定額",
+    "currency": "新台幣",
+    "status": "停售",
+    "saleDate": "2024-07-01",
+    "stopDate": "2024-07-12",
+    "versionFolder": "v7",
+    "productFolder": "國泰人壽三倍真醫靠住院醫療定期保險(外溢型)",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ]
+  },
+  "204311MZ1BL5023A11E10000015": {
+    "company": "國泰人壽保險股份有限公司",
+    "productName": "國泰人壽真心安住院醫療終身保險(外溢型)(第15次部分變更)",
+    "planCode": "204311MZ1BL5023A11E10000015",
+    "contractType": "主約",
+    "productType": "醫療定額",
+    "currency": "新台幣",
+    "status": "停售",
+    "saleDate": "2024-07-01",
+    "stopDate": "2024-09-30",
+    "versionFolder": "v15",
+    "productFolder": "國泰人壽真心安住院醫療終身保險(外溢型)",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ]
+  },
+  "204311RZ1ACF221A11E10000002": {
+    "company": "國泰人壽保險股份有限公司",
+    "productName": "國泰人壽溢起順心手術醫療健康保險附約(第2次部分變更)",
+    "planCode": "204311RZ1ACF221A11E10000002",
+    "contractType": "附約",
+    "productType": "醫療定額",
+    "currency": "新台幣",
+    "status": "停售",
+    "saleDate": "2024-07-01",
+    "stopDate": "2024-09-30",
+    "versionFolder": "v2",
+    "productFolder": "國泰人壽溢起順心手術醫療健康保險附約",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ]
+  },
+  "204311MZ1BDCA22A11E10000002": {
+    "company": "國泰人壽保險股份有限公司",
+    "productName": "國泰人壽樂心安住院醫療定期保險(外溢型)(第2次部分變更)",
+    "planCode": "204311MZ1BDCA22A11E10000002",
+    "contractType": "主約",
+    "productType": "醫療定額",
+    "currency": "新台幣",
+    "status": "停售",
+    "saleDate": "2024-07-01",
+    "stopDate": "2024-09-30",
+    "versionFolder": "v2",
+    "productFolder": "國泰人壽樂心安住院醫療定期保險(外溢型)",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ]
+  },
+  "204311MZ1BFZ222A11Z10000004": {
+    "company": "國泰人壽保險股份有限公司",
+    "productName": "國泰人壽全新醫靠住院醫療定期保險(第4次部分變更)",
+    "planCode": "204311MZ1BFZ222A11Z10000004",
+    "contractType": "主約",
+    "productType": "醫療定額",
+    "currency": "新台幣",
+    "status": "停售",
+    "saleDate": "2024-07-01",
+    "stopDate": "2024-07-12",
+    "versionFolder": "v4",
+    "productFolder": "國泰人壽全新醫靠住院醫療定期保險",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ]
+  },
+  "204311MZ1BAGA23A11E10000009": {
+    "company": "國泰人壽保險股份有限公司",
+    "productName": "國泰人壽真漾心安住院醫療終身保險(外溢型)(第9次部分變更)",
+    "planCode": "204311MZ1BAGA23A11E10000009",
+    "contractType": "主約",
+    "productType": "醫療定額",
+    "currency": "新台幣",
+    "status": "停售",
+    "saleDate": "2024-07-01",
+    "stopDate": "2024-09-30",
+    "versionFolder": "v9",
+    "productFolder": "國泰人壽真漾心安住院醫療終身保險(外溢型)",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ]
+  },
+  "204311MZ1BJWB23A11Z10000005": {
+    "company": "國泰人壽保險股份有限公司",
+    "productName": "國泰人壽安鑫醫靠醫療終身保險(第5次部分變更)",
+    "planCode": "204311MZ1BJWB23A11Z10000005",
+    "contractType": "主約",
+    "productType": "終身壽險",
+    "currency": "新台幣",
+    "status": "停售",
+    "saleDate": "2024-07-01",
+    "stopDate": "2024-09-29",
+    "versionFolder": "v5",
+    "productFolder": "國泰人壽安鑫醫靠醫療終身保險",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ]
+  },
+  "204311MZ1BGJ023A11B10000008": {
+    "company": "國泰人壽保險股份有限公司",
+    "productName": "國泰人壽樂轉健康住院醫療終身保險(第8次部分變更)",
+    "planCode": "204311MZ1BGJ023A11B10000008",
+    "contractType": "主約",
+    "productType": "醫療定額",
+    "currency": "新台幣",
+    "status": "停售",
+    "saleDate": "2024-07-01",
+    "stopDate": "2024-09-30",
+    "versionFolder": "v8",
+    "productFolder": "國泰人壽樂轉健康住院醫療終身保險",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ]
+  },
+  "204311MZ1BJW023A11E10000005": {
+    "company": "國泰人壽保險股份有限公司",
+    "productName": "國泰人壽真安安醫療終身保險(外溢型)(第5次部分變更)",
+    "planCode": "204311MZ1BJW023A11E10000005",
+    "contractType": "主約",
+    "productType": "終身壽險",
+    "currency": "新台幣",
+    "status": "停售",
+    "saleDate": "2024-07-01",
+    "stopDate": "2024-09-30",
+    "versionFolder": "v5",
+    "productFolder": "國泰人壽真安安醫療終身保險(外溢型)",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ]
+  },
+  "204321MZ2BDP322A11E10000001": {
+    "company": "國泰人壽保險股份有限公司",
+    "productName": "國泰人壽鑫溢滿滿防癌定期保險（外溢型）(第1次部分變更)",
+    "planCode": "204321MZ2BDP322A11E10000001",
+    "contractType": "主約",
+    "productType": "防癌險",
+    "currency": "新台幣",
+    "status": "停售",
+    "saleDate": "2024-07-01",
+    "stopDate": "2024-09-30",
+    "versionFolder": "v1",
+    "productFolder": "國泰人壽鑫溢滿滿防癌定期保險（外溢型）",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ]
+  },
+  "204321MZ2BM2322A11Z10000005": {
+    "company": "國泰人壽保險股份有限公司",
+    "productName": "國泰人壽鍾愛守護防癌定期保險(第5次部分變更)",
+    "planCode": "204321MZ2BM2322A11Z10000005",
+    "contractType": "主約",
+    "productType": "防癌險",
+    "currency": "新台幣",
+    "status": "停售",
+    "saleDate": "2024-07-01",
+    "stopDate": "2024-09-30",
+    "versionFolder": "v5",
+    "productFolder": "國泰人壽鍾愛守護防癌定期保險",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ]
+  },
+  "204321RZ1ACFK21A11Z10000002": {
+    "company": "國泰人壽保險股份有限公司",
+    "productName": "國泰人壽自由配一年定期初次罹患癌症健康保險附約(第2次部分變更)",
+    "planCode": "204321RZ1ACFK21A11Z10000002",
+    "contractType": "附約",
+    "productType": "防癌險",
+    "currency": "新台幣",
+    "status": "停售",
+    "saleDate": "2024-07-01",
+    "stopDate": "2024-09-30",
+    "versionFolder": "v2",
+    "productFolder": "國泰人壽自由配一年定期初次罹患癌症健康保險附約",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ]
+  },
+  "204321MZ9GWTR22A11Z10000004": {
+    "company": "國泰人壽保險股份有限公司",
+    "productName": "國泰人壽真愛平安防癌定期保險(第4次部分變更)",
+    "planCode": "204321MZ9GWTR22A11Z10000004",
+    "contractType": "主約",
+    "productType": "防癌險",
+    "currency": "新台幣",
+    "status": "停售",
+    "saleDate": "2024-07-01",
+    "stopDate": "2024-09-30",
+    "versionFolder": "v4",
+    "productFolder": "國泰人壽真愛平安防癌定期保險",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ]
+  },
+  "204391RZ1ACFL21A11Z10000002": {
+    "company": "國泰人壽保險股份有限公司",
+    "productName": "國泰人壽自由配一年定期健康保險附約(第2次部分變更)",
+    "planCode": "204391RZ1ACFL21A11Z10000002",
+    "contractType": "附約",
+    "productType": "醫療定額",
+    "currency": "新台幣",
+    "status": "停售",
+    "saleDate": "2024-07-01",
+    "stopDate": "2024-09-30",
+    "versionFolder": "v2",
+    "productFolder": "國泰人壽自由配一年定期健康保險附約",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ]
+  },
+  "204391RZ1ACF321A11E10000003": {
+    "company": "國泰人壽保險股份有限公司",
+    "productName": "國泰人壽溢起守護定期健康保險附約(第3次部分變更)",
+    "planCode": "204391RZ1ACF321A11E10000003",
+    "contractType": "附約",
+    "productType": "醫療定額",
+    "currency": "新台幣",
+    "status": "停售",
+    "saleDate": "2024-07-01",
+    "stopDate": "2024-09-30",
+    "versionFolder": "v3",
+    "productFolder": "國泰人壽溢起守護定期健康保險附約",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ]
+  },
+  "204391MZ9BZDN22A11E10000000": {
+    "company": "國泰人壽保險股份有限公司",
+    "productName": "國泰人壽鍾心滿溢重大傷病定期保險(外溢型)",
+    "planCode": "204391MZ9BZDN22A11E10000000",
+    "contractType": "主約",
+    "productType": "重大疾(傷)病險",
+    "currency": "新台幣",
+    "status": "停售",
+    "saleDate": "2024-07-01",
+    "stopDate": "2024-09-30",
+    "versionFolder": "v0",
+    "productFolder": "國泰人壽鍾心滿溢重大傷病定期保險(外溢型)",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ]
+  },
+  "204391MZ9BZCN22A11E10000002": {
+    "company": "國泰人壽保險股份有限公司",
+    "productName": "國泰人壽新鍾心滿福重大傷病定期保險(外溢型)(第2次部分變更)",
+    "planCode": "204391MZ9BZCN22A11E10000002",
+    "contractType": "主約",
+    "productType": "重大疾(傷)病險",
+    "currency": "新台幣",
+    "status": "停售",
+    "saleDate": "2024-07-01",
+    "stopDate": "2024-09-30",
+    "versionFolder": "v2",
+    "productFolder": "國泰人壽新鍾心滿福重大傷病定期保險(外溢型)",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ]
+  },
+  "204391MZ9BVM022A31Z10000007": {
+    "company": "國泰人壽保險股份有限公司",
+    "productName": "國泰人壽三高平安定期健康保險(第7次部分變更)",
+    "planCode": "204391MZ9BVM022A31Z10000007",
+    "contractType": "主約",
+    "productType": "醫療定額",
+    "currency": "新台幣",
+    "status": "停售",
+    "saleDate": "2024-07-01",
+    "stopDate": "2024-09-30",
+    "versionFolder": "v7",
+    "productFolder": "國泰人壽三高平安定期健康保險",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ]
+  },
+  "204391MZ9BL6023A11E10000014": {
+    "company": "國泰人壽保險股份有限公司",
+    "productName": "國泰人壽真康順手術醫療終身保險(外溢型)(第14次部分變更)",
+    "planCode": "204391MZ9BL6023A11E10000014",
+    "contractType": "主約",
+    "productType": "終身壽險",
+    "currency": "新台幣",
+    "status": "停售",
+    "saleDate": "2024-07-01",
+    "stopDate": "2024-09-30",
+    "versionFolder": "v14",
+    "productFolder": "國泰人壽真康順手術醫療終身保險(外溢型)",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ]
+  },
+  "204393EZ1ANC921A11Z10000006": {
+    "company": "國泰人壽保險股份有限公司",
+    "productName": "國泰人壽眷屬身故前未給付醫療保險金受益人指定批註條款(第6次部分變更)",
+    "planCode": "204393EZ1ANC921A11Z10000006",
+    "contractType": "主約",
+    "productType": "醫療定額",
+    "currency": "新台幣",
+    "status": "停售",
+    "saleDate": "2024-07-01",
+    "stopDate": "2025-11-12",
+    "versionFolder": "v6",
+    "productFolder": "國泰人壽眷屬身故前未給付醫療保險金受益人指定批註條款",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ]
+  },
+  "204341RZ1AX9321A11Z10000000": {
+    "company": "國泰人壽保險股份有限公司",
+    "productName": "國泰人壽安護一年期保險費豁免附約",
+    "planCode": "204341RZ1AX9321A11Z10000000",
+    "contractType": "附約",
+    "productType": "其他",
+    "currency": "新台幣",
+    "status": "停售",
+    "saleDate": "2024-07-01",
+    "stopDate": "2024-09-30",
+    "versionFolder": "v0",
+    "productFolder": "國泰人壽安護一年期保險費豁免附約",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ]
+  },
+  "204351RZ1APX521A11E10000000": {
+    "company": "國泰人壽保險股份有限公司",
+    "productName": "國泰人壽鍾溢祝福重大疾病健康保險附約(乙型)(外溢型)",
+    "planCode": "204351RZ1APX521A11E10000000",
+    "contractType": "附約",
+    "productType": "重大疾(傷)病險",
+    "currency": "新台幣",
+    "status": "停售",
+    "saleDate": "2024-07-01",
+    "stopDate": "2024-09-30",
+    "versionFolder": "v0",
+    "productFolder": "國泰人壽鍾溢祝福重大疾病健康保險附約(乙型)(外溢型)",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ]
+  },
+  "204341RZ1AX9421A11Z10000000": {
+    "company": "國泰人壽保險股份有限公司",
+    "productName": "國泰人壽安家一年期保險費豁免附約",
+    "planCode": "204341RZ1AX9421A11Z10000000",
+    "contractType": "附約",
+    "productType": "其他",
+    "currency": "新台幣",
+    "status": "停售",
+    "saleDate": "2024-07-01",
+    "stopDate": "2024-09-30",
+    "versionFolder": "v0",
+    "productFolder": "國泰人壽安家一年期保險費豁免附約",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ]
+  },
+  "204351MZ9BZIA23A11Z10000002": {
+    "company": "國泰人壽保險股份有限公司",
+    "productName": "國泰人壽鍾生健康特定傷病終身保險(第2次部分變更)",
+    "planCode": "204351MZ9BZIA23A11Z10000002",
+    "contractType": "主約",
+    "productType": "重大疾(傷)病險",
+    "currency": "新台幣",
+    "status": "停售",
+    "saleDate": "2024-07-01",
+    "stopDate": "2024-09-30",
+    "versionFolder": "v2",
+    "productFolder": "國泰人壽鍾生健康特定傷病終身保險",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ]
+  },
+  "204361MZ6BHD023A11B10000007": {
+    "company": "國泰人壽保險股份有限公司",
+    "productName": "國泰人壽新樂轉守護長期照顧終身保險(第7次部分變更)",
+    "planCode": "204361MZ6BHD023A11B10000007",
+    "contractType": "主約",
+    "productType": "長照險",
+    "currency": "新台幣",
+    "status": "停售",
+    "saleDate": "2024-07-01",
+    "stopDate": "2024-12-31",
+    "versionFolder": "v7",
+    "productFolder": "國泰人壽新樂轉守護長期照顧終身保險",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ]
+  },
+  "204361MZ6BVS823A12Z10000002": {
+    "company": "國泰人壽保險股份有限公司",
+    "productName": "國泰人壽真心守護長期照顧終身保險(實物給付型保險商品)(第2次部分變更)",
+    "planCode": "204361MZ6BVS823A12Z10000002",
+    "contractType": "主約",
+    "productType": "長照險",
+    "currency": "新台幣",
+    "status": "停售",
+    "saleDate": "2024-07-01",
+    "stopDate": "2024-12-31",
+    "versionFolder": "v2",
+    "productFolder": "國泰人壽真心守護長期照顧終身保險(實物給付型保險商品)",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ]
+  },
+  "204311MZ1BJWH23A11Z10000000": {
+    "company": "國泰人壽保險股份有限公司",
+    "productName": "國泰人壽享醫靠醫療終身保險",
+    "planCode": "204311MZ1BJWH23A11Z10000000",
+    "contractType": "主約",
+    "productType": "終身壽險",
+    "currency": "新台幣",
+    "status": "停售",
+    "saleDate": "2024-08-29",
+    "stopDate": "2024-12-31",
+    "versionFolder": "v0",
+    "productFolder": "國泰人壽享醫靠醫療終身保險",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ]
+  },
+  "204311RZ1ACV121A11Z10000003": {
+    "company": "國泰人壽保險股份有限公司",
+    "productName": "國泰人壽新實全心意住院醫療健康保險附約(第3次部分變更)",
+    "planCode": "204311RZ1ACV121A11Z10000003",
+    "contractType": "附約",
+    "productType": "醫療定額",
+    "currency": "新台幣",
+    "status": "停售",
+    "saleDate": "2024-08-29",
+    "stopDate": "2025-04-23",
+    "versionFolder": "v3",
+    "productFolder": "國泰人壽新實全心意住院醫療健康保險附約",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ]
+  },
+  "204311MZ1ACWA21A11Z10000002": {
+    "company": "國泰人壽保險股份有限公司",
+    "productName": "國泰人壽新iHealth一年期住院醫療健康保險(第2次部分變更)",
+    "planCode": "204311MZ1ACWA21A11Z10000002",
+    "contractType": "主約",
+    "productType": "醫療定額",
+    "currency": "新台幣",
+    "status": "停售",
+    "saleDate": "2024-08-29",
+    "stopDate": "2025-06-30",
+    "versionFolder": "v2",
+    "productFolder": "國泰人壽新iHealth一年期住院醫療健康保險",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ]
+  },
+  "204391MZ1ASC122A11E10000000": {
+    "company": "國泰人壽保險股份有限公司",
+    "productName": "國泰人壽樂鍾心特定傷病定期健康保險（外溢型）",
+    "planCode": "204391MZ1ASC122A11E10000000",
+    "contractType": "主約",
+    "productType": "重大疾(傷)病險",
+    "currency": "新台幣",
+    "status": "現售",
+    "saleDate": "2024-08-29",
+    "stopDate": "",
+    "versionFolder": "v0",
+    "productFolder": "國泰人壽樂鍾心特定傷病定期健康保險（外溢型）",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ]
+  },
+  "204311RZ1APP121A11Z10000004": {
+    "company": "國泰人壽保險股份有限公司",
+    "productName": "國泰人壽睛彩人生手術醫療健康保險附約(第4次部分變更)",
+    "planCode": "204311RZ1APP121A11Z10000004",
+    "contractType": "附約",
+    "productType": "醫療定額",
+    "currency": "新台幣",
+    "status": "停售",
+    "saleDate": "2024-10-01",
+    "stopDate": "2025-04-23",
+    "versionFolder": "v4",
+    "productFolder": "國泰人壽睛彩人生手術醫療健康保險附約",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ]
+  },
+  "204141M11ASI000": {
+    "company": "國泰人壽保險股份有限公司",
+    "productName": "國泰人壽長豐年年終身保險",
+    "planCode": "204141M11ASI000",
+    "contractType": "主約",
+    "productType": "終身壽險",
+    "currency": "新台幣",
+    "status": "停售",
+    "saleDate": "2006-01-01",
+    "stopDate": "2006-12-31",
+    "versionFolder": "v0",
+    "productFolder": "國泰人壽長豐年年終身保險",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ]
+  },
+  "204141M12BQM000": {
+    "company": "國泰人壽保險股份有限公司",
+    "productName": "國泰人壽松柏長期看護終身壽險",
+    "planCode": "204141M12BQM000",
+    "contractType": "主約",
+    "productType": "終身壽險",
+    "currency": "新台幣",
+    "status": "停售",
+    "saleDate": "2006-01-01",
+    "stopDate": "2006-12-31",
+    "versionFolder": "v0",
+    "productFolder": "國泰人壽松柏長期看護終身壽險",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ]
   }
 }
