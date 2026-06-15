@@ -150,15 +150,27 @@ def roc_to_western(roc_date: str) -> str:
     return roc_date
 
 
+_CH_NUMS = {
+    '一':1,'二':2,'三':3,'四':4,'五':5,'六':6,'七':7,'八':8,'九':9,'十':10,
+    '十一':11,'十二':12,'十三':13,'十四':14,'十五':15,'十六':16,'十七':17,
+    '十八':18,'十九':19,'二十':20,
+}
+# 匹配各種版次變體：部分/部份、全形/半形括號、中文/阿拉伯數字、有無「次」
+_VER_RE = re.compile(r'[\(（]第([一二三四五六七八九十\d]+)次?部[分份]變更[\)）]')
+
+
 def get_version_number(product_name: str) -> int:
-    """從商品名稱取版次：有「第N次部分變更」→ N，否則 → 0"""
-    m = re.search(r'第(\d+)次部分變更', product_name)
-    return int(m.group(1)) if m else 0
+    """從商品名稱取版次，支援阿拉伯/中文數字、全形括號、缺「次」"""
+    m = _VER_RE.search(product_name)
+    if not m:
+        return 0
+    token = m.group(1)
+    return int(token) if token.isdigit() else _CH_NUMS.get(token, 0)
 
 
 def base_product_name(product_name: str) -> str:
-    """去除「(第N次部分變更)」，取基本商品名稱"""
-    return re.sub(r'\s*\(第\d+次部分變更\)', '', product_name).strip()
+    """去除版次後綴，支援全形括號、中文數字、缺「次」"""
+    return _VER_RE.sub('', product_name).strip()
 
 
 def safe_folder_name(name: str, max_len: int = 50) -> str:
@@ -254,38 +266,52 @@ def solve_captcha(page) -> str:
 
 # ── 取 DetailList 所有 PDF ─────────────────────────
 
-def get_all_pdfs(product_id: str, cookies: dict) -> dict:
-    """回傳 {doc_type: url}，用 HTTP 抓 DetailList（不動 Playwright browser）"""
-    try:
-        url = f"{BASE_URL}/DetailList.aspx?productId={product_id}"
-        req = urllib.request.Request(url)
-        req.add_header("Cookie", "; ".join(f"{k}={v}" for k, v in cookies.items()))
-        req.add_header("Referer", BASE_URL)
-        req.add_header("User-Agent", "Mozilla/5.0")
-        with urllib.request.urlopen(req, timeout=15, context=_SSL_CTX) as resp:
-            html = resp.read().decode("utf-8", errors="replace")
+class DetailListError(Exception):
+    """DetailList 網路抓取失敗（需重試，不可當成『無文件』）"""
 
-        # 找所有 <a href="Open2.ashx?id=...">filename.pdf</a>
-        pattern = re.compile(
-            r'href=["\']?(Open2\.ashx\?[^"\'>\s]+)["\']?[^>]*>\s*([^<]+\.pdf)\s*</a>',
-            re.IGNORECASE,
-        )
-        pdfs = {}
-        for href, text in pattern.findall(html):
-            text = text.strip()
-            full_url = f"{BASE_URL}/{href}"
-            doc_label = None
-            for suffix, label in DOC_SUFFIX_MAP.items():
-                if re.search(rf"{re.escape(suffix)}\.pdf", text, re.IGNORECASE):
-                    doc_label = label
-                    break
-            if doc_label is _SKIP or doc_label is None:
-                continue
-            pdfs[doc_label] = full_url
-    except Exception as e:
-        print(f"         ⚠️  DetailList 失敗 ({product_id})：{e}")
-        pdfs = {}
-    return pdfs
+
+def get_all_pdfs(product_id: str, cookies: dict, retries: int = 3) -> dict:
+    """回傳 {doc_type: url}，用 HTTP 抓 DetailList（不動 Playwright browser）。
+
+    成功載入但無符合文件 → 回傳 {}（合理，該筆真的沒 PDF）。
+    網路/逾時失敗 → 重試 retries 次後仍失敗則 raise DetailListError，
+    讓呼叫端記錄並改日重試，避免靜默丟筆。
+    """
+    last_err = None
+    for attempt in range(1, retries + 1):
+        try:
+            url = f"{BASE_URL}/DetailList.aspx?productId={product_id}"
+            req = urllib.request.Request(url)
+            req.add_header("Cookie", "; ".join(f"{k}={v}" for k, v in cookies.items()))
+            req.add_header("Referer", BASE_URL)
+            req.add_header("User-Agent", "Mozilla/5.0")
+            with urllib.request.urlopen(req, timeout=30, context=_SSL_CTX) as resp:
+                html = resp.read().decode("utf-8", errors="replace")
+
+            # 找所有 <a href="Open2.ashx?id=...">filename.pdf</a>
+            pattern = re.compile(
+                r'href=["\']?(Open2\.ashx\?[^"\'>\s]+)["\']?[^>]*>\s*([^<]+\.pdf)\s*</a>',
+                re.IGNORECASE,
+            )
+            pdfs = {}
+            for href, text in pattern.findall(html):
+                text = text.strip()
+                full_url = f"{BASE_URL}/{href}"
+                doc_label = None
+                for suffix, label in DOC_SUFFIX_MAP.items():
+                    if re.search(rf"{re.escape(suffix)}\.pdf", text, re.IGNORECASE):
+                        doc_label = label
+                        break
+                if doc_label is _SKIP or doc_label is None:
+                    continue
+                pdfs[doc_label] = full_url
+            return pdfs
+        except Exception as e:
+            last_err = e
+            if attempt < retries:
+                print(f"         ⚠️  DetailList 失敗（第{attempt}次）{product_id}，5秒後重試：{e}")
+                time.sleep(5)
+    raise DetailListError(f"{product_id}: {last_err}")
 
 
 def download_pdf(url: str, dest: Path, cookies: dict) -> bool:
@@ -336,6 +362,23 @@ def _mark_subcat_done(company_code: str, sub_val: str):
     done = _load_done_subcats(company_code)
     done.add(sub_val)
     p.write_text(json.dumps(sorted(done), ensure_ascii=False))
+
+
+def _failures_path(company_code: str) -> Path:
+    return BASE_DIR / f"scraper_failures_{company_code}.json"
+
+
+def _log_failure(company_code: str, pid: str, name: str, reason: str):
+    """記錄抓取失敗的單筆，供日後重試（不靜默丟掉）"""
+    p = _failures_path(company_code)
+    data = {}
+    if p.exists():
+        try:
+            data = json.loads(p.read_text("utf-8"))
+        except Exception:
+            data = {}
+    data[pid] = {"productName": name, "reason": reason}
+    p.write_text(json.dumps(data, ensure_ascii=False, indent=2), "utf-8")
 
 
 def _navigate_and_captcha(page, target_value: str, sub_cat: str) -> bool:
@@ -476,6 +519,7 @@ def scrape_and_upload(company_code: str, limit: int = 0, manual_captcha: str = "
             # ── 翻頁爬取（同一子類別內）──────────────
             page_num = 1
             sub_done = False
+            subcat_had_failure = False   # 有任何單筆網路失敗就不標記子類別完成
 
             while True:
                 print(f"\n📄 [{sub_label}] 第 {page_num} 頁...")
@@ -536,11 +580,18 @@ def scrape_and_upload(company_code: str, limit: int = 0, manual_captcha: str = "
                     print(f"       版次：{version_folder}")
 
                     cookies = {c["name"]: c["value"] for c in context.cookies()}
-                    pdfs = get_all_pdfs(pid, cookies)
+                    try:
+                        pdfs = get_all_pdfs(pid, cookies)
+                    except DetailListError as e:
+                        # 網路失敗：記錄下來改日重試，不要靜默丟掉，也標記此子類別未完成
+                        print(f"       ❌ DetailList 連續失敗，記錄待重試：{e}")
+                        _log_failure(company_code, pid, name, f"DetailList: {e}")
+                        subcat_had_failure = True
+                        continue
                     if pdfs:
                         print(f"       文件類型：{', '.join(pdfs.keys())}")
                     else:
-                        print(f"       ⚠️  找不到任何 PDF，略過")
+                        print(f"       ⚠️  此筆確實無符合文件（DetailList 已載入），略過")
                         processed += 1
                         continue
 
@@ -608,10 +659,13 @@ def scrape_and_upload(company_code: str, limit: int = 0, manual_captcha: str = "
                             raise
                 page_num += 1
 
-            # 子類別全部完成（非 limit 中斷），記錄避免重啟重複掃
+            # 子類別全部完成（非 limit 中斷、且無任何單筆失敗）才記錄，避免重啟重複掃
             if not sub_done and not (limit > 0 and processed >= limit):
-                _mark_subcat_done(company_code, sub_val)
-                print(f"   💾 {sub_label} 完成，已記錄")
+                if subcat_had_failure:
+                    print(f"   ⚠️  {sub_label} 有單筆失敗，不標記完成（下次會重掃補抓）")
+                else:
+                    _mark_subcat_done(company_code, sub_val)
+                    print(f"   💾 {sub_label} 完成，已記錄")
 
             if sub_done or (limit > 0 and processed >= limit):
                 break
