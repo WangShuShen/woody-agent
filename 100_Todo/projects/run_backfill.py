@@ -35,7 +35,7 @@ def get_api_key() -> str:
 
 
 def run_once(company: str, env: dict) -> bool:
-    """跑一次 scraper，回傳是否乾淨完成（印出 🎉 完成）"""
+    """跑一次 scraper，回傳是否「6 個子類別全部完成」（而非只看 🎉）"""
     proc = subprocess.run(
         [sys.executable, str(SCRAPER), "--company", company],
         env=env,
@@ -44,9 +44,12 @@ def run_once(company: str, env: dict) -> bool:
         text=True,
     )
     out = proc.stdout or ""
-    # 印出尾段供觀察
     print(out[-2000:], flush=True)
-    return "🎉 完成" in out
+    # 以子類別進度檔判斷是否真的全完成（6 個子類別齊全）
+    import json as _json
+    pf = BASE / f"scraper_subcat_{company}.json"
+    done = set(_json.loads(pf.read_text("utf-8"))) if pf.exists() else set()
+    return len(done) >= 6
 
 
 def main():

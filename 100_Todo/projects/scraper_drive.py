@@ -17,6 +17,7 @@ import re
 import sys
 import argparse
 import time
+import math
 import base64
 import ssl
 import unicodedata
@@ -518,6 +519,16 @@ def scrape_and_upload(company_code: str, limit: int = 0, manual_captcha: str = "
                     print(f"   ⚠️  {sub_label} CAPTCHA 失敗，跳過此子類別")
                     continue
 
+            # ── 每頁顯示改 50 筆（減少頁數、降低翻頁風險）─────
+            page_size = 50
+            try:
+                page.select_option("select[name='PageCrt']", "50")
+                page.wait_for_load_state("networkidle", timeout=15000)
+                page.wait_for_timeout(500)
+            except Exception as _e:
+                page_size = 10
+                print(f"   ⚠️  設定每頁 50 筆失敗，沿用預設：{_e}")
+
             # ── 翻頁爬取（同一子類別內）──────────────
             page_num = 1
             sub_done = False
@@ -531,7 +542,9 @@ def scrape_and_upload(company_code: str, limit: int = 0, manual_captcha: str = "
                 total_count = int(_m.group(1)) if _m else -1
             except Exception:
                 total_count = -1
-            print(f"   TII 宣告總筆數：{total_count if total_count >= 0 else '未知'}")
+            last_page = max(1, math.ceil(total_count / page_size)) if total_count > 0 else None
+            print(f"   TII 宣告總筆數：{total_count if total_count >= 0 else '未知'}"
+                  f"（每頁 {page_size}，共 {last_page if last_page else '?'} 頁）")
 
             while True:
                 print(f"\n📄 [{sub_label}] 第 {page_num} 頁...")
@@ -648,41 +661,37 @@ def scrape_and_upload(company_code: str, limit: int = 0, manual_captcha: str = "
                     print(f"\n✅ 達到 limit={limit}，停止")
                     break
 
-                # 找下一頁連結；找不到時重試數次（避免渲染未完成的假陰性）
-                next_link = None
-                for _find in range(3):
-                    next_link = page.query_selector(f"a:text('{page_num + 1}')") or \
-                                page.query_selector("a:text('[下十頁]')")
-                    if next_link:
-                        break
-                    page.wait_for_timeout(1500)
-
-                if not next_link:
-                    # 沒有下一頁連結：須確認是否真的爬完（看過列數 >= 宣告總數）
+                # 已到最後一頁？
+                if last_page and page_num >= last_page:
                     if total_count >= 0 and rows_seen < total_count:
-                        print(f"\n❌ [{sub_label}] 分頁中斷！只看到 {rows_seen}/{total_count} 列，"
-                              f"標記未完成，下次重掃")
+                        print(f"\n❌ [{sub_label}] 列數不足！{rows_seen}/{total_count}，標記未完成下次重掃")
                         subcat_had_failure = True
                     else:
-                        print(f"\n✅ [{sub_label}] 全部爬完（{rows_seen} 列）")
+                        print(f"\n✅ [{sub_label}] 全部爬完（{rows_seen}/{total_count} 列）")
                     break
+                if not last_page:
+                    # 不知總頁數（無宣告總數）：退回偵測下一頁連結
+                    nl = page.query_selector(f"a[href*='page={page_num+1}']")
+                    if not nl:
+                        print(f"\n✅ [{sub_label}] 全部爬完（{rows_seen} 列）")
+                        break
 
-                for _click_attempt in range(3):
+                # 直接以網址跳下一頁（TII 分頁為 GET：ResultQueryAll.aspx?page=N）
+                page_num += 1
+                _ok = False
+                for _attempt in range(3):
                     try:
-                        next_link.click()
-                        page.wait_for_load_state("networkidle", timeout=30000)
+                        page.goto(f"{BASE_URL}/ResultQueryAll.aspx?page={page_num}",
+                                  wait_until="networkidle", timeout=30000)
+                        _ok = True
                         break
                     except Exception as _e:
-                        if _click_attempt < 2:
-                            print(f"   ⚠️  翻頁失敗，重試：{_e}")
-                            time.sleep(5)
-                            next_link = page.query_selector(f"a:text('{page_num + 1}')") or \
-                                        page.query_selector("a:text('[下十頁]')")
-                            if not next_link:
-                                break
-                        else:
-                            raise
-                page_num += 1
+                        print(f"   ⚠️  跳頁 {page_num} 失敗，重試：{_e}")
+                        time.sleep(5)
+                if not _ok:
+                    print(f"\n❌ [{sub_label}] 跳頁 {page_num} 連續失敗，標記未完成下次重掃")
+                    subcat_had_failure = True
+                    break
 
             # 子類別全部完成（非 limit 中斷、且無任何單筆失敗）才記錄，避免重啟重複掃
             if not sub_done and not (limit > 0 and processed >= limit):
