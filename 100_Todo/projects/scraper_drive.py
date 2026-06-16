@@ -158,7 +158,8 @@ _CH_NUMS = {
     '十八':18,'十九':19,'二十':20,
 }
 # 匹配各種版次變體：部分/部份、全形/半形括號、中文/阿拉伯數字、有無「次」
-_VER_RE = re.compile(r'[\(（]第([一二三四五六七八九十\d]+)次?部[分份]變更[\)）]')
+# 版次後綴：支援 (第N次部分變更)、（…）、-第N次部分變更（破折號無括號）等
+_VER_RE = re.compile(r'[\(（\-－]\s*第([一二三四五六七八九十\d]+)次?部[分份]變更[\)）]?')
 
 
 def get_version_number(product_name: str) -> int:
@@ -444,14 +445,16 @@ def _navigate_and_captcha(page, target_value: str, sub_cat: str) -> bool:
     return False
 
 
-def scrape_and_upload(company_code: str, limit: int = 0, manual_captcha: str = ""):
+def scrape_and_upload(company_code: str, limit: int = 0, manual_captcha: str = "",
+                       registry_file: str = ""):
     print("🔌 連線 Google Drive...")
     drive   = connect_drive()
     root_id = get_or_create_folder(drive, DRIVE_ROOT_FOLDER)
     print(f"   ✅ Drive 根資料夾：{DRIVE_ROOT_FOLDER}")
 
     # 本地 registry 記錄已處理項目（避免重跑時重複上傳）
-    registry_path = BASE_DIR / "drive_registry.json"
+    # 可用 --registry 指定獨立檔，避免與其他同時執行的爬蟲爭寫同一檔
+    registry_path = Path(registry_file) if registry_file else BASE_DIR / "drive_registry.json"
     registry: dict = {}
     if registry_path.exists():
         try:
@@ -716,8 +719,9 @@ def main():
     parser.add_argument("--company", required=True, help="公司代碼，例如 206（南山人壽）")
     parser.add_argument("--limit",   type=int, default=0, help="最多處理幾筆（0=全部）")
     parser.add_argument("--captcha", default="", help="直接傳入已知的 CAPTCHA 值，跳過自動解析")
+    parser.add_argument("--registry", default="", help="指定 registry 檔路徑（同時跑多公司時用獨立檔避免爭寫）")
     args = parser.parse_args()
-    scrape_and_upload(args.company, args.limit, args.captcha)
+    scrape_and_upload(args.company, args.limit, args.captcha, args.registry)
 
 
 if __name__ == "__main__":

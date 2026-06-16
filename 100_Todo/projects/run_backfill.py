@@ -9,6 +9,7 @@ scraper 本身有：registry 逐筆寫入、子類別完成標記、單筆失敗
 """
 import os
 import re
+import argparse
 import subprocess
 import sys
 import time
@@ -16,8 +17,8 @@ from pathlib import Path
 
 BASE = Path(__file__).parent
 SCRAPER = BASE / "scraper_drive.py"
-COMPANIES = ["206", "204"]   # 南山、國泰
-MAX_RETRIES = 40             # 每間公司最多重啟次數
+DEFAULT_COMPANIES = ["206", "204"]   # 南山、國泰
+MAX_RETRIES = 40                      # 每間公司最多重啟次數
 ROOT = BASE.parent.parent
 
 
@@ -34,11 +35,13 @@ def get_api_key() -> str:
     return ""
 
 
-def run_once(company: str, env: dict) -> bool:
+def run_once(company: str, env: dict, registry: str = "") -> bool:
     """跑一次 scraper，回傳是否「6 個子類別全部完成」（而非只看 🎉）"""
+    cmd = [sys.executable, str(SCRAPER), "--company", company]
+    if registry:
+        cmd += ["--registry", registry]
     proc = subprocess.run(
-        [sys.executable, str(SCRAPER), "--company", company],
-        env=env,
+        cmd, env=env,
         stdout=subprocess.PIPE,
         stderr=subprocess.STDOUT,
         text=True,
@@ -53,6 +56,14 @@ def run_once(company: str, env: dict) -> bool:
 
 
 def main():
+    ap = argparse.ArgumentParser(description="多公司爬取自動重啟包裝器")
+    ap.add_argument("--companies", default=",".join(DEFAULT_COMPANIES),
+                    help="公司代碼，逗號分隔，例如 208 或 208,209")
+    ap.add_argument("--registry", default="",
+                    help="registry 檔路徑（同時跑多公司時用獨立檔避免爭寫）")
+    args = ap.parse_args()
+    companies = [c.strip() for c in args.companies.split(",") if c.strip()]
+
     key = get_api_key()
     if not key:
         print("❌ 找不到 ANTHROPIC_API_KEY，無法解 CAPTCHA")
@@ -60,7 +71,7 @@ def main():
     env = dict(os.environ)
     env["ANTHROPIC_API_KEY"] = key
 
-    for company in COMPANIES:
+    for company in companies:
         print(f"\n{'#'*60}")
         print(f"# 開始補抓公司 {company}")
         print(f"{'#'*60}", flush=True)
@@ -69,7 +80,7 @@ def main():
         for attempt in range(1, MAX_RETRIES + 1):
             print(f"\n>>> 公司 {company} 第 {attempt} 次嘗試 <<<", flush=True)
             try:
-                done = run_once(company, env)
+                done = run_once(company, env, args.registry)
             except Exception as e:
                 print(f"⚠️  執行例外：{e}", flush=True)
                 done = False
