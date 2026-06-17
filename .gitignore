@@ -21,7 +21,13 @@ google_credentials.json
 100_Todo/projects/uuid_registry.json
 100_Todo/projects/migrate_progress.json
 100_Todo/projects/scraper_subcat_*.json
+100_Todo/projects/scraper_failures_*.json
 100_Todo/projects/debug_links.txt
+# 爬取過程產物（合併後即可丟）
+100_Todo/projects/drive_registry_209.json
+100_Todo/projects/junk_property_records.json
+100_Todo/projects/backfill_plancode_added.json
+100_Todo/projects/verify_real_miss.json
 
 # OAuth token（每台機器獨立，不 commit）
 000_Agent/authorized_user.json

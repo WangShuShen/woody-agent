@@ -79,7 +79,11 @@ DOC_SUFFIX_MAP = {
 # ── 排除（只排產險、延續條款、團險）─────────────────
 EXCLUDE_KEYWORDS = [
     "延續條款", "停售後續", "附約延續",
-    "產險", "財產保險", "火災保險", "汽車險", "車險",
+    # 產險（TII 會在壽險公司查詢結果夾帶關係企業產險商品，需排除）
+    "產險", "產物", "財產保險", "火災保險", "汽車險", "車險",
+    "責任保險", "信用保險", "保證保險", "竊盜", "工程保險", "貨物運送",
+    "運送保險", "海上保險", "航空保險", "船舶", "地震保險", "颱風", "洪水",
+    "CARGO", "CLAUSES", "營業中斷", "員工誠實", "玻璃保險",
     "團體", "團險", "集體", "團保", "Group", "group",
 ]
 
@@ -680,17 +684,30 @@ def scrape_and_upload(company_code: str, limit: int = 0, manual_captcha: str = "
                         break
 
                 # 直接以網址跳下一頁（TII 分頁為 GET：ResultQueryAll.aspx?page=N）
+                # 長頁集（如投資型壽險 24 頁）走太久 session 會過期 → 跳頁失敗時自動重建 session
                 page_num += 1
                 _ok = False
-                for _attempt in range(3):
+                for _attempt in range(4):
                     try:
                         page.goto(f"{BASE_URL}/ResultQueryAll.aspx?page={page_num}",
                                   wait_until="networkidle", timeout=30000)
-                        _ok = True
-                        break
+                        if page.query_selector("a[href*='DetailList.aspx']"):
+                            _ok = True
+                            break
+                        raise RuntimeError("頁面無資料，疑似 session 過期")
                     except Exception as _e:
-                        print(f"   ⚠️  跳頁 {page_num} 失敗，重試：{_e}")
-                        time.sleep(5)
+                        print(f"   ⚠️  跳頁 {page_num} 失敗（第{_attempt+1}次），重建 session 後重試：{_e}")
+                        if manual_captcha:
+                            time.sleep(5)
+                            continue
+                        try:
+                            if _navigate_and_captcha(page, target_value, sub_val):
+                                page.select_option("select[name='PageCrt']", str(page_size))
+                                page.wait_for_load_state("networkidle", timeout=15000)
+                                page.wait_for_timeout(500)
+                        except Exception:
+                            pass
+                        time.sleep(3)
                 if not _ok:
                     print(f"\n❌ [{sub_label}] 跳頁 {page_num} 連續失敗，標記未完成下次重掃")
                     subcat_had_failure = True
