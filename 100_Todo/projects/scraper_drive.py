@@ -645,6 +645,8 @@ def scrape_and_upload(company_code: str, limit: int = 0, manual_captcha: str = "
                         "company":       company_name,
                         "productName":   name,
                         "planCode":      pid,
+                        "categoryCode":  sub_val,    # TII 險種代碼 2_1~2_6
+                        "category":      sub_label,  # 險種名稱（傷害/健康/壽險/年金/投資型）
                         "contractType":  contract_type,
                         "productType":   product_type,
                         "currency":      currency,

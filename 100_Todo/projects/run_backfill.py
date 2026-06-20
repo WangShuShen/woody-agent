@@ -22,6 +22,25 @@ MAX_RETRIES = 40                      # 每間公司最多重啟次數
 ROOT = BASE.parent.parent
 
 
+def wait_for_network(host: str = "oauth2.googleapis.com", max_wait: int = 1800):
+    """等待網路恢復（能解析 Google OAuth 主機）。斷網不計入爬取重試次數。"""
+    import socket
+    waited = 0
+    while waited < max_wait:
+        try:
+            socket.gethostbyname(host)
+            if waited:
+                print(f"   🌐 網路已恢復（等了 {waited}s）", flush=True)
+            return True
+        except Exception:
+            if waited == 0:
+                print("   ⏳ 偵測到斷網，等待恢復中...", flush=True)
+            time.sleep(15)
+            waited += 15
+    print("   ⚠️  網路長時間未恢復，仍嘗試繼續", flush=True)
+    return False
+
+
 def get_api_key() -> str:
     for fn in [".env", ".env.local", ".env.production"]:
         p = ROOT / "policy-analyzer" / fn
@@ -78,6 +97,7 @@ def main():
 
         done = False
         for attempt in range(1, MAX_RETRIES + 1):
+            wait_for_network()   # 斷網時等待，避免把重試次數浪費在連不上的瞬間
             print(f"\n>>> 公司 {company} 第 {attempt} 次嘗試 <<<", flush=True)
             try:
                 done = run_once(company, env, args.registry)
