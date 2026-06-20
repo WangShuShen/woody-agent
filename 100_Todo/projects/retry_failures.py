@@ -21,10 +21,16 @@ def main(code):
                 v=l.split("=",1)[1].strip().strip('"').strip("'")
                 if v: os.environ["ANTHROPIC_API_KEY"]=v
 
-    company_name = next((n for n, c in COMPANY_CODE.items() if c == code), "")
     fpath = BASE / f"scraper_failures_{code}.json"
     failures = json.loads(fpath.read_text("utf-8"))
     registry = json.loads(MAIN.read_text("utf-8"))
+    # 公司名：先查字典，沒有就從 registry 中同代碼前綴的既有記錄取得
+    company_name = next((n for n, c in COMPANY_CODE.items() if c == code), "")
+    if not company_name:
+        company_name = next((v["company"] for k, v in registry.items()
+                             if k.startswith(code) and v.get("company")), "")
+    if not company_name:
+        print(f"❌ 無法判定公司名（code={code}），中止"); return
     print(f"待重試 {len(failures)} 筆（公司：{company_name}）")
 
     drive = S.connect_drive()
