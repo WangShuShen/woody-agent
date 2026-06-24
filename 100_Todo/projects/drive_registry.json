@@ -263910,5 +263910,6985 @@
     ],
     "categoryCode": "2_2",
     "category": "健康保險"
+  },
+  "216311R12G02511": {
+    "company": "遠雄人壽保險事業股份有限公司",
+    "productName": "遠雄人壽特定傷病終身壽險附約(第11次部分變更)",
+    "planCode": "216311R12G02511",
+    "contractType": "附約",
+    "productType": "重大疾(傷)病險",
+    "currency": "新台幣",
+    "status": "",
+    "saleDate": "",
+    "stopDate": "",
+    "versionFolder": "v11",
+    "productFolder": "遠雄人壽特定傷病終身壽險附約",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ],
+    "categoryCode": "2_2",
+    "category": "健康保險"
+  },
+  "216311R12G02708": {
+    "company": "遠雄人壽保險事業股份有限公司",
+    "productName": "遠雄人壽金安心豁免保險費附約(第8次部分變更)",
+    "planCode": "216311R12G02708",
+    "contractType": "附約",
+    "productType": "其他",
+    "currency": "新台幣",
+    "status": "",
+    "saleDate": "",
+    "stopDate": "",
+    "versionFolder": "v8",
+    "productFolder": "遠雄人壽金安心豁免保險費附約",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ],
+    "categoryCode": "2_2",
+    "category": "健康保險"
+  },
+  "216311R11A02007": {
+    "company": "遠雄人壽保險事業股份有限公司",
+    "productName": "遠雄人壽住院醫療日額給付保險附約(103)(第7次部分變更)",
+    "planCode": "216311R11A02007",
+    "contractType": "附約",
+    "productType": "醫療定額",
+    "currency": "新台幣",
+    "status": "",
+    "saleDate": "",
+    "stopDate": "",
+    "versionFolder": "v7",
+    "productFolder": "遠雄人壽住院醫療日額給付保險附約(103)",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ],
+    "categoryCode": "2_2",
+    "category": "健康保險"
+  },
+  "216311R11A02107": {
+    "company": "遠雄人壽保險事業股份有限公司",
+    "productName": "遠雄人壽綜合住院醫療日額給付保險附約(103)(第7次部分變更)",
+    "planCode": "216311R11A02107",
+    "contractType": "附約",
+    "productType": "醫療定額",
+    "currency": "新台幣",
+    "status": "",
+    "saleDate": "",
+    "stopDate": "",
+    "versionFolder": "v7",
+    "productFolder": "遠雄人壽綜合住院醫療日額給付保險附約(103)",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ],
+    "categoryCode": "2_2",
+    "category": "健康保險"
+  },
+  "216321R11A11605": {
+    "company": "遠雄人壽保險事業股份有限公司",
+    "productName": "遠雄人壽新癌症終身健康保險附約(99)(第5次部份變更)",
+    "planCode": "216321R11A11605",
+    "contractType": "附約",
+    "productType": "防癌險",
+    "currency": "新台幣",
+    "status": "",
+    "saleDate": "",
+    "stopDate": "",
+    "versionFolder": "v5",
+    "productFolder": "遠雄人壽新癌症終身健康保險附約(99)",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ],
+    "categoryCode": "2_2",
+    "category": "健康保險"
+  },
+  "216321R11A09506": {
+    "company": "遠雄人壽保險事業股份有限公司",
+    "productName": "遠雄人壽全心照護防癌終身健康保險附約(第6次部分變更)",
+    "planCode": "216321R11A09506",
+    "contractType": "附約",
+    "productType": "防癌險",
+    "currency": "新台幣",
+    "status": "",
+    "saleDate": "",
+    "stopDate": "",
+    "versionFolder": "v6",
+    "productFolder": "遠雄人壽全心照護防癌終身健康保險附約",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ],
+    "categoryCode": "2_2",
+    "category": "健康保險"
+  },
+  "216321R11A10604": {
+    "company": "遠雄人壽保險事業股份有限公司",
+    "productName": "遠雄人壽全心守護防癌終身健康保險附約(第4次部分變更)",
+    "planCode": "216321R11A10604",
+    "contractType": "附約",
+    "productType": "防癌險",
+    "currency": "新台幣",
+    "status": "",
+    "saleDate": "",
+    "stopDate": "",
+    "versionFolder": "v4",
+    "productFolder": "遠雄人壽全心守護防癌終身健康保險附約",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ],
+    "categoryCode": "2_2",
+    "category": "健康保險"
+  },
+  "216341R11A13601": {
+    "company": "遠雄人壽保險事業股份有限公司",
+    "productName": "遠雄人壽金好心豁免保險費附約(第1次部分變更)",
+    "planCode": "216341R11A13601",
+    "contractType": "附約",
+    "productType": "其他",
+    "currency": "新台幣",
+    "status": "",
+    "saleDate": "",
+    "stopDate": "",
+    "versionFolder": "v1",
+    "productFolder": "遠雄人壽金好心豁免保險費附約",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ],
+    "categoryCode": "2_2",
+    "category": "健康保險"
+  },
+  "216351R11A09703": {
+    "company": "遠雄人壽保險事業股份有限公司",
+    "productName": "遠雄人壽永康特定傷病終身健康保險附約(第3次部分變更)",
+    "planCode": "216351R11A09703",
+    "contractType": "附約",
+    "productType": "重大疾(傷)病險",
+    "currency": "新台幣",
+    "status": "",
+    "saleDate": "",
+    "stopDate": "",
+    "versionFolder": "v3",
+    "productFolder": "遠雄人壽永康特定傷病終身健康保險附約",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ],
+    "categoryCode": "2_2",
+    "category": "健康保險"
+  },
+  "216341R11A02812": {
+    "company": "遠雄人壽保險事業股份有限公司",
+    "productName": "遠雄人壽雄享福全殘扶助終身健康保險附約(第12次部分變更)",
+    "planCode": "216341R11A02812",
+    "contractType": "附約",
+    "productType": "醫療定額",
+    "currency": "新台幣",
+    "status": "",
+    "saleDate": "",
+    "stopDate": "",
+    "versionFolder": "v12",
+    "productFolder": "遠雄人壽雄享福全殘扶助終身健康保險附約",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ],
+    "categoryCode": "2_2",
+    "category": "健康保險"
+  },
+  "216341R12B02611": {
+    "company": "遠雄人壽保險事業股份有限公司",
+    "productName": "遠雄人壽豁免保險費附約(第11次部分變更)",
+    "planCode": "216341R12B02611",
+    "contractType": "附約",
+    "productType": "其他",
+    "currency": "新台幣",
+    "status": "",
+    "saleDate": "",
+    "stopDate": "",
+    "versionFolder": "v11",
+    "productFolder": "遠雄人壽豁免保險費附約",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ],
+    "categoryCode": "2_2",
+    "category": "健康保險"
+  },
+  "216321R11A02405": {
+    "company": "遠雄人壽保險事業股份有限公司",
+    "productName": "遠雄人壽一年定期癌症健康保險附約(第5次部分變更)",
+    "planCode": "216321R11A02405",
+    "contractType": "附約",
+    "productType": "防癌險",
+    "currency": "新台幣",
+    "status": "",
+    "saleDate": "",
+    "stopDate": "",
+    "versionFolder": "v5",
+    "productFolder": "遠雄人壽一年定期癌症健康保險附約",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ],
+    "categoryCode": "2_2",
+    "category": "健康保險"
+  },
+  "216391A11A06802": {
+    "company": "遠雄人壽保險事業股份有限公司",
+    "productName": "遠雄人壽老年住院醫療提前給付附加條款(第2次部分變更)",
+    "planCode": "216391A11A06802",
+    "contractType": "附約",
+    "productType": "醫療定額",
+    "currency": "新台幣",
+    "status": "",
+    "saleDate": "",
+    "stopDate": "",
+    "versionFolder": "v2",
+    "productFolder": "遠雄人壽老年住院醫療提前給付附加條款",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ],
+    "categoryCode": "2_2",
+    "category": "健康保險"
+  },
+  "216391E11A06902": {
+    "company": "遠雄人壽保險事業股份有限公司",
+    "productName": "遠雄人壽生前需求提前給付批註條款(第2次部分變更)",
+    "planCode": "216391E11A06902",
+    "contractType": "主約",
+    "productType": "其他",
+    "currency": "新台幣",
+    "status": "",
+    "saleDate": "",
+    "stopDate": "",
+    "versionFolder": "v2",
+    "productFolder": "遠雄人壽生前需求提前給付批註條款",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ],
+    "categoryCode": "2_2",
+    "category": "健康保險"
+  },
+  "216321M12B14900": {
+    "company": "遠雄人壽保險事業股份有限公司",
+    "productName": "遠雄人壽愛無懼防癌保本終身保險",
+    "planCode": "216321M12B14900",
+    "contractType": "主約",
+    "productType": "防癌險",
+    "currency": "新台幣",
+    "status": "",
+    "saleDate": "",
+    "stopDate": "",
+    "versionFolder": "v0",
+    "productFolder": "遠雄人壽愛無懼防癌保本終身保險",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ],
+    "categoryCode": "2_2",
+    "category": "健康保險"
+  },
+  "216351R11A17000": {
+    "company": "遠雄人壽保險事業股份有限公司",
+    "productName": "遠雄人壽保安心重大傷病一年定期健康保險附約",
+    "planCode": "216351R11A17000",
+    "contractType": "附約",
+    "productType": "重大疾(傷)病險",
+    "currency": "新台幣",
+    "status": "",
+    "saleDate": "",
+    "stopDate": "",
+    "versionFolder": "v0",
+    "productFolder": "遠雄人壽保安心重大傷病一年定期健康保險附約",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ],
+    "categoryCode": "2_2",
+    "category": "健康保險"
+  },
+  "216391R19B17100": {
+    "company": "遠雄人壽保險事業股份有限公司",
+    "productName": "遠雄人壽永康照護特定傷病終身保險附約",
+    "planCode": "216391R19B17100",
+    "contractType": "附約",
+    "productType": "重大疾(傷)病險",
+    "currency": "新台幣",
+    "status": "",
+    "saleDate": "",
+    "stopDate": "",
+    "versionFolder": "v0",
+    "productFolder": "遠雄人壽永康照護特定傷病終身保險附約",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ],
+    "categoryCode": "2_2",
+    "category": "健康保險"
+  },
+  "216311M11A17700": {
+    "company": "遠雄人壽保險事業股份有限公司",
+    "productName": "遠雄人壽超級海外突發疾病健康保險",
+    "planCode": "216311M11A17700",
+    "contractType": "主約",
+    "productType": "醫療定額",
+    "currency": "新台幣",
+    "status": "",
+    "saleDate": "",
+    "stopDate": "",
+    "versionFolder": "v0",
+    "productFolder": "遠雄人壽超級海外突發疾病健康保險",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ],
+    "categoryCode": "2_2",
+    "category": "健康保險"
+  },
+  "216391R11A18200": {
+    "company": "遠雄人壽保險事業股份有限公司",
+    "productName": "遠雄人壽超好心B型殘廢照護終身健康保險附約",
+    "planCode": "216391R11A18200",
+    "contractType": "附約",
+    "productType": "醫療定額",
+    "currency": "新台幣",
+    "status": "",
+    "saleDate": "",
+    "stopDate": "",
+    "versionFolder": "v0",
+    "productFolder": "遠雄人壽超好心B型殘廢照護終身健康保險附約",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ],
+    "categoryCode": "2_2",
+    "category": "健康保險"
+  },
+  "216311MZ1A07023A11Z10000008": {
+    "company": "遠雄人壽保險事業股份有限公司",
+    "productName": "遠雄人壽雄溫馨終身醫療健康保險(103)(第8次部分變更)",
+    "planCode": "216311MZ1A07023A11Z10000008",
+    "contractType": "主約",
+    "productType": "醫療定額",
+    "currency": "新台幣",
+    "status": "",
+    "saleDate": "",
+    "stopDate": "",
+    "versionFolder": "v8",
+    "productFolder": "遠雄人壽雄溫馨終身醫療健康保險(103)",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ],
+    "categoryCode": "2_2",
+    "category": "健康保險"
+  },
+  "216311MZ1A17721A11Z10000001": {
+    "company": "遠雄人壽保險事業股份有限公司",
+    "productName": "遠雄人壽超級海外突發疾病健康保險(第1次部分變更)",
+    "planCode": "216311MZ1A17721A11Z10000001",
+    "contractType": "主約",
+    "productType": "醫療定額",
+    "currency": "新台幣",
+    "status": "",
+    "saleDate": "",
+    "stopDate": "",
+    "versionFolder": "v1",
+    "productFolder": "遠雄人壽超級海外突發疾病健康保險",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ],
+    "categoryCode": "2_2",
+    "category": "健康保險"
+  },
+  "216311MZ1B13923A11Z10000002": {
+    "company": "遠雄人壽保險事業股份有限公司",
+    "productName": "遠雄人壽守護醫級棒醫療保本終身保險(103)(第2次部分變更)",
+    "planCode": "216311MZ1B13923A11Z10000002",
+    "contractType": "主約",
+    "productType": "儲蓄壽險",
+    "currency": "新台幣",
+    "status": "",
+    "saleDate": "",
+    "stopDate": "",
+    "versionFolder": "v2",
+    "productFolder": "遠雄人壽守護醫級棒醫療保本終身保險(103)",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ],
+    "categoryCode": "2_2",
+    "category": "健康保險"
+  },
+  "216311MZ1B00823A11Z10000011": {
+    "company": "遠雄人壽保險事業股份有限公司",
+    "productName": "遠雄人壽新薔薇女性終身保險(A、B、C型)(第11次部分變更)",
+    "planCode": "216311MZ1B00823A11Z10000011",
+    "contractType": "主約",
+    "productType": "終身壽險",
+    "currency": "新台幣",
+    "status": "",
+    "saleDate": "",
+    "stopDate": "",
+    "versionFolder": "v11",
+    "productFolder": "遠雄人壽新薔薇女性終身保險(A、B、C型)",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ],
+    "categoryCode": "2_2",
+    "category": "健康保險"
+  },
+  "216311MZ1B08823A11Z10000009": {
+    "company": "遠雄人壽保險事業股份有限公司",
+    "productName": "遠雄人壽守護久久醫療終身保險(103)(第9次部分變更)",
+    "planCode": "216311MZ1B08823A11Z10000009",
+    "contractType": "主約",
+    "productType": "終身壽險",
+    "currency": "新台幣",
+    "status": "",
+    "saleDate": "",
+    "stopDate": "",
+    "versionFolder": "v9",
+    "productFolder": "遠雄人壽守護久久醫療終身保險(103)",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ],
+    "categoryCode": "2_2",
+    "category": "健康保險"
+  },
+  "216311RZ1A02021A11Z10000008": {
+    "company": "遠雄人壽保險事業股份有限公司",
+    "productName": "遠雄人壽住院醫療日額給付保險附約(103)(第8次部分變更)",
+    "planCode": "216311RZ1A02021A11Z10000008",
+    "contractType": "附約",
+    "productType": "醫療定額",
+    "currency": "新台幣",
+    "status": "",
+    "saleDate": "",
+    "stopDate": "",
+    "versionFolder": "v8",
+    "productFolder": "遠雄人壽住院醫療日額給付保險附約(103)",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ],
+    "categoryCode": "2_2",
+    "category": "健康保險"
+  },
+  "216311RZ1A02121A11Z10000008": {
+    "company": "遠雄人壽保險事業股份有限公司",
+    "productName": "遠雄人壽綜合住院醫療日額給付保險附約(103)(第8次部分變更)",
+    "planCode": "216311RZ1A02121A11Z10000008",
+    "contractType": "附約",
+    "productType": "醫療定額",
+    "currency": "新台幣",
+    "status": "",
+    "saleDate": "",
+    "stopDate": "",
+    "versionFolder": "v8",
+    "productFolder": "遠雄人壽綜合住院醫療日額給付保險附約(103)",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ],
+    "categoryCode": "2_2",
+    "category": "健康保險"
+  },
+  "216311RZ1A02221A11Z10000010": {
+    "company": "遠雄人壽保險事業股份有限公司",
+    "productName": "遠雄人壽真安心醫療保險附約(103)(第10次部分變更)",
+    "planCode": "216311RZ1A02221A11Z10000010",
+    "contractType": "附約",
+    "productType": "醫療定額",
+    "currency": "新台幣",
+    "status": "",
+    "saleDate": "",
+    "stopDate": "",
+    "versionFolder": "v10",
+    "productFolder": "遠雄人壽真安心醫療保險附約(103)",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ],
+    "categoryCode": "2_2",
+    "category": "健康保險"
+  },
+  "216311RZ1A02823A11Z10000013": {
+    "company": "遠雄人壽保險事業股份有限公司",
+    "productName": "遠雄人壽雄享福全殘扶助終身健康保險附約(第13次部分變更)",
+    "planCode": "216311RZ1A02823A11Z10000013",
+    "contractType": "附約",
+    "productType": "醫療定額",
+    "currency": "新台幣",
+    "status": "",
+    "saleDate": "",
+    "stopDate": "",
+    "versionFolder": "v13",
+    "productFolder": "遠雄人壽雄享福全殘扶助終身健康保險附約",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ],
+    "categoryCode": "2_2",
+    "category": "健康保險"
+  },
+  "216311RZ1A07223A11Z10000007": {
+    "company": "遠雄人壽保險事業股份有限公司",
+    "productName": "遠雄人壽雄健康手術醫療終身健康保險附約(第7次部分變更)",
+    "planCode": "216311RZ1A07223A11Z10000007",
+    "contractType": "附約",
+    "productType": "醫療定額",
+    "currency": "新台幣",
+    "status": "",
+    "saleDate": "",
+    "stopDate": "",
+    "versionFolder": "v7",
+    "productFolder": "遠雄人壽雄健康手術醫療終身健康保險附約",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ],
+    "categoryCode": "2_2",
+    "category": "健康保險"
+  },
+  "216311RZ1A07423A11Z10000008": {
+    "company": "遠雄人壽保險事業股份有限公司",
+    "productName": "遠雄人壽雄溫情終身醫療健康保險附約(103)(第8次部分變更)",
+    "planCode": "216311RZ1A07423A11Z10000008",
+    "contractType": "附約",
+    "productType": "醫療定額",
+    "currency": "新台幣",
+    "status": "",
+    "saleDate": "",
+    "stopDate": "",
+    "versionFolder": "v8",
+    "productFolder": "遠雄人壽雄溫情終身醫療健康保險附約(103)",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ],
+    "categoryCode": "2_2",
+    "category": "健康保險"
+  },
+  "216311RZ1A08623A11Z10000006": {
+    "company": "遠雄人壽保險事業股份有限公司",
+    "productName": "遠雄人壽新溫馨終身醫療健康保險附約(103)(第6次部分變更)",
+    "planCode": "216311RZ1A08623A11Z10000006",
+    "contractType": "附約",
+    "productType": "醫療定額",
+    "currency": "新台幣",
+    "status": "",
+    "saleDate": "",
+    "stopDate": "",
+    "versionFolder": "v6",
+    "productFolder": "遠雄人壽新溫馨終身醫療健康保險附約(103)",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ],
+    "categoryCode": "2_2",
+    "category": "健康保險"
+  },
+  "216311RZ1A11321A11Z10000006": {
+    "company": "遠雄人壽保險事業股份有限公司",
+    "productName": "遠雄人壽好安心住院醫療健康保險附約(103)(第6次部分變更)",
+    "planCode": "216311RZ1A11321A11Z10000006",
+    "contractType": "附約",
+    "productType": "醫療定額",
+    "currency": "新台幣",
+    "status": "",
+    "saleDate": "",
+    "stopDate": "",
+    "versionFolder": "v6",
+    "productFolder": "遠雄人壽好安心住院醫療健康保險附約(103)",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ],
+    "categoryCode": "2_2",
+    "category": "健康保險"
+  },
+  "216311RZ1B08923A11Z10000009": {
+    "company": "遠雄人壽保險事業股份有限公司",
+    "productName": "遠雄人壽健康久久手術醫療終身保險附約(第9次部分變更)",
+    "planCode": "216311RZ1B08923A11Z10000009",
+    "contractType": "附約",
+    "productType": "醫療定額",
+    "currency": "新台幣",
+    "status": "",
+    "saleDate": "",
+    "stopDate": "",
+    "versionFolder": "v9",
+    "productFolder": "遠雄人壽健康久久手術醫療終身保險附約",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ],
+    "categoryCode": "2_2",
+    "category": "健康保險"
+  },
+  "216321RZ1A02421A11Z10000006": {
+    "company": "遠雄人壽保險事業股份有限公司",
+    "productName": "遠雄人壽一年定期癌症健康保險附約(第6次部分變更)",
+    "planCode": "216321RZ1A02421A11Z10000006",
+    "contractType": "附約",
+    "productType": "防癌險",
+    "currency": "新台幣",
+    "status": "",
+    "saleDate": "",
+    "stopDate": "",
+    "versionFolder": "v6",
+    "productFolder": "遠雄人壽一年定期癌症健康保險附約",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ],
+    "categoryCode": "2_2",
+    "category": "健康保險"
+  },
+  "216321RZ1A09523A11Z10000007": {
+    "company": "遠雄人壽保險事業股份有限公司",
+    "productName": "遠雄人壽全心照護防癌終身健康保險附約(第7次部分變更)",
+    "planCode": "216321RZ1A09523A11Z10000007",
+    "contractType": "附約",
+    "productType": "防癌險",
+    "currency": "新台幣",
+    "status": "",
+    "saleDate": "",
+    "stopDate": "",
+    "versionFolder": "v7",
+    "productFolder": "遠雄人壽全心照護防癌終身健康保險附約",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ],
+    "categoryCode": "2_2",
+    "category": "健康保險"
+  },
+  "216321RZ1A10623A11Z10000005": {
+    "company": "遠雄人壽保險事業股份有限公司",
+    "productName": "遠雄人壽全心守護防癌終身健康保險附約(第5次部分變更)",
+    "planCode": "216321RZ1A10623A11Z10000005",
+    "contractType": "附約",
+    "productType": "防癌險",
+    "currency": "新台幣",
+    "status": "",
+    "saleDate": "",
+    "stopDate": "",
+    "versionFolder": "v5",
+    "productFolder": "遠雄人壽全心守護防癌終身健康保險附約",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ],
+    "categoryCode": "2_2",
+    "category": "健康保險"
+  },
+  "216321RZ1A11623A11Z10000006": {
+    "company": "遠雄人壽保險事業股份有限公司",
+    "productName": "遠雄人壽新癌症終身健康保險附約(99)(第6次部分變更)",
+    "planCode": "216321RZ1A11623A11Z10000006",
+    "contractType": "附約",
+    "productType": "防癌險",
+    "currency": "新台幣",
+    "status": "",
+    "saleDate": "",
+    "stopDate": "",
+    "versionFolder": "v6",
+    "productFolder": "遠雄人壽新癌症終身健康保險附約(99)",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ],
+    "categoryCode": "2_2",
+    "category": "健康保險"
+  },
+  "216321MZ2B14923A11Z10000001": {
+    "company": "遠雄人壽保險事業股份有限公司",
+    "productName": "遠雄人壽愛無懼防癌保本終身保險(第1次部分變更)",
+    "planCode": "216321MZ2B14923A11Z10000001",
+    "contractType": "主約",
+    "productType": "防癌險",
+    "currency": "新台幣",
+    "status": "",
+    "saleDate": "",
+    "stopDate": "",
+    "versionFolder": "v1",
+    "productFolder": "遠雄人壽愛無懼防癌保本終身保險",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ],
+    "categoryCode": "2_2",
+    "category": "健康保險"
+  },
+  "216351RZ1A09723A11Z10000004": {
+    "company": "遠雄人壽保險事業股份有限公司",
+    "productName": "遠雄人壽永康特定傷病終身健康保險附約(第4次部分變更)",
+    "planCode": "216351RZ1A09723A11Z10000004",
+    "contractType": "附約",
+    "productType": "重大疾(傷)病險",
+    "currency": "新台幣",
+    "status": "",
+    "saleDate": "",
+    "stopDate": "",
+    "versionFolder": "v4",
+    "productFolder": "遠雄人壽永康特定傷病終身健康保險附約",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ],
+    "categoryCode": "2_2",
+    "category": "健康保險"
+  },
+  "216351RZ1A17021A11Z10000001": {
+    "company": "遠雄人壽保險事業股份有限公司",
+    "productName": "遠雄人壽保安心重大傷病一年定期健康保險附約(第1次部分變更)",
+    "planCode": "216351RZ1A17021A11Z10000001",
+    "contractType": "附約",
+    "productType": "重大疾(傷)病險",
+    "currency": "新台幣",
+    "status": "",
+    "saleDate": "",
+    "stopDate": "",
+    "versionFolder": "v1",
+    "productFolder": "遠雄人壽保安心重大傷病一年定期健康保險附約",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ],
+    "categoryCode": "2_2",
+    "category": "健康保險"
+  },
+  "216351RZ9B02523A11Z10000012": {
+    "company": "遠雄人壽保險事業股份有限公司",
+    "productName": "遠雄人壽特定傷病終身壽險附約(第12次部分變更)",
+    "planCode": "216351RZ9B02523A11Z10000012",
+    "contractType": "附約",
+    "productType": "重大疾(傷)病險",
+    "currency": "新台幣",
+    "status": "",
+    "saleDate": "",
+    "stopDate": "",
+    "versionFolder": "v12",
+    "productFolder": "遠雄人壽特定傷病終身壽險附約",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ],
+    "categoryCode": "2_2",
+    "category": "健康保險"
+  },
+  "216341RZ1A02622A11Z10000012": {
+    "company": "遠雄人壽保險事業股份有限公司",
+    "productName": "遠雄人壽豁免保險費附約(第12次部分變更)",
+    "planCode": "216341RZ1A02622A11Z10000012",
+    "contractType": "附約",
+    "productType": "其他",
+    "currency": "新台幣",
+    "status": "",
+    "saleDate": "",
+    "stopDate": "",
+    "versionFolder": "v12",
+    "productFolder": "遠雄人壽豁免保險費附約",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ],
+    "categoryCode": "2_2",
+    "category": "健康保險"
+  },
+  "216341RZ1A02722A11Z10000009": {
+    "company": "遠雄人壽保險事業股份有限公司",
+    "productName": "遠雄人壽金安心豁免保險費附約(第9次部分變更)",
+    "planCode": "216341RZ1A02722A11Z10000009",
+    "contractType": "附約",
+    "productType": "其他",
+    "currency": "新台幣",
+    "status": "",
+    "saleDate": "",
+    "stopDate": "",
+    "versionFolder": "v9",
+    "productFolder": "遠雄人壽金安心豁免保險費附約",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ],
+    "categoryCode": "2_2",
+    "category": "健康保險"
+  },
+  "216341RZ1A13622A11Z10000002": {
+    "company": "遠雄人壽保險事業股份有限公司",
+    "productName": "遠雄人壽金好心豁免保險費附約(第2次部分變更)",
+    "planCode": "216341RZ1A13622A11Z10000002",
+    "contractType": "附約",
+    "productType": "其他",
+    "currency": "新台幣",
+    "status": "",
+    "saleDate": "",
+    "stopDate": "",
+    "versionFolder": "v2",
+    "productFolder": "遠雄人壽金好心豁免保險費附約",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ],
+    "categoryCode": "2_2",
+    "category": "健康保險"
+  },
+  "216351RZ9B17123A11Z10000001": {
+    "company": "遠雄人壽保險事業股份有限公司",
+    "productName": "遠雄人壽永康照護特定傷病終身保險附約(第1次部分變更)",
+    "planCode": "216351RZ9B17123A11Z10000001",
+    "contractType": "附約",
+    "productType": "重大疾(傷)病險",
+    "currency": "新台幣",
+    "status": "",
+    "saleDate": "",
+    "stopDate": "",
+    "versionFolder": "v1",
+    "productFolder": "遠雄人壽永康照護特定傷病終身保險附約",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ],
+    "categoryCode": "2_2",
+    "category": "健康保險"
+  },
+  "216391RZ1A18223A11Z10000001": {
+    "company": "遠雄人壽保險事業股份有限公司",
+    "productName": "遠雄人壽超好心B型殘廢照護終身健康保險附約(第1次部分變更)",
+    "planCode": "216391RZ1A18223A11Z10000001",
+    "contractType": "附約",
+    "productType": "醫療定額",
+    "currency": "新台幣",
+    "status": "",
+    "saleDate": "",
+    "stopDate": "",
+    "versionFolder": "v1",
+    "productFolder": "遠雄人壽超好心B型殘廢照護終身健康保險附約",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ],
+    "categoryCode": "2_2",
+    "category": "健康保險"
+  },
+  "216391EZ1A06923A11Z10000003": {
+    "company": "遠雄人壽保險事業股份有限公司",
+    "productName": "遠雄人壽生前需求提前給付批註條款(第3次部分變更)",
+    "planCode": "216391EZ1A06923A11Z10000003",
+    "contractType": "主約",
+    "productType": "其他",
+    "currency": "新台幣",
+    "status": "",
+    "saleDate": "",
+    "stopDate": "",
+    "versionFolder": "v3",
+    "productFolder": "遠雄人壽生前需求提前給付批註條款",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ],
+    "categoryCode": "2_2",
+    "category": "健康保險"
+  },
+  "216391MZ9B10323A11Z10000008": {
+    "company": "遠雄人壽保險事業股份有限公司",
+    "productName": "遠雄人壽永安手術醫療終身保險(第8次部分變更)",
+    "planCode": "216391MZ9B10323A11Z10000008",
+    "contractType": "主約",
+    "productType": "終身壽險",
+    "currency": "新台幣",
+    "status": "",
+    "saleDate": "",
+    "stopDate": "",
+    "versionFolder": "v8",
+    "productFolder": "遠雄人壽永安手術醫療終身保險",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ],
+    "categoryCode": "2_2",
+    "category": "健康保險"
+  },
+  "216351MZ5B18723A11Z10000000": {
+    "company": "遠雄人壽保險事業股份有限公司",
+    "productName": "遠雄人壽保安心90重大傷病終身保險",
+    "planCode": "216351MZ5B18723A11Z10000000",
+    "contractType": "主約",
+    "productType": "重大疾(傷)病險",
+    "currency": "新台幣",
+    "status": "",
+    "saleDate": "",
+    "stopDate": "",
+    "versionFolder": "v0",
+    "productFolder": "遠雄人壽保安心90重大傷病終身保險",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ],
+    "categoryCode": "2_2",
+    "category": "健康保險"
+  },
+  "216311RZ1A19421A11Z10000000": {
+    "company": "遠雄人壽保險事業股份有限公司",
+    "productName": "遠雄人壽康富醫療健康保險附約",
+    "planCode": "216311RZ1A19421A11Z10000000",
+    "contractType": "附約",
+    "productType": "醫療定額",
+    "currency": "新台幣",
+    "status": "",
+    "saleDate": "",
+    "stopDate": "",
+    "versionFolder": "v0",
+    "productFolder": "遠雄人壽康富醫療健康保險附約",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ],
+    "categoryCode": "2_2",
+    "category": "健康保險"
+  },
+  "216311MZ1B13923A11Z10000003": {
+    "company": "遠雄人壽保險事業股份有限公司",
+    "productName": "遠雄人壽守護醫級棒醫療保本終身保險(103)(第3次部分變更)",
+    "planCode": "216311MZ1B13923A11Z10000003",
+    "contractType": "主約",
+    "productType": "儲蓄壽險",
+    "currency": "新台幣",
+    "status": "",
+    "saleDate": "",
+    "stopDate": "",
+    "versionFolder": "v3",
+    "productFolder": "遠雄人壽守護醫級棒醫療保本終身保險(103)",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ],
+    "categoryCode": "2_2",
+    "category": "健康保險"
+  },
+  "216311MZ1A07023A11Z10000009": {
+    "company": "遠雄人壽保險事業股份有限公司",
+    "productName": "遠雄人壽雄溫馨終身醫療健康保險(103)(第9次部分變更)",
+    "planCode": "216311MZ1A07023A11Z10000009",
+    "contractType": "主約",
+    "productType": "醫療定額",
+    "currency": "新台幣",
+    "status": "",
+    "saleDate": "",
+    "stopDate": "",
+    "versionFolder": "v9",
+    "productFolder": "遠雄人壽雄溫馨終身醫療健康保險(103)",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ],
+    "categoryCode": "2_2",
+    "category": "健康保險"
+  },
+  "216351RZ9B02523A11Z10000013": {
+    "company": "遠雄人壽保險事業股份有限公司",
+    "productName": "遠雄人壽特定傷病終身壽險附約(第13次部分變更)",
+    "planCode": "216351RZ9B02523A11Z10000013",
+    "contractType": "附約",
+    "productType": "重大疾(傷)病險",
+    "currency": "新台幣",
+    "status": "",
+    "saleDate": "",
+    "stopDate": "",
+    "versionFolder": "v13",
+    "productFolder": "遠雄人壽特定傷病終身壽險附約",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ],
+    "categoryCode": "2_2",
+    "category": "健康保險"
+  },
+  "216351RZ1A09723A11Z10000005": {
+    "company": "遠雄人壽保險事業股份有限公司",
+    "productName": "遠雄人壽永康特定傷病終身健康保險附約(第5次部分變更)",
+    "planCode": "216351RZ1A09723A11Z10000005",
+    "contractType": "附約",
+    "productType": "重大疾(傷)病險",
+    "currency": "新台幣",
+    "status": "",
+    "saleDate": "",
+    "stopDate": "",
+    "versionFolder": "v5",
+    "productFolder": "遠雄人壽永康特定傷病終身健康保險附約",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ],
+    "categoryCode": "2_2",
+    "category": "健康保險"
+  },
+  "216341RZ1A02722A11Z10000010": {
+    "company": "遠雄人壽保險事業股份有限公司",
+    "productName": "遠雄人壽金安心豁免保險費附約(第10次部分變更)",
+    "planCode": "216341RZ1A02722A11Z10000010",
+    "contractType": "附約",
+    "productType": "其他",
+    "currency": "新台幣",
+    "status": "",
+    "saleDate": "",
+    "stopDate": "",
+    "versionFolder": "v10",
+    "productFolder": "遠雄人壽金安心豁免保險費附約",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ],
+    "categoryCode": "2_2",
+    "category": "健康保險"
+  },
+  "216341RZ1A02622A11Z10000013": {
+    "company": "遠雄人壽保險事業股份有限公司",
+    "productName": "遠雄人壽豁免保險費附約(第13次部分變更)",
+    "planCode": "216341RZ1A02622A11Z10000013",
+    "contractType": "附約",
+    "productType": "其他",
+    "currency": "新台幣",
+    "status": "",
+    "saleDate": "",
+    "stopDate": "",
+    "versionFolder": "v13",
+    "productFolder": "遠雄人壽豁免保險費附約",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ],
+    "categoryCode": "2_2",
+    "category": "健康保險"
+  },
+  "216351RZ9B17123A11Z10000002": {
+    "company": "遠雄人壽保險事業股份有限公司",
+    "productName": "遠雄人壽永康照護特定傷病終身保險附約(第2次部分變更)",
+    "planCode": "216351RZ9B17123A11Z10000002",
+    "contractType": "附約",
+    "productType": "重大疾(傷)病險",
+    "currency": "新台幣",
+    "status": "",
+    "saleDate": "",
+    "stopDate": "",
+    "versionFolder": "v2",
+    "productFolder": "遠雄人壽永康照護特定傷病終身保險附約",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ],
+    "categoryCode": "2_2",
+    "category": "健康保險"
+  },
+  "216311MZ1B13923A11Z10000004": {
+    "company": "遠雄人壽保險事業股份有限公司",
+    "productName": "遠雄人壽守護醫級棒醫療保本終身保險(103)(第4次部分變更)",
+    "planCode": "216311MZ1B13923A11Z10000004",
+    "contractType": "主約",
+    "productType": "儲蓄壽險",
+    "currency": "新台幣",
+    "status": "",
+    "saleDate": "",
+    "stopDate": "",
+    "versionFolder": "v4",
+    "productFolder": "遠雄人壽守護醫級棒醫療保本終身保險(103)",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ],
+    "categoryCode": "2_2",
+    "category": "健康保險"
+  },
+  "216351RZ1A19623A11Z10000000": {
+    "company": "遠雄人壽保險事業股份有限公司",
+    "productName": "遠雄人壽永康滿福重大疾病終身健康保險附約(乙型)",
+    "planCode": "216351RZ1A19623A11Z10000000",
+    "contractType": "附約",
+    "productType": "重大疾(傷)病險",
+    "currency": "新台幣",
+    "status": "",
+    "saleDate": "",
+    "stopDate": "",
+    "versionFolder": "v0",
+    "productFolder": "遠雄人壽永康滿福重大疾病終身健康保險附約(乙型)",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ],
+    "categoryCode": "2_2",
+    "category": "健康保險"
+  },
+  "216321RZ1A20023A11Z10000000": {
+    "company": "遠雄人壽保險事業股份有限公司",
+    "productName": "遠雄人壽愛無懼B型防癌終身健康保險附約",
+    "planCode": "216321RZ1A20023A11Z10000000",
+    "contractType": "附約",
+    "productType": "防癌險",
+    "currency": "新台幣",
+    "status": "",
+    "saleDate": "",
+    "stopDate": "",
+    "versionFolder": "v0",
+    "productFolder": "遠雄人壽愛無懼B型防癌終身健康保險附約",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ],
+    "categoryCode": "2_2",
+    "category": "健康保險"
+  },
+  "216321MZ2B14923A11Z10000002": {
+    "company": "遠雄人壽保險事業股份有限公司",
+    "productName": "遠雄人壽愛無懼防癌保本終身保險(第2次部分變更)",
+    "planCode": "216321MZ2B14923A11Z10000002",
+    "contractType": "主約",
+    "productType": "防癌險",
+    "currency": "新台幣",
+    "status": "",
+    "saleDate": "",
+    "stopDate": "",
+    "versionFolder": "v2",
+    "productFolder": "遠雄人壽愛無懼防癌保本終身保險",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ],
+    "categoryCode": "2_2",
+    "category": "健康保險"
+  },
+  "216321RZ1A20023A11Z10000001": {
+    "company": "遠雄人壽保險事業股份有限公司",
+    "productName": "遠雄人壽愛無懼B型防癌終身健康保險附約(第1次部分變更)",
+    "planCode": "216321RZ1A20023A11Z10000001",
+    "contractType": "附約",
+    "productType": "防癌險",
+    "currency": "新台幣",
+    "status": "",
+    "saleDate": "",
+    "stopDate": "",
+    "versionFolder": "v1",
+    "productFolder": "遠雄人壽愛無懼B型防癌終身健康保險附約",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ],
+    "categoryCode": "2_2",
+    "category": "健康保險"
+  },
+  "216321RZ1A09523A11Z10000008": {
+    "company": "遠雄人壽保險事業股份有限公司",
+    "productName": "遠雄人壽全心照護防癌終身健康保險附約(第8次部分變更)",
+    "planCode": "216321RZ1A09523A11Z10000008",
+    "contractType": "附約",
+    "productType": "防癌險",
+    "currency": "新台幣",
+    "status": "",
+    "saleDate": "",
+    "stopDate": "",
+    "versionFolder": "v8",
+    "productFolder": "遠雄人壽全心照護防癌終身健康保險附約",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ],
+    "categoryCode": "2_2",
+    "category": "健康保險"
+  },
+  "216311RZ1A08623A11Z10000007": {
+    "company": "遠雄人壽保險事業股份有限公司",
+    "productName": "遠雄人壽新溫馨終身醫療健康保險附約(103)(第7次部分變更)",
+    "planCode": "216311RZ1A08623A11Z10000007",
+    "contractType": "附約",
+    "productType": "醫療定額",
+    "currency": "新台幣",
+    "status": "",
+    "saleDate": "",
+    "stopDate": "",
+    "versionFolder": "v7",
+    "productFolder": "遠雄人壽新溫馨終身醫療健康保險附約(103)",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ],
+    "categoryCode": "2_2",
+    "category": "健康保險"
+  },
+  "216311RZ1A07423A11Z10000009": {
+    "company": "遠雄人壽保險事業股份有限公司",
+    "productName": "遠雄人壽雄溫情終身醫療健康保險附約(103)(第9次部分變更)",
+    "planCode": "216311RZ1A07423A11Z10000009",
+    "contractType": "附約",
+    "productType": "醫療定額",
+    "currency": "新台幣",
+    "status": "",
+    "saleDate": "",
+    "stopDate": "",
+    "versionFolder": "v9",
+    "productFolder": "遠雄人壽雄溫情終身醫療健康保險附約(103)",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ],
+    "categoryCode": "2_2",
+    "category": "健康保險"
+  },
+  "216311RZ1B08923A11Z10000010": {
+    "company": "遠雄人壽保險事業股份有限公司",
+    "productName": "遠雄人壽健康久久手術醫療終身保險附約(第10次部分變更)",
+    "planCode": "216311RZ1B08923A11Z10000010",
+    "contractType": "附約",
+    "productType": "醫療定額",
+    "currency": "新台幣",
+    "status": "",
+    "saleDate": "",
+    "stopDate": "",
+    "versionFolder": "v10",
+    "productFolder": "遠雄人壽健康久久手術醫療終身保險附約",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ],
+    "categoryCode": "2_2",
+    "category": "健康保險"
+  },
+  "216311MZ1B13923A11Z10000005": {
+    "company": "遠雄人壽保險事業股份有限公司",
+    "productName": "遠雄人壽守護醫級棒醫療保本終身保險(103)(第5次部分變更)",
+    "planCode": "216311MZ1B13923A11Z10000005",
+    "contractType": "主約",
+    "productType": "儲蓄壽險",
+    "currency": "新台幣",
+    "status": "",
+    "saleDate": "",
+    "stopDate": "",
+    "versionFolder": "v5",
+    "productFolder": "遠雄人壽守護醫級棒醫療保本終身保險(103)",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ],
+    "categoryCode": "2_2",
+    "category": "健康保險"
+  },
+  "216311MZ1B08823A11Z10000010": {
+    "company": "遠雄人壽保險事業股份有限公司",
+    "productName": "遠雄人壽守護久久醫療終身保險(103)(第10次部分變更)",
+    "planCode": "216311MZ1B08823A11Z10000010",
+    "contractType": "主約",
+    "productType": "終身壽險",
+    "currency": "新台幣",
+    "status": "",
+    "saleDate": "",
+    "stopDate": "",
+    "versionFolder": "v10",
+    "productFolder": "遠雄人壽守護久久醫療終身保險(103)",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ],
+    "categoryCode": "2_2",
+    "category": "健康保險"
+  },
+  "216311MZ1A07023A11Z10000010": {
+    "company": "遠雄人壽保險事業股份有限公司",
+    "productName": "遠雄人壽雄溫馨終身醫療健康保險(103)(第10次部分變更)",
+    "planCode": "216311MZ1A07023A11Z10000010",
+    "contractType": "主約",
+    "productType": "醫療定額",
+    "currency": "新台幣",
+    "status": "",
+    "saleDate": "",
+    "stopDate": "",
+    "versionFolder": "v10",
+    "productFolder": "遠雄人壽雄溫馨終身醫療健康保險(103)",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ],
+    "categoryCode": "2_2",
+    "category": "健康保險"
+  },
+  "216311RZ1A07223A11Z10000008": {
+    "company": "遠雄人壽保險事業股份有限公司",
+    "productName": "遠雄人壽雄健康手術醫療終身健康保險附約(第8次部分變更)",
+    "planCode": "216311RZ1A07223A11Z10000008",
+    "contractType": "附約",
+    "productType": "醫療定額",
+    "currency": "新台幣",
+    "status": "",
+    "saleDate": "",
+    "stopDate": "",
+    "versionFolder": "v8",
+    "productFolder": "遠雄人壽雄健康手術醫療終身健康保險附約",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ],
+    "categoryCode": "2_2",
+    "category": "健康保險"
+  },
+  "216351RZ1A19623A11Z10000001": {
+    "company": "遠雄人壽保險事業股份有限公司",
+    "productName": "遠雄人壽永康滿福重大疾病終身健康保險附約(乙型)(第1次部分變更)",
+    "planCode": "216351RZ1A19623A11Z10000001",
+    "contractType": "附約",
+    "productType": "重大疾(傷)病險",
+    "currency": "新台幣",
+    "status": "",
+    "saleDate": "",
+    "stopDate": "",
+    "versionFolder": "v1",
+    "productFolder": "遠雄人壽永康滿福重大疾病終身健康保險附約(乙型)",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ],
+    "categoryCode": "2_2",
+    "category": "健康保險"
+  },
+  "216351MZ5B18723A11Z10000001": {
+    "company": "遠雄人壽保險事業股份有限公司",
+    "productName": "遠雄人壽保安心90重大傷病終身保險(第1次部分變更)",
+    "planCode": "216351MZ5B18723A11Z10000001",
+    "contractType": "主約",
+    "productType": "重大疾(傷)病險",
+    "currency": "新台幣",
+    "status": "",
+    "saleDate": "",
+    "stopDate": "",
+    "versionFolder": "v1",
+    "productFolder": "遠雄人壽保安心90重大傷病終身保險",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ],
+    "categoryCode": "2_2",
+    "category": "健康保險"
+  },
+  "216351RZ1A09723A11Z10000006": {
+    "company": "遠雄人壽保險事業股份有限公司",
+    "productName": "遠雄人壽永康特定傷病終身健康保險附約(第6次部分變更)",
+    "planCode": "216351RZ1A09723A11Z10000006",
+    "contractType": "附約",
+    "productType": "重大疾(傷)病險",
+    "currency": "新台幣",
+    "status": "",
+    "saleDate": "",
+    "stopDate": "",
+    "versionFolder": "v6",
+    "productFolder": "遠雄人壽永康特定傷病終身健康保險附約",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ],
+    "categoryCode": "2_2",
+    "category": "健康保險"
+  },
+  "216351RZ9B17123A11Z10000003": {
+    "company": "遠雄人壽保險事業股份有限公司",
+    "productName": "遠雄人壽永康照護特定傷病終身保險附約(第3次部分變更)",
+    "planCode": "216351RZ9B17123A11Z10000003",
+    "contractType": "附約",
+    "productType": "重大疾(傷)病險",
+    "currency": "新台幣",
+    "status": "",
+    "saleDate": "",
+    "stopDate": "",
+    "versionFolder": "v3",
+    "productFolder": "遠雄人壽永康照護特定傷病終身保險附約",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ],
+    "categoryCode": "2_2",
+    "category": "健康保險"
+  },
+  "216391MZ9B10323A11Z10000009": {
+    "company": "遠雄人壽保險事業股份有限公司",
+    "productName": "遠雄人壽永安手術醫療終身保險(第9次部分變更)",
+    "planCode": "216391MZ9B10323A11Z10000009",
+    "contractType": "主約",
+    "productType": "終身壽險",
+    "currency": "新台幣",
+    "status": "",
+    "saleDate": "",
+    "stopDate": "",
+    "versionFolder": "v9",
+    "productFolder": "遠雄人壽永安手術醫療終身保險",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ],
+    "categoryCode": "2_2",
+    "category": "健康保險"
+  },
+  "216391RZ1A18223A11Z10000002": {
+    "company": "遠雄人壽保險事業股份有限公司",
+    "productName": "遠雄人壽超好心B型殘廢照護終身健康保險附約(106)(第2次部分變更)",
+    "planCode": "216391RZ1A18223A11Z10000002",
+    "contractType": "附約",
+    "productType": "醫療定額",
+    "currency": "新台幣",
+    "status": "",
+    "saleDate": "",
+    "stopDate": "",
+    "versionFolder": "v2",
+    "productFolder": "遠雄人壽超好心B型殘廢照護終身健康保險附約(106)",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ],
+    "categoryCode": "2_2",
+    "category": "健康保險"
+  },
+  "216311AZ1A11221A11Z10000005": {
+    "company": "遠雄人壽保險事業股份有限公司",
+    "productName": "遠雄人壽新海外突發疾病健康保險附加條款(第5次部份變更)",
+    "planCode": "216311AZ1A11221A11Z10000005",
+    "contractType": "附約",
+    "productType": "醫療定額",
+    "currency": "新台幣",
+    "status": "",
+    "saleDate": "",
+    "stopDate": "",
+    "versionFolder": "v5",
+    "productFolder": "遠雄人壽新海外突發疾病健康保險附加條款",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ],
+    "categoryCode": "2_2",
+    "category": "健康保險"
+  },
+  "216321RZ1A22323A11Z10000000": {
+    "company": "遠雄人壽保險事業股份有限公司",
+    "productName": "遠雄人壽愛無限B型防癌照護終身健康保險附約",
+    "planCode": "216321RZ1A22323A11Z10000000",
+    "contractType": "附約",
+    "productType": "防癌險",
+    "currency": "新台幣",
+    "status": "",
+    "saleDate": "",
+    "stopDate": "",
+    "versionFolder": "v0",
+    "productFolder": "遠雄人壽愛無限B型防癌照護終身健康保險附約",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ],
+    "categoryCode": "2_2",
+    "category": "健康保險"
+  },
+  "216341RZ1A22722A11Z10000000": {
+    "company": "遠雄人壽保險事業股份有限公司",
+    "productName": "遠雄人壽金貼心豁免保險費附約",
+    "planCode": "216341RZ1A22722A11Z10000000",
+    "contractType": "附約",
+    "productType": "其他",
+    "currency": "新台幣",
+    "status": "",
+    "saleDate": "",
+    "stopDate": "",
+    "versionFolder": "v0",
+    "productFolder": "遠雄人壽金貼心豁免保險費附約",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ],
+    "categoryCode": "2_2",
+    "category": "健康保險"
+  },
+  "216391MZ9B22922A11Z10000000": {
+    "company": "遠雄人壽保險事業股份有限公司",
+    "productName": "遠雄人壽保安心85重大傷病定期保險",
+    "planCode": "216391MZ9B22922A11Z10000000",
+    "contractType": "主約",
+    "productType": "重大疾(傷)病險",
+    "currency": "新台幣",
+    "status": "",
+    "saleDate": "",
+    "stopDate": "",
+    "versionFolder": "v0",
+    "productFolder": "遠雄人壽保安心85重大傷病定期保險",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ],
+    "categoryCode": "2_2",
+    "category": "健康保險"
+  },
+  "216391MZ1A22823A11Z10000000": {
+    "company": "遠雄人壽保險事業股份有限公司",
+    "productName": "遠雄人壽超好心C型殘廢照護終身健康保險",
+    "planCode": "216391MZ1A22823A11Z10000000",
+    "contractType": "主約",
+    "productType": "醫療定額",
+    "currency": "新台幣",
+    "status": "",
+    "saleDate": "",
+    "stopDate": "",
+    "versionFolder": "v0",
+    "productFolder": "遠雄人壽超好心C型殘廢照護終身健康保險",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ],
+    "categoryCode": "2_2",
+    "category": "健康保險"
+  },
+  "216391RZ1A23421A11Z10000000": {
+    "company": "遠雄人壽保險事業股份有限公司",
+    "productName": "遠雄人壽保安心B型重大傷病一年定期健康保險附約",
+    "planCode": "216391RZ1A23421A11Z10000000",
+    "contractType": "附約",
+    "productType": "重大疾(傷)病險",
+    "currency": "新台幣",
+    "status": "",
+    "saleDate": "",
+    "stopDate": "",
+    "versionFolder": "v0",
+    "productFolder": "遠雄人壽保安心B型重大傷病一年定期健康保險附約",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ],
+    "categoryCode": "2_2",
+    "category": "健康保險"
+  },
+  "216321MZ2B14923A11Z10000003": {
+    "company": "遠雄人壽保險事業股份有限公司",
+    "productName": "遠雄人壽愛無懼防癌保本終身保險(第3次部分變更)",
+    "planCode": "216321MZ2B14923A11Z10000003",
+    "contractType": "主約",
+    "productType": "防癌險",
+    "currency": "新台幣",
+    "status": "",
+    "saleDate": "",
+    "stopDate": "",
+    "versionFolder": "v3",
+    "productFolder": "遠雄人壽愛無懼防癌保本終身保險",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ],
+    "categoryCode": "2_2",
+    "category": "健康保險"
+  },
+  "216321RZ1A22323A11Z10000001": {
+    "company": "遠雄人壽保險事業股份有限公司",
+    "productName": "遠雄人壽愛無限B型防癌照護終身健康保險附約(第1次部分變更)",
+    "planCode": "216321RZ1A22323A11Z10000001",
+    "contractType": "附約",
+    "productType": "防癌險",
+    "currency": "新台幣",
+    "status": "",
+    "saleDate": "",
+    "stopDate": "",
+    "versionFolder": "v1",
+    "productFolder": "遠雄人壽愛無限B型防癌照護終身健康保險附約",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ],
+    "categoryCode": "2_2",
+    "category": "健康保險"
+  },
+  "216321RZ1A20023A11Z10000002": {
+    "company": "遠雄人壽保險事業股份有限公司",
+    "productName": "遠雄人壽愛無懼B型防癌終身健康保險附約(第2次部分變更)",
+    "planCode": "216321RZ1A20023A11Z10000002",
+    "contractType": "附約",
+    "productType": "防癌險",
+    "currency": "新台幣",
+    "status": "",
+    "saleDate": "",
+    "stopDate": "",
+    "versionFolder": "v2",
+    "productFolder": "遠雄人壽愛無懼B型防癌終身健康保險附約",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ],
+    "categoryCode": "2_2",
+    "category": "健康保險"
+  },
+  "216321RZ1A11623A11Z10000007": {
+    "company": "遠雄人壽保險事業股份有限公司",
+    "productName": "遠雄人壽新癌症終身健康保險附約(99)(第7次部分變更)",
+    "planCode": "216321RZ1A11623A11Z10000007",
+    "contractType": "附約",
+    "productType": "防癌險",
+    "currency": "新台幣",
+    "status": "",
+    "saleDate": "",
+    "stopDate": "",
+    "versionFolder": "v7",
+    "productFolder": "遠雄人壽新癌症終身健康保險附約(99)",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ],
+    "categoryCode": "2_2",
+    "category": "健康保險"
+  },
+  "216321RZ1A09523A11Z10000009": {
+    "company": "遠雄人壽保險事業股份有限公司",
+    "productName": "遠雄人壽全心照護防癌終身健康保險附約(第9次部分變更)",
+    "planCode": "216321RZ1A09523A11Z10000009",
+    "contractType": "附約",
+    "productType": "防癌險",
+    "currency": "新台幣",
+    "status": "",
+    "saleDate": "",
+    "stopDate": "",
+    "versionFolder": "v9",
+    "productFolder": "遠雄人壽全心照護防癌終身健康保險附約",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ],
+    "categoryCode": "2_2",
+    "category": "健康保險"
+  },
+  "216351RZ1A19623A11Z10000002": {
+    "company": "遠雄人壽保險事業股份有限公司",
+    "productName": "遠雄人壽永康滿福重大疾病終身健康保險附約(乙型)(第2次部分變更)",
+    "planCode": "216351RZ1A19623A11Z10000002",
+    "contractType": "附約",
+    "productType": "重大疾(傷)病險",
+    "currency": "新台幣",
+    "status": "",
+    "saleDate": "",
+    "stopDate": "",
+    "versionFolder": "v2",
+    "productFolder": "遠雄人壽永康滿福重大疾病終身健康保險附約(乙型)",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ],
+    "categoryCode": "2_2",
+    "category": "健康保險"
+  },
+  "216391MZ1A22823A11Z10000001": {
+    "company": "遠雄人壽保險事業股份有限公司",
+    "productName": "遠雄人壽超好心C型殘廢照護終身健康保險(第1次部分變更)",
+    "planCode": "216391MZ1A22823A11Z10000001",
+    "contractType": "主約",
+    "productType": "醫療定額",
+    "currency": "新台幣",
+    "status": "",
+    "saleDate": "",
+    "stopDate": "",
+    "versionFolder": "v1",
+    "productFolder": "遠雄人壽超好心C型殘廢照護終身健康保險",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ],
+    "categoryCode": "2_2",
+    "category": "健康保險"
+  },
+  "216321MZ2B24023A11Z10000000": {
+    "company": "遠雄人壽保險事業股份有限公司",
+    "productName": "遠雄人壽愛無限A型防癌照護終身健康保險",
+    "planCode": "216321MZ2B24023A11Z10000000",
+    "contractType": "主約",
+    "productType": "防癌險",
+    "currency": "新台幣",
+    "status": "",
+    "saleDate": "",
+    "stopDate": "",
+    "versionFolder": "v0",
+    "productFolder": "遠雄人壽愛無限A型防癌照護終身健康保險",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ],
+    "categoryCode": "2_2",
+    "category": "健康保險"
+  },
+  "216341RZ1A24122B11Z10000000": {
+    "company": "遠雄人壽保險事業股份有限公司",
+    "productName": "遠雄人壽金放心美元豁免保險費附約",
+    "planCode": "216341RZ1A24122B11Z10000000",
+    "contractType": "附約",
+    "productType": "其他",
+    "currency": "美元",
+    "status": "",
+    "saleDate": "",
+    "stopDate": "",
+    "versionFolder": "v0",
+    "productFolder": "遠雄人壽金放心美元豁免保險費附約",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ],
+    "categoryCode": "2_2",
+    "category": "健康保險"
+  },
+  "216341RZ1A22722A11Z10000001": {
+    "company": "遠雄人壽保險事業股份有限公司",
+    "productName": "遠雄人壽金貼心豁免保險費附約(第1次部分變更)",
+    "planCode": "216341RZ1A22722A11Z10000001",
+    "contractType": "附約",
+    "productType": "其他",
+    "currency": "新台幣",
+    "status": "",
+    "saleDate": "",
+    "stopDate": "",
+    "versionFolder": "v1",
+    "productFolder": "遠雄人壽金貼心豁免保險費附約",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ],
+    "categoryCode": "2_2",
+    "category": "健康保險"
+  },
+  "216351RZ1A19623A11Z10000003": {
+    "company": "遠雄人壽保險事業股份有限公司",
+    "productName": "遠雄人壽永康滿福重大疾病終身健康保險附約(乙型)(第3次部分變更)",
+    "planCode": "216351RZ1A19623A11Z10000003",
+    "contractType": "附約",
+    "productType": "重大疾(傷)病險",
+    "currency": "新台幣",
+    "status": "",
+    "saleDate": "",
+    "stopDate": "",
+    "versionFolder": "v3",
+    "productFolder": "遠雄人壽永康滿福重大疾病終身健康保險附約(乙型)",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ],
+    "categoryCode": "2_2",
+    "category": "健康保險"
+  },
+  "216351MZ5B18723A11Z10000002": {
+    "company": "遠雄人壽保險事業股份有限公司",
+    "productName": "遠雄人壽保安心90重大傷病終身保險(第2次部分變更)",
+    "planCode": "216351MZ5B18723A11Z10000002",
+    "contractType": "主約",
+    "productType": "重大疾(傷)病險",
+    "currency": "新台幣",
+    "status": "",
+    "saleDate": "",
+    "stopDate": "",
+    "versionFolder": "v2",
+    "productFolder": "遠雄人壽保安心90重大傷病終身保險",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ],
+    "categoryCode": "2_2",
+    "category": "健康保險"
+  },
+  "216351RZ1A09723A11Z10000007": {
+    "company": "遠雄人壽保險事業股份有限公司",
+    "productName": "遠雄人壽永康特定傷病終身健康保險附約(第7次部分變更)",
+    "planCode": "216351RZ1A09723A11Z10000007",
+    "contractType": "附約",
+    "productType": "重大疾(傷)病險",
+    "currency": "新台幣",
+    "status": "",
+    "saleDate": "",
+    "stopDate": "",
+    "versionFolder": "v7",
+    "productFolder": "遠雄人壽永康特定傷病終身健康保險附約",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ],
+    "categoryCode": "2_2",
+    "category": "健康保險"
+  },
+  "216341RZ1A13622A11Z10000003": {
+    "company": "遠雄人壽保險事業股份有限公司",
+    "productName": "遠雄人壽金好心豁免保險費附約(第3次部分變更)",
+    "planCode": "216341RZ1A13622A11Z10000003",
+    "contractType": "附約",
+    "productType": "其他",
+    "currency": "新台幣",
+    "status": "",
+    "saleDate": "",
+    "stopDate": "",
+    "versionFolder": "v3",
+    "productFolder": "遠雄人壽金好心豁免保險費附約",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ],
+    "categoryCode": "2_2",
+    "category": "健康保險"
+  },
+  "216341RZ1A02722A11Z10000011": {
+    "company": "遠雄人壽保險事業股份有限公司",
+    "productName": "遠雄人壽金安心豁免保險費附約(第11次部分變更)",
+    "planCode": "216341RZ1A02722A11Z10000011",
+    "contractType": "附約",
+    "productType": "其他",
+    "currency": "新台幣",
+    "status": "",
+    "saleDate": "",
+    "stopDate": "",
+    "versionFolder": "v11",
+    "productFolder": "遠雄人壽金安心豁免保險費附約",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ],
+    "categoryCode": "2_2",
+    "category": "健康保險"
+  },
+  "216341RZ1A02622A11Z10000014": {
+    "company": "遠雄人壽保險事業股份有限公司",
+    "productName": "遠雄人壽豁免保險費附約(第14次部分變更)",
+    "planCode": "216341RZ1A02622A11Z10000014",
+    "contractType": "附約",
+    "productType": "其他",
+    "currency": "新台幣",
+    "status": "",
+    "saleDate": "",
+    "stopDate": "",
+    "versionFolder": "v14",
+    "productFolder": "遠雄人壽豁免保險費附約",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ],
+    "categoryCode": "2_2",
+    "category": "健康保險"
+  },
+  "216351RZ9B17123A11Z10000004": {
+    "company": "遠雄人壽保險事業股份有限公司",
+    "productName": "遠雄人壽永康照護特定傷病終身保險附約(第4次部分變更)",
+    "planCode": "216351RZ9B17123A11Z10000004",
+    "contractType": "附約",
+    "productType": "重大疾(傷)病險",
+    "currency": "新台幣",
+    "status": "",
+    "saleDate": "",
+    "stopDate": "",
+    "versionFolder": "v4",
+    "productFolder": "遠雄人壽永康照護特定傷病終身保險附約",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ],
+    "categoryCode": "2_2",
+    "category": "健康保險"
+  },
+  "216311RZ1B08923A11Z10000011": {
+    "company": "遠雄人壽保險事業股份有限公司",
+    "productName": "遠雄人壽健康久久手術醫療終身保險附約(第11次部分變更)",
+    "planCode": "216311RZ1B08923A11Z10000011",
+    "contractType": "附約",
+    "productType": "醫療定額",
+    "currency": "新台幣",
+    "status": "",
+    "saleDate": "",
+    "stopDate": "",
+    "versionFolder": "v11",
+    "productFolder": "遠雄人壽健康久久手術醫療終身保險附約",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ],
+    "categoryCode": "2_2",
+    "category": "健康保險"
+  },
+  "216311RZ1A19421A11Z10000001": {
+    "company": "遠雄人壽保險事業股份有限公司",
+    "productName": "遠雄人壽康富醫療健康保險附約(第1次部分變更)",
+    "planCode": "216311RZ1A19421A11Z10000001",
+    "contractType": "附約",
+    "productType": "醫療定額",
+    "currency": "新台幣",
+    "status": "",
+    "saleDate": "",
+    "stopDate": "",
+    "versionFolder": "v1",
+    "productFolder": "遠雄人壽康富醫療健康保險附約",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ],
+    "categoryCode": "2_2",
+    "category": "健康保險"
+  },
+  "216311MZ1B13923A11Z10000006": {
+    "company": "遠雄人壽保險事業股份有限公司",
+    "productName": "遠雄人壽守護醫級棒醫療保本終身保險(103)(第6次部分變更)",
+    "planCode": "216311MZ1B13923A11Z10000006",
+    "contractType": "主約",
+    "productType": "儲蓄壽險",
+    "currency": "新台幣",
+    "status": "",
+    "saleDate": "",
+    "stopDate": "",
+    "versionFolder": "v6",
+    "productFolder": "遠雄人壽守護醫級棒醫療保本終身保險(103)",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ],
+    "categoryCode": "2_2",
+    "category": "健康保險"
+  },
+  "216311MZ1B08823A11Z10000011": {
+    "company": "遠雄人壽保險事業股份有限公司",
+    "productName": "遠雄人壽守護久久醫療終身保險(103)(第11次部分變更)",
+    "planCode": "216311MZ1B08823A11Z10000011",
+    "contractType": "主約",
+    "productType": "終身壽險",
+    "currency": "新台幣",
+    "status": "",
+    "saleDate": "",
+    "stopDate": "",
+    "versionFolder": "v11",
+    "productFolder": "遠雄人壽守護久久醫療終身保險(103)",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ],
+    "categoryCode": "2_2",
+    "category": "健康保險"
+  },
+  "216311MZ1A07023A11Z10000011": {
+    "company": "遠雄人壽保險事業股份有限公司",
+    "productName": "遠雄人壽雄溫馨終身醫療健康保險(103)(第11次部分變更)",
+    "planCode": "216311MZ1A07023A11Z10000011",
+    "contractType": "主約",
+    "productType": "醫療定額",
+    "currency": "新台幣",
+    "status": "",
+    "saleDate": "",
+    "stopDate": "",
+    "versionFolder": "v11",
+    "productFolder": "遠雄人壽雄溫馨終身醫療健康保險(103)",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ],
+    "categoryCode": "2_2",
+    "category": "健康保險"
+  },
+  "216321MZ2B14923A11Z10000004": {
+    "company": "遠雄人壽保險事業股份有限公司",
+    "productName": "遠雄人壽愛無懼防癌保本終身保險(第4次部分變更)",
+    "planCode": "216321MZ2B14923A11Z10000004",
+    "contractType": "主約",
+    "productType": "防癌險",
+    "currency": "新台幣",
+    "status": "",
+    "saleDate": "",
+    "stopDate": "",
+    "versionFolder": "v4",
+    "productFolder": "遠雄人壽愛無懼防癌保本終身保險",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ],
+    "categoryCode": "2_2",
+    "category": "健康保險"
+  },
+  "216321RZ1A09523A11Z10000010": {
+    "company": "遠雄人壽保險事業股份有限公司",
+    "productName": "遠雄人壽全心照護防癌終身健康保險附約(第10次部分變更)",
+    "planCode": "216321RZ1A09523A11Z10000010",
+    "contractType": "附約",
+    "productType": "防癌險",
+    "currency": "新台幣",
+    "status": "",
+    "saleDate": "",
+    "stopDate": "",
+    "versionFolder": "v10",
+    "productFolder": "遠雄人壽全心照護防癌終身健康保險附約",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ],
+    "categoryCode": "2_2",
+    "category": "健康保險"
+  },
+  "216321RZ1A02421A11Z10000007": {
+    "company": "遠雄人壽保險事業股份有限公司",
+    "productName": "遠雄人壽一年定期癌症健康保險附約(第7次部分變更)",
+    "planCode": "216321RZ1A02421A11Z10000007",
+    "contractType": "附約",
+    "productType": "防癌險",
+    "currency": "新台幣",
+    "status": "",
+    "saleDate": "",
+    "stopDate": "",
+    "versionFolder": "v7",
+    "productFolder": "遠雄人壽一年定期癌症健康保險附約",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ],
+    "categoryCode": "2_2",
+    "category": "健康保險"
+  },
+  "216321RZ1A11623A11Z10000008": {
+    "company": "遠雄人壽保險事業股份有限公司",
+    "productName": "遠雄人壽新癌症終身健康保險附約(99)(第8次部分變更)",
+    "planCode": "216321RZ1A11623A11Z10000008",
+    "contractType": "附約",
+    "productType": "防癌險",
+    "currency": "新台幣",
+    "status": "",
+    "saleDate": "",
+    "stopDate": "",
+    "versionFolder": "v8",
+    "productFolder": "遠雄人壽新癌症終身健康保險附約(99)",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ],
+    "categoryCode": "2_2",
+    "category": "健康保險"
+  },
+  "216321RZ1A20023A11Z10000003": {
+    "company": "遠雄人壽保險事業股份有限公司",
+    "productName": "遠雄人壽愛無懼B型防癌終身健康保險附約(第3次部分變更)",
+    "planCode": "216321RZ1A20023A11Z10000003",
+    "contractType": "附約",
+    "productType": "防癌險",
+    "currency": "新台幣",
+    "status": "",
+    "saleDate": "",
+    "stopDate": "",
+    "versionFolder": "v3",
+    "productFolder": "遠雄人壽愛無懼B型防癌終身健康保險附約",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ],
+    "categoryCode": "2_2",
+    "category": "健康保險"
+  },
+  "216321RZ1A22323A11Z10000002": {
+    "company": "遠雄人壽保險事業股份有限公司",
+    "productName": "遠雄人壽愛無限B型防癌照護終身健康保險附約(第2次部分變更)",
+    "planCode": "216321RZ1A22323A11Z10000002",
+    "contractType": "附約",
+    "productType": "防癌險",
+    "currency": "新台幣",
+    "status": "",
+    "saleDate": "",
+    "stopDate": "",
+    "versionFolder": "v2",
+    "productFolder": "遠雄人壽愛無限B型防癌照護終身健康保險附約",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ],
+    "categoryCode": "2_2",
+    "category": "健康保險"
+  },
+  "216391MZ1A22823A11Z10000002": {
+    "company": "遠雄人壽保險事業股份有限公司",
+    "productName": "遠雄人壽超好心C型失能照護終身健康保險(第2次部分變更)",
+    "planCode": "216391MZ1A22823A11Z10000002",
+    "contractType": "主約",
+    "productType": "失能險",
+    "currency": "新台幣",
+    "status": "",
+    "saleDate": "",
+    "stopDate": "",
+    "versionFolder": "v2",
+    "productFolder": "遠雄人壽超好心C型失能照護終身健康保險",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ],
+    "categoryCode": "2_2",
+    "category": "健康保險"
+  },
+  "216391MZ9B10323A11Z10000010": {
+    "company": "遠雄人壽保險事業股份有限公司",
+    "productName": "遠雄人壽永安手術醫療終身保險(第10次部分變更)",
+    "planCode": "216391MZ9B10323A11Z10000010",
+    "contractType": "主約",
+    "productType": "終身壽險",
+    "currency": "新台幣",
+    "status": "",
+    "saleDate": "",
+    "stopDate": "",
+    "versionFolder": "v10",
+    "productFolder": "遠雄人壽永安手術醫療終身保險",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ],
+    "categoryCode": "2_2",
+    "category": "健康保險"
+  },
+  "216391RZ1A23421A11Z10000001": {
+    "company": "遠雄人壽保險事業股份有限公司",
+    "productName": "遠雄人壽保安心B型重大傷病一年定期健康保險附約(第1次部分變更)",
+    "planCode": "216391RZ1A23421A11Z10000001",
+    "contractType": "附約",
+    "productType": "重大疾(傷)病險",
+    "currency": "新台幣",
+    "status": "",
+    "saleDate": "",
+    "stopDate": "",
+    "versionFolder": "v1",
+    "productFolder": "遠雄人壽保安心B型重大傷病一年定期健康保險附約",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ],
+    "categoryCode": "2_2",
+    "category": "健康保險"
+  },
+  "216391MZ9B22922A11Z10000001": {
+    "company": "遠雄人壽保險事業股份有限公司",
+    "productName": "遠雄人壽保安心85重大傷病定期保險(第1次部分變更)",
+    "planCode": "216391MZ9B22922A11Z10000001",
+    "contractType": "主約",
+    "productType": "重大疾(傷)病險",
+    "currency": "新台幣",
+    "status": "",
+    "saleDate": "",
+    "stopDate": "",
+    "versionFolder": "v1",
+    "productFolder": "遠雄人壽保安心85重大傷病定期保險",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ],
+    "categoryCode": "2_2",
+    "category": "健康保險"
+  },
+  "216391RZ1A18223A11Z10000003": {
+    "company": "遠雄人壽保險事業股份有限公司",
+    "productName": "遠雄人壽超好心B型失能照護終身健康保險附約(106)(第3次部分變更)",
+    "planCode": "216391RZ1A18223A11Z10000003",
+    "contractType": "附約",
+    "productType": "失能險",
+    "currency": "新台幣",
+    "status": "",
+    "saleDate": "",
+    "stopDate": "",
+    "versionFolder": "v3",
+    "productFolder": "遠雄人壽超好心B型失能照護終身健康保險附約(106)",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ],
+    "categoryCode": "2_2",
+    "category": "健康保險"
+  },
+  "216321RZ1A22323A11Z10000003": {
+    "company": "遠雄人壽保險事業股份有限公司",
+    "productName": "遠雄人壽愛無限B型防癌照護終身健康保險附約(第3次部分變更)",
+    "planCode": "216321RZ1A22323A11Z10000003",
+    "contractType": "附約",
+    "productType": "防癌險",
+    "currency": "新台幣",
+    "status": "",
+    "saleDate": "",
+    "stopDate": "",
+    "versionFolder": "v3",
+    "productFolder": "遠雄人壽愛無限B型防癌照護終身健康保險附約",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ],
+    "categoryCode": "2_2",
+    "category": "健康保險"
+  },
+  "216321RZ1A20023A11Z10000004": {
+    "company": "遠雄人壽保險事業股份有限公司",
+    "productName": "遠雄人壽愛無懼B型防癌終身健康保險附約(第4次部分變更)",
+    "planCode": "216321RZ1A20023A11Z10000004",
+    "contractType": "附約",
+    "productType": "防癌險",
+    "currency": "新台幣",
+    "status": "",
+    "saleDate": "",
+    "stopDate": "",
+    "versionFolder": "v4",
+    "productFolder": "遠雄人壽愛無懼B型防癌終身健康保險附約",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ],
+    "categoryCode": "2_2",
+    "category": "健康保險"
+  },
+  "216321RZ1A11623A11Z10000009": {
+    "company": "遠雄人壽保險事業股份有限公司",
+    "productName": "遠雄人壽新癌症終身健康保險附約(99)(第9次部分變更)",
+    "planCode": "216321RZ1A11623A11Z10000009",
+    "contractType": "附約",
+    "productType": "防癌險",
+    "currency": "新台幣",
+    "status": "",
+    "saleDate": "",
+    "stopDate": "",
+    "versionFolder": "v9",
+    "productFolder": "遠雄人壽新癌症終身健康保險附約(99)",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ],
+    "categoryCode": "2_2",
+    "category": "健康保險"
+  },
+  "216321RZ1A02421A11Z10000008": {
+    "company": "遠雄人壽保險事業股份有限公司",
+    "productName": "遠雄人壽一年定期癌症健康保險附約(第8次部分變更)",
+    "planCode": "216321RZ1A02421A11Z10000008",
+    "contractType": "附約",
+    "productType": "防癌險",
+    "currency": "新台幣",
+    "status": "",
+    "saleDate": "",
+    "stopDate": "",
+    "versionFolder": "v8",
+    "productFolder": "遠雄人壽一年定期癌症健康保險附約",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ],
+    "categoryCode": "2_2",
+    "category": "健康保險"
+  },
+  "216321MZ2B14923A11Z10000005": {
+    "company": "遠雄人壽保險事業股份有限公司",
+    "productName": "遠雄人壽愛無懼防癌保本終身保險(第5次部分變更)",
+    "planCode": "216321MZ2B14923A11Z10000005",
+    "contractType": "主約",
+    "productType": "防癌險",
+    "currency": "新台幣",
+    "status": "",
+    "saleDate": "",
+    "stopDate": "",
+    "versionFolder": "v5",
+    "productFolder": "遠雄人壽愛無懼防癌保本終身保險",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ],
+    "categoryCode": "2_2",
+    "category": "健康保險"
+  },
+  "216321MZ2B24023A11Z10000001": {
+    "company": "遠雄人壽保險事業股份有限公司",
+    "productName": "遠雄人壽愛無限A型防癌照護終身健康保險(第1次部分變更)",
+    "planCode": "216321MZ2B24023A11Z10000001",
+    "contractType": "主約",
+    "productType": "防癌險",
+    "currency": "新台幣",
+    "status": "",
+    "saleDate": "",
+    "stopDate": "",
+    "versionFolder": "v1",
+    "productFolder": "遠雄人壽愛無限A型防癌照護終身健康保險",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ],
+    "categoryCode": "2_2",
+    "category": "健康保險"
+  },
+  "216311MZ1A07023A11Z10000012": {
+    "company": "遠雄人壽保險事業股份有限公司",
+    "productName": "遠雄人壽雄溫馨終身醫療健康保險(103)(第12次部分變更)",
+    "planCode": "216311MZ1A07023A11Z10000012",
+    "contractType": "主約",
+    "productType": "醫療定額",
+    "currency": "新台幣",
+    "status": "",
+    "saleDate": "",
+    "stopDate": "",
+    "versionFolder": "v12",
+    "productFolder": "遠雄人壽雄溫馨終身醫療健康保險(103)",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ],
+    "categoryCode": "2_2",
+    "category": "健康保險"
+  },
+  "216311MZ1B13923A11Z10000007": {
+    "company": "遠雄人壽保險事業股份有限公司",
+    "productName": "遠雄人壽守護醫級棒醫療保本終身保險(103)(第7次部分變更)",
+    "planCode": "216311MZ1B13923A11Z10000007",
+    "contractType": "主約",
+    "productType": "儲蓄壽險",
+    "currency": "新台幣",
+    "status": "",
+    "saleDate": "",
+    "stopDate": "",
+    "versionFolder": "v7",
+    "productFolder": "遠雄人壽守護醫級棒醫療保本終身保險(103)",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ],
+    "categoryCode": "2_2",
+    "category": "健康保險"
+  },
+  "216351RZ9B17123A11Z10000005": {
+    "company": "遠雄人壽保險事業股份有限公司",
+    "productName": "遠雄人壽永康照護特定傷病終身保險附約(第5次部分變更)",
+    "planCode": "216351RZ9B17123A11Z10000005",
+    "contractType": "附約",
+    "productType": "重大疾(傷)病險",
+    "currency": "新台幣",
+    "status": "",
+    "saleDate": "",
+    "stopDate": "",
+    "versionFolder": "v5",
+    "productFolder": "遠雄人壽永康照護特定傷病終身保險附約",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ],
+    "categoryCode": "2_2",
+    "category": "健康保險"
+  },
+  "216341RZ1A02622A11Z10000015": {
+    "company": "遠雄人壽保險事業股份有限公司",
+    "productName": "遠雄人壽豁免保險費附約(第15次部分變更)",
+    "planCode": "216341RZ1A02622A11Z10000015",
+    "contractType": "附約",
+    "productType": "其他",
+    "currency": "新台幣",
+    "status": "",
+    "saleDate": "",
+    "stopDate": "",
+    "versionFolder": "v15",
+    "productFolder": "遠雄人壽豁免保險費附約",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ],
+    "categoryCode": "2_2",
+    "category": "健康保險"
+  },
+  "216341RZ1A02722A11Z10000012": {
+    "company": "遠雄人壽保險事業股份有限公司",
+    "productName": "遠雄人壽金安心豁免保險費附約(第12次部分變更)",
+    "planCode": "216341RZ1A02722A11Z10000012",
+    "contractType": "附約",
+    "productType": "其他",
+    "currency": "新台幣",
+    "status": "",
+    "saleDate": "",
+    "stopDate": "",
+    "versionFolder": "v12",
+    "productFolder": "遠雄人壽金安心豁免保險費附約",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ],
+    "categoryCode": "2_2",
+    "category": "健康保險"
+  },
+  "216351RZ1A09723A11Z10000008": {
+    "company": "遠雄人壽保險事業股份有限公司",
+    "productName": "遠雄人壽永康特定傷病終身健康保險附約(第8次部分變更)",
+    "planCode": "216351RZ1A09723A11Z10000008",
+    "contractType": "附約",
+    "productType": "重大疾(傷)病險",
+    "currency": "新台幣",
+    "status": "",
+    "saleDate": "",
+    "stopDate": "",
+    "versionFolder": "v8",
+    "productFolder": "遠雄人壽永康特定傷病終身健康保險附約",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ],
+    "categoryCode": "2_2",
+    "category": "健康保險"
+  },
+  "216311RZ1A24921A11E10000000": {
+    "company": "遠雄人壽保險事業股份有限公司",
+    "productName": "遠雄人壽康樂綜合醫療手術定額健康保險附約",
+    "planCode": "216311RZ1A24921A11E10000000",
+    "contractType": "附約",
+    "productType": "醫療定額",
+    "currency": "新台幣",
+    "status": "",
+    "saleDate": "",
+    "stopDate": "",
+    "versionFolder": "v0",
+    "productFolder": "遠雄人壽康樂綜合醫療手術定額健康保險附約",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ],
+    "categoryCode": "2_2",
+    "category": "健康保險"
+  },
+  "216391RZ1A25623A11Z10000000": {
+    "company": "遠雄人壽保險事業股份有限公司",
+    "productName": "遠雄人壽新超好心B型失能照護終身健康保險附約",
+    "planCode": "216391RZ1A25623A11Z10000000",
+    "contractType": "附約",
+    "productType": "失能險",
+    "currency": "新台幣",
+    "status": "",
+    "saleDate": "",
+    "stopDate": "",
+    "versionFolder": "v0",
+    "productFolder": "遠雄人壽新超好心B型失能照護終身健康保險附約",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ],
+    "categoryCode": "2_2",
+    "category": "健康保險"
+  },
+  "216391MZ1A25723A11Z10000000": {
+    "company": "遠雄人壽保險事業股份有限公司",
+    "productName": "遠雄人壽新超好心C型失能照護終身健康保險",
+    "planCode": "216391MZ1A25723A11Z10000000",
+    "contractType": "主約",
+    "productType": "失能險",
+    "currency": "新台幣",
+    "status": "",
+    "saleDate": "",
+    "stopDate": "",
+    "versionFolder": "v0",
+    "productFolder": "遠雄人壽新超好心C型失能照護終身健康保險",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ],
+    "categoryCode": "2_2",
+    "category": "健康保險"
+  },
+  "216311RZ1A11321A11Z10000007": {
+    "company": "遠雄人壽保險事業股份有限公司",
+    "productName": "遠雄人壽好安心住院醫療健康保險附約(103)(第7次部分變更)",
+    "planCode": "216311RZ1A11321A11Z10000007",
+    "contractType": "附約",
+    "productType": "醫療定額",
+    "currency": "新台幣",
+    "status": "",
+    "saleDate": "",
+    "stopDate": "",
+    "versionFolder": "v7",
+    "productFolder": "遠雄人壽好安心住院醫療健康保險附約(103)",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ],
+    "categoryCode": "2_2",
+    "category": "健康保險"
+  },
+  "216311RZ1A08623A11Z10000008": {
+    "company": "遠雄人壽保險事業股份有限公司",
+    "productName": "遠雄人壽新溫馨終身醫療健康保險附約(103)(第8次部分變更)",
+    "planCode": "216311RZ1A08623A11Z10000008",
+    "contractType": "附約",
+    "productType": "醫療定額",
+    "currency": "新台幣",
+    "status": "",
+    "saleDate": "",
+    "stopDate": "",
+    "versionFolder": "v8",
+    "productFolder": "遠雄人壽新溫馨終身醫療健康保險附約(103)",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ],
+    "categoryCode": "2_2",
+    "category": "健康保險"
+  },
+  "216311RZ1B08923A11Z10000012": {
+    "company": "遠雄人壽保險事業股份有限公司",
+    "productName": "遠雄人壽健康久久手術醫療終身保險附約(第12次部分變更)",
+    "planCode": "216311RZ1B08923A11Z10000012",
+    "contractType": "附約",
+    "productType": "醫療定額",
+    "currency": "新台幣",
+    "status": "",
+    "saleDate": "",
+    "stopDate": "",
+    "versionFolder": "v12",
+    "productFolder": "遠雄人壽健康久久手術醫療終身保險附約",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ],
+    "categoryCode": "2_2",
+    "category": "健康保險"
+  },
+  "216311RZ1A02221A11Z10000011": {
+    "company": "遠雄人壽保險事業股份有限公司",
+    "productName": "遠雄人壽真安心醫療保險附約(103)(第11次部分變更)",
+    "planCode": "216311RZ1A02221A11Z10000011",
+    "contractType": "附約",
+    "productType": "醫療定額",
+    "currency": "新台幣",
+    "status": "",
+    "saleDate": "",
+    "stopDate": "",
+    "versionFolder": "v11",
+    "productFolder": "遠雄人壽真安心醫療保險附約(103)",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ],
+    "categoryCode": "2_2",
+    "category": "健康保險"
+  },
+  "216311RZ1A02121A11Z10000009": {
+    "company": "遠雄人壽保險事業股份有限公司",
+    "productName": "遠雄人壽綜合住院醫療日額給付保險附約(103)(第9次部分變更)",
+    "planCode": "216311RZ1A02121A11Z10000009",
+    "contractType": "附約",
+    "productType": "醫療定額",
+    "currency": "新台幣",
+    "status": "",
+    "saleDate": "",
+    "stopDate": "",
+    "versionFolder": "v9",
+    "productFolder": "遠雄人壽綜合住院醫療日額給付保險附約(103)",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ],
+    "categoryCode": "2_2",
+    "category": "健康保險"
+  },
+  "216311RZ1A02021A11Z10000009": {
+    "company": "遠雄人壽保險事業股份有限公司",
+    "productName": "遠雄人壽住院醫療日額給付保險附約(103)(第9次部分變更)",
+    "planCode": "216311RZ1A02021A11Z10000009",
+    "contractType": "附約",
+    "productType": "醫療定額",
+    "currency": "新台幣",
+    "status": "",
+    "saleDate": "",
+    "stopDate": "",
+    "versionFolder": "v9",
+    "productFolder": "遠雄人壽住院醫療日額給付保險附約(103)",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ],
+    "categoryCode": "2_2",
+    "category": "健康保險"
+  },
+  "216391MZ9B10323A11Z10000011": {
+    "company": "遠雄人壽保險事業股份有限公司",
+    "productName": "遠雄人壽永安手術醫療終身保險(第11次部分變更)",
+    "planCode": "216391MZ9B10323A11Z10000011",
+    "contractType": "主約",
+    "productType": "終身壽險",
+    "currency": "新台幣",
+    "status": "",
+    "saleDate": "",
+    "stopDate": "",
+    "versionFolder": "v11",
+    "productFolder": "遠雄人壽永安手術醫療終身保險",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ],
+    "categoryCode": "2_2",
+    "category": "健康保險"
+  },
+  "216321MZ2B24023A11Z10000002": {
+    "company": "遠雄人壽保險事業股份有限公司",
+    "productName": "遠雄人壽愛無限A型防癌照護終身健康保險(第2次部分變更)",
+    "planCode": "216321MZ2B24023A11Z10000002",
+    "contractType": "主約",
+    "productType": "防癌險",
+    "currency": "新台幣",
+    "status": "",
+    "saleDate": "",
+    "stopDate": "",
+    "versionFolder": "v2",
+    "productFolder": "遠雄人壽愛無限A型防癌照護終身健康保險",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ],
+    "categoryCode": "2_2",
+    "category": "健康保險"
+  },
+  "216321MZ2B14923A11Z10000006": {
+    "company": "遠雄人壽保險事業股份有限公司",
+    "productName": "遠雄人壽愛無懼防癌保本終身保險(第6次部分變更)",
+    "planCode": "216321MZ2B14923A11Z10000006",
+    "contractType": "主約",
+    "productType": "防癌險",
+    "currency": "新台幣",
+    "status": "",
+    "saleDate": "",
+    "stopDate": "",
+    "versionFolder": "v6",
+    "productFolder": "遠雄人壽愛無懼防癌保本終身保險",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ],
+    "categoryCode": "2_2",
+    "category": "健康保險"
+  },
+  "216321RZ1A02421A11Z10000009": {
+    "company": "遠雄人壽保險事業股份有限公司",
+    "productName": "遠雄人壽一年定期癌症健康保險附約(第9次部分變更)",
+    "planCode": "216321RZ1A02421A11Z10000009",
+    "contractType": "附約",
+    "productType": "防癌險",
+    "currency": "新台幣",
+    "status": "",
+    "saleDate": "",
+    "stopDate": "",
+    "versionFolder": "v9",
+    "productFolder": "遠雄人壽一年定期癌症健康保險附約",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ],
+    "categoryCode": "2_2",
+    "category": "健康保險"
+  },
+  "216321RZ1A11623A11Z10000010": {
+    "company": "遠雄人壽保險事業股份有限公司",
+    "productName": "遠雄人壽新癌症終身健康保險附約(99)(第10次部分變更)",
+    "planCode": "216321RZ1A11623A11Z10000010",
+    "contractType": "附約",
+    "productType": "防癌險",
+    "currency": "新台幣",
+    "status": "",
+    "saleDate": "",
+    "stopDate": "",
+    "versionFolder": "v10",
+    "productFolder": "遠雄人壽新癌症終身健康保險附約(99)",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ],
+    "categoryCode": "2_2",
+    "category": "健康保險"
+  },
+  "216321RZ1A20023A11Z10000005": {
+    "company": "遠雄人壽保險事業股份有限公司",
+    "productName": "遠雄人壽愛無懼B型防癌終身健康保險附約(第5次部分變更)",
+    "planCode": "216321RZ1A20023A11Z10000005",
+    "contractType": "附約",
+    "productType": "防癌險",
+    "currency": "新台幣",
+    "status": "",
+    "saleDate": "",
+    "stopDate": "",
+    "versionFolder": "v5",
+    "productFolder": "遠雄人壽愛無懼B型防癌終身健康保險附約",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ],
+    "categoryCode": "2_2",
+    "category": "健康保險"
+  },
+  "216321RZ1A22323A11Z10000004": {
+    "company": "遠雄人壽保險事業股份有限公司",
+    "productName": "遠雄人壽愛無限B型防癌照護終身健康保險附約(第4次部分變更)",
+    "planCode": "216321RZ1A22323A11Z10000004",
+    "contractType": "附約",
+    "productType": "防癌險",
+    "currency": "新台幣",
+    "status": "",
+    "saleDate": "",
+    "stopDate": "",
+    "versionFolder": "v4",
+    "productFolder": "遠雄人壽愛無限B型防癌照護終身健康保險附約",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ],
+    "categoryCode": "2_2",
+    "category": "健康保險"
+  },
+  "216311RZ1A02021A11Z10000010": {
+    "company": "遠雄人壽保險事業股份有限公司",
+    "productName": "遠雄人壽住院醫療日額給付保險附約(103)(第10次部分變更)",
+    "planCode": "216311RZ1A02021A11Z10000010",
+    "contractType": "附約",
+    "productType": "醫療定額",
+    "currency": "新台幣",
+    "status": "",
+    "saleDate": "",
+    "stopDate": "",
+    "versionFolder": "v10",
+    "productFolder": "遠雄人壽住院醫療日額給付保險附約(103)",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ],
+    "categoryCode": "2_2",
+    "category": "健康保險"
+  },
+  "216311RZ1A02121A11Z10000010": {
+    "company": "遠雄人壽保險事業股份有限公司",
+    "productName": "遠雄人壽綜合住院醫療日額給付保險附約(103)(第10次部分變更)",
+    "planCode": "216311RZ1A02121A11Z10000010",
+    "contractType": "附約",
+    "productType": "醫療定額",
+    "currency": "新台幣",
+    "status": "",
+    "saleDate": "",
+    "stopDate": "",
+    "versionFolder": "v10",
+    "productFolder": "遠雄人壽綜合住院醫療日額給付保險附約(103)",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ],
+    "categoryCode": "2_2",
+    "category": "健康保險"
+  },
+  "216311RZ1A02221A11Z10000012": {
+    "company": "遠雄人壽保險事業股份有限公司",
+    "productName": "遠雄人壽真安心醫療保險附約(103)(第12次部分變更)",
+    "planCode": "216311RZ1A02221A11Z10000012",
+    "contractType": "附約",
+    "productType": "醫療定額",
+    "currency": "新台幣",
+    "status": "",
+    "saleDate": "",
+    "stopDate": "",
+    "versionFolder": "v12",
+    "productFolder": "遠雄人壽真安心醫療保險附約(103)",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ],
+    "categoryCode": "2_2",
+    "category": "健康保險"
+  },
+  "216311RZ1A07223A11Z10000009": {
+    "company": "遠雄人壽保險事業股份有限公司",
+    "productName": "遠雄人壽雄健康手術醫療終身健康保險附約(第9次部分變更)",
+    "planCode": "216311RZ1A07223A11Z10000009",
+    "contractType": "附約",
+    "productType": "醫療定額",
+    "currency": "新台幣",
+    "status": "",
+    "saleDate": "",
+    "stopDate": "",
+    "versionFolder": "v9",
+    "productFolder": "遠雄人壽雄健康手術醫療終身健康保險附約",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ],
+    "categoryCode": "2_2",
+    "category": "健康保險"
+  },
+  "216311MZ1B13923A11Z10000008": {
+    "company": "遠雄人壽保險事業股份有限公司",
+    "productName": "遠雄人壽守護醫級棒醫療保本終身保險(103)(第8次部分變更)",
+    "planCode": "216311MZ1B13923A11Z10000008",
+    "contractType": "主約",
+    "productType": "儲蓄壽險",
+    "currency": "新台幣",
+    "status": "",
+    "saleDate": "",
+    "stopDate": "",
+    "versionFolder": "v8",
+    "productFolder": "遠雄人壽守護醫級棒醫療保本終身保險(103)",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ],
+    "categoryCode": "2_2",
+    "category": "健康保險"
+  },
+  "216311AZ1A11221A11Z10000006": {
+    "company": "遠雄人壽保險事業股份有限公司",
+    "productName": "遠雄人壽新海外突發疾病健康保險附加條款(第6次部份變更)",
+    "planCode": "216311AZ1A11221A11Z10000006",
+    "contractType": "附約",
+    "productType": "醫療定額",
+    "currency": "新台幣",
+    "status": "",
+    "saleDate": "",
+    "stopDate": "",
+    "versionFolder": "v6",
+    "productFolder": "遠雄人壽新海外突發疾病健康保險附加條款",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ],
+    "categoryCode": "2_2",
+    "category": "健康保險"
+  },
+  "216311MZ1A17721A11Z10000002": {
+    "company": "遠雄人壽保險事業股份有限公司",
+    "productName": "遠雄人壽超級海外突發疾病健康保險(第2次部分變更)",
+    "planCode": "216311MZ1A17721A11Z10000002",
+    "contractType": "主約",
+    "productType": "醫療定額",
+    "currency": "新台幣",
+    "status": "",
+    "saleDate": "",
+    "stopDate": "",
+    "versionFolder": "v2",
+    "productFolder": "遠雄人壽超級海外突發疾病健康保險",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ],
+    "categoryCode": "2_2",
+    "category": "健康保險"
+  },
+  "216311MZ1B08823A11Z10000012": {
+    "company": "遠雄人壽保險事業股份有限公司",
+    "productName": "遠雄人壽守護久久醫療終身保險(103)(第12次部分變更)",
+    "planCode": "216311MZ1B08823A11Z10000012",
+    "contractType": "主約",
+    "productType": "終身壽險",
+    "currency": "新台幣",
+    "status": "",
+    "saleDate": "",
+    "stopDate": "",
+    "versionFolder": "v12",
+    "productFolder": "遠雄人壽守護久久醫療終身保險(103)",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ],
+    "categoryCode": "2_2",
+    "category": "健康保險"
+  },
+  "216311MZ1A07023A11Z10000013": {
+    "company": "遠雄人壽保險事業股份有限公司",
+    "productName": "遠雄人壽雄溫馨終身醫療健康保險(103)(第13次部分變更)",
+    "planCode": "216311MZ1A07023A11Z10000013",
+    "contractType": "主約",
+    "productType": "醫療定額",
+    "currency": "新台幣",
+    "status": "",
+    "saleDate": "",
+    "stopDate": "",
+    "versionFolder": "v13",
+    "productFolder": "遠雄人壽雄溫馨終身醫療健康保險(103)",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ],
+    "categoryCode": "2_2",
+    "category": "健康保險"
+  },
+  "216311RZ1A08623A11Z10000009": {
+    "company": "遠雄人壽保險事業股份有限公司",
+    "productName": "遠雄人壽新溫馨終身醫療健康保險附約(103)(第9次部分變更)",
+    "planCode": "216311RZ1A08623A11Z10000009",
+    "contractType": "附約",
+    "productType": "醫療定額",
+    "currency": "新台幣",
+    "status": "",
+    "saleDate": "",
+    "stopDate": "",
+    "versionFolder": "v9",
+    "productFolder": "遠雄人壽新溫馨終身醫療健康保險附約(103)",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ],
+    "categoryCode": "2_2",
+    "category": "健康保險"
+  },
+  "216311RZ1A07423A11Z10000010": {
+    "company": "遠雄人壽保險事業股份有限公司",
+    "productName": "遠雄人壽雄溫情終身醫療健康保險附約(103)(第10次部分變更)",
+    "planCode": "216311RZ1A07423A11Z10000010",
+    "contractType": "附約",
+    "productType": "醫療定額",
+    "currency": "新台幣",
+    "status": "",
+    "saleDate": "",
+    "stopDate": "",
+    "versionFolder": "v10",
+    "productFolder": "遠雄人壽雄溫情終身醫療健康保險附約(103)",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ],
+    "categoryCode": "2_2",
+    "category": "健康保險"
+  },
+  "216311RZ1A11321A11Z10000008": {
+    "company": "遠雄人壽保險事業股份有限公司",
+    "productName": "遠雄人壽好安心住院醫療健康保險附約(103)(第8次部分變更)",
+    "planCode": "216311RZ1A11321A11Z10000008",
+    "contractType": "附約",
+    "productType": "醫療定額",
+    "currency": "新台幣",
+    "status": "",
+    "saleDate": "",
+    "stopDate": "",
+    "versionFolder": "v8",
+    "productFolder": "遠雄人壽好安心住院醫療健康保險附約(103)",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ],
+    "categoryCode": "2_2",
+    "category": "健康保險"
+  },
+  "216311RZ1A19421A11Z10000002": {
+    "company": "遠雄人壽保險事業股份有限公司",
+    "productName": "遠雄人壽康富醫療健康保險附約(第2次部分變更)",
+    "planCode": "216311RZ1A19421A11Z10000002",
+    "contractType": "附約",
+    "productType": "醫療定額",
+    "currency": "新台幣",
+    "status": "",
+    "saleDate": "",
+    "stopDate": "",
+    "versionFolder": "v2",
+    "productFolder": "遠雄人壽康富醫療健康保險附約",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ],
+    "categoryCode": "2_2",
+    "category": "健康保險"
+  },
+  "216311RZ1A24921A11E10000001": {
+    "company": "遠雄人壽保險事業股份有限公司",
+    "productName": "遠雄人壽康樂綜合醫療手術定額健康保險附約(第1次部分變更)",
+    "planCode": "216311RZ1A24921A11E10000001",
+    "contractType": "附約",
+    "productType": "醫療定額",
+    "currency": "新台幣",
+    "status": "",
+    "saleDate": "",
+    "stopDate": "",
+    "versionFolder": "v1",
+    "productFolder": "遠雄人壽康樂綜合醫療手術定額健康保險附約",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ],
+    "categoryCode": "2_2",
+    "category": "健康保險"
+  },
+  "216351RZ1A09723A11Z10000009": {
+    "company": "遠雄人壽保險事業股份有限公司",
+    "productName": "遠雄人壽永康特定傷病終身健康保險附約(第9次部分變更)",
+    "planCode": "216351RZ1A09723A11Z10000009",
+    "contractType": "附約",
+    "productType": "重大疾(傷)病險",
+    "currency": "新台幣",
+    "status": "",
+    "saleDate": "",
+    "stopDate": "",
+    "versionFolder": "v9",
+    "productFolder": "遠雄人壽永康特定傷病終身健康保險附約",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ],
+    "categoryCode": "2_2",
+    "category": "健康保險"
+  },
+  "216351RZ1A17021A11Z10000002": {
+    "company": "遠雄人壽保險事業股份有限公司",
+    "productName": "遠雄人壽保安心重大傷病一年定期健康保險附約(第2次部分變更)",
+    "planCode": "216351RZ1A17021A11Z10000002",
+    "contractType": "附約",
+    "productType": "重大疾(傷)病險",
+    "currency": "新台幣",
+    "status": "",
+    "saleDate": "",
+    "stopDate": "",
+    "versionFolder": "v2",
+    "productFolder": "遠雄人壽保安心重大傷病一年定期健康保險附約",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ],
+    "categoryCode": "2_2",
+    "category": "健康保險"
+  },
+  "216351RZ1A19623A11Z10000004": {
+    "company": "遠雄人壽保險事業股份有限公司",
+    "productName": "遠雄人壽永康滿福重大疾病終身健康保險附約(乙型)(第4次部分變更)",
+    "planCode": "216351RZ1A19623A11Z10000004",
+    "contractType": "附約",
+    "productType": "重大疾(傷)病險",
+    "currency": "新台幣",
+    "status": "",
+    "saleDate": "",
+    "stopDate": "",
+    "versionFolder": "v4",
+    "productFolder": "遠雄人壽永康滿福重大疾病終身健康保險附約(乙型)",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ],
+    "categoryCode": "2_2",
+    "category": "健康保險"
+  },
+  "216341RZ1A22722A11Z10000002": {
+    "company": "遠雄人壽保險事業股份有限公司",
+    "productName": "遠雄人壽金貼心豁免保險費附約(第2次部分變更)",
+    "planCode": "216341RZ1A22722A11Z10000002",
+    "contractType": "附約",
+    "productType": "其他",
+    "currency": "新台幣",
+    "status": "",
+    "saleDate": "",
+    "stopDate": "",
+    "versionFolder": "v2",
+    "productFolder": "遠雄人壽金貼心豁免保險費附約",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ],
+    "categoryCode": "2_2",
+    "category": "健康保險"
+  },
+  "216341RZ1A24122B11Z10000001": {
+    "company": "遠雄人壽保險事業股份有限公司",
+    "productName": "遠雄人壽金放心美元豁免保險費附約(第1次部分變更)",
+    "planCode": "216341RZ1A24122B11Z10000001",
+    "contractType": "附約",
+    "productType": "其他",
+    "currency": "美元",
+    "status": "",
+    "saleDate": "",
+    "stopDate": "",
+    "versionFolder": "v1",
+    "productFolder": "遠雄人壽金放心美元豁免保險費附約",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ],
+    "categoryCode": "2_2",
+    "category": "健康保險"
+  },
+  "216341RZ1A02722A11Z10000013": {
+    "company": "遠雄人壽保險事業股份有限公司",
+    "productName": "遠雄人壽金安心豁免保險費附約(第13次部分變更)",
+    "planCode": "216341RZ1A02722A11Z10000013",
+    "contractType": "附約",
+    "productType": "其他",
+    "currency": "新台幣",
+    "status": "",
+    "saleDate": "",
+    "stopDate": "",
+    "versionFolder": "v13",
+    "productFolder": "遠雄人壽金安心豁免保險費附約",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ],
+    "categoryCode": "2_2",
+    "category": "健康保險"
+  },
+  "216341RZ1A13622A11Z10000004": {
+    "company": "遠雄人壽保險事業股份有限公司",
+    "productName": "遠雄人壽金好心豁免保險費附約(第4次部分變更)",
+    "planCode": "216341RZ1A13622A11Z10000004",
+    "contractType": "附約",
+    "productType": "其他",
+    "currency": "新台幣",
+    "status": "",
+    "saleDate": "",
+    "stopDate": "",
+    "versionFolder": "v4",
+    "productFolder": "遠雄人壽金好心豁免保險費附約",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ],
+    "categoryCode": "2_2",
+    "category": "健康保險"
+  },
+  "216341RZ1A02622A11Z10000016": {
+    "company": "遠雄人壽保險事業股份有限公司",
+    "productName": "遠雄人壽豁免保險費附約(第16次部分變更)",
+    "planCode": "216341RZ1A02622A11Z10000016",
+    "contractType": "附約",
+    "productType": "其他",
+    "currency": "新台幣",
+    "status": "",
+    "saleDate": "",
+    "stopDate": "",
+    "versionFolder": "v16",
+    "productFolder": "遠雄人壽豁免保險費附約",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ],
+    "categoryCode": "2_2",
+    "category": "健康保險"
+  },
+  "216391MZ9B10323A11Z10000012": {
+    "company": "遠雄人壽保險事業股份有限公司",
+    "productName": "遠雄人壽永安手術醫療終身保險(第12次部分變更)",
+    "planCode": "216391MZ9B10323A11Z10000012",
+    "contractType": "主約",
+    "productType": "終身壽險",
+    "currency": "新台幣",
+    "status": "",
+    "saleDate": "",
+    "stopDate": "",
+    "versionFolder": "v12",
+    "productFolder": "遠雄人壽永安手術醫療終身保險",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ],
+    "categoryCode": "2_2",
+    "category": "健康保險"
+  },
+  "216391MZ1A25723A11Z10000001": {
+    "company": "遠雄人壽保險事業股份有限公司",
+    "productName": "遠雄人壽新超好心C型失能照護終身健康保險(第1次部分變更)",
+    "planCode": "216391MZ1A25723A11Z10000001",
+    "contractType": "主約",
+    "productType": "失能險",
+    "currency": "新台幣",
+    "status": "",
+    "saleDate": "",
+    "stopDate": "",
+    "versionFolder": "v1",
+    "productFolder": "遠雄人壽新超好心C型失能照護終身健康保險",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ],
+    "categoryCode": "2_2",
+    "category": "健康保險"
+  },
+  "216391EZ1A06923A11Z10000004": {
+    "company": "遠雄人壽保險事業股份有限公司",
+    "productName": "遠雄人壽生前需求提前給付批註條款(第4次部分變更)",
+    "planCode": "216391EZ1A06923A11Z10000004",
+    "contractType": "主約",
+    "productType": "其他",
+    "currency": "新台幣",
+    "status": "",
+    "saleDate": "",
+    "stopDate": "",
+    "versionFolder": "v4",
+    "productFolder": "遠雄人壽生前需求提前給付批註條款",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ],
+    "categoryCode": "2_2",
+    "category": "健康保險"
+  },
+  "216391AZ1A06823A11Z10000003": {
+    "company": "遠雄人壽保險事業股份有限公司",
+    "productName": "遠雄人壽老年住院醫療提前給付附加條款(第3次部分變更)",
+    "planCode": "216391AZ1A06823A11Z10000003",
+    "contractType": "附約",
+    "productType": "醫療定額",
+    "currency": "新台幣",
+    "status": "",
+    "saleDate": "",
+    "stopDate": "",
+    "versionFolder": "v3",
+    "productFolder": "遠雄人壽老年住院醫療提前給付附加條款",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ],
+    "categoryCode": "2_2",
+    "category": "健康保險"
+  },
+  "216391RZ1A25623A11Z10000001": {
+    "company": "遠雄人壽保險事業股份有限公司",
+    "productName": "遠雄人壽新超好心B型失能照護終身健康保險附約(第1次部分變更)",
+    "planCode": "216391RZ1A25623A11Z10000001",
+    "contractType": "附約",
+    "productType": "失能險",
+    "currency": "新台幣",
+    "status": "",
+    "saleDate": "",
+    "stopDate": "",
+    "versionFolder": "v1",
+    "productFolder": "遠雄人壽新超好心B型失能照護終身健康保險附約",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ],
+    "categoryCode": "2_2",
+    "category": "健康保險"
+  },
+  "216391MZ9B22922A11Z10000002": {
+    "company": "遠雄人壽保險事業股份有限公司",
+    "productName": "遠雄人壽保安心85重大傷病定期保險(第2次部分變更)",
+    "planCode": "216391MZ9B22922A11Z10000002",
+    "contractType": "主約",
+    "productType": "重大疾(傷)病險",
+    "currency": "新台幣",
+    "status": "",
+    "saleDate": "",
+    "stopDate": "",
+    "versionFolder": "v2",
+    "productFolder": "遠雄人壽保安心85重大傷病定期保險",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ],
+    "categoryCode": "2_2",
+    "category": "健康保險"
+  },
+  "216391RZ1A23421A11Z10000002": {
+    "company": "遠雄人壽保險事業股份有限公司",
+    "productName": "遠雄人壽保安心B型重大傷病一年定期健康保險附約(第2次部分變更)",
+    "planCode": "216391RZ1A23421A11Z10000002",
+    "contractType": "附約",
+    "productType": "重大疾(傷)病險",
+    "currency": "新台幣",
+    "status": "",
+    "saleDate": "",
+    "stopDate": "",
+    "versionFolder": "v2",
+    "productFolder": "遠雄人壽保安心B型重大傷病一年定期健康保險附約",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ],
+    "categoryCode": "2_2",
+    "category": "健康保險"
+  },
+  "216391RZ9B08923A11Z10000013": {
+    "company": "遠雄人壽保險事業股份有限公司",
+    "productName": "遠雄人壽健康久久手術醫療終身保險附約(第13次部分變更)",
+    "planCode": "216391RZ9B08923A11Z10000013",
+    "contractType": "附約",
+    "productType": "醫療定額",
+    "currency": "新台幣",
+    "status": "",
+    "saleDate": "",
+    "stopDate": "",
+    "versionFolder": "v13",
+    "productFolder": "遠雄人壽健康久久手術醫療終身保險附約",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ],
+    "categoryCode": "2_2",
+    "category": "健康保險"
+  },
+  "216391RZ1A26523A11Z10000000": {
+    "company": "遠雄人壽保險事業股份有限公司",
+    "productName": "遠雄人壽幸福好照B型失能照護終身健康保險附約",
+    "planCode": "216391RZ1A26523A11Z10000000",
+    "contractType": "附約",
+    "productType": "失能險",
+    "currency": "新台幣",
+    "status": "",
+    "saleDate": "",
+    "stopDate": "",
+    "versionFolder": "v0",
+    "productFolder": "遠雄人壽幸福好照B型失能照護終身健康保險附約",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ],
+    "categoryCode": "2_2",
+    "category": "健康保險"
+  },
+  "216391MZ1A26623A11Z10000000": {
+    "company": "遠雄人壽保險事業股份有限公司",
+    "productName": "遠雄人壽幸福好照C型失能照護終身健康保險",
+    "planCode": "216391MZ1A26623A11Z10000000",
+    "contractType": "主約",
+    "productType": "失能險",
+    "currency": "新台幣",
+    "status": "",
+    "saleDate": "",
+    "stopDate": "",
+    "versionFolder": "v0",
+    "productFolder": "遠雄人壽幸福好照C型失能照護終身健康保險",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ],
+    "categoryCode": "2_2",
+    "category": "健康保險"
+  },
+  "216321RZ1A26722A11Z10000000": {
+    "company": "遠雄人壽保險事業股份有限公司",
+    "productName": "遠雄人壽愛家守護五年定期癌症健康保險附約",
+    "planCode": "216321RZ1A26722A11Z10000000",
+    "contractType": "附約",
+    "productType": "防癌險",
+    "currency": "新台幣",
+    "status": "",
+    "saleDate": "",
+    "stopDate": "",
+    "versionFolder": "v0",
+    "productFolder": "遠雄人壽愛家守護五年定期癌症健康保險附約",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ],
+    "categoryCode": "2_2",
+    "category": "健康保險"
+  },
+  "216391RZ1A26822A11Z10000000": {
+    "company": "遠雄人壽保險事業股份有限公司",
+    "productName": "遠雄人壽幸福守護五年定期失能健康保險附約",
+    "planCode": "216391RZ1A26822A11Z10000000",
+    "contractType": "附約",
+    "productType": "失能險",
+    "currency": "新台幣",
+    "status": "",
+    "saleDate": "",
+    "stopDate": "",
+    "versionFolder": "v0",
+    "productFolder": "遠雄人壽幸福守護五年定期失能健康保險附約",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ],
+    "categoryCode": "2_2",
+    "category": "健康保險"
+  },
+  "216391MZ9B22922A11Z10000003": {
+    "company": "遠雄人壽保險事業股份有限公司",
+    "productName": "遠雄人壽保安心85重大傷病定期保險(第3次部分變更)",
+    "planCode": "216391MZ9B22922A11Z10000003",
+    "contractType": "主約",
+    "productType": "重大疾(傷)病險",
+    "currency": "新台幣",
+    "status": "",
+    "saleDate": "",
+    "stopDate": "",
+    "versionFolder": "v3",
+    "productFolder": "遠雄人壽保安心85重大傷病定期保險",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ],
+    "categoryCode": "2_2",
+    "category": "健康保險"
+  },
+  "216391RZ1A23421A11Z10000003": {
+    "company": "遠雄人壽保險事業股份有限公司",
+    "productName": "遠雄人壽保安心B型重大傷病一年定期健康保險附約(第3次部分變更)",
+    "planCode": "216391RZ1A23421A11Z10000003",
+    "contractType": "附約",
+    "productType": "重大疾(傷)病險",
+    "currency": "新台幣",
+    "status": "",
+    "saleDate": "",
+    "stopDate": "",
+    "versionFolder": "v3",
+    "productFolder": "遠雄人壽保安心B型重大傷病一年定期健康保險附約",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ],
+    "categoryCode": "2_2",
+    "category": "健康保險"
+  },
+  "216321RZ1A29022A11Z10000000": {
+    "company": "遠雄人壽保險事業股份有限公司",
+    "productName": "遠雄人壽輕鬆愛生活癌症醫療定期健康保險附約",
+    "planCode": "216321RZ1A29022A11Z10000000",
+    "contractType": "附約",
+    "productType": "防癌險",
+    "currency": "新台幣",
+    "status": "",
+    "saleDate": "",
+    "stopDate": "",
+    "versionFolder": "v0",
+    "productFolder": "遠雄人壽輕鬆愛生活癌症醫療定期健康保險附約",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ],
+    "categoryCode": "2_2",
+    "category": "健康保險"
+  },
+  "216311MZ1A28722A11Z10000000": {
+    "company": "遠雄人壽保險事業股份有限公司",
+    "productName": "遠雄人壽輕鬆醫起來定期健康保險",
+    "planCode": "216311MZ1A28722A11Z10000000",
+    "contractType": "主約",
+    "productType": "醫療定額",
+    "currency": "新台幣",
+    "status": "",
+    "saleDate": "",
+    "stopDate": "",
+    "versionFolder": "v0",
+    "productFolder": "遠雄人壽輕鬆醫起來定期健康保險",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ],
+    "categoryCode": "2_2",
+    "category": "健康保險"
+  },
+  "216361RZ1A28822A11Z10000000": {
+    "company": "遠雄人壽保險事業股份有限公司",
+    "productName": "遠雄人壽輕鬆超享福長期照顧定期健康保險附約",
+    "planCode": "216361RZ1A28822A11Z10000000",
+    "contractType": "附約",
+    "productType": "長照險",
+    "currency": "新台幣",
+    "status": "",
+    "saleDate": "",
+    "stopDate": "",
+    "versionFolder": "v0",
+    "productFolder": "遠雄人壽輕鬆超享福長期照顧定期健康保險附約",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ],
+    "categoryCode": "2_2",
+    "category": "健康保險"
+  },
+  "216391RZ1A29122A11Z10000000": {
+    "company": "遠雄人壽保險事業股份有限公司",
+    "productName": "遠雄人壽輕鬆保安穩重大傷病定期健康保險附約",
+    "planCode": "216391RZ1A29122A11Z10000000",
+    "contractType": "附約",
+    "productType": "重大疾(傷)病險",
+    "currency": "新台幣",
+    "status": "",
+    "saleDate": "",
+    "stopDate": "",
+    "versionFolder": "v0",
+    "productFolder": "遠雄人壽輕鬆保安穩重大傷病定期健康保險附約",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ],
+    "categoryCode": "2_2",
+    "category": "健康保險"
+  },
+  "216311MZ1B13923A11Z10000009": {
+    "company": "遠雄人壽保險事業股份有限公司",
+    "productName": "遠雄人壽守護醫級棒醫療保本終身保險(103)(第9次部分變更)",
+    "planCode": "216311MZ1B13923A11Z10000009",
+    "contractType": "主約",
+    "productType": "儲蓄壽險",
+    "currency": "新台幣",
+    "status": "",
+    "saleDate": "",
+    "stopDate": "",
+    "versionFolder": "v9",
+    "productFolder": "遠雄人壽守護醫級棒醫療保本終身保險(103)",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ],
+    "categoryCode": "2_2",
+    "category": "健康保險"
+  },
+  "216311MZ1A07023A11Z10000014": {
+    "company": "遠雄人壽保險事業股份有限公司",
+    "productName": "遠雄人壽雄溫馨終身醫療健康保險(103)(第14次部分變更)",
+    "planCode": "216311MZ1A07023A11Z10000014",
+    "contractType": "主約",
+    "productType": "醫療定額",
+    "currency": "新台幣",
+    "status": "",
+    "saleDate": "",
+    "stopDate": "",
+    "versionFolder": "v14",
+    "productFolder": "遠雄人壽雄溫馨終身醫療健康保險(103)",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ],
+    "categoryCode": "2_2",
+    "category": "健康保險"
+  },
+  "216311RZ1A07223A11Z10000010": {
+    "company": "遠雄人壽保險事業股份有限公司",
+    "productName": "遠雄人壽雄健康手術醫療終身健康保險附約(第10次部分變更)",
+    "planCode": "216311RZ1A07223A11Z10000010",
+    "contractType": "附約",
+    "productType": "醫療定額",
+    "currency": "新台幣",
+    "status": "",
+    "saleDate": "",
+    "stopDate": "",
+    "versionFolder": "v10",
+    "productFolder": "遠雄人壽雄健康手術醫療終身健康保險附約",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ],
+    "categoryCode": "2_2",
+    "category": "健康保險"
+  },
+  "216311RZ1A07423A11Z10000011": {
+    "company": "遠雄人壽保險事業股份有限公司",
+    "productName": "遠雄人壽雄溫情終身醫療健康保險附約(103)(第11次部分變更)",
+    "planCode": "216311RZ1A07423A11Z10000011",
+    "contractType": "附約",
+    "productType": "醫療定額",
+    "currency": "新台幣",
+    "status": "",
+    "saleDate": "",
+    "stopDate": "",
+    "versionFolder": "v11",
+    "productFolder": "遠雄人壽雄溫情終身醫療健康保險附約(103)",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ],
+    "categoryCode": "2_2",
+    "category": "健康保險"
+  },
+  "216311RZ1A08623A11Z10000010": {
+    "company": "遠雄人壽保險事業股份有限公司",
+    "productName": "遠雄人壽新溫馨終身醫療健康保險附約(103)(第10次部分變更)",
+    "planCode": "216311RZ1A08623A11Z10000010",
+    "contractType": "附約",
+    "productType": "醫療定額",
+    "currency": "新台幣",
+    "status": "",
+    "saleDate": "",
+    "stopDate": "",
+    "versionFolder": "v10",
+    "productFolder": "遠雄人壽新溫馨終身醫療健康保險附約(103)",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ],
+    "categoryCode": "2_2",
+    "category": "健康保險"
+  },
+  "216321RZ1A26722A11Z10000001": {
+    "company": "遠雄人壽保險事業股份有限公司",
+    "productName": "遠雄人壽愛家守護五年定期癌症健康保險附約(第1次部分變更)",
+    "planCode": "216321RZ1A26722A11Z10000001",
+    "contractType": "附約",
+    "productType": "防癌險",
+    "currency": "新台幣",
+    "status": "",
+    "saleDate": "",
+    "stopDate": "",
+    "versionFolder": "v1",
+    "productFolder": "遠雄人壽愛家守護五年定期癌症健康保險附約",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ],
+    "categoryCode": "2_2",
+    "category": "健康保險"
+  },
+  "216321RZ1A22323A11Z10000005": {
+    "company": "遠雄人壽保險事業股份有限公司",
+    "productName": "遠雄人壽愛無限B型防癌照護終身健康保險附約(第5次部分變更)",
+    "planCode": "216321RZ1A22323A11Z10000005",
+    "contractType": "附約",
+    "productType": "防癌險",
+    "currency": "新台幣",
+    "status": "",
+    "saleDate": "",
+    "stopDate": "",
+    "versionFolder": "v5",
+    "productFolder": "遠雄人壽愛無限B型防癌照護終身健康保險附約",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ],
+    "categoryCode": "2_2",
+    "category": "健康保險"
+  },
+  "216321RZ1A20023A11Z10000006": {
+    "company": "遠雄人壽保險事業股份有限公司",
+    "productName": "遠雄人壽愛無懼B型防癌終身健康保險附約(第6次部分變更)",
+    "planCode": "216321RZ1A20023A11Z10000006",
+    "contractType": "附約",
+    "productType": "防癌險",
+    "currency": "新台幣",
+    "status": "",
+    "saleDate": "",
+    "stopDate": "",
+    "versionFolder": "v6",
+    "productFolder": "遠雄人壽愛無懼B型防癌終身健康保險附約",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ],
+    "categoryCode": "2_2",
+    "category": "健康保險"
+  },
+  "216321RZ1A11623A11Z10000011": {
+    "company": "遠雄人壽保險事業股份有限公司",
+    "productName": "遠雄人壽新癌症終身健康保險附約(99)(第11次部分變更)",
+    "planCode": "216321RZ1A11623A11Z10000011",
+    "contractType": "附約",
+    "productType": "防癌險",
+    "currency": "新台幣",
+    "status": "",
+    "saleDate": "",
+    "stopDate": "",
+    "versionFolder": "v11",
+    "productFolder": "遠雄人壽新癌症終身健康保險附約(99)",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ],
+    "categoryCode": "2_2",
+    "category": "健康保險"
+  },
+  "216321MZ2B14923A11Z10000007": {
+    "company": "遠雄人壽保險事業股份有限公司",
+    "productName": "遠雄人壽愛無懼防癌保本終身保險(第7次部分變更)",
+    "planCode": "216321MZ2B14923A11Z10000007",
+    "contractType": "主約",
+    "productType": "防癌險",
+    "currency": "新台幣",
+    "status": "",
+    "saleDate": "",
+    "stopDate": "",
+    "versionFolder": "v7",
+    "productFolder": "遠雄人壽愛無懼防癌保本終身保險",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ],
+    "categoryCode": "2_2",
+    "category": "健康保險"
+  },
+  "216321MZ2B24023A11Z10000003": {
+    "company": "遠雄人壽保險事業股份有限公司",
+    "productName": "遠雄人壽愛無限A型防癌照護終身健康保險(第3次部分變更)",
+    "planCode": "216321MZ2B24023A11Z10000003",
+    "contractType": "主約",
+    "productType": "防癌險",
+    "currency": "新台幣",
+    "status": "",
+    "saleDate": "",
+    "stopDate": "",
+    "versionFolder": "v3",
+    "productFolder": "遠雄人壽愛無限A型防癌照護終身健康保險",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ],
+    "categoryCode": "2_2",
+    "category": "健康保險"
+  },
+  "216351RZ1A19623A11Z10000005": {
+    "company": "遠雄人壽保險事業股份有限公司",
+    "productName": "遠雄人壽永康滿福重大疾病終身健康保險附約(乙型)(第5次部分變更)",
+    "planCode": "216351RZ1A19623A11Z10000005",
+    "contractType": "附約",
+    "productType": "重大疾(傷)病險",
+    "currency": "新台幣",
+    "status": "",
+    "saleDate": "",
+    "stopDate": "",
+    "versionFolder": "v5",
+    "productFolder": "遠雄人壽永康滿福重大疾病終身健康保險附約(乙型)",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ],
+    "categoryCode": "2_2",
+    "category": "健康保險"
+  },
+  "216351RZ1A09723A11Z10000010": {
+    "company": "遠雄人壽保險事業股份有限公司",
+    "productName": "遠雄人壽永康特定傷病終身健康保險附約(第10次部分變更)",
+    "planCode": "216351RZ1A09723A11Z10000010",
+    "contractType": "附約",
+    "productType": "重大疾(傷)病險",
+    "currency": "新台幣",
+    "status": "",
+    "saleDate": "",
+    "stopDate": "",
+    "versionFolder": "v10",
+    "productFolder": "遠雄人壽永康特定傷病終身健康保險附約",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ],
+    "categoryCode": "2_2",
+    "category": "健康保險"
+  },
+  "216391RZ9B08923A11Z10000014": {
+    "company": "遠雄人壽保險事業股份有限公司",
+    "productName": "遠雄人壽健康久久手術醫療終身保險附約(第14次部分變更)",
+    "planCode": "216391RZ9B08923A11Z10000014",
+    "contractType": "附約",
+    "productType": "醫療定額",
+    "currency": "新台幣",
+    "status": "",
+    "saleDate": "",
+    "stopDate": "",
+    "versionFolder": "v14",
+    "productFolder": "遠雄人壽健康久久手術醫療終身保險附約",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ],
+    "categoryCode": "2_2",
+    "category": "健康保險"
+  },
+  "216391MZ9B10323A11Z10000013": {
+    "company": "遠雄人壽保險事業股份有限公司",
+    "productName": "遠雄人壽永安手術醫療終身保險(第13次部分變更)",
+    "planCode": "216391MZ9B10323A11Z10000013",
+    "contractType": "主約",
+    "productType": "終身壽險",
+    "currency": "新台幣",
+    "status": "",
+    "saleDate": "",
+    "stopDate": "",
+    "versionFolder": "v13",
+    "productFolder": "遠雄人壽永安手術醫療終身保險",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ],
+    "categoryCode": "2_2",
+    "category": "健康保險"
+  },
+  "216311RZ1A29521A11Z10000000": {
+    "company": "遠雄人壽保險事業股份有限公司",
+    "productName": "遠雄人壽新康富醫療健康保險附約",
+    "planCode": "216311RZ1A29521A11Z10000000",
+    "contractType": "附約",
+    "productType": "醫療定額",
+    "currency": "新台幣",
+    "status": "",
+    "saleDate": "",
+    "stopDate": "",
+    "versionFolder": "v0",
+    "productFolder": "遠雄人壽新康富醫療健康保險附約",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ],
+    "categoryCode": "2_2",
+    "category": "健康保險"
+  },
+  "216391RZ1A29921A11Z10000000": {
+    "company": "遠雄人壽保險事業股份有限公司",
+    "productName": "遠雄人壽保安康重大傷病一年定期健康保險附約",
+    "planCode": "216391RZ1A29921A11Z10000000",
+    "contractType": "附約",
+    "productType": "重大疾(傷)病險",
+    "currency": "新台幣",
+    "status": "",
+    "saleDate": "",
+    "stopDate": "",
+    "versionFolder": "v0",
+    "productFolder": "遠雄人壽保安康重大傷病一年定期健康保險附約",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ],
+    "categoryCode": "2_2",
+    "category": "健康保險"
+  },
+  "216321MZ2B30722A11Z10000000": {
+    "company": "遠雄人壽保險事業股份有限公司",
+    "productName": "遠雄人壽愛無價85防癌健康保險",
+    "planCode": "216321MZ2B30722A11Z10000000",
+    "contractType": "主約",
+    "productType": "防癌險",
+    "currency": "新台幣",
+    "status": "",
+    "saleDate": "",
+    "stopDate": "",
+    "versionFolder": "v0",
+    "productFolder": "遠雄人壽愛無價85防癌健康保險",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ],
+    "categoryCode": "2_2",
+    "category": "健康保險"
+  },
+  "216311AZ1A11221A11Z10000007": {
+    "company": "遠雄人壽保險事業股份有限公司",
+    "productName": "遠雄人壽新海外突發疾病健康保險附加條款(第7次部份變更)",
+    "planCode": "216311AZ1A11221A11Z10000007",
+    "contractType": "附約",
+    "productType": "醫療定額",
+    "currency": "新台幣",
+    "status": "",
+    "saleDate": "",
+    "stopDate": "",
+    "versionFolder": "v7",
+    "productFolder": "遠雄人壽新海外突發疾病健康保險附加條款",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ],
+    "categoryCode": "2_2",
+    "category": "健康保險"
+  },
+  "216311RZ1A31521A11Z10000000": {
+    "company": "遠雄人壽保險事業股份有限公司",
+    "productName": "遠雄人壽安心康富醫療健康保險附約",
+    "planCode": "216311RZ1A31521A11Z10000000",
+    "contractType": "附約",
+    "productType": "醫療定額",
+    "currency": "新台幣",
+    "status": "",
+    "saleDate": "",
+    "stopDate": "",
+    "versionFolder": "v0",
+    "productFolder": "遠雄人壽安心康富醫療健康保險附約",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ],
+    "categoryCode": "2_2",
+    "category": "健康保險"
+  },
+  "216351MZ1A32222A11Z10000000": {
+    "company": "遠雄人壽保險事業股份有限公司",
+    "productName": "遠雄人壽e富通重大疾病定期健康保險(甲型)",
+    "planCode": "216351MZ1A32222A11Z10000000",
+    "contractType": "主約",
+    "productType": "重大疾(傷)病險",
+    "currency": "新台幣",
+    "status": "",
+    "saleDate": "",
+    "stopDate": "",
+    "versionFolder": "v0",
+    "productFolder": "遠雄人壽e富通重大疾病定期健康保險(甲型)",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ],
+    "categoryCode": "2_2",
+    "category": "健康保險"
+  },
+  "216351MZ1A32121A11Z10000000": {
+    "company": "遠雄人壽保險事業股份有限公司",
+    "productName": "遠雄人壽e富通一年期重大疾病健康保險(甲型)",
+    "planCode": "216351MZ1A32121A11Z10000000",
+    "contractType": "主約",
+    "productType": "重大疾(傷)病險",
+    "currency": "新台幣",
+    "status": "",
+    "saleDate": "",
+    "stopDate": "",
+    "versionFolder": "v0",
+    "productFolder": "遠雄人壽e富通一年期重大疾病健康保險(甲型)",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ],
+    "categoryCode": "2_2",
+    "category": "健康保險"
+  },
+  "216311RZ1A11221A11Z10000008": {
+    "company": "遠雄人壽保險事業股份有限公司",
+    "productName": "遠雄人壽新海外突發疾病醫療健康保險附約(第8次部份變更)",
+    "planCode": "216311RZ1A11221A11Z10000008",
+    "contractType": "附約",
+    "productType": "醫療定額",
+    "currency": "新台幣",
+    "status": "",
+    "saleDate": "",
+    "stopDate": "",
+    "versionFolder": "v8",
+    "productFolder": "遠雄人壽新海外突發疾病醫療健康保險附約",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ],
+    "categoryCode": "2_2",
+    "category": "健康保險"
+  },
+  "216311RZ1A07423A11Z10000012": {
+    "company": "遠雄人壽保險事業股份有限公司",
+    "productName": "遠雄人壽雄溫情終身醫療健康保險附約(103)(第12次部分變更)",
+    "planCode": "216311RZ1A07423A11Z10000012",
+    "contractType": "附約",
+    "productType": "醫療定額",
+    "currency": "新台幣",
+    "status": "",
+    "saleDate": "",
+    "stopDate": "",
+    "versionFolder": "v12",
+    "productFolder": "遠雄人壽雄溫情終身醫療健康保險附約(103)",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ],
+    "categoryCode": "2_2",
+    "category": "健康保險"
+  },
+  "216311RZ1A08623A11Z10000011": {
+    "company": "遠雄人壽保險事業股份有限公司",
+    "productName": "遠雄人壽新溫馨終身醫療健康保險附約(103)(第11次部分變更)",
+    "planCode": "216311RZ1A08623A11Z10000011",
+    "contractType": "附約",
+    "productType": "醫療定額",
+    "currency": "新台幣",
+    "status": "",
+    "saleDate": "",
+    "stopDate": "",
+    "versionFolder": "v11",
+    "productFolder": "遠雄人壽新溫馨終身醫療健康保險附約(103)",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ],
+    "categoryCode": "2_2",
+    "category": "健康保險"
+  },
+  "216311RZ1A31521A11Z10000001": {
+    "company": "遠雄人壽保險事業股份有限公司",
+    "productName": "遠雄人壽安心康富醫療健康保險附約(第1次部分變更)",
+    "planCode": "216311RZ1A31521A11Z10000001",
+    "contractType": "附約",
+    "productType": "醫療定額",
+    "currency": "新台幣",
+    "status": "",
+    "saleDate": "",
+    "stopDate": "",
+    "versionFolder": "v1",
+    "productFolder": "遠雄人壽安心康富醫療健康保險附約",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ],
+    "categoryCode": "2_2",
+    "category": "健康保險"
+  },
+  "216311RZ1A24921A11E10000002": {
+    "company": "遠雄人壽保險事業股份有限公司",
+    "productName": "遠雄人壽康樂綜合醫療手術定額健康保險附約(第2次部分變更)",
+    "planCode": "216311RZ1A24921A11E10000002",
+    "contractType": "附約",
+    "productType": "醫療定額",
+    "currency": "新台幣",
+    "status": "",
+    "saleDate": "",
+    "stopDate": "",
+    "versionFolder": "v2",
+    "productFolder": "遠雄人壽康樂綜合醫療手術定額健康保險附約",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ],
+    "categoryCode": "2_2",
+    "category": "健康保險"
+  },
+  "216311RZ1A19421A11Z10000003": {
+    "company": "遠雄人壽保險事業股份有限公司",
+    "productName": "遠雄人壽康富醫療健康保險附約(第3次部分變更)",
+    "planCode": "216311RZ1A19421A11Z10000003",
+    "contractType": "附約",
+    "productType": "醫療定額",
+    "currency": "新台幣",
+    "status": "",
+    "saleDate": "",
+    "stopDate": "",
+    "versionFolder": "v3",
+    "productFolder": "遠雄人壽康富醫療健康保險附約",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ],
+    "categoryCode": "2_2",
+    "category": "健康保險"
+  },
+  "216311RZ1A11321A11Z10000009": {
+    "company": "遠雄人壽保險事業股份有限公司",
+    "productName": "遠雄人壽好安心住院醫療健康保險附約(103)(第9次部分變更)",
+    "planCode": "216311RZ1A11321A11Z10000009",
+    "contractType": "附約",
+    "productType": "醫療定額",
+    "currency": "新台幣",
+    "status": "",
+    "saleDate": "",
+    "stopDate": "",
+    "versionFolder": "v9",
+    "productFolder": "遠雄人壽好安心住院醫療健康保險附約(103)",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ],
+    "categoryCode": "2_2",
+    "category": "健康保險"
+  },
+  "216311RZ1A29521A11Z10000001": {
+    "company": "遠雄人壽保險事業股份有限公司",
+    "productName": "遠雄人壽新康富醫療健康保險附約(第1次部分變更)",
+    "planCode": "216311RZ1A29521A11Z10000001",
+    "contractType": "附約",
+    "productType": "醫療定額",
+    "currency": "新台幣",
+    "status": "",
+    "saleDate": "",
+    "stopDate": "",
+    "versionFolder": "v1",
+    "productFolder": "遠雄人壽新康富醫療健康保險附約",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ],
+    "categoryCode": "2_2",
+    "category": "健康保險"
+  },
+  "216311MZ1A28722A11Z10000001": {
+    "company": "遠雄人壽保險事業股份有限公司",
+    "productName": "遠雄人壽輕鬆醫起來定期健康保險(第1次部分變更)",
+    "planCode": "216311MZ1A28722A11Z10000001",
+    "contractType": "主約",
+    "productType": "醫療定額",
+    "currency": "新台幣",
+    "status": "",
+    "saleDate": "",
+    "stopDate": "",
+    "versionFolder": "v1",
+    "productFolder": "遠雄人壽輕鬆醫起來定期健康保險",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ],
+    "categoryCode": "2_2",
+    "category": "健康保險"
+  },
+  "216311MZ1B13923A11Z10000010": {
+    "company": "遠雄人壽保險事業股份有限公司",
+    "productName": "遠雄人壽守護醫級棒醫療保本終身保險(103)(第10次部分變更)",
+    "planCode": "216311MZ1B13923A11Z10000010",
+    "contractType": "主約",
+    "productType": "儲蓄壽險",
+    "currency": "新台幣",
+    "status": "",
+    "saleDate": "",
+    "stopDate": "",
+    "versionFolder": "v10",
+    "productFolder": "遠雄人壽守護醫級棒醫療保本終身保險(103)",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ],
+    "categoryCode": "2_2",
+    "category": "健康保險"
+  },
+  "216311MZ1A07023A11Z10000015": {
+    "company": "遠雄人壽保險事業股份有限公司",
+    "productName": "遠雄人壽雄溫馨終身醫療健康保險(103)(第15次部分變更)",
+    "planCode": "216311MZ1A07023A11Z10000015",
+    "contractType": "主約",
+    "productType": "醫療定額",
+    "currency": "新台幣",
+    "status": "",
+    "saleDate": "",
+    "stopDate": "",
+    "versionFolder": "v15",
+    "productFolder": "遠雄人壽雄溫馨終身醫療健康保險(103)",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ],
+    "categoryCode": "2_2",
+    "category": "健康保險"
+  },
+  "216311RZ1A07223A11Z10000011": {
+    "company": "遠雄人壽保險事業股份有限公司",
+    "productName": "遠雄人壽雄健康手術醫療終身健康保險附約(第11次部分變更)",
+    "planCode": "216311RZ1A07223A11Z10000011",
+    "contractType": "附約",
+    "productType": "醫療定額",
+    "currency": "新台幣",
+    "status": "",
+    "saleDate": "",
+    "stopDate": "",
+    "versionFolder": "v11",
+    "productFolder": "遠雄人壽雄健康手術醫療終身健康保險附約",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ],
+    "categoryCode": "2_2",
+    "category": "健康保險"
+  },
+  "216311RZ1A02221A11Z10000013": {
+    "company": "遠雄人壽保險事業股份有限公司",
+    "productName": "遠雄人壽真安心醫療保險附約(103)(第13次部分變更)",
+    "planCode": "216311RZ1A02221A11Z10000013",
+    "contractType": "附約",
+    "productType": "醫療定額",
+    "currency": "新台幣",
+    "status": "",
+    "saleDate": "",
+    "stopDate": "",
+    "versionFolder": "v13",
+    "productFolder": "遠雄人壽真安心醫療保險附約(103)",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ],
+    "categoryCode": "2_2",
+    "category": "健康保險"
+  },
+  "216311RZ1A02121A11Z10000011": {
+    "company": "遠雄人壽保險事業股份有限公司",
+    "productName": "遠雄人壽綜合住院醫療日額給付保險附約(103)(第11次部分變更)",
+    "planCode": "216311RZ1A02121A11Z10000011",
+    "contractType": "附約",
+    "productType": "醫療定額",
+    "currency": "新台幣",
+    "status": "",
+    "saleDate": "",
+    "stopDate": "",
+    "versionFolder": "v11",
+    "productFolder": "遠雄人壽綜合住院醫療日額給付保險附約(103)",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ],
+    "categoryCode": "2_2",
+    "category": "健康保險"
+  },
+  "216311RZ1A02021A11Z10000011": {
+    "company": "遠雄人壽保險事業股份有限公司",
+    "productName": "遠雄人壽住院醫療日額給付保險附約(103)(第11次部分變更)",
+    "planCode": "216311RZ1A02021A11Z10000011",
+    "contractType": "附約",
+    "productType": "醫療定額",
+    "currency": "新台幣",
+    "status": "",
+    "saleDate": "",
+    "stopDate": "",
+    "versionFolder": "v11",
+    "productFolder": "遠雄人壽住院醫療日額給付保險附約(103)",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ],
+    "categoryCode": "2_2",
+    "category": "健康保險"
+  },
+  "216321MZ2B30722A11Z10000001": {
+    "company": "遠雄人壽保險事業股份有限公司",
+    "productName": "遠雄人壽愛無價85防癌健康保險(第1次部分變更)",
+    "planCode": "216321MZ2B30722A11Z10000001",
+    "contractType": "主約",
+    "productType": "防癌險",
+    "currency": "新台幣",
+    "status": "",
+    "saleDate": "",
+    "stopDate": "",
+    "versionFolder": "v1",
+    "productFolder": "遠雄人壽愛無價85防癌健康保險",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ],
+    "categoryCode": "2_2",
+    "category": "健康保險"
+  },
+  "216321MZ2B24023A11Z10000004": {
+    "company": "遠雄人壽保險事業股份有限公司",
+    "productName": "遠雄人壽愛無限A型防癌照護終身健康保險(第4次部分變更)",
+    "planCode": "216321MZ2B24023A11Z10000004",
+    "contractType": "主約",
+    "productType": "防癌險",
+    "currency": "新台幣",
+    "status": "",
+    "saleDate": "",
+    "stopDate": "",
+    "versionFolder": "v4",
+    "productFolder": "遠雄人壽愛無限A型防癌照護終身健康保險",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ],
+    "categoryCode": "2_2",
+    "category": "健康保險"
+  },
+  "216321MZ2B14923A11Z10000008": {
+    "company": "遠雄人壽保險事業股份有限公司",
+    "productName": "遠雄人壽愛無懼防癌保本終身保險(第8次部分變更)",
+    "planCode": "216321MZ2B14923A11Z10000008",
+    "contractType": "主約",
+    "productType": "防癌險",
+    "currency": "新台幣",
+    "status": "",
+    "saleDate": "",
+    "stopDate": "",
+    "versionFolder": "v8",
+    "productFolder": "遠雄人壽愛無懼防癌保本終身保險",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ],
+    "categoryCode": "2_2",
+    "category": "健康保險"
+  },
+  "216321RZ1A11623A11Z10000012": {
+    "company": "遠雄人壽保險事業股份有限公司",
+    "productName": "遠雄人壽新癌症終身健康保險附約(99)(第12次部分變更)",
+    "planCode": "216321RZ1A11623A11Z10000012",
+    "contractType": "附約",
+    "productType": "防癌險",
+    "currency": "新台幣",
+    "status": "",
+    "saleDate": "",
+    "stopDate": "",
+    "versionFolder": "v12",
+    "productFolder": "遠雄人壽新癌症終身健康保險附約(99)",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ],
+    "categoryCode": "2_2",
+    "category": "健康保險"
+  },
+  "216321RZ1A20023A11Z10000007": {
+    "company": "遠雄人壽保險事業股份有限公司",
+    "productName": "遠雄人壽愛無懼B型防癌終身健康保險附約(第7次部分變更)",
+    "planCode": "216321RZ1A20023A11Z10000007",
+    "contractType": "附約",
+    "productType": "防癌險",
+    "currency": "新台幣",
+    "status": "",
+    "saleDate": "",
+    "stopDate": "",
+    "versionFolder": "v7",
+    "productFolder": "遠雄人壽愛無懼B型防癌終身健康保險附約",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ],
+    "categoryCode": "2_2",
+    "category": "健康保險"
+  },
+  "216321RZ1A22323A11Z10000006": {
+    "company": "遠雄人壽保險事業股份有限公司",
+    "productName": "遠雄人壽愛無限B型防癌照護終身健康保險附約(第6次部分變更)",
+    "planCode": "216321RZ1A22323A11Z10000006",
+    "contractType": "附約",
+    "productType": "防癌險",
+    "currency": "新台幣",
+    "status": "",
+    "saleDate": "",
+    "stopDate": "",
+    "versionFolder": "v6",
+    "productFolder": "遠雄人壽愛無限B型防癌照護終身健康保險附約",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ],
+    "categoryCode": "2_2",
+    "category": "健康保險"
+  },
+  "216321RZ1A26722A11Z10000002": {
+    "company": "遠雄人壽保險事業股份有限公司",
+    "productName": "遠雄人壽愛家守護五年定期癌症健康保險附約(第2次部分變更)",
+    "planCode": "216321RZ1A26722A11Z10000002",
+    "contractType": "附約",
+    "productType": "防癌險",
+    "currency": "新台幣",
+    "status": "",
+    "saleDate": "",
+    "stopDate": "",
+    "versionFolder": "v2",
+    "productFolder": "遠雄人壽愛家守護五年定期癌症健康保險附約",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ],
+    "categoryCode": "2_2",
+    "category": "健康保險"
+  },
+  "216321RZ1A29022A11Z10000001": {
+    "company": "遠雄人壽保險事業股份有限公司",
+    "productName": "遠雄人壽輕鬆愛生活癌症醫療定期健康保險附約(第1次部分變更)",
+    "planCode": "216321RZ1A29022A11Z10000001",
+    "contractType": "附約",
+    "productType": "防癌險",
+    "currency": "新台幣",
+    "status": "",
+    "saleDate": "",
+    "stopDate": "",
+    "versionFolder": "v1",
+    "productFolder": "遠雄人壽輕鬆愛生活癌症醫療定期健康保險附約",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ],
+    "categoryCode": "2_2",
+    "category": "健康保險"
+  },
+  "216321RZ1A02421A11Z10000010": {
+    "company": "遠雄人壽保險事業股份有限公司",
+    "productName": "遠雄人壽一年定期癌症健康保險附約(第10次部分變更)",
+    "planCode": "216321RZ1A02421A11Z10000010",
+    "contractType": "附約",
+    "productType": "防癌險",
+    "currency": "新台幣",
+    "status": "",
+    "saleDate": "",
+    "stopDate": "",
+    "versionFolder": "v10",
+    "productFolder": "遠雄人壽一年定期癌症健康保險附約",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ],
+    "categoryCode": "2_2",
+    "category": "健康保險"
+  },
+  "216351MZ1A32121A11Z10000001": {
+    "company": "遠雄人壽保險事業股份有限公司",
+    "productName": "遠雄人壽e富通一年期重大疾病健康保險(甲型)(第1次部分變更)",
+    "planCode": "216351MZ1A32121A11Z10000001",
+    "contractType": "主約",
+    "productType": "重大疾(傷)病險",
+    "currency": "新台幣",
+    "status": "",
+    "saleDate": "",
+    "stopDate": "",
+    "versionFolder": "v1",
+    "productFolder": "遠雄人壽e富通一年期重大疾病健康保險(甲型)",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ],
+    "categoryCode": "2_2",
+    "category": "健康保險"
+  },
+  "216341RZ1A24122B11Z10000002": {
+    "company": "遠雄人壽保險事業股份有限公司",
+    "productName": "遠雄人壽金放心美元豁免保險費附約(第2次部分變更)",
+    "planCode": "216341RZ1A24122B11Z10000002",
+    "contractType": "附約",
+    "productType": "其他",
+    "currency": "美元",
+    "status": "",
+    "saleDate": "",
+    "stopDate": "",
+    "versionFolder": "v2",
+    "productFolder": "遠雄人壽金放心美元豁免保險費附約",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ],
+    "categoryCode": "2_2",
+    "category": "健康保險"
+  },
+  "216341RZ1A22722A11Z10000003": {
+    "company": "遠雄人壽保險事業股份有限公司",
+    "productName": "遠雄人壽金貼心豁免保險費附約(第3次部分變更)",
+    "planCode": "216341RZ1A22722A11Z10000003",
+    "contractType": "附約",
+    "productType": "其他",
+    "currency": "新台幣",
+    "status": "",
+    "saleDate": "",
+    "stopDate": "",
+    "versionFolder": "v3",
+    "productFolder": "遠雄人壽金貼心豁免保險費附約",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ],
+    "categoryCode": "2_2",
+    "category": "健康保險"
+  },
+  "216351MZ1A32222A11Z10000001": {
+    "company": "遠雄人壽保險事業股份有限公司",
+    "productName": "遠雄人壽e富通重大疾病定期健康保險(甲型)(第1次部分變更)",
+    "planCode": "216351MZ1A32222A11Z10000001",
+    "contractType": "主約",
+    "productType": "重大疾(傷)病險",
+    "currency": "新台幣",
+    "status": "",
+    "saleDate": "",
+    "stopDate": "",
+    "versionFolder": "v1",
+    "productFolder": "遠雄人壽e富通重大疾病定期健康保險(甲型)",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ],
+    "categoryCode": "2_2",
+    "category": "健康保險"
+  },
+  "216351RZ1A09723A11Z10000011": {
+    "company": "遠雄人壽保險事業股份有限公司",
+    "productName": "遠雄人壽永康特定傷病終身健康保險附約(第11次部分變更)",
+    "planCode": "216351RZ1A09723A11Z10000011",
+    "contractType": "附約",
+    "productType": "重大疾(傷)病險",
+    "currency": "新台幣",
+    "status": "",
+    "saleDate": "",
+    "stopDate": "",
+    "versionFolder": "v11",
+    "productFolder": "遠雄人壽永康特定傷病終身健康保險附約",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ],
+    "categoryCode": "2_2",
+    "category": "健康保險"
+  },
+  "216351RZ1A19623A11Z10000006": {
+    "company": "遠雄人壽保險事業股份有限公司",
+    "productName": "遠雄人壽永康滿福重大疾病終身健康保險附約(乙型)(第6次部分變更)",
+    "planCode": "216351RZ1A19623A11Z10000006",
+    "contractType": "附約",
+    "productType": "重大疾(傷)病險",
+    "currency": "新台幣",
+    "status": "",
+    "saleDate": "",
+    "stopDate": "",
+    "versionFolder": "v6",
+    "productFolder": "遠雄人壽永康滿福重大疾病終身健康保險附約(乙型)",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ],
+    "categoryCode": "2_2",
+    "category": "健康保險"
+  },
+  "216341RZ1A02622A11Z10000017": {
+    "company": "遠雄人壽保險事業股份有限公司",
+    "productName": "遠雄人壽豁免保險費附約(第17次部分變更)",
+    "planCode": "216341RZ1A02622A11Z10000017",
+    "contractType": "附約",
+    "productType": "其他",
+    "currency": "新台幣",
+    "status": "",
+    "saleDate": "",
+    "stopDate": "",
+    "versionFolder": "v17",
+    "productFolder": "遠雄人壽豁免保險費附約",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ],
+    "categoryCode": "2_2",
+    "category": "健康保險"
+  },
+  "216341RZ1A13622A11Z10000005": {
+    "company": "遠雄人壽保險事業股份有限公司",
+    "productName": "遠雄人壽金好心豁免保險費附約(第5次部分變更)",
+    "planCode": "216341RZ1A13622A11Z10000005",
+    "contractType": "附約",
+    "productType": "其他",
+    "currency": "新台幣",
+    "status": "",
+    "saleDate": "",
+    "stopDate": "",
+    "versionFolder": "v5",
+    "productFolder": "遠雄人壽金好心豁免保險費附約",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ],
+    "categoryCode": "2_2",
+    "category": "健康保險"
+  },
+  "216341RZ1A02722A11Z10000014": {
+    "company": "遠雄人壽保險事業股份有限公司",
+    "productName": "遠雄人壽金安心豁免保險費附約(第14次部分變更)",
+    "planCode": "216341RZ1A02722A11Z10000014",
+    "contractType": "附約",
+    "productType": "其他",
+    "currency": "新台幣",
+    "status": "",
+    "saleDate": "",
+    "stopDate": "",
+    "versionFolder": "v14",
+    "productFolder": "遠雄人壽金安心豁免保險費附約",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ],
+    "categoryCode": "2_2",
+    "category": "健康保險"
+  },
+  "216391RZ1A29921A11Z10000001": {
+    "company": "遠雄人壽保險事業股份有限公司",
+    "productName": "遠雄人壽保安康重大傷病一年定期健康保險附約(第1次部分變更)",
+    "planCode": "216391RZ1A29921A11Z10000001",
+    "contractType": "附約",
+    "productType": "重大疾(傷)病險",
+    "currency": "新台幣",
+    "status": "",
+    "saleDate": "",
+    "stopDate": "",
+    "versionFolder": "v1",
+    "productFolder": "遠雄人壽保安康重大傷病一年定期健康保險附約",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ],
+    "categoryCode": "2_2",
+    "category": "健康保險"
+  },
+  "216391RZ9B08923A11Z10000015": {
+    "company": "遠雄人壽保險事業股份有限公司",
+    "productName": "遠雄人壽健康久久手術醫療終身保險附約(第15次部分變更)",
+    "planCode": "216391RZ9B08923A11Z10000015",
+    "contractType": "附約",
+    "productType": "醫療定額",
+    "currency": "新台幣",
+    "status": "",
+    "saleDate": "",
+    "stopDate": "",
+    "versionFolder": "v15",
+    "productFolder": "遠雄人壽健康久久手術醫療終身保險附約",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ],
+    "categoryCode": "2_2",
+    "category": "健康保險"
+  },
+  "216391MZ9B10323A11Z10000014": {
+    "company": "遠雄人壽保險事業股份有限公司",
+    "productName": "遠雄人壽永安手術醫療終身保險(第14次部分變更)",
+    "planCode": "216391MZ9B10323A11Z10000014",
+    "contractType": "主約",
+    "productType": "終身壽險",
+    "currency": "新台幣",
+    "status": "",
+    "saleDate": "",
+    "stopDate": "",
+    "versionFolder": "v14",
+    "productFolder": "遠雄人壽永安手術醫療終身保險",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ],
+    "categoryCode": "2_2",
+    "category": "健康保險"
+  },
+  "216361RZ1A28822A11Z10000001": {
+    "company": "遠雄人壽保險事業股份有限公司",
+    "productName": "遠雄人壽輕鬆超享福長期照顧定期健康保險附約(第1次部分變更)",
+    "planCode": "216361RZ1A28822A11Z10000001",
+    "contractType": "附約",
+    "productType": "長照險",
+    "currency": "新台幣",
+    "status": "",
+    "saleDate": "",
+    "stopDate": "",
+    "versionFolder": "v1",
+    "productFolder": "遠雄人壽輕鬆超享福長期照顧定期健康保險附約",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ],
+    "categoryCode": "2_2",
+    "category": "健康保險"
+  },
+  "216341RZ1A24122B11Z10000003": {
+    "company": "遠雄人壽保險事業股份有限公司",
+    "productName": "遠雄人壽金放心美元豁免保險費附約(第3次部分變更)",
+    "planCode": "216341RZ1A24122B11Z10000003",
+    "contractType": "附約",
+    "productType": "其他",
+    "currency": "美元",
+    "status": "",
+    "saleDate": "",
+    "stopDate": "",
+    "versionFolder": "v3",
+    "productFolder": "遠雄人壽金放心美元豁免保險費附約",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ],
+    "categoryCode": "2_2",
+    "category": "健康保險"
+  },
+  "216311RZ1A34121A11Z10000000": {
+    "company": "遠雄人壽保險事業股份有限公司",
+    "productName": "遠雄人壽永安康醫療健康保險附約",
+    "planCode": "216311RZ1A34121A11Z10000000",
+    "contractType": "附約",
+    "productType": "醫療定額",
+    "currency": "新台幣",
+    "status": "",
+    "saleDate": "",
+    "stopDate": "",
+    "versionFolder": "v0",
+    "productFolder": "遠雄人壽永安康醫療健康保險附約",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ],
+    "categoryCode": "2_2",
+    "category": "健康保險"
+  },
+  "216311RZ1A34221A11Z10000000": {
+    "company": "遠雄人壽保險事業股份有限公司",
+    "productName": "遠雄人壽永康富醫療健康保險附約",
+    "planCode": "216311RZ1A34221A11Z10000000",
+    "contractType": "附約",
+    "productType": "醫療定額",
+    "currency": "新台幣",
+    "status": "",
+    "saleDate": "",
+    "stopDate": "",
+    "versionFolder": "v0",
+    "productFolder": "遠雄人壽永康富醫療健康保險附約",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ],
+    "categoryCode": "2_2",
+    "category": "健康保險"
+  },
+  "216321RZ1A26722A11Z10000003": {
+    "company": "遠雄人壽保險事業股份有限公司",
+    "productName": "遠雄人壽愛家守護五年定期癌症健康保險附約(第3次部分變更)",
+    "planCode": "216321RZ1A26722A11Z10000003",
+    "contractType": "附約",
+    "productType": "防癌險",
+    "currency": "新台幣",
+    "status": "",
+    "saleDate": "",
+    "stopDate": "",
+    "versionFolder": "v3",
+    "productFolder": "遠雄人壽愛家守護五年定期癌症健康保險附約",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ],
+    "categoryCode": "2_2",
+    "category": "健康保險"
+  },
+  "216321RZ1A22323A11Z10000007": {
+    "company": "遠雄人壽保險事業股份有限公司",
+    "productName": "遠雄人壽愛無限B型防癌照護終身健康保險附約(第7次部分變更)",
+    "planCode": "216321RZ1A22323A11Z10000007",
+    "contractType": "附約",
+    "productType": "防癌險",
+    "currency": "新台幣",
+    "status": "",
+    "saleDate": "",
+    "stopDate": "",
+    "versionFolder": "v7",
+    "productFolder": "遠雄人壽愛無限B型防癌照護終身健康保險附約",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ],
+    "categoryCode": "2_2",
+    "category": "健康保險"
+  },
+  "216321RZ1A20023A11Z10000008": {
+    "company": "遠雄人壽保險事業股份有限公司",
+    "productName": "遠雄人壽愛無懼B型防癌終身健康保險附約(第8次部分變更)",
+    "planCode": "216321RZ1A20023A11Z10000008",
+    "contractType": "附約",
+    "productType": "防癌險",
+    "currency": "新台幣",
+    "status": "",
+    "saleDate": "",
+    "stopDate": "",
+    "versionFolder": "v8",
+    "productFolder": "遠雄人壽愛無懼B型防癌終身健康保險附約",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ],
+    "categoryCode": "2_2",
+    "category": "健康保險"
+  },
+  "216321MZ2B14923A11Z10000009": {
+    "company": "遠雄人壽保險事業股份有限公司",
+    "productName": "遠雄人壽愛無懼防癌保本終身保險(第9次部分變更)",
+    "planCode": "216321MZ2B14923A11Z10000009",
+    "contractType": "主約",
+    "productType": "防癌險",
+    "currency": "新台幣",
+    "status": "",
+    "saleDate": "",
+    "stopDate": "",
+    "versionFolder": "v9",
+    "productFolder": "遠雄人壽愛無懼防癌保本終身保險",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ],
+    "categoryCode": "2_2",
+    "category": "健康保險"
+  },
+  "216321MZ2B24023A11Z10000005": {
+    "company": "遠雄人壽保險事業股份有限公司",
+    "productName": "遠雄人壽愛無限A型防癌照護終身健康保險(第5次部分變更)",
+    "planCode": "216321MZ2B24023A11Z10000005",
+    "contractType": "主約",
+    "productType": "防癌險",
+    "currency": "新台幣",
+    "status": "",
+    "saleDate": "",
+    "stopDate": "",
+    "versionFolder": "v5",
+    "productFolder": "遠雄人壽愛無限A型防癌照護終身健康保險",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ],
+    "categoryCode": "2_2",
+    "category": "健康保險"
+  },
+  "216321MZ2B30722A11Z10000002": {
+    "company": "遠雄人壽保險事業股份有限公司",
+    "productName": "遠雄人壽愛無價85防癌健康保險(第2次部分變更)",
+    "planCode": "216321MZ2B30722A11Z10000002",
+    "contractType": "主約",
+    "productType": "防癌險",
+    "currency": "新台幣",
+    "status": "",
+    "saleDate": "",
+    "stopDate": "",
+    "versionFolder": "v2",
+    "productFolder": "遠雄人壽愛無價85防癌健康保險",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ],
+    "categoryCode": "2_2",
+    "category": "健康保險"
+  },
+  "216351RZ1A19623A11Z10000007": {
+    "company": "遠雄人壽保險事業股份有限公司",
+    "productName": "遠雄人壽永康滿福重大疾病終身健康保險附約(乙型)(第7次部分變更)",
+    "planCode": "216351RZ1A19623A11Z10000007",
+    "contractType": "附約",
+    "productType": "重大疾(傷)病險",
+    "currency": "新台幣",
+    "status": "",
+    "saleDate": "",
+    "stopDate": "",
+    "versionFolder": "v7",
+    "productFolder": "遠雄人壽永康滿福重大疾病終身健康保險附約(乙型)",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ],
+    "categoryCode": "2_2",
+    "category": "健康保險"
+  },
+  "216311RZ1A08623A11Z10000012": {
+    "company": "遠雄人壽保險事業股份有限公司",
+    "productName": "遠雄人壽新溫馨終身醫療健康保險附約(103)(第12次部分變更)",
+    "planCode": "216311RZ1A08623A11Z10000012",
+    "contractType": "附約",
+    "productType": "醫療定額",
+    "currency": "新台幣",
+    "status": "",
+    "saleDate": "",
+    "stopDate": "",
+    "versionFolder": "v12",
+    "productFolder": "遠雄人壽新溫馨終身醫療健康保險附約(103)",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ],
+    "categoryCode": "2_2",
+    "category": "健康保險"
+  },
+  "216321RZ1A35321A11Z10000000": {
+    "company": "遠雄人壽保險事業股份有限公司",
+    "productName": "遠雄人壽愛吉時一年定期癌症健康保險附約",
+    "planCode": "216321RZ1A35321A11Z10000000",
+    "contractType": "附約",
+    "productType": "防癌險",
+    "currency": "新台幣",
+    "status": "",
+    "saleDate": "",
+    "stopDate": "",
+    "versionFolder": "v0",
+    "productFolder": "遠雄人壽愛吉時一年定期癌症健康保險附約",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ],
+    "categoryCode": "2_2",
+    "category": "健康保險"
+  },
+  "216341RZ1A35721A11Z10000000": {
+    "company": "遠雄人壽保險事業股份有限公司",
+    "productName": "遠雄人壽金大吉豁免保險費附約",
+    "planCode": "216341RZ1A35721A11Z10000000",
+    "contractType": "附約",
+    "productType": "其他",
+    "currency": "新台幣",
+    "status": "",
+    "saleDate": "",
+    "stopDate": "",
+    "versionFolder": "v0",
+    "productFolder": "遠雄人壽金大吉豁免保險費附約",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ],
+    "categoryCode": "2_2",
+    "category": "健康保險"
+  },
+  "216341RZ1A24122B11Z10000004": {
+    "company": "遠雄人壽保險事業股份有限公司",
+    "productName": "遠雄人壽金放心美元豁免保險費附約(第4次部分變更)",
+    "planCode": "216341RZ1A24122B11Z10000004",
+    "contractType": "附約",
+    "productType": "其他",
+    "currency": "美元",
+    "status": "",
+    "saleDate": "",
+    "stopDate": "",
+    "versionFolder": "v4",
+    "productFolder": "遠雄人壽金放心美元豁免保險費附約",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ],
+    "categoryCode": "2_2",
+    "category": "健康保險"
+  },
+  "216341RZ1A22722A11Z10000004": {
+    "company": "遠雄人壽保險事業股份有限公司",
+    "productName": "遠雄人壽金貼心豁免保險費附約(第4次部分變更)",
+    "planCode": "216341RZ1A22722A11Z10000004",
+    "contractType": "附約",
+    "productType": "其他",
+    "currency": "新台幣",
+    "status": "",
+    "saleDate": "",
+    "stopDate": "",
+    "versionFolder": "v4",
+    "productFolder": "遠雄人壽金貼心豁免保險費附約",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ],
+    "categoryCode": "2_2",
+    "category": "健康保險"
+  },
+  "216341RZ1A02722A11Z10000015": {
+    "company": "遠雄人壽保險事業股份有限公司",
+    "productName": "遠雄人壽金安心豁免保險費附約(第15次部分變更)",
+    "planCode": "216341RZ1A02722A11Z10000015",
+    "contractType": "附約",
+    "productType": "其他",
+    "currency": "新台幣",
+    "status": "",
+    "saleDate": "",
+    "stopDate": "",
+    "versionFolder": "v15",
+    "productFolder": "遠雄人壽金安心豁免保險費附約",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ],
+    "categoryCode": "2_2",
+    "category": "健康保險"
+  },
+  "216341RZ1A13622A11Z10000006": {
+    "company": "遠雄人壽保險事業股份有限公司",
+    "productName": "遠雄人壽金好心豁免保險費附約(第6次部分變更)",
+    "planCode": "216341RZ1A13622A11Z10000006",
+    "contractType": "附約",
+    "productType": "其他",
+    "currency": "新台幣",
+    "status": "",
+    "saleDate": "",
+    "stopDate": "",
+    "versionFolder": "v6",
+    "productFolder": "遠雄人壽金好心豁免保險費附約",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ],
+    "categoryCode": "2_2",
+    "category": "健康保險"
+  },
+  "216341RZ1A02622A11Z10000018": {
+    "company": "遠雄人壽保險事業股份有限公司",
+    "productName": "遠雄人壽豁免保險費附約(第18次部分變更)",
+    "planCode": "216341RZ1A02622A11Z10000018",
+    "contractType": "附約",
+    "productType": "其他",
+    "currency": "新台幣",
+    "status": "",
+    "saleDate": "",
+    "stopDate": "",
+    "versionFolder": "v18",
+    "productFolder": "遠雄人壽豁免保險費附約",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ],
+    "categoryCode": "2_2",
+    "category": "健康保險"
+  },
+  "216351MZ9B36922A11E10000000": {
+    "company": "遠雄人壽保險事業股份有限公司",
+    "productName": "遠雄人壽雄有溢85精選傷病定期保險",
+    "planCode": "216351MZ9B36922A11E10000000",
+    "contractType": "主約",
+    "productType": "定期壽險",
+    "currency": "新台幣",
+    "status": "",
+    "saleDate": "",
+    "stopDate": "",
+    "versionFolder": "v0",
+    "productFolder": "遠雄人壽雄有溢85精選傷病定期保險",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ],
+    "categoryCode": "2_2",
+    "category": "健康保險"
+  },
+  "216351MZ9B36922A11E10000001": {
+    "company": "遠雄人壽保險事業股份有限公司",
+    "productName": "遠雄人壽雄有溢85精選傷病定期保險(第1次部分變更)",
+    "planCode": "216351MZ9B36922A11E10000001",
+    "contractType": "主約",
+    "productType": "定期壽險",
+    "currency": "新台幣",
+    "status": "",
+    "saleDate": "",
+    "stopDate": "",
+    "versionFolder": "v1",
+    "productFolder": "遠雄人壽雄有溢85精選傷病定期保險",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ],
+    "categoryCode": "2_2",
+    "category": "健康保險"
+  },
+  "216351RZ1A19623A11Z10000008": {
+    "company": "遠雄人壽保險事業股份有限公司",
+    "productName": "遠雄人壽永康滿福重大疾病終身健康保險附約(乙型)(第8次部分變更)",
+    "planCode": "216351RZ1A19623A11Z10000008",
+    "contractType": "附約",
+    "productType": "重大疾(傷)病險",
+    "currency": "新台幣",
+    "status": "",
+    "saleDate": "",
+    "stopDate": "",
+    "versionFolder": "v8",
+    "productFolder": "遠雄人壽永康滿福重大疾病終身健康保險附約(乙型)",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ],
+    "categoryCode": "2_2",
+    "category": "健康保險"
+  },
+  "216351RZ1A09723A11Z10000012": {
+    "company": "遠雄人壽保險事業股份有限公司",
+    "productName": "遠雄人壽永康特定傷病終身健康保險附約(第12次部分變更)",
+    "planCode": "216351RZ1A09723A11Z10000012",
+    "contractType": "附約",
+    "productType": "重大疾(傷)病險",
+    "currency": "新台幣",
+    "status": "",
+    "saleDate": "",
+    "stopDate": "",
+    "versionFolder": "v12",
+    "productFolder": "遠雄人壽永康特定傷病終身健康保險附約",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ],
+    "categoryCode": "2_2",
+    "category": "健康保險"
+  },
+  "216341RZ1A22722A11Z10000005": {
+    "company": "遠雄人壽保險事業股份有限公司",
+    "productName": "遠雄人壽金貼心豁免保險費附約(第5次部分變更)",
+    "planCode": "216341RZ1A22722A11Z10000005",
+    "contractType": "附約",
+    "productType": "其他",
+    "currency": "新台幣",
+    "status": "",
+    "saleDate": "",
+    "stopDate": "",
+    "versionFolder": "v5",
+    "productFolder": "遠雄人壽金貼心豁免保險費附約",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ],
+    "categoryCode": "2_2",
+    "category": "健康保險"
+  },
+  "216341RZ1A24122B11Z10000005": {
+    "company": "遠雄人壽保險事業股份有限公司",
+    "productName": "遠雄人壽金放心美元豁免保險費附約(第5次部分變更)",
+    "planCode": "216341RZ1A24122B11Z10000005",
+    "contractType": "附約",
+    "productType": "其他",
+    "currency": "美元",
+    "status": "",
+    "saleDate": "",
+    "stopDate": "",
+    "versionFolder": "v5",
+    "productFolder": "遠雄人壽金放心美元豁免保險費附約",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ],
+    "categoryCode": "2_2",
+    "category": "健康保險"
+  },
+  "216341RZ1A35721A11Z10000001": {
+    "company": "遠雄人壽保險事業股份有限公司",
+    "productName": "遠雄人壽金大吉豁免保險費附約(第1次部分變更)",
+    "planCode": "216341RZ1A35721A11Z10000001",
+    "contractType": "附約",
+    "productType": "其他",
+    "currency": "新台幣",
+    "status": "",
+    "saleDate": "",
+    "stopDate": "",
+    "versionFolder": "v1",
+    "productFolder": "遠雄人壽金大吉豁免保險費附約",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ],
+    "categoryCode": "2_2",
+    "category": "健康保險"
+  },
+  "216341RZ1A02622A11Z10000019": {
+    "company": "遠雄人壽保險事業股份有限公司",
+    "productName": "遠雄人壽豁免保險費附約(113)(第19次部分變更)",
+    "planCode": "216341RZ1A02622A11Z10000019",
+    "contractType": "附約",
+    "productType": "其他",
+    "currency": "新台幣",
+    "status": "",
+    "saleDate": "",
+    "stopDate": "",
+    "versionFolder": "v19",
+    "productFolder": "遠雄人壽豁免保險費附約(113)",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ],
+    "categoryCode": "2_2",
+    "category": "健康保險"
+  },
+  "216341RZ1A13622A11Z10000007": {
+    "company": "遠雄人壽保險事業股份有限公司",
+    "productName": "遠雄人壽金好心豁免保險費附約(第7次部分變更)",
+    "planCode": "216341RZ1A13622A11Z10000007",
+    "contractType": "附約",
+    "productType": "其他",
+    "currency": "新台幣",
+    "status": "",
+    "saleDate": "",
+    "stopDate": "",
+    "versionFolder": "v7",
+    "productFolder": "遠雄人壽金好心豁免保險費附約",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ],
+    "categoryCode": "2_2",
+    "category": "健康保險"
+  },
+  "216341RZ1A02722A11Z10000016": {
+    "company": "遠雄人壽保險事業股份有限公司",
+    "productName": "遠雄人壽金安心豁免保險費附約(113)(第16次部分變更)",
+    "planCode": "216341RZ1A02722A11Z10000016",
+    "contractType": "附約",
+    "productType": "其他",
+    "currency": "新台幣",
+    "status": "",
+    "saleDate": "",
+    "stopDate": "",
+    "versionFolder": "v16",
+    "productFolder": "遠雄人壽金安心豁免保險費附約(113)",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ],
+    "categoryCode": "2_2",
+    "category": "健康保險"
+  },
+  "216321RZ1A35321A11Z10000001": {
+    "company": "遠雄人壽保險事業股份有限公司",
+    "productName": "遠雄人壽愛吉時一年定期癌症健康保險附約(第1次部分變更)",
+    "planCode": "216321RZ1A35321A11Z10000001",
+    "contractType": "附約",
+    "productType": "防癌險",
+    "currency": "新台幣",
+    "status": "",
+    "saleDate": "",
+    "stopDate": "",
+    "versionFolder": "v1",
+    "productFolder": "遠雄人壽愛吉時一年定期癌症健康保險附約",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ],
+    "categoryCode": "2_2",
+    "category": "健康保險"
+  },
+  "216321RZ1A29022A11Z10000002": {
+    "company": "遠雄人壽保險事業股份有限公司",
+    "productName": "遠雄人壽輕鬆愛生活癌症醫療定期健康保險附約(第2次部分變更)",
+    "planCode": "216321RZ1A29022A11Z10000002",
+    "contractType": "附約",
+    "productType": "防癌險",
+    "currency": "新台幣",
+    "status": "",
+    "saleDate": "",
+    "stopDate": "",
+    "versionFolder": "v2",
+    "productFolder": "遠雄人壽輕鬆愛生活癌症醫療定期健康保險附約",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ],
+    "categoryCode": "2_2",
+    "category": "健康保險"
+  },
+  "216321RZ1A26722A11Z10000004": {
+    "company": "遠雄人壽保險事業股份有限公司",
+    "productName": "遠雄人壽愛家守護五年定期癌症健康保險附約(第4次部分變更)",
+    "planCode": "216321RZ1A26722A11Z10000004",
+    "contractType": "附約",
+    "productType": "防癌險",
+    "currency": "新台幣",
+    "status": "",
+    "saleDate": "",
+    "stopDate": "",
+    "versionFolder": "v4",
+    "productFolder": "遠雄人壽愛家守護五年定期癌症健康保險附約",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ],
+    "categoryCode": "2_2",
+    "category": "健康保險"
+  },
+  "216321RZ1A22323A11Z10000008": {
+    "company": "遠雄人壽保險事業股份有限公司",
+    "productName": "遠雄人壽愛無限B型防癌照護終身健康保險附約(第8次部分變更)",
+    "planCode": "216321RZ1A22323A11Z10000008",
+    "contractType": "附約",
+    "productType": "防癌險",
+    "currency": "新台幣",
+    "status": "",
+    "saleDate": "",
+    "stopDate": "",
+    "versionFolder": "v8",
+    "productFolder": "遠雄人壽愛無限B型防癌照護終身健康保險附約",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ],
+    "categoryCode": "2_2",
+    "category": "健康保險"
+  },
+  "216321RZ1A20023A11Z10000009": {
+    "company": "遠雄人壽保險事業股份有限公司",
+    "productName": "遠雄人壽愛無懼B型防癌終身健康保險附約(第9次部分變更)",
+    "planCode": "216321RZ1A20023A11Z10000009",
+    "contractType": "附約",
+    "productType": "防癌險",
+    "currency": "新台幣",
+    "status": "",
+    "saleDate": "",
+    "stopDate": "",
+    "versionFolder": "v9",
+    "productFolder": "遠雄人壽愛無懼B型防癌終身健康保險附約",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ],
+    "categoryCode": "2_2",
+    "category": "健康保險"
+  },
+  "216321RZ1A11623A11Z10000013": {
+    "company": "遠雄人壽保險事業股份有限公司",
+    "productName": "遠雄人壽新癌症終身健康保險附約(99)(第13次部分變更)",
+    "planCode": "216321RZ1A11623A11Z10000013",
+    "contractType": "附約",
+    "productType": "防癌險",
+    "currency": "新台幣",
+    "status": "",
+    "saleDate": "",
+    "stopDate": "",
+    "versionFolder": "v13",
+    "productFolder": "遠雄人壽新癌症終身健康保險附約(99)",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ],
+    "categoryCode": "2_2",
+    "category": "健康保險"
+  },
+  "216321RZ1A02421A11Z10000011": {
+    "company": "遠雄人壽保險事業股份有限公司",
+    "productName": "遠雄人壽一年定期癌症健康保險附約(第11次部分變更)",
+    "planCode": "216321RZ1A02421A11Z10000011",
+    "contractType": "附約",
+    "productType": "防癌險",
+    "currency": "新台幣",
+    "status": "",
+    "saleDate": "",
+    "stopDate": "",
+    "versionFolder": "v11",
+    "productFolder": "遠雄人壽一年定期癌症健康保險附約",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ],
+    "categoryCode": "2_2",
+    "category": "健康保險"
+  },
+  "216321MZ2B30722A11Z10000003": {
+    "company": "遠雄人壽保險事業股份有限公司",
+    "productName": "遠雄人壽愛無價85防癌健康保險(第3次部分變更)",
+    "planCode": "216321MZ2B30722A11Z10000003",
+    "contractType": "主約",
+    "productType": "防癌險",
+    "currency": "新台幣",
+    "status": "",
+    "saleDate": "",
+    "stopDate": "",
+    "versionFolder": "v3",
+    "productFolder": "遠雄人壽愛無價85防癌健康保險",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ],
+    "categoryCode": "2_2",
+    "category": "健康保險"
+  },
+  "216321MZ2B24023A11Z10000006": {
+    "company": "遠雄人壽保險事業股份有限公司",
+    "productName": "遠雄人壽愛無限A型防癌照護終身健康保險(第6次部分變更)",
+    "planCode": "216321MZ2B24023A11Z10000006",
+    "contractType": "主約",
+    "productType": "防癌險",
+    "currency": "新台幣",
+    "status": "",
+    "saleDate": "",
+    "stopDate": "",
+    "versionFolder": "v6",
+    "productFolder": "遠雄人壽愛無限A型防癌照護終身健康保險",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ],
+    "categoryCode": "2_2",
+    "category": "健康保險"
+  },
+  "216321MZ2B14923A11Z10000010": {
+    "company": "遠雄人壽保險事業股份有限公司",
+    "productName": "遠雄人壽愛無懼防癌保本終身保險(第10次部分變更)",
+    "planCode": "216321MZ2B14923A11Z10000010",
+    "contractType": "主約",
+    "productType": "防癌險",
+    "currency": "新台幣",
+    "status": "",
+    "saleDate": "",
+    "stopDate": "",
+    "versionFolder": "v10",
+    "productFolder": "遠雄人壽愛無懼防癌保本終身保險",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ],
+    "categoryCode": "2_2",
+    "category": "健康保險"
+  },
+  "216311RZ1A08623A11Z10000013": {
+    "company": "遠雄人壽保險事業股份有限公司",
+    "productName": "遠雄人壽新溫馨終身醫療健康保險附約(103)(第13次部分變更)",
+    "planCode": "216311RZ1A08623A11Z10000013",
+    "contractType": "附約",
+    "productType": "醫療定額",
+    "currency": "新台幣",
+    "status": "",
+    "saleDate": "",
+    "stopDate": "",
+    "versionFolder": "v13",
+    "productFolder": "遠雄人壽新溫馨終身醫療健康保險附約(103)",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ],
+    "categoryCode": "2_2",
+    "category": "健康保險"
+  },
+  "216311RZ1A07423A11Z10000013": {
+    "company": "遠雄人壽保險事業股份有限公司",
+    "productName": "遠雄人壽雄溫情終身醫療健康保險附約(103)(第13次部分變更)",
+    "planCode": "216311RZ1A07423A11Z10000013",
+    "contractType": "附約",
+    "productType": "醫療定額",
+    "currency": "新台幣",
+    "status": "",
+    "saleDate": "",
+    "stopDate": "",
+    "versionFolder": "v13",
+    "productFolder": "遠雄人壽雄溫情終身醫療健康保險附約(103)",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ],
+    "categoryCode": "2_2",
+    "category": "健康保險"
+  },
+  "216311RZ1A34121A11Z10000001": {
+    "company": "遠雄人壽保險事業股份有限公司",
+    "productName": "遠雄人壽永安康醫療健康保險附約(第1次部分變更)",
+    "planCode": "216311RZ1A34121A11Z10000001",
+    "contractType": "附約",
+    "productType": "醫療定額",
+    "currency": "新台幣",
+    "status": "",
+    "saleDate": "",
+    "stopDate": "",
+    "versionFolder": "v1",
+    "productFolder": "遠雄人壽永安康醫療健康保險附約",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ],
+    "categoryCode": "2_2",
+    "category": "健康保險"
+  },
+  "216311RZ1A24921A11E10000003": {
+    "company": "遠雄人壽保險事業股份有限公司",
+    "productName": "遠雄人壽康樂綜合醫療手術定額健康保險附約(第3次部分變更)",
+    "planCode": "216311RZ1A24921A11E10000003",
+    "contractType": "附約",
+    "productType": "醫療定額",
+    "currency": "新台幣",
+    "status": "",
+    "saleDate": "",
+    "stopDate": "",
+    "versionFolder": "v3",
+    "productFolder": "遠雄人壽康樂綜合醫療手術定額健康保險附約",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ],
+    "categoryCode": "2_2",
+    "category": "健康保險"
+  },
+  "216311RZ1A37221A11Z10000000": {
+    "company": "遠雄人壽保險事業股份有限公司",
+    "productName": "遠雄人壽遨遊海外突發疾病醫療健康保險附約",
+    "planCode": "216311RZ1A37221A11Z10000000",
+    "contractType": "附約",
+    "productType": "醫療定額",
+    "currency": "新台幣",
+    "status": "",
+    "saleDate": "",
+    "stopDate": "",
+    "versionFolder": "v0",
+    "productFolder": "遠雄人壽遨遊海外突發疾病醫療健康保險附約",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ],
+    "categoryCode": "2_2",
+    "category": "健康保險"
+  },
+  "216311RZ1A02021A11Z10000012": {
+    "company": "遠雄人壽保險事業股份有限公司",
+    "productName": "遠雄人壽住院醫療日額給付保險附約(103)(第12次部分變更)",
+    "planCode": "216311RZ1A02021A11Z10000012",
+    "contractType": "附約",
+    "productType": "醫療定額",
+    "currency": "新台幣",
+    "status": "",
+    "saleDate": "",
+    "stopDate": "",
+    "versionFolder": "v12",
+    "productFolder": "遠雄人壽住院醫療日額給付保險附約(103)",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ],
+    "categoryCode": "2_2",
+    "category": "健康保險"
+  },
+  "216311RZ1A07223A11Z10000012": {
+    "company": "遠雄人壽保險事業股份有限公司",
+    "productName": "遠雄人壽雄健康手術醫療終身健康保險附約(第12次部分變更)",
+    "planCode": "216311RZ1A07223A11Z10000012",
+    "contractType": "附約",
+    "productType": "醫療定額",
+    "currency": "新台幣",
+    "status": "",
+    "saleDate": "",
+    "stopDate": "",
+    "versionFolder": "v12",
+    "productFolder": "遠雄人壽雄健康手術醫療終身健康保險附約",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ],
+    "categoryCode": "2_2",
+    "category": "健康保險"
+  },
+  "216361RZ1A28822A11Z10000002": {
+    "company": "遠雄人壽保險事業股份有限公司",
+    "productName": "遠雄人壽輕鬆超享福長期照顧定期健康保險附約(第2次部分變更)",
+    "planCode": "216361RZ1A28822A11Z10000002",
+    "contractType": "附約",
+    "productType": "長照險",
+    "currency": "新台幣",
+    "status": "",
+    "saleDate": "",
+    "stopDate": "",
+    "versionFolder": "v2",
+    "productFolder": "遠雄人壽輕鬆超享福長期照顧定期健康保險附約",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ],
+    "categoryCode": "2_2",
+    "category": "健康保險"
+  },
+  "216391RZ9B08923A11Z10000016": {
+    "company": "遠雄人壽保險事業股份有限公司",
+    "productName": "遠雄人壽健康久久手術醫療終身保險附約(第16次部分變更)",
+    "planCode": "216391RZ9B08923A11Z10000016",
+    "contractType": "附約",
+    "productType": "醫療定額",
+    "currency": "新台幣",
+    "status": "",
+    "saleDate": "",
+    "stopDate": "",
+    "versionFolder": "v16",
+    "productFolder": "遠雄人壽健康久久手術醫療終身保險附約",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ],
+    "categoryCode": "2_2",
+    "category": "健康保險"
+  },
+  "216391RZ1A29921A11Z10000002": {
+    "company": "遠雄人壽保險事業股份有限公司",
+    "productName": "遠雄人壽保安康重大傷病一年定期健康保險附約(第2次部分變更)",
+    "planCode": "216391RZ1A29921A11Z10000002",
+    "contractType": "附約",
+    "productType": "重大疾(傷)病險",
+    "currency": "新台幣",
+    "status": "",
+    "saleDate": "",
+    "stopDate": "",
+    "versionFolder": "v2",
+    "productFolder": "遠雄人壽保安康重大傷病一年定期健康保險附約",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ],
+    "categoryCode": "2_2",
+    "category": "健康保險"
+  },
+  "216311RZ1A07223A11Z10000013": {
+    "company": "遠雄人壽保險事業股份有限公司",
+    "productName": "遠雄人壽雄健康手術醫療終身健康保險附約(第13次部分變更)",
+    "planCode": "216311RZ1A07223A11Z10000013",
+    "contractType": "附約",
+    "productType": "醫療定額",
+    "currency": "新台幣",
+    "status": "",
+    "saleDate": "",
+    "stopDate": "",
+    "versionFolder": "v13",
+    "productFolder": "遠雄人壽雄健康手術醫療終身健康保險附約",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ],
+    "categoryCode": "2_2",
+    "category": "健康保險"
+  },
+  "216311RZ1A02021A11Z10000013": {
+    "company": "遠雄人壽保險事業股份有限公司",
+    "productName": "遠雄人壽住院醫療日額給付保險附約(103)(第13次部分變更)",
+    "planCode": "216311RZ1A02021A11Z10000013",
+    "contractType": "附約",
+    "productType": "醫療定額",
+    "currency": "新台幣",
+    "status": "",
+    "saleDate": "",
+    "stopDate": "",
+    "versionFolder": "v13",
+    "productFolder": "遠雄人壽住院醫療日額給付保險附約(103)",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ],
+    "categoryCode": "2_2",
+    "category": "健康保險"
+  },
+  "216311MZ1A07023A11Z10000016": {
+    "company": "遠雄人壽保險事業股份有限公司",
+    "productName": "遠雄人壽雄溫馨終身醫療健康保險(103)(第16次部分變更)",
+    "planCode": "216311MZ1A07023A11Z10000016",
+    "contractType": "主約",
+    "productType": "醫療定額",
+    "currency": "新台幣",
+    "status": "",
+    "saleDate": "",
+    "stopDate": "",
+    "versionFolder": "v16",
+    "productFolder": "遠雄人壽雄溫馨終身醫療健康保險(103)",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ],
+    "categoryCode": "2_2",
+    "category": "健康保險"
+  },
+  "216311MZ1B13923A11Z10000011": {
+    "company": "遠雄人壽保險事業股份有限公司",
+    "productName": "遠雄人壽守護醫級棒醫療保本終身保險(103)(第11次部分變更)",
+    "planCode": "216311MZ1B13923A11Z10000011",
+    "contractType": "主約",
+    "productType": "儲蓄壽險",
+    "currency": "新台幣",
+    "status": "",
+    "saleDate": "",
+    "stopDate": "",
+    "versionFolder": "v11",
+    "productFolder": "遠雄人壽守護醫級棒醫療保本終身保險(103)",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ],
+    "categoryCode": "2_2",
+    "category": "健康保險"
+  },
+  "216311RZ1A24921A11E10000004": {
+    "company": "遠雄人壽保險事業股份有限公司",
+    "productName": "遠雄人壽康樂綜合醫療手術定額健康保險附約(第4次部分變更)",
+    "planCode": "216311RZ1A24921A11E10000004",
+    "contractType": "附約",
+    "productType": "醫療定額",
+    "currency": "新台幣",
+    "status": "",
+    "saleDate": "",
+    "stopDate": "",
+    "versionFolder": "v4",
+    "productFolder": "遠雄人壽康樂綜合醫療手術定額健康保險附約",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ],
+    "categoryCode": "2_2",
+    "category": "健康保險"
+  },
+  "216311RZ1A34121A11Z10000002": {
+    "company": "遠雄人壽保險事業股份有限公司",
+    "productName": "遠雄人壽永安康醫療健康保險附約(第2次部分變更)",
+    "planCode": "216311RZ1A34121A11Z10000002",
+    "contractType": "附約",
+    "productType": "醫療定額",
+    "currency": "新台幣",
+    "status": "",
+    "saleDate": "",
+    "stopDate": "",
+    "versionFolder": "v2",
+    "productFolder": "遠雄人壽永安康醫療健康保險附約",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ],
+    "categoryCode": "2_2",
+    "category": "健康保險"
+  },
+  "216311RZ1A07423A11Z10000014": {
+    "company": "遠雄人壽保險事業股份有限公司",
+    "productName": "遠雄人壽雄溫情終身醫療健康保險附約(103)(第14次部分變更)",
+    "planCode": "216311RZ1A07423A11Z10000014",
+    "contractType": "附約",
+    "productType": "醫療定額",
+    "currency": "新台幣",
+    "status": "",
+    "saleDate": "",
+    "stopDate": "",
+    "versionFolder": "v14",
+    "productFolder": "遠雄人壽雄溫情終身醫療健康保險附約(103)",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ],
+    "categoryCode": "2_2",
+    "category": "健康保險"
+  },
+  "216311RZ1A08623A11Z10000014": {
+    "company": "遠雄人壽保險事業股份有限公司",
+    "productName": "遠雄人壽新溫馨終身醫療健康保險附約(103)(第14次部分變更)",
+    "planCode": "216311RZ1A08623A11Z10000014",
+    "contractType": "附約",
+    "productType": "醫療定額",
+    "currency": "新台幣",
+    "status": "",
+    "saleDate": "",
+    "stopDate": "",
+    "versionFolder": "v14",
+    "productFolder": "遠雄人壽新溫馨終身醫療健康保險附約(103)",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ],
+    "categoryCode": "2_2",
+    "category": "健康保險"
+  },
+  "216321MZ2B14923A11Z10000011": {
+    "company": "遠雄人壽保險事業股份有限公司",
+    "productName": "遠雄人壽愛無懼防癌保本終身保險(第11次部分變更)",
+    "planCode": "216321MZ2B14923A11Z10000011",
+    "contractType": "主約",
+    "productType": "防癌險",
+    "currency": "新台幣",
+    "status": "",
+    "saleDate": "",
+    "stopDate": "",
+    "versionFolder": "v11",
+    "productFolder": "遠雄人壽愛無懼防癌保本終身保險",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ],
+    "categoryCode": "2_2",
+    "category": "健康保險"
+  },
+  "216321MZ2B24023A11Z10000007": {
+    "company": "遠雄人壽保險事業股份有限公司",
+    "productName": "遠雄人壽愛無限A型防癌照護終身健康保險(第7次部分變更)",
+    "planCode": "216321MZ2B24023A11Z10000007",
+    "contractType": "主約",
+    "productType": "防癌險",
+    "currency": "新台幣",
+    "status": "",
+    "saleDate": "",
+    "stopDate": "",
+    "versionFolder": "v7",
+    "productFolder": "遠雄人壽愛無限A型防癌照護終身健康保險",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ],
+    "categoryCode": "2_2",
+    "category": "健康保險"
+  },
+  "216321MZ2B30722A11Z10000004": {
+    "company": "遠雄人壽保險事業股份有限公司",
+    "productName": "遠雄人壽愛無價85防癌健康保險(第4次部分變更)",
+    "planCode": "216321MZ2B30722A11Z10000004",
+    "contractType": "主約",
+    "productType": "防癌險",
+    "currency": "新台幣",
+    "status": "",
+    "saleDate": "",
+    "stopDate": "",
+    "versionFolder": "v4",
+    "productFolder": "遠雄人壽愛無價85防癌健康保險",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ],
+    "categoryCode": "2_2",
+    "category": "健康保險"
+  },
+  "216321RZ1A02421A11Z10000012": {
+    "company": "遠雄人壽保險事業股份有限公司",
+    "productName": "遠雄人壽一年定期癌症健康保險附約(第12次部分變更)",
+    "planCode": "216321RZ1A02421A11Z10000012",
+    "contractType": "附約",
+    "productType": "防癌險",
+    "currency": "新台幣",
+    "status": "",
+    "saleDate": "",
+    "stopDate": "",
+    "versionFolder": "v12",
+    "productFolder": "遠雄人壽一年定期癌症健康保險附約",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ],
+    "categoryCode": "2_2",
+    "category": "健康保險"
+  },
+  "216321RZ1A11623A11Z10000014": {
+    "company": "遠雄人壽保險事業股份有限公司",
+    "productName": "遠雄人壽新癌症終身健康保險附約(99)(第14次部分變更)",
+    "planCode": "216321RZ1A11623A11Z10000014",
+    "contractType": "附約",
+    "productType": "防癌險",
+    "currency": "新台幣",
+    "status": "",
+    "saleDate": "",
+    "stopDate": "",
+    "versionFolder": "v14",
+    "productFolder": "遠雄人壽新癌症終身健康保險附約(99)",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ],
+    "categoryCode": "2_2",
+    "category": "健康保險"
+  },
+  "216321RZ1A20023A11Z10000010": {
+    "company": "遠雄人壽保險事業股份有限公司",
+    "productName": "遠雄人壽愛無懼B型防癌終身健康保險附約(第10次部分變更)",
+    "planCode": "216321RZ1A20023A11Z10000010",
+    "contractType": "附約",
+    "productType": "防癌險",
+    "currency": "新台幣",
+    "status": "",
+    "saleDate": "",
+    "stopDate": "",
+    "versionFolder": "v10",
+    "productFolder": "遠雄人壽愛無懼B型防癌終身健康保險附約",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ],
+    "categoryCode": "2_2",
+    "category": "健康保險"
+  },
+  "216321RZ1A22323A11Z10000009": {
+    "company": "遠雄人壽保險事業股份有限公司",
+    "productName": "遠雄人壽愛無限B型防癌照護終身健康保險附約(第9次部分變更)",
+    "planCode": "216321RZ1A22323A11Z10000009",
+    "contractType": "附約",
+    "productType": "防癌險",
+    "currency": "新台幣",
+    "status": "",
+    "saleDate": "",
+    "stopDate": "",
+    "versionFolder": "v9",
+    "productFolder": "遠雄人壽愛無限B型防癌照護終身健康保險附約",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ],
+    "categoryCode": "2_2",
+    "category": "健康保險"
+  },
+  "216321RZ1A26722A11Z10000005": {
+    "company": "遠雄人壽保險事業股份有限公司",
+    "productName": "遠雄人壽愛家守護五年定期癌症健康保險附約(第5次部分變更)",
+    "planCode": "216321RZ1A26722A11Z10000005",
+    "contractType": "附約",
+    "productType": "防癌險",
+    "currency": "新台幣",
+    "status": "",
+    "saleDate": "",
+    "stopDate": "",
+    "versionFolder": "v5",
+    "productFolder": "遠雄人壽愛家守護五年定期癌症健康保險附約",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ],
+    "categoryCode": "2_2",
+    "category": "健康保險"
+  },
+  "216321RZ1A35321A11Z10000002": {
+    "company": "遠雄人壽保險事業股份有限公司",
+    "productName": "遠雄人壽愛吉時一年定期癌症健康保險附約(第2次部分變更)",
+    "planCode": "216321RZ1A35321A11Z10000002",
+    "contractType": "附約",
+    "productType": "防癌險",
+    "currency": "新台幣",
+    "status": "",
+    "saleDate": "",
+    "stopDate": "",
+    "versionFolder": "v2",
+    "productFolder": "遠雄人壽愛吉時一年定期癌症健康保險附約",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ],
+    "categoryCode": "2_2",
+    "category": "健康保險"
+  },
+  "216341RZ1A02722A11Z10000017": {
+    "company": "遠雄人壽保險事業股份有限公司",
+    "productName": "遠雄人壽金安心豁免保險費附約(113)(第17次部分變更)",
+    "planCode": "216341RZ1A02722A11Z10000017",
+    "contractType": "附約",
+    "productType": "其他",
+    "currency": "新台幣",
+    "status": "",
+    "saleDate": "",
+    "stopDate": "",
+    "versionFolder": "v17",
+    "productFolder": "遠雄人壽金安心豁免保險費附約(113)",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ],
+    "categoryCode": "2_2",
+    "category": "健康保險"
+  },
+  "216341RZ1A13622A11Z10000008": {
+    "company": "遠雄人壽保險事業股份有限公司",
+    "productName": "遠雄人壽金好心豁免保險費附約(第8次部分變更)",
+    "planCode": "216341RZ1A13622A11Z10000008",
+    "contractType": "附約",
+    "productType": "其他",
+    "currency": "新台幣",
+    "status": "",
+    "saleDate": "",
+    "stopDate": "",
+    "versionFolder": "v8",
+    "productFolder": "遠雄人壽金好心豁免保險費附約",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ],
+    "categoryCode": "2_2",
+    "category": "健康保險"
+  },
+  "216341RZ1A02622A11Z10000020": {
+    "company": "遠雄人壽保險事業股份有限公司",
+    "productName": "遠雄人壽豁免保險費附約(113)(第20次部分變更)",
+    "planCode": "216341RZ1A02622A11Z10000020",
+    "contractType": "附約",
+    "productType": "其他",
+    "currency": "新台幣",
+    "status": "",
+    "saleDate": "",
+    "stopDate": "",
+    "versionFolder": "v20",
+    "productFolder": "遠雄人壽豁免保險費附約(113)",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ],
+    "categoryCode": "2_2",
+    "category": "健康保險"
+  },
+  "216341RZ1A35721A11Z10000002": {
+    "company": "遠雄人壽保險事業股份有限公司",
+    "productName": "遠雄人壽金大吉豁免保險費附約(第2次部分變更)",
+    "planCode": "216341RZ1A35721A11Z10000002",
+    "contractType": "附約",
+    "productType": "其他",
+    "currency": "新台幣",
+    "status": "",
+    "saleDate": "",
+    "stopDate": "",
+    "versionFolder": "v2",
+    "productFolder": "遠雄人壽金大吉豁免保險費附約",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ],
+    "categoryCode": "2_2",
+    "category": "健康保險"
+  },
+  "216341RZ1A24122B11Z10000006": {
+    "company": "遠雄人壽保險事業股份有限公司",
+    "productName": "遠雄人壽金放心美元豁免保險費附約(第6次部分變更)",
+    "planCode": "216341RZ1A24122B11Z10000006",
+    "contractType": "附約",
+    "productType": "其他",
+    "currency": "美元",
+    "status": "",
+    "saleDate": "",
+    "stopDate": "",
+    "versionFolder": "v6",
+    "productFolder": "遠雄人壽金放心美元豁免保險費附約",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ],
+    "categoryCode": "2_2",
+    "category": "健康保險"
+  },
+  "216341RZ1A22722A11Z10000006": {
+    "company": "遠雄人壽保險事業股份有限公司",
+    "productName": "遠雄人壽金貼心豁免保險費附約(第6次部分變更)",
+    "planCode": "216341RZ1A22722A11Z10000006",
+    "contractType": "附約",
+    "productType": "其他",
+    "currency": "新台幣",
+    "status": "",
+    "saleDate": "",
+    "stopDate": "",
+    "versionFolder": "v6",
+    "productFolder": "遠雄人壽金貼心豁免保險費附約",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ],
+    "categoryCode": "2_2",
+    "category": "健康保險"
+  },
+  "216351MZ1A32121A11Z10000002": {
+    "company": "遠雄人壽保險事業股份有限公司",
+    "productName": "遠雄人壽e富通一年期重大疾病健康保險(甲型)(第2次部分變更)",
+    "planCode": "216351MZ1A32121A11Z10000002",
+    "contractType": "主約",
+    "productType": "重大疾(傷)病險",
+    "currency": "新台幣",
+    "status": "",
+    "saleDate": "",
+    "stopDate": "",
+    "versionFolder": "v2",
+    "productFolder": "遠雄人壽e富通一年期重大疾病健康保險(甲型)",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ],
+    "categoryCode": "2_2",
+    "category": "健康保險"
+  },
+  "216351RZ1A09723A11Z10000013": {
+    "company": "遠雄人壽保險事業股份有限公司",
+    "productName": "遠雄人壽永康特定傷病終身健康保險附約(第13次部分變更)",
+    "planCode": "216351RZ1A09723A11Z10000013",
+    "contractType": "附約",
+    "productType": "重大疾(傷)病險",
+    "currency": "新台幣",
+    "status": "",
+    "saleDate": "",
+    "stopDate": "",
+    "versionFolder": "v13",
+    "productFolder": "遠雄人壽永康特定傷病終身健康保險附約",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ],
+    "categoryCode": "2_2",
+    "category": "健康保險"
+  },
+  "216351MZ1A32222A11Z10000002": {
+    "company": "遠雄人壽保險事業股份有限公司",
+    "productName": "遠雄人壽e富通重大疾病定期健康保險(甲型)(第2次部分變更)",
+    "planCode": "216351MZ1A32222A11Z10000002",
+    "contractType": "主約",
+    "productType": "重大疾(傷)病險",
+    "currency": "新台幣",
+    "status": "",
+    "saleDate": "",
+    "stopDate": "",
+    "versionFolder": "v2",
+    "productFolder": "遠雄人壽e富通重大疾病定期健康保險(甲型)",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ],
+    "categoryCode": "2_2",
+    "category": "健康保險"
+  },
+  "216351RZ1A19623A11Z10000009": {
+    "company": "遠雄人壽保險事業股份有限公司",
+    "productName": "遠雄人壽永康滿福重大疾病終身健康保險附約(乙型)(第9次部分變更)",
+    "planCode": "216351RZ1A19623A11Z10000009",
+    "contractType": "附約",
+    "productType": "重大疾(傷)病險",
+    "currency": "新台幣",
+    "status": "",
+    "saleDate": "",
+    "stopDate": "",
+    "versionFolder": "v9",
+    "productFolder": "遠雄人壽永康滿福重大疾病終身健康保險附約(乙型)",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ],
+    "categoryCode": "2_2",
+    "category": "健康保險"
+  },
+  "216351MZ9B36922A11E10000002": {
+    "company": "遠雄人壽保險事業股份有限公司",
+    "productName": "遠雄人壽雄有溢85精選傷病定期保險(第2次部分變更)",
+    "planCode": "216351MZ9B36922A11E10000002",
+    "contractType": "主約",
+    "productType": "定期壽險",
+    "currency": "新台幣",
+    "status": "",
+    "saleDate": "",
+    "stopDate": "",
+    "versionFolder": "v2",
+    "productFolder": "遠雄人壽雄有溢85精選傷病定期保險",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ],
+    "categoryCode": "2_2",
+    "category": "健康保險"
+  },
+  "216391RZ1A29921A11Z10000003": {
+    "company": "遠雄人壽保險事業股份有限公司",
+    "productName": "遠雄人壽保安康重大傷病一年定期健康保險附約(第3次部分變更)",
+    "planCode": "216391RZ1A29921A11Z10000003",
+    "contractType": "附約",
+    "productType": "重大疾(傷)病險",
+    "currency": "新台幣",
+    "status": "",
+    "saleDate": "",
+    "stopDate": "",
+    "versionFolder": "v3",
+    "productFolder": "遠雄人壽保安康重大傷病一年定期健康保險附約",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ],
+    "categoryCode": "2_2",
+    "category": "健康保險"
+  },
+  "216391RZ9B08923A11Z10000017": {
+    "company": "遠雄人壽保險事業股份有限公司",
+    "productName": "遠雄人壽健康久久手術醫療終身保險附約(第17次部分變更)",
+    "planCode": "216391RZ9B08923A11Z10000017",
+    "contractType": "附約",
+    "productType": "醫療定額",
+    "currency": "新台幣",
+    "status": "",
+    "saleDate": "",
+    "stopDate": "",
+    "versionFolder": "v17",
+    "productFolder": "遠雄人壽健康久久手術醫療終身保險附約",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ],
+    "categoryCode": "2_2",
+    "category": "健康保險"
+  },
+  "216391AZ1A06823A11Z10000004": {
+    "company": "遠雄人壽保險事業股份有限公司",
+    "productName": "遠雄人壽老年住院醫療提前給付附加條款(第4次部分變更)",
+    "planCode": "216391AZ1A06823A11Z10000004",
+    "contractType": "附約",
+    "productType": "醫療定額",
+    "currency": "新台幣",
+    "status": "",
+    "saleDate": "",
+    "stopDate": "",
+    "versionFolder": "v4",
+    "productFolder": "遠雄人壽老年住院醫療提前給付附加條款",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ],
+    "categoryCode": "2_2",
+    "category": "健康保險"
+  },
+  "216391MZ9B10323A11Z10000015": {
+    "company": "遠雄人壽保險事業股份有限公司",
+    "productName": "遠雄人壽永安手術醫療終身保險(第15次部分變更)",
+    "planCode": "216391MZ9B10323A11Z10000015",
+    "contractType": "主約",
+    "productType": "終身壽險",
+    "currency": "新台幣",
+    "status": "",
+    "saleDate": "",
+    "stopDate": "",
+    "versionFolder": "v15",
+    "productFolder": "遠雄人壽永安手術醫療終身保險",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ],
+    "categoryCode": "2_2",
+    "category": "健康保險"
+  },
+  "216311RZ1A11221A11Z10000009": {
+    "company": "遠雄人壽保險事業股份有限公司",
+    "productName": "遠雄人壽新海外突發疾病醫療健康保險附約(第9次部份變更)",
+    "planCode": "216311RZ1A11221A11Z10000009",
+    "contractType": "附約",
+    "productType": "醫療定額",
+    "currency": "新台幣",
+    "status": "",
+    "saleDate": "",
+    "stopDate": "",
+    "versionFolder": "v9",
+    "productFolder": "遠雄人壽新海外突發疾病醫療健康保險附約",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ],
+    "categoryCode": "2_2",
+    "category": "健康保險"
+  },
+  "216311RZ1A37221A11Z10000001": {
+    "company": "遠雄人壽保險事業股份有限公司",
+    "productName": "遠雄人壽遨遊海外突發疾病醫療健康保險附約(第1次部分變更)",
+    "planCode": "216311RZ1A37221A11Z10000001",
+    "contractType": "附約",
+    "productType": "醫療定額",
+    "currency": "新台幣",
+    "status": "",
+    "saleDate": "",
+    "stopDate": "",
+    "versionFolder": "v1",
+    "productFolder": "遠雄人壽遨遊海外突發疾病醫療健康保險附約",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ],
+    "categoryCode": "2_2",
+    "category": "健康保險"
+  },
+  "216311MZ1B13923A11Z10000012": {
+    "company": "遠雄人壽保險事業股份有限公司",
+    "productName": "遠雄人壽守護醫級棒醫療保本終身保險(103)(第12次部分變更)",
+    "planCode": "216311MZ1B13923A11Z10000012",
+    "contractType": "主約",
+    "productType": "儲蓄壽險",
+    "currency": "新台幣",
+    "status": "",
+    "saleDate": "",
+    "stopDate": "",
+    "versionFolder": "v12",
+    "productFolder": "遠雄人壽守護醫級棒醫療保本終身保險(103)",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ],
+    "categoryCode": "2_2",
+    "category": "健康保險"
+  },
+  "216321MZ2B30722A11Z10000005": {
+    "company": "遠雄人壽保險事業股份有限公司",
+    "productName": "遠雄人壽愛無價85防癌健康保險(第5次部分變更)",
+    "planCode": "216321MZ2B30722A11Z10000005",
+    "contractType": "主約",
+    "productType": "防癌險",
+    "currency": "新台幣",
+    "status": "",
+    "saleDate": "",
+    "stopDate": "",
+    "versionFolder": "v5",
+    "productFolder": "遠雄人壽愛無價85防癌健康保險",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ],
+    "categoryCode": "2_2",
+    "category": "健康保險"
+  },
+  "216321MZ2B24023A11Z10000008": {
+    "company": "遠雄人壽保險事業股份有限公司",
+    "productName": "遠雄人壽愛無限A型防癌照護終身健康保險(第8次部分變更)",
+    "planCode": "216321MZ2B24023A11Z10000008",
+    "contractType": "主約",
+    "productType": "防癌險",
+    "currency": "新台幣",
+    "status": "",
+    "saleDate": "",
+    "stopDate": "",
+    "versionFolder": "v8",
+    "productFolder": "遠雄人壽愛無限A型防癌照護終身健康保險",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ],
+    "categoryCode": "2_2",
+    "category": "健康保險"
+  },
+  "216321MZ2B14923A11Z10000012": {
+    "company": "遠雄人壽保險事業股份有限公司",
+    "productName": "遠雄人壽愛無懼防癌保本終身保險(第12次部分變更)",
+    "planCode": "216321MZ2B14923A11Z10000012",
+    "contractType": "主約",
+    "productType": "防癌險",
+    "currency": "新台幣",
+    "status": "",
+    "saleDate": "",
+    "stopDate": "",
+    "versionFolder": "v12",
+    "productFolder": "遠雄人壽愛無懼防癌保本終身保險",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ],
+    "categoryCode": "2_2",
+    "category": "健康保險"
+  },
+  "216351MZ9B36922A11E10000003": {
+    "company": "遠雄人壽保險事業股份有限公司",
+    "productName": "遠雄人壽雄有溢85精選傷病定期保險(第3次部分變更)",
+    "planCode": "216351MZ9B36922A11E10000003",
+    "contractType": "主約",
+    "productType": "定期壽險",
+    "currency": "新台幣",
+    "status": "",
+    "saleDate": "",
+    "stopDate": "",
+    "versionFolder": "v3",
+    "productFolder": "遠雄人壽雄有溢85精選傷病定期保險",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ],
+    "categoryCode": "2_2",
+    "category": "健康保險"
+  },
+  "216391MZ9B10323A11Z10000016": {
+    "company": "遠雄人壽保險事業股份有限公司",
+    "productName": "遠雄人壽永安手術醫療終身保險(第16次部分變更)",
+    "planCode": "216391MZ9B10323A11Z10000016",
+    "contractType": "主約",
+    "productType": "終身壽險",
+    "currency": "新台幣",
+    "status": "",
+    "saleDate": "",
+    "stopDate": "",
+    "versionFolder": "v16",
+    "productFolder": "遠雄人壽永安手術醫療終身保險",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ],
+    "categoryCode": "2_2",
+    "category": "健康保險"
+  },
+  "216361RZ1A38521A11Z10000000": {
+    "company": "遠雄人壽保險事業股份有限公司",
+    "productName": "遠雄人壽輕盈好享福長期照顧一年期健康保險附約",
+    "planCode": "216361RZ1A38521A11Z10000000",
+    "contractType": "附約",
+    "productType": "長照險",
+    "currency": "新台幣",
+    "status": "",
+    "saleDate": "",
+    "stopDate": "",
+    "versionFolder": "v0",
+    "productFolder": "遠雄人壽輕盈好享福長期照顧一年期健康保險附約",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ],
+    "categoryCode": "2_2",
+    "category": "健康保險"
+  },
+  "216391RZ9B08923A11Z10000018": {
+    "company": "遠雄人壽保險事業股份有限公司",
+    "productName": "遠雄人壽健康久久手術醫療終身保險附約(第18次部分變更)",
+    "planCode": "216391RZ9B08923A11Z10000018",
+    "contractType": "附約",
+    "productType": "醫療定額",
+    "currency": "新台幣",
+    "status": "",
+    "saleDate": "",
+    "stopDate": "",
+    "versionFolder": "v18",
+    "productFolder": "遠雄人壽健康久久手術醫療終身保險附約",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ],
+    "categoryCode": "2_2",
+    "category": "健康保險"
+  },
+  "216311MZ1B39323A11Z10000000": {
+    "company": "遠雄人壽保險事業股份有限公司",
+    "productName": "遠雄人壽實足守護醫療終身保險",
+    "planCode": "216311MZ1B39323A11Z10000000",
+    "contractType": "主約",
+    "productType": "終身壽險",
+    "currency": "新台幣",
+    "status": "",
+    "saleDate": "",
+    "stopDate": "",
+    "versionFolder": "v0",
+    "productFolder": "遠雄人壽實足守護醫療終身保險",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ],
+    "categoryCode": "2_2",
+    "category": "健康保險"
+  },
+  "216311RZ1A39121A11Z10000000": {
+    "company": "遠雄人壽保險事業股份有限公司",
+    "productName": "遠雄人壽術術平安一年定期手術健康保險附約",
+    "planCode": "216311RZ1A39121A11Z10000000",
+    "contractType": "附約",
+    "productType": "醫療定額",
+    "currency": "新台幣",
+    "status": "",
+    "saleDate": "",
+    "stopDate": "",
+    "versionFolder": "v0",
+    "productFolder": "遠雄人壽術術平安一年定期手術健康保險附約",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ],
+    "categoryCode": "2_2",
+    "category": "健康保險"
+  },
+  "216311MZ1B39323A11Z10000001": {
+    "company": "遠雄人壽保險事業股份有限公司",
+    "productName": "遠雄人壽實足守護醫療終身保險(第1次部分變更)",
+    "planCode": "216311MZ1B39323A11Z10000001",
+    "contractType": "主約",
+    "productType": "終身壽險",
+    "currency": "新台幣",
+    "status": "",
+    "saleDate": "",
+    "stopDate": "",
+    "versionFolder": "v1",
+    "productFolder": "遠雄人壽實足守護醫療終身保險",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ],
+    "categoryCode": "2_2",
+    "category": "健康保險"
+  },
+  "216351MZ1A40922A11Z10000000": {
+    "company": "遠雄人壽保險事業股份有限公司",
+    "productName": "遠雄人壽雄醫靠特定傷病定期健康保險",
+    "planCode": "216351MZ1A40922A11Z10000000",
+    "contractType": "主約",
+    "productType": "重大疾(傷)病險",
+    "currency": "新台幣",
+    "status": "",
+    "saleDate": "",
+    "stopDate": "",
+    "versionFolder": "v0",
+    "productFolder": "遠雄人壽雄醫靠特定傷病定期健康保險",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ],
+    "categoryCode": "2_2",
+    "category": "健康保險"
+  },
+  "216311MZ1B41322A11Z10000000": {
+    "company": "遠雄人壽保險事業股份有限公司",
+    "productName": "遠雄人壽實足滿醫醫療定期保險",
+    "planCode": "216311MZ1B41322A11Z10000000",
+    "contractType": "主約",
+    "productType": "定期壽險",
+    "currency": "新台幣",
+    "status": "",
+    "saleDate": "",
+    "stopDate": "",
+    "versionFolder": "v0",
+    "productFolder": "遠雄人壽實足滿醫醫療定期保險",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ],
+    "categoryCode": "2_2",
+    "category": "健康保險"
+  },
+  "216311MZ1B41623A11Z10000000": {
+    "company": "遠雄人壽保險事業股份有限公司",
+    "productName": "遠雄人壽術術如意手術醫療終身保險",
+    "planCode": "216311MZ1B41623A11Z10000000",
+    "contractType": "主約",
+    "productType": "終身壽險",
+    "currency": "新台幣",
+    "status": "",
+    "saleDate": "",
+    "stopDate": "",
+    "versionFolder": "v0",
+    "productFolder": "遠雄人壽術術如意手術醫療終身保險",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ],
+    "categoryCode": "2_2",
+    "category": "健康保險"
+  },
+  "216391MZ9G41722A11Z10000000": {
+    "company": "遠雄人壽保險事業股份有限公司",
+    "productName": "遠雄人壽愛無憂防癌定期保險",
+    "planCode": "216391MZ9G41722A11Z10000000",
+    "contractType": "主約",
+    "productType": "防癌險",
+    "currency": "新台幣",
+    "status": "",
+    "saleDate": "",
+    "stopDate": "",
+    "versionFolder": "v0",
+    "productFolder": "遠雄人壽愛無憂防癌定期保險",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ],
+    "categoryCode": "2_2",
+    "category": "健康保險"
+  },
+  "216141M11A04403": {
+    "company": "遠雄人壽保險事業股份有限公司",
+    "productName": "遠雄人壽金美滿終身壽險(第3次部分變更)",
+    "planCode": "216141M11A04403",
+    "contractType": "主約",
+    "productType": "終身壽險",
+    "currency": "新台幣",
+    "status": "",
+    "saleDate": "",
+    "stopDate": "",
+    "versionFolder": "v3",
+    "productFolder": "遠雄人壽金美滿終身壽險",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ],
+    "categoryCode": "2_3",
+    "category": "傳統型壽險"
+  },
+  "216131M11A06700": {
+    "company": "遠雄人壽保險事業股份有限公司",
+    "productName": "遠雄人壽千禧一年期定期壽險",
+    "planCode": "216131M11A06700",
+    "contractType": "主約",
+    "productType": "定期壽險",
+    "currency": "新台幣",
+    "status": "",
+    "saleDate": "",
+    "stopDate": "",
+    "versionFolder": "v0",
+    "productFolder": "遠雄人壽千禧一年期定期壽險",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ],
+    "categoryCode": "2_3",
+    "category": "傳統型壽險"
+  },
+  "216141M11A00307": {
+    "company": "遠雄人壽保險事業股份有限公司",
+    "productName": "遠雄人壽金保本終身壽險(第7次部分變更)",
+    "planCode": "216141M11A00307",
+    "contractType": "主約",
+    "productType": "儲蓄壽險",
+    "currency": "新台幣",
+    "status": "",
+    "saleDate": "",
+    "stopDate": "",
+    "versionFolder": "v7",
+    "productFolder": "遠雄人壽金保本終身壽險",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ],
+    "categoryCode": "2_3",
+    "category": "傳統型壽險"
+  },
+  "216121M11A09203": {
+    "company": "遠雄人壽保險事業股份有限公司",
+    "productName": "遠雄人壽真鑽養老保險(第3次部分變更)",
+    "planCode": "216121M11A09203",
+    "contractType": "主約",
+    "productType": "儲蓄壽險",
+    "currency": "新台幣",
+    "status": "",
+    "saleDate": "",
+    "stopDate": "",
+    "versionFolder": "v3",
+    "productFolder": "遠雄人壽真鑽養老保險",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ],
+    "categoryCode": "2_3",
+    "category": "傳統型壽險"
+  },
+  "216121M11A09204": {
+    "company": "遠雄人壽保險事業股份有限公司",
+    "productName": "遠雄人壽真鑽養老保險(第4次部分變更)",
+    "planCode": "216121M11A09204",
+    "contractType": "主約",
+    "productType": "儲蓄壽險",
+    "currency": "新台幣",
+    "status": "",
+    "saleDate": "",
+    "stopDate": "",
+    "versionFolder": "v4",
+    "productFolder": "遠雄人壽真鑽養老保險",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ],
+    "categoryCode": "2_3",
+    "category": "傳統型壽險"
+  },
+  "216121MZ1A10022A11Z10000010": {
+    "company": "遠雄人壽保險事業股份有限公司",
+    "productName": "遠雄人壽新雄多利保險甲型(106)(第10次部分變更)",
+    "planCode": "216121MZ1A10022A11Z10000010",
+    "contractType": "主約",
+    "productType": "其他",
+    "currency": "新台幣",
+    "status": "",
+    "saleDate": "",
+    "stopDate": "",
+    "versionFolder": "v10",
+    "productFolder": "遠雄人壽新雄多利保險甲型(106)",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ],
+    "categoryCode": "2_3",
+    "category": "傳統型壽險"
+  },
+  "216121MA1A20122B11Z10000005": {
+    "company": "遠雄人壽保險事業股份有限公司",
+    "productName": "遠雄人壽美金鑽美元利率變動型養老保險(106)(第5次部份變更)",
+    "planCode": "216121MA1A20122B11Z10000005",
+    "contractType": "主約",
+    "productType": "利率變動型壽險",
+    "currency": "美元",
+    "status": "",
+    "saleDate": "",
+    "stopDate": "",
+    "versionFolder": "v5",
+    "productFolder": "遠雄人壽美金鑽美元利率變動型養老保險(106)",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ],
+    "categoryCode": "2_3",
+    "category": "傳統型壽險"
+  },
+  "216131MA2A37823A11Z10000001": {
+    "company": "遠雄人壽保險事業股份有限公司",
+    "productName": "遠雄人壽美滿雄go利利率變動型增額終身壽險(第1次部分變更)",
+    "planCode": "216131MA2A37823A11Z10000001",
+    "contractType": "主約",
+    "productType": "利率變動型壽險",
+    "currency": "新台幣",
+    "status": "",
+    "saleDate": "",
+    "stopDate": "",
+    "versionFolder": "v1",
+    "productFolder": "遠雄人壽美滿雄go利利率變動型增額終身壽險",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ],
+    "categoryCode": "2_3",
+    "category": "傳統型壽險"
+  },
+  "216131MA2A35223A11Z10000001": {
+    "company": "遠雄人壽保險事業股份有限公司",
+    "productName": "遠雄人壽美滿雄福利利率變動型增額終身壽險(第1次部分變更)",
+    "planCode": "216131MA2A35223A11Z10000001",
+    "contractType": "主約",
+    "productType": "利率變動型壽險",
+    "currency": "新台幣",
+    "status": "",
+    "saleDate": "",
+    "stopDate": "",
+    "versionFolder": "v1",
+    "productFolder": "遠雄人壽美滿雄福利利率變動型增額終身壽險",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ],
+    "categoryCode": "2_3",
+    "category": "傳統型壽險"
+  },
+  "216131MA2A36223A11Z10000001": {
+    "company": "遠雄人壽保險事業股份有限公司",
+    "productName": "遠雄人壽傳富倍多紛利率變動型終身壽險(第1次部分變更)",
+    "planCode": "216131MA2A36223A11Z10000001",
+    "contractType": "主約",
+    "productType": "利率變動型壽險",
+    "currency": "新台幣",
+    "status": "",
+    "saleDate": "",
+    "stopDate": "",
+    "versionFolder": "v1",
+    "productFolder": "遠雄人壽傳富倍多紛利率變動型終身壽險",
+    "docTypes": [
+      "說明",
+      "條款",
+      "費率"
+    ],
+    "categoryCode": "2_3",
+    "category": "傳統型壽險"
   }
 }

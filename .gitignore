@@ -53,3 +53,4 @@ policy-analyzer/tsconfig.tsbuildinfo
 
 # Claude Code 快取（不需備份）
 .claude/cache/
+100_Todo/projects/audit_missing_*.json

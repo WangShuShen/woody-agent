@@ -12,6 +12,7 @@ Drive 結構：
   python3 scraper_drive.py --company 206 --limit 5 # 測試 5 筆
 """
 
+import os
 import json
 import re
 import sys
@@ -24,6 +25,13 @@ import unicodedata
 import urllib.request
 from pathlib import Path
 from urllib.parse import urlparse, parse_qs
+
+# 移除環境中失效的 NODE_OPTIONS --require（指向已被清除的暫存檔，
+# 否則 Playwright 自帶的 node driver 會啟動即崩潰）。保留其餘安全選項。
+_no = os.environ.get("NODE_OPTIONS", "")
+if "restore-node-options" in _no or "cmux" in _no:
+    _kept = [tok for tok in _no.split() if "restore-node-options" not in tok and "cmux" not in tok and not tok.startswith("--require")]
+    os.environ["NODE_OPTIONS"] = " ".join(_kept)
 
 import anthropic
 
